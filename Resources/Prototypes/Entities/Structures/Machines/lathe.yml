@@ -502,8 +502,11 @@
       - RipleyPeripheralsElectronics
       - GygaxCentralElectronics
       - GygaxPeripheralsElectronics
+<<<<<<< HEAD
       - DurandCentralElectronics
       - DurandPeripheralsElectronics
+=======
+>>>>>>> 00177796fb2 (Технология гигакса)
       - HonkerCentralElectronics
       - HonkerPeripheralsElectronics
       - HonkerTargetingElectronics
@@ -680,6 +683,8 @@
     - MechHadesWeapon
     - MechMssileWeapon
     - MechTeslaWeapon
+    - MechLaserWeapon
+    - MechScattershotWeapon
   - type: MaterialStorage
     whitelist:
       tags:

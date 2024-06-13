@@ -178,7 +178,7 @@
 
 - type: technology
   id: MilitaryMachinery
-  name: research-technology-military-machinery
+  name: research-technology-military_machinery
   icon:
     sprite: Objects/Specific/Mech/mecha.rsi
     state: gygax
