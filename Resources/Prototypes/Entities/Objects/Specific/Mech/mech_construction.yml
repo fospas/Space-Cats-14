@@ -484,7 +484,7 @@
     node: start
     defaultTarget: vim
 
-# Gygax
+# Gygax APLU
 
 - type: entity
   id: BaseGygaxPart
@@ -516,7 +516,11 @@
       gygax_l_arm+o:
         whitelist:
           tags:
+<<<<<<< HEAD
           - GygaxLArm
+=======
+          - gygaxLArm
+>>>>>>> 682e7789632 (Гигакс)
       gygax_r_arm+o:
         whitelist:
           tags:
@@ -610,6 +614,7 @@
   - type: Construction
     graph: Gygax
     node: start
+<<<<<<< HEAD
     defaultTarget: gygax
 
 # Durand
@@ -739,3 +744,6 @@
     graph: Durand
     node: start
     defaultTarget: durand
+=======
+    defaultTarget: gygax
+>>>>>>> 682e7789632 (Гигакс)
