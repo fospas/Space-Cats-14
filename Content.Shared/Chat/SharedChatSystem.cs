@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Text.RegularExpressions;
 using Content.Shared.Popups;
 using Content.Shared.Radio;
+using Content.Shared.SpeciesChat;
 using Content.Shared.Speech;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -22,7 +23,8 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesAltPrefix = '*';
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
-    public const char DefaultChannelKey = 'р'; // Corvax-Localization
+    public const char DefaultChannelKey = 'h';
+    public const char SpeciesChannelPrefix = '#';
     public const char TelepathicPrefix = '='; // backmen: Psionic
     // Corvax-TTS-Start: Moved from Server to Shared
     public const int VoiceRange = 10; // how far voice goes in world units
@@ -44,7 +46,8 @@ public abstract class SharedChatSystem : EntitySystem
     /// <summary>
     /// Cache of the keycodes for faster lookup.
     /// </summary>
-    private FrozenDictionary<char, RadioChannelPrototype> _keyCodes = default!;
+    private FrozenDictionary<char, RadioChannelPrototype> _radioKeyCodes = default!;
+    private FrozenDictionary<char, SpeciesChannelPrototype> _speciesKeyCodes = default!;
 
     public override void Initialize()
     {
@@ -62,8 +65,7 @@ public abstract class SharedChatSystem : EntitySystem
 
     private void CacheRadios()
     {
-        _keyCodes = _prototypeManager.EnumeratePrototypes<RadioChannelPrototype>()
-            .ToFrozenDictionary(x => x.KeyCode);
+        _radioKeyCodes = _prototypeManager.EnumeratePrototypes<RadioChannelPrototype>().ToFrozenDictionary(x => x.KeyCode);
     }
 
     /// <summary>
@@ -127,7 +129,10 @@ public abstract class SharedChatSystem : EntitySystem
         {
             output = SanitizeMessageCapital(input[1..].TrimStart());
             if (!quiet)
-                _popup.PopupEntity(Loc.GetString("chat-manager-no-radio-key"), source, source);
+            {
+                var msg = "chat-manager-no-radio-key";
+                _popup.PopupEntity(Loc.GetString(msg), source, source);
+            }
             return true;
         }
 
@@ -145,7 +150,67 @@ public abstract class SharedChatSystem : EntitySystem
             return true;
         }
 
-        if (!_keyCodes.TryGetValue(channelKey, out channel) && !quiet)
+        if (!_radioKeyCodes.TryGetValue(channelKey, out channel) && !quiet)
+        {
+            var msg = Loc.GetString("chat-manager-no-such-channel", ("key", channelKey));
+            _popup.PopupEntity(msg, source, source);
+        }
+
+        return true;
+    }
+    ///
+    /// <summary>
+    ///     Attempts to resolve species prefixes in chat messages (e.g., remove a leading "#d" and resolve the requested
+    ///     channel. Returns true if a species message was attempted, even if the channel is invalid.
+    /// </summary>
+    /// <param name="source">Source of the message</param>
+    /// <param name="input">The message to be modified</param>
+    /// <param name="output">The modified message</param>
+    /// <param name="channel">The channel that was requested, if any</param>
+    /// <param name="quiet">Whether or not to generate an informative pop-up message.</param>
+    /// <returns></returns>
+    public bool TryProccessSpeciesMessage(
+        EntityUid source,
+        string input,
+        out string output,
+        out SpeciesChannelPrototype? channel,
+        bool quiet = false)
+    {
+        output = input.Trim();
+        channel = null;
+
+        if (input.Length == 0)
+            return false;
+
+        if (!input.StartsWith(SpeciesChannelPrefix))
+            return false;
+
+        if (input.Length < 2 || char.IsWhiteSpace(input[1]))
+        {
+            output = SanitizeMessageCapital(input[1..].TrimStart());
+            if (!quiet)
+            {
+                var msg = "chat-manager-no-radio-key";
+                _popup.PopupEntity(Loc.GetString(msg), source, source);
+            }
+            return true;
+        }
+
+        var channelKey = input[1];
+        channelKey = char.ToLower(channelKey);
+        output = SanitizeMessageCapital(input[2..].TrimStart());
+
+        if (channelKey == DefaultChannelKey)
+        {
+            var ev = new GetDefaultRadioChannelEvent();
+            RaiseLocalEvent(source, ev);
+
+            if (ev.Channel != null)
+                _prototypeManager.TryIndex(ev.Channel, out channel);
+            return true;
+        }
+
+        if (!_speciesKeyCodes.TryGetValue(channelKey, out channel) && !quiet)
         {
             var msg = Loc.GetString("chat-manager-no-such-channel", ("key", channelKey));
             _popup.PopupEntity(msg, source, source);
