@@ -18,7 +18,6 @@
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 3
-    fillBaseName: fueltank-2-
   - type: ExaminableSolution
     solution: tank
   - type: ReagentTank
@@ -62,7 +61,6 @@
         visible: false
   - type: SolutionContainerVisuals
     maxFillLevels: 7
-    fillBaseName: highfueltank-2-
   - type: SolutionContainerManager
     solutions:
       tank:
@@ -94,7 +92,6 @@
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 5
-    fillBaseName: watertank-2-
   - type: ExaminableSolution
     solution: tank
 
@@ -125,7 +122,6 @@
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 4
-    fillBaseName: watercooler-2-
   - type: SolutionContainerManager
     solutions:
       tank:
@@ -176,7 +172,6 @@
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 7
-    fillBaseName: highwatertank-2-
   - type: SolutionContainerManager
     solutions:
       tank:
@@ -207,6 +202,5 @@
     - type: Appearance
     - type: SolutionContainerVisuals
       maxFillLevels: 5
-      fillBaseName: generictank-1- # Corvax-Resprite
     - type: ExaminableSolution
       solution: tank
