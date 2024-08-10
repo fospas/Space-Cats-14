@@ -12,8 +12,7 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: fueltank-2
-      - state: fueltank-2-1
+      - state: fueltank
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
@@ -58,8 +57,7 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: highfueltank-2
-      - state: highfueltank-2-1
+      - state: highfueltank
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: SolutionContainerVisuals
@@ -90,8 +88,7 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: watertank-2
-      - state: watertank-2-1
+      - state: watertank
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
@@ -122,8 +119,7 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: watercooler-2
-      - state: watercooler-2-1
+      - state: watercooler
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
@@ -174,8 +170,7 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: highwatertank-2
-      - state: highwatertank-2-1
+      - state: highwatertank
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Appearance
@@ -206,8 +201,7 @@
     - type: Sprite
       sprite: Structures/Storage/tanks.rsi
       layers:
-        - state: generictank-1
-        - state: generictank-1-1 # Corvax-Resprite
+        - state: generictank
           map: ["enum.SolutionContainerLayers.Fill"]
           visible: false
     - type: Appearance
