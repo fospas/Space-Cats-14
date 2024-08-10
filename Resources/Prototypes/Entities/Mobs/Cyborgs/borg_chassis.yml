@@ -9,11 +9,17 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: robot_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     maxModules: 6
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
+    hasMindState: robot_e_r
+    noMindState: robot_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -42,12 +48,25 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: miner_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: miner_moving
+    noMovementLayers:
+      movement:
+        state: miner
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleCargo
+    hasMindState: miner_e_r
+    noMindState: miner_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -89,12 +108,18 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: engineer_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleEngineering
+    hasMindState: engineer_e_r
+    noMindState: engineer_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -137,12 +162,18 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: janitor_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleJanitor
+    hasMindState: janitor_e_r
+    noMindState: janitor_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -185,12 +216,18 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: medical_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleMedical
+    hasMindState: medical_e_r
+    noMindState: medical_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -238,12 +275,18 @@
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
+    - state: service_e_r
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleService
+    hasMindState: service_e_r
+    noMindState: service_e_r
   - type: BorgTransponder
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
@@ -363,7 +406,7 @@
           map: ["enum.BorgVisualLayers.Light"]
           shader: unshaded
           visible: false
-        - state: synd_engi_l
+        - state: synd_engi_e_r
           shader: unshaded
           map: ["light"]
           visible: false
