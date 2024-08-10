@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/faf6db214927874c19b8fa8585d26b5d40de1acc, Taken from OnyxBay at https://github.com/ChaoticOnyx/OnyxBay/blob/596f006f985b58c8532420a538a96d249b733a04/icons/mob/robots.dmi modificated @CrimeMoot",
+  "copyright": "Taken from OnyxBay at https://github.com/ChaoticOnyx/OnyxBay/blob/596f006f985b58c8532420a538a96d249b733a04/icons/mob/robots.dmi modificated @CrimeMoot",
   "states": [
     {
       "name": "clown",
@@ -24,7 +24,7 @@
       "directions": 4
     },
     {
-      "name": "dengineer",
+      "name": "engineer",
       "directions": 4,
       "delays": [
         [
@@ -52,6 +52,10 @@
           0.8
         ]
       ]
+    },
+    {
+      "name": "engineer_e",
+      "directions": 4
     },
     {
       "name": "engineer_e_r",
@@ -84,6 +88,10 @@
       ]
     },
     {
+      "name": "engineer_l",
+      "directions": 4
+    },
+    {
       "name": "janitor",
       "directions": 4,
       "delays": [
@@ -112,6 +120,40 @@
           0.8
         ]
       ]
+    },
+    {
+      "name": "janitor_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "janitor_e",
+      "directions": 4
     },
     {
       "name": "janitor_e_r",
@@ -144,6 +186,10 @@
       ]
     },
     {
+      "name": "janitor_l",
+      "directions": 4
+    },
+    {
       "name": "medical",
       "directions": 4,
       "delays": [
@@ -172,6 +218,36 @@
           0.8
         ]
       ]
+    },
+    {
+      "name": "medical_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medical_e",
+      "directions": 4
     },
     {
       "name": "medical_e_r",
@@ -204,6 +280,10 @@
       ]
     },
     {
+      "name": "medical_l",
+      "directions": 4
+    },
+    {
       "name": "miner",
       "directions": 4,
       "delays": [
@@ -232,6 +312,32 @@
           0.8
         ]
       ]
+    },
+    {
+      "name": "miner_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "miner_e",
+      "directions": 4
     },
     {
       "name": "miner_e_r",
@@ -294,6 +400,10 @@
       ]
     },
     {
+      "name": "robot_e",
+      "directions": 4
+    },
+    {
       "name": "robot_e_r",
       "directions": 4,
       "delays": [
@@ -322,6 +432,10 @@
           0.8
         ]
       ]
+    },
+    {
+      "name": "robot_l",
+      "directions": 4
     },
     {
       "name": "peace",
@@ -370,6 +484,10 @@
       ]
     },
     {
+      "name": "service_e",
+      "directions": 4
+    },
+    {
       "name": "service_e_r",
       "directions": 4,
       "delays": [
@@ -399,7 +517,11 @@
         ]
       ]
     },
-	  {
+    {
+      "name": "service_l",
+      "directions": 4
+    },
+    {
       "name": "synd_sec",
       "directions": 4
     },
@@ -411,7 +533,7 @@
       "name": "synd_sec_l",
       "directions": 4
     },
-	  {
+    {
       "name": "synd_medical",
       "directions": 4
     },
@@ -420,24 +542,28 @@
       "directions": 4,
       "delays": [
         [
-          0.1,
-          0.2,
-          0.1
+          0.3,
+          0.8,
+          0.3,
+          0.8
         ],
         [
-          0.1,
-          0.2,
-          0.1
+          0.3,
+          0.8,
+          0.3,
+          0.8
         ],
         [
-          0.1,
-          0.2,
-          0.1
+          0.3,
+          0.8,
+          0.3,
+          0.8
         ],
         [
-          0.1,
-          0.2,
-          0.1
+          0.3,
+          0.8,
+          0.3,
+          0.8
         ]
       ]
     },
@@ -446,32 +572,6 @@
       "directions": 4,
       "delays": [
         [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "drone-engineer",
-      "directions": 4,
-      "delays": [
-        [
           0.3,
           0.8,
           0.3,
@@ -498,34 +598,17 @@
       ]
     },
     {
-      "name": "eyes-drone-engineer",
-      "directions": 4,
-      "delays": [
-        [
-          0.3,
-          0.8,
-          0.3,
-          0.8
-        ],
-        [
-          0.3,
-          0.8,
-          0.3,
-          0.8
-        ],
-        [
-          0.3,
-          0.8,
-          0.3,
-          0.8
-        ],
-        [
-          0.3,
-          0.8,
-          0.3,
-          0.8
-        ]
-      ]
+      "name": "synd_engi",
+      "directions": 4
+    },
+    {
+      "name": "synd_engi_e",
+      "directions": 4
+    },
+    {
+      "name": "synd_engi_l",
+      "directions": 4
     }
   ]
 }
+
