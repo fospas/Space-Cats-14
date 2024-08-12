@@ -40,9 +40,5 @@
 
 - type: loadout
   id: ClothingOuterWinterSeniorResearcher
-  equipment: ClothingOuterWinterSeniorResearcher  # cats
-
-- type: startingGear
-  id: ClothingOuterWinterSeniorResearcher
   equipment:
     outerClothing: ClothingOuterWinterSeniorResearcher  # cats
