@@ -289,6 +289,8 @@
     - id: AntiPsychicKnife # backmen
     - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: genguns # space cats
+
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
