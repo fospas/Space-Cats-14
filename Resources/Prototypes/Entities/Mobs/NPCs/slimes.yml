@@ -112,6 +112,9 @@
     speechSounds: Slime
   - type: TypingIndicator
     proto: slime
+  - type: SpeciesLanguage
+    understoodLanguages:
+    - Slime
 
 - type: entity
   name: basic slime
