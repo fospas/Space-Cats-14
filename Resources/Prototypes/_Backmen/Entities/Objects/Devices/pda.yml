@@ -25,6 +25,8 @@
         whitelist:
           tags:
           - Write
+    - type: PdaBorderColor
+      borderColor: "#8b0000"
     - type: Icon
       sprite: Backmen/Objects/Devices/pda.rsi
       state: pda-orden
@@ -56,6 +58,8 @@
         whitelist:
           tags:
           - Write
+    - type: PdaBorderColor
+      borderColor: "#00a000"
     - type: Icon
       sprite: Backmen/Objects/Devices/pda.rsi
       state: pda-Delivery
