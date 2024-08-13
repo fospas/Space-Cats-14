@@ -8,6 +8,7 @@
   - type: Appearance
   - type: Sprite
     sprite: Objects/Devices/pda.rsi
+    scale: 0.8, 0.8
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
