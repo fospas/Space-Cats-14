@@ -7,8 +7,6 @@
     - type: Pda
       id: IAAIDCard
       state: pda-lawyer
-    - type: PdaBorderColor
-      borderColor: "#6f6192"
     - type: Icon
       state: pda-lawyer
 
@@ -21,8 +19,5 @@
     - type: Pda
       id: PilotIDCard
       state: pda-seniorofficer
-    - type: PdaBorderColor
-      borderColor: "#A32D26"
-      accentVColor: "#DFDFDF"
     - type: Icon
       state: pda-seniorofficer
