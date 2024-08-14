@@ -18,13 +18,13 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-#    - map: ["jumpsuit"]
+    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["socks"] #backmen:underclothing
-    - map: ["underpants"] #backmen:underclothing
-    - map: ["undershirt"] #backmen:underclothing
-    - map: ["jumpsuit"]
+#    - map: ["socks"] #backmen:underclothing # Cats lock
+#    - map: ["underpants"] #backmen:underclothing # Cats lock
+#    - map: ["undershirt"] #backmen:underclothing # Cats lock
+#    - map: ["jumpsuit"]  # Cats lock
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "gloves" ]

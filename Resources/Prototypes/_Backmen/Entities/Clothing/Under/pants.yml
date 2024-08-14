@@ -4,9 +4,9 @@
   parent: Clothing
   id: ClothingUnderPantsBase
   components:
-    - type: Clothing
-      slots:
-        - UNDERPANTS
+#    - type: Clothing
+#      slots:
+#        - UNDERPANTS
     - type: Sprite
       # noRot: true
       state: icon
@@ -33,9 +33,9 @@
       state: bee_shorts-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: bee_shorts
+      # clothingVisuals:
+#        underpants:
+#          - state: bee_shorts
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -48,9 +48,9 @@
       state: boxer_briefs-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxer_briefs
+      # clothingVisuals:
+#        underpants:
+#          - state: boxer_briefs
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -63,9 +63,9 @@
       state: boxers_assblastusa-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers_assblastusa
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers_assblastusa
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -78,9 +78,9 @@
       state: boxers_commie-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers_commie
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers_commie
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -93,9 +93,9 @@
       state: boxers_heart-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers_heart
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers_heart
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -108,9 +108,9 @@
       state: boxers_striped-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers_striped
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers_striped
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -123,9 +123,9 @@
       state: boxers_uk-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers_uk
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers_uk
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -138,9 +138,9 @@
       state: boxers-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: boxers
+      # clothingVisuals:
+#        underpants:
+#          - state: boxers
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -153,9 +153,9 @@
       state: briefs-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: briefs
+      # clothingVisuals:
+#        underpants:
+#          - state: briefs
 
 # - type: entity
 #   parent: ClothingUnderPantsBase
@@ -182,9 +182,9 @@
       state: jockstrap-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: jockstrap
+      # clothingVisuals:
+#        underpants:
+#          - state: jockstrap
     - type: TemperatureProtection
       coefficient: 0.98
 
@@ -199,9 +199,9 @@
       state: ljonb-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: ljonb
+      # clothingVisuals:
+#        underpants:
+#          - state: ljonb
     - type: TemperatureProtection
       coefficient: 0.70
 
@@ -216,9 +216,9 @@
       state: panties_alt-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_alt
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_alt
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -231,9 +231,9 @@
       state: panties_assblastusa-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_assblastusa
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_assblastusa
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -246,9 +246,9 @@
       state: panties_bee-kini-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_bee-kini
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_bee-kini
     - type: TemperatureProtection
       coefficient: 0.85
 
@@ -263,9 +263,9 @@
       state: panties_commie-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_commie
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_commie
 
 # - type: entity
 #   parent: ClothingUnderPantsBase
@@ -292,9 +292,9 @@
       state: panties_neko-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_neko
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_neko
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -307,9 +307,9 @@
       state: panties_slim-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_slim
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_slim
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -322,9 +322,9 @@
       state: panties_swimming-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_swimming
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_swimming
 
 # - type: entity
 #   parent: ClothingUnderPantsBase
@@ -351,9 +351,9 @@
       state: panties_uk-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties_uk
+      # clothingVisuals:
+#        underpants:
+#          - state: panties_uk
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -366,9 +366,9 @@
       state: panties-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: panties
+      # clothingVisuals:
+#        underpants:
+#          - state: panties
 
 # - type: entity
 #   parent: ClothingUnderPantsBase
@@ -395,9 +395,9 @@
       state: pantyhose-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: pantyhose
+      # clothingVisuals:
+#        underpants:
+#          - state: pantyhose
 
 - type: entity
   parent: ClothingUnderPantsBase
@@ -410,9 +410,9 @@
       state: striped_panties-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: striped_panties
+      # clothingVisuals:
+#        underpants:
+#          - state: striped_panties
 
 # - type: entity
 #   parent: ClothingUnderPantsBase
@@ -438,7 +438,7 @@
       state: thong-ICON
     - type: Clothing
       sprite: Backmen/Clothing/Under/underpants.rsi
-      clothingVisuals:
-        underpants:
-          - state: thong
+      # clothingVisuals:
+#        underpants:
+#          - state: thong
 

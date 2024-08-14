@@ -1,8 +1,8 @@
 #носок
-- type: loadout
-  id: ClothingUnderSocksCoderBlue
-  equipment:
-    socks: ClothingUnderSocksCoderBlue
+#- type: loadout
+#  id: ClothingUnderSocksCoderBlue
+#  equipment:
+#    socks: ClothingUnderSocksCoderBlue
 
 #комбинезон
 - type: loadout
@@ -23,14 +23,14 @@
     neck: ClothingNeckEsmira
 
 # трусы 
-- type: loadout
-  id: ClothingUnderPantsEsmira
-  equipment:
-    underpants: ClothingUnderPantsEsmira
+#- type: loadout
+#  id: ClothingUnderPantsEsmira
+#  equipment:
+#    underpants: ClothingUnderPantsEsmira
 
 
 # лифчик
-- type: loadout
-  id: ClothingUnderShirtEsmira
-  equipment:
-    undershirt: ClothingUnderShirtEsmira
+#- type: loadout
+#  id: ClothingUnderShirtEsmira
+#  equipment:
+#    undershirt: ClothingUnderShirtEsmira

@@ -10,9 +10,9 @@
     state: icon
   - type: Clothing
     sprite: _SpaceCats/Sponsor/Fredik21/blue.rsi
-    clothingVisuals:
-      socks:
-        - state: equipped-FEET
+#    clothingVisuals:
+#      socks:
+#        - state: equipped-FEET
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -61,9 +61,9 @@
     state: icon
   - type: Clothing
     sprite: _SpaceCats/Sponsor/Fredik21/pants.rsi
-    clothingVisuals:
-      underpants:
-        - state: equipped-INNERCLOTHING
+#    clothingVisuals:
+#      underpants:
+#        - state: equipped-INNERCLOTHING
 
 - type: entity
   description: Верни позязя владельцу~
@@ -77,6 +77,6 @@
     state: icon
   - type: Clothing
     sprite: _SpaceCats/Sponsor/Fredik21/brassierer.rsi
-    clothingVisuals:
-      undershirt:
-        - state: equipped-INNERCLOTHING
+#    clothingVisuals:
+#      undershirt:
+#        - state: equipped-INNERCLOTHING

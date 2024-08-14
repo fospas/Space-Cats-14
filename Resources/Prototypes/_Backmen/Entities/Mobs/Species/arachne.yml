@@ -259,14 +259,14 @@
       uiWindowPos: 0,2
       strippingWindowPos: 0,2
       displayName: Jumpsuit
-  #backmen:underclothing-start
-    - name: undershirt
-      slotTexture: undershirt
-      slotFlags: UNDERSHIRT
-      stripTime: 8
-      uiWindowPos: 4,1
-      strippingWindowPos: 3,1
-      displayName: Undershirt
+#  #backmen:underclothing-start  # Cats
+#    - name: undershirt
+#      slotTexture: undershirt
+#      slotFlags: UNDERSHIRT
+#      stripTime: 8
+#      uiWindowPos: 4,1
+#      strippingWindowPos: 3,1
+#      displayName: Undershirt
 #    - name: underpants
 #      slotTexture: underpants
 #      slotFlags: UNDERPANTS
@@ -281,7 +281,7 @@
 #      uiWindowPos: 4,2
 #      strippingWindowPos: 3,3
 #      displayName: Socks
-  #backmen:underclothing-end
+#  #backmen:underclothing-end # Cats
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES
