@@ -65,18 +65,18 @@
 #      underpants:
 #        - state: equipped-INNERCLOTHING
 
-- type: entity
-  description: Верни позязя владельцу~
-  name: топик эсмиры
-  parent: ClothingUnderShirtBase
-  id: ClothingUnderShirtEsmira
-  suffix: Спонсор, Fredik21
-  components:
-  - type: Sprite
-    sprite: _SpaceCats/Sponsor/Fredik21/brassierer.rsi
-    state: icon
-  - type: Clothing
-    sprite: _SpaceCats/Sponsor/Fredik21/brassierer.rsi
+#- type: entity
+#  description: Верни позязя владельцу~
+#  name: топик эсмиры
+#  parent: ClothingUnderShirtBase
+#  id: ClothingUnderShirtEsmira
+#  suffix: Спонсор, Fredik21
+#  components:
+#  - type: Sprite
+#    sprite: _SpaceCats/Sponsor/Fredik21/brassierer.rsi
+#    state: icon
+#  - type: Clothing
+#    sprite: _SpaceCats/Sponsor/Fredik21/brassierer.rsi
 #    clothingVisuals:
 #      undershirt:
 #        - state: equipped-INNERCLOTHING
