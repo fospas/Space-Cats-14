@@ -354,25 +354,6 @@
 
 - type: entity
   parent: ClothingUnderSocksBase
-  id: ClothingUnderSocks_knee
-  name: knee-highs
-  description: "A pair of knee-highs, perfect for keeping your legs warm and looking stylish."
-  suffix: uncolored
-  components:
-    - type: Sprite
-      sprite: Backmen/Clothing/Under/socks.rsi
-      state: socks_knee-ICON
-    - type: Clothing
-      sprite: Backmen/Clothing/Under/socks.rsi
-      #clothingVisuals:
-#        socks:
-#          - state: socks_knee
-    - type: TemperatureProtection
-      coefficient: 0.85
-            # color: "#FF0000FF" #WOOOOO
-
-- type: entity
-  parent: ClothingUnderSocksBase
   id: ClothingUnderSocks_norm
   name: socks
   description: "A pair of basic socks, perfect for when you need to blend in with the crowd."
