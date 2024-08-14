@@ -128,7 +128,6 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("alertLevels");
             _prototypeManager.RegisterIgnore("nukeopsRole");
             _prototypeManager.RegisterIgnore("stationGoal"); // Corvax-StationGoal
-            _prototypeManager.RegisterIgnore("advertisementsPack");
 
             // Begin Backmen: our ignored prototypes.
             _prototypeManager.RegisterIgnore("npcConversationTree");
