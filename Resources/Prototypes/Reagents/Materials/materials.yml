@@ -17,7 +17,7 @@
 
 - type: material
   id: Log
-  stackEntity: stage-1
+  stackEntity: MaterialLoglank1
   name: materials-tree
   icon: { sprite: /Textures/Objects/Specific/Hydroponics/towercap.rsi, state: produce }
   color: "#70736c"
