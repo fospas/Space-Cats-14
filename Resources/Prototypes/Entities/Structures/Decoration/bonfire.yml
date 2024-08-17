@@ -3,6 +3,7 @@
   parent: BaseStructure
   name: bonfire
   description: What can be better than a late evening under the sky with guitar and friends?
+  suffix: rimworld
   components:
   - type: Sprite
     noRot: true
@@ -17,6 +18,19 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
+  # space cats rimworld
+  - type: ApcPowerReceiver
+    powerLoad: 0
+  - type: EntityHeater
+  - type: ItemPlacer
+    maxEntities: 4
+    whitelist:
+      components:
+      - Temperature
+  - type: GenericVisualizer
+    visuals:
+      enum.EntityHeaterVisuals.Setting:
+  # space cats rimworld
   - type: Destructible
     thresholds:
       - trigger:

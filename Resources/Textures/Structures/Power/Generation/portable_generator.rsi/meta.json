@@ -74,6 +74,19 @@
             ]
         },
         {
+            "name": "portgen4"
+        },
+        {
+            "name": "portgen4on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
             "name": "portgen3on_unlit",
             "delays": [
                 [
