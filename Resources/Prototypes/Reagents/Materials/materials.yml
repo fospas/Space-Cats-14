@@ -16,6 +16,14 @@
   price: 0.005
 
 - type: material
+  id: Log
+  stackEntity: stage-1
+  name: materials-tree
+  icon: { sprite: /Textures/Objects/Specific/Hydroponics/towercap.rsi, state: produce }
+  color: "#70736c"
+  price: 0.005
+
+- type: material
   id: Cloth
   stackEntity: MaterialCloth1
   name: materials-cloth
