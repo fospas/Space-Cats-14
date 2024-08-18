@@ -7,7 +7,7 @@
   
   - type:  Sprite
     drawdepth: Mobs
-    sprite: _SpaceCats/Mobs/Animals/kotortOrange.rsi
+    sprite: _SpaceCats/Mobs/Animals/kotortorange.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: cak
