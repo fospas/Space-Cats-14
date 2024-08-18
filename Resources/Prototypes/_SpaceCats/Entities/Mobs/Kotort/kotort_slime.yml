@@ -7,7 +7,7 @@
   
   - type:  Sprite
     drawdepth: Mobs
-    sprite: _SpaceCats/Mobs/Animals/kotortslime.rsi
+    sprite: _SpaceCats/Mobs/Animals/Kotort/slime.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: cak
@@ -25,7 +25,7 @@
   - type: Butcherable
     spawned:
     - id: ClothingHeadHatCatEars
-      amount: 1                   #NOOOOOOO
+      amount: 1                   
     - id: FoodCakeSlimeSlice
       amount: 1
 
