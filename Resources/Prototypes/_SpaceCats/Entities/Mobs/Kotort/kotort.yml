@@ -1,0 +1,98 @@
+- type: entity
+  name: Классический корт
+  description: Малыш корт...
+  parent: [SimpleMobBase, FoodBreadSliceBase, MobCatCake]
+  id: MobCatKotort
+  components:
+  - type: NpcFactionMember
+    factions:
+      - PetsNT
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: female
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+
+  - type: Item
+    size: Tiny
+
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _SpaceCats/Mobs/Animals/kotort.rsi
+    offset: 0,0.4
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cak
+
+
+
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Корт
+    description: Самый сладкий котик на станции. Пожалуйся не дайте себя съесть..
+  - type: GhostTakeoverAvailable
+
+  - type: Butcherable
+    spawned:
+    - id: ClothingHeadHatCatEars
+      amount: 1
+    - id: FoodCakePlainSlice
+      amount: 1
+
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 15
+        - ReagentId: Nutriment
+          Quantity: 15
+
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 6
+    baseSprintSpeed : 6
+
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      150: Dead
+
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cak
+      Critical:
+        Base: cak_dead
+      Dead:
+        Base: cak_dead
+
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+
+  - type: FlavorProfile
+    flavors:
+      - creamy
+      - bad-joke
+      - cat 
+
+  - type: Bloodstream
+    bloodReagent: Sugar
+
+
+
+
