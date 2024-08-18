@@ -1,0 +1,55 @@
+- type: entity
+  name: Лаймовый корт
+  description: Самый цитрусовый котик на станции. Пожалуйся не ешьте его..
+  parent: [MobCatKotort, FoodBreadSliceBase, MobCatCake]
+  id: MobCatKotortLime
+  components:
+  
+  - type:  Sprite
+    drawdepth: Mobs
+    sprite: _SpaceCats/Mobs/Animals/kotortlemon.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cak
+
+
+
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Котр
+    description: Самый цитрусовый котик на станции. Пожалуйся не дайте себя съесть..
+  - type: GhostTakeoverAvailable
+
+  - type: Butcherable
+    spawned:
+    - id: ClothingHeadHatCatEars
+      amount: 1                   
+    - id: FoodCakeLimeSlice
+      amount: 1
+
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: JuiceLime
+          Quantity: 15
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: Bloodstream
+    bloodReagent: JuiceLime
+
+  - type: FlavorProfile
+    flavors:
+      - bad-joke   
+      - cat            
+      - lime
+      - sweet  
+
+
+
+
+
