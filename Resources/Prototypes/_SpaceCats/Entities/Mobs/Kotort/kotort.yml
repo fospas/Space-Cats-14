@@ -24,7 +24,7 @@
 
   - type: Sprite
     drawdepth: Mobs
-    sprite: _SpaceCats/Mobs/Animals/kotort.rsi
+    sprite: Mobs/Pets/cat.rsi
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
