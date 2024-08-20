@@ -1,0 +1,97 @@
+- type: entity
+  name: Шоколадный корт
+  description: Самый шоколадный котик на станции. Пожалуйся не ешьте его..
+  parent: [SimpleMobBase, FoodBreadSliceBase, MobCatCake]
+  id: MobCatKotortСhocolate
+  components:
+  - type: NpcFactionMember
+    factions:
+      - PetsNT
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: female
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+
+  - type: Item
+    size: Tiny
+
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _SpaceCats/Mobs/Animals/Kotort/chocolate.rsi
+    offset: 0,0.4
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cak
+
+
+
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Котр
+    description: Самый шоколадный котик на станции. Пожалуйся не дайте себя съесть..
+  - type: GhostTakeoverAvailable
+
+  - type: Butcherable
+    spawned:
+    - id: ClothingHeadHatCatEars
+      amount: 1
+    - id: FoodCakeChocolateSlice
+      amount: 1
+
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: CocoaPowder
+          Quantity: 15
+        - ReagentId: Nutriment
+          Quantity: 15
+
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 6
+    baseSprintSpeed : 6
+
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      150: Dead
+
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cak
+      Critical:
+        Base: cak_dead
+      Dead:
+        Base: cak_dead
+
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+      - bad-joke
+      - cat 
+
+  - type: Bloodstream
+    bloodReagent: CocoaPowder
+
+
+
