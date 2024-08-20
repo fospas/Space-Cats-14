@@ -24,6 +24,7 @@ using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.FixedPoint;
 using Robust.Server.Audio;
+using Content.Shared.Mood;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
@@ -425,11 +426,13 @@ namespace Content.Server.Atmos.EntitySystems
 
                 if (!flammable.OnFire)
                 {
-                    _alertsSystem.ClearAlert(uid, flammable.FireAlert);
+                    _alertsSystem.ClearAlert(uid, AlertType.Fire);
+                    RaiseLocalEvent(uid, new MoodRemoveEffectEvent("OnFire"));
                     continue;
                 }
 
-                _alertsSystem.ShowAlert(uid, flammable.FireAlert);
+                _alertsSystem.ShowAlert(uid, AlertType.Fire);
+                RaiseLocalEvent(uid, new MoodEffectEvent("OnFire"));
 
                 if (flammable.FireStacks > 0)
                 {

@@ -27,6 +27,7 @@ using Content.Shared.Timing;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Audio.Systems;
+using Content.Shared.Mood;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -184,6 +185,16 @@ namespace Content.Shared.Cuffs
                 _alerts.ClearAlert(uid, component.CuffedAlert);
             else
                 _alerts.ShowAlert(uid, component.CuffedAlert);
+
+            {
+                _alerts.ClearAlert(uid, AlertType.Handcuffed);
+                RaiseLocalEvent(uid, new MoodRemoveEffectEvent("Handcuffed"));
+            }
+            else
+            {
+                _alerts.ShowAlert(uid, AlertType.Handcuffed);
+                RaiseLocalEvent(uid, new MoodEffectEvent("Handcuffed"));
+            }
 
             var ev = new CuffedStateChangeEvent();
             RaiseLocalEvent(uid, ref ev);

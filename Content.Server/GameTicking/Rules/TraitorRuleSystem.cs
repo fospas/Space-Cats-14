@@ -17,6 +17,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
+using Content.Shared.Mood;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -137,6 +138,28 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         // Change the faction
         _npcFaction.RemoveFaction(traitor, component.NanoTrasenFaction, false);
         _npcFaction.AddFaction(traitor, component.SyndicateFaction);
+
+        RaiseLocalEvent(traitor, new MoodEffectEvent("TraitorFocused"));
+
+        // Give traitors their objectives
+        if (giveObjectives)
+        {
+            var maxDifficulty = _cfg.GetCVar(CCVars.TraitorMaxDifficulty);
+            var maxPicks = _cfg.GetCVar(CCVars.TraitorMaxPicks);
+            var difficulty = 0f;
+            Log.Debug($"Attempting {maxPicks} objective picks with {maxDifficulty} difficulty");
+            for (var pick = 0; pick < maxPicks && maxDifficulty > difficulty; pick++)
+            {
+                var objective = _objectives.GetRandomObjective(mindId, mind, component.ObjectiveGroup);
+                if (objective == null)
+                    continue;
+
+                _mindSystem.AddObjective(mindId, mind, objective.Value);
+                var adding = Comp<ObjectiveComponent>(objective.Value).Difficulty;
+                difficulty += adding;
+                Log.Debug($"Added objective {ToPrettyString(objective):objective} with {adding} difficulty");
+            }
+        }
 
         return true;
     }
