@@ -195,21 +195,29 @@ public sealed class BluespaceHarvesterSystem : EntitySystem
         _appearance.SetData(ent, BluespaceHarvesterVisualLayers.Effects, level != 0);
     }
 
-    private void UpdateUI(Entity<BluespaceHarvesterComponent> ent)
+    private void UpdateUI(EntityUid uid, BluespaceHarvesterComponent harvester)
+{
+    if (TryComp<ServerUserInterfaceComponent>(uid, out var uiComp))
     {
-        _ui.UpdateState(ent, BluespaceHarvesterUiKey.Key, new BluespaceHarvesterBoundUserInterfaceState(
-            ent.Comp.TargetLevel,
-            ent.Comp.CurrentLevel,
-            ent.Comp.MaxLevel,
-            GetUsagePower(ent.Comp.CurrentLevel),
-            GetUsageNextPower(ent.Comp.CurrentLevel),
-            GetPowerSupplier(ent),
-            ent.Comp.Points,
-            ent.Comp.TotalPoints,
-            GetPointGeneration(ent),
-            ent.Comp.Categories
-        ));
+        if (uiComp.TryGetBoundUserInterface(BluespaceHarvesterUiKey.Key, out var ui))
+        {
+            var newState = new BluespaceHarvesterBoundUserInterfaceState(
+                harvester.TargetLevel,
+                harvester.CurrentLevel,
+                harvester.MaxLevel,
+                GetUsagePower(harvester.CurrentLevel),
+                GetUsageNextPower(harvester.CurrentLevel),
+                GetPowerSupplier(uid, harvester),
+                harvester.Points,
+                harvester.TotalPoints,
+                GetPointGeneration(uid, harvester),
+                harvester.Categories
+            );
+
+            ui.SetState(newState);
+        }
     }
+}
 
     private uint GetUsageNextPower(int level)
     {
