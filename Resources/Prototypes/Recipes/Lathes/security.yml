@@ -22,6 +22,16 @@
     Plastic: 300
 
 - type: latheRecipe
+  id: EnergyDomeDirectionalTurtle
+  result: EnergyDomeDirectionalTurtle
+  completetime: 12
+  materials:
+    Steel: 1000
+    Plastic: 500
+    Gold: 250
+    Uranium: 50
+
+- type: latheRecipe
   id: Truncheon
   result: Truncheon
   category: Weapons

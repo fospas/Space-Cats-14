@@ -352,6 +352,7 @@
       - SapphireRing
       - GoldenRing
       - DeviceQuantumSpinInverter
+      - EnergyDomeDirectionalTurtle # energe_barriers
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
