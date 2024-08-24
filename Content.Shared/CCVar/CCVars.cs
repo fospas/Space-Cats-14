@@ -494,6 +494,9 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> DiscordLastMessageBeforeDeathWebhook =
             CVarDef.Create("discord.last_message_before_death_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
+        public static readonly CVarDef<string> DiscordBansWebhook =
+            CVarDef.Create("discord.bans_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
         /*
          * Tips
          */
