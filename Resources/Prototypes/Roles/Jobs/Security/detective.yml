@@ -4,9 +4,9 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs # Corvax-RoleTime
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -17,7 +17,12 @@
   - Maintenance
   - Service
   - Detective
-    #start-backmen: currency
+  - Cryogenics
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  #start-backmen: currency
   minBankBalance: 150
   maxBankBalance: 250
   wageDepartment: Security
