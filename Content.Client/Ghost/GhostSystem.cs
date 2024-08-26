@@ -1,3 +1,4 @@
+using Content.Client.UserInterface.Systems.Ghost.Widgets;
 using Content.Client.Movement.Systems;
 using Content.Shared.Actions;
 using Content.Shared.Ghost;
@@ -12,6 +13,17 @@ namespace Content.Client.Ghost
     {
         [Dependency] private readonly IClientConsoleHost _console = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
+        [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
+
+        public override void Update(float frameTime)
+        {
+            foreach (var ghost in EntityManager.EntityQuery<GhostComponent>(true))
+            {
+                var ui = _uiManager.GetActiveUIWidgetOrNull<GhostGui>();
+                if (ui != null && Player != null)
+                    ui.UpdateRespawn(Player?.TimeOfDeath);
+            }
+        }
         [Dependency] private readonly SharedActionsSystem _actions = default!;
         [Dependency] private readonly ContentEyeSystem _contentEye = default!;
 

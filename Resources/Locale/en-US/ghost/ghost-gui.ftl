@@ -1,4 +1,6 @@
 ghost-gui-return-to-body-button = Return to body
+ghost-gui-respawn-button-denied = Respawn ({$time})
+ghost-gui-respawn-button-allowed = Respawn
 ghost-gui-ghost-warp-button = Ghost Warp
 ghost-gui-ghost-roles-button = Ghost Roles ({$count})
 ghost-gui-toggle-ghost-visibility-popup = Toggled visibility of ghosts.
@@ -32,3 +34,13 @@ ghost-roles-window-rules-footer = The button will enable after {$time} seconds (
 
 ghost-return-to-body-title = Return to Body
 ghost-return-to-body-text = You are being revived! Return to your body?
+
+ghost-respawn-rules-window-title = Ghost Respawn Rules
+ghost-respawn-rules-window-confirm-button = I understand, respawn me
+ghost-respawn-rules-window-rules =
+    placeholder
+    another placeholder
+    some more placeholder
+    with a side of placeholder
+    maybe some extra placeholder too
+    can I also get some placeholder to go with that

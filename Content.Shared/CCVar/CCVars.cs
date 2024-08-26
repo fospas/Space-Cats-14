@@ -2244,5 +2244,17 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
+
+        /// <summary>
+        ///     Whether or not respawning is enabled.
+        /// </summary>
+        public static readonly CVarDef<bool> RespawnEnabled =
+             CVarDef.Create("game.respawn_enabled", true, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     How long the player has to wait in seconds after death before respawning.
+        /// </summary>
+        public static readonly CVarDef<int> RespawnTime =
+             CVarDef.Create("game.respawn_time", 600, CVar.SERVER | CVar.REPLICATED);
     }
 }
