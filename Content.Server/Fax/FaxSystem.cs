@@ -516,7 +516,7 @@ public sealed class FaxSystem : EntitySystem
             { FaxConstants.FaxPaperLabelData, labelComponent?.CurrentLabel },
             { FaxConstants.FaxPaperContentData, paper.Content },
             { FaxConstants.FaxSenderName, metaDataComponent?.EntityName },
-            { FaxConstants.FaxSenderMachineName, component.FaxName }
+            { FaxConstants.FaxSenderMachineName, component.FaxName },
             { FaxConstants.FaxPaperLockedData, paper.EditingDisabled },
         };
 
