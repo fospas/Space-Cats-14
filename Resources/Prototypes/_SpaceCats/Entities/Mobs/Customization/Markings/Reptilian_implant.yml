@@ -4,7 +4,7 @@
   markingCategory: Arms
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-arm_l
 
 - type: marking
@@ -13,7 +13,7 @@
   markingCategory: Arms
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-arm_r
 
 - type: marking
@@ -22,7 +22,7 @@
   markingCategory: Legs
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-leg_l
 
 - type: marking
@@ -31,7 +31,7 @@
   markingCategory: Legs
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-leg_r
 
 - type: marking
@@ -40,7 +40,7 @@
   markingCategory: Legs
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-foot_l
 
 - type: marking
@@ -49,7 +49,7 @@
   markingCategory: Legs
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-foot_r
 
 - type: marking
@@ -58,7 +58,7 @@
   markingCategory: Arms
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-hand_l
 
 - type: marking
@@ -67,5 +67,5 @@
   markingCategory: Arms
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Reptilian/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Reptilian\custom.rsi
     state: implantcybersun-hand_r

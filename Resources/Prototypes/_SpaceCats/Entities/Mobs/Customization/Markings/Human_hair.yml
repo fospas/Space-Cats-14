@@ -4,7 +4,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-beardchin
 
 - type: marking
@@ -13,7 +13,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-beardlong
 
 - type: marking
@@ -22,7 +22,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-beardshort
 
 - type: marking
@@ -31,7 +31,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-beardthick
 
 - type: marking
@@ -40,7 +40,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-beardviking
 
 - type: marking
@@ -49,7 +49,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-bristle
 
 - type: marking
@@ -58,7 +58,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-mustachewithstubble
 
 - type: marking
@@ -67,7 +67,7 @@
   markingCategory: FacialHair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: beard-thickbristle
 
 - type: marking
@@ -76,7 +76,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-arabicgatheredhair
 
 - type: marking
@@ -85,7 +85,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-classichairmale
 
 - type: marking
@@ -94,7 +94,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-combedfromside
 
 - type: marking
@@ -103,7 +103,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-longhair
 
 - type: marking
@@ -112,7 +112,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-manbunold
 
 - type: marking
@@ -121,7 +121,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-pigtailtajaran
 
 - type: marking
@@ -130,7 +130,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-shavedside
 
 - type: marking
@@ -139,7 +139,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-shorthaired
 
 - type: marking
@@ -148,7 +148,7 @@
   markingCategory: Hair
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: hair-womenbun
 
 - type: marking
@@ -157,7 +157,7 @@
   markingCategory: Snout
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: forehead-Bindi
 
 - type: marking
@@ -166,7 +166,7 @@
   markingCategory: Snout
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: forehead-fathereyebrows
 
 - type: marking
@@ -175,7 +175,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: piercing_brow_l
 
 - type: marking
@@ -184,5 +184,5 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-  - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+  - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
     state: piercing_brow_r

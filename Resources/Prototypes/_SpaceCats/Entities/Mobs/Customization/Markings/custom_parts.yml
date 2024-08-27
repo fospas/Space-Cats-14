@@ -148,7 +148,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_ear_l
 
 - type: marking
@@ -157,7 +157,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_ear_r
 
 - type: marking
@@ -166,7 +166,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_navel
 
 - type: marking
@@ -175,7 +175,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_nipple_l
 
 - type: marking
@@ -184,7 +184,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_nipple_r
 
 - type: marking
@@ -193,7 +193,7 @@
   markingCategory: HeadSide
   speciesRestriction: [Human]
   sprites:
-    - sprite: _SpaceCats/Mobs/Customization/Human/custom.rsi
+    - sprite: _SpaceCats\Mobs\Customization\Human\custom.rsi
       state: piercing_nipple
 
 - type: marking
@@ -211,9 +211,9 @@
           category: FacialHair
         - !type:SkinColoring
   sprites:
-  - sprite: ADT/Mobs/Customization/Human/fox_parts.rsi
+  - sprite: ADT\Mobs\Customization\Human\fox_parts.rsi
     state: tail_fox_wag_stripes_prime
-  - sprite: ADT/Mobs/Customization/Human/fox_parts.rsi
+  - sprite: ADT\Mobs\Customization\Human\fox_parts.rsi
     state: tail_fox_wag_stripes_second
-  - sprite: ADT/Mobs/Customization/Human/fox_parts.rsi
+  - sprite: ADT\Mobs\Customization\Human\fox_parts.rsi
     state: tail_fox_wag_stripes_third
