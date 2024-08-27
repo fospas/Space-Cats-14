@@ -1,0 +1,143 @@
+- type: marking
+   id: HumanFrillsAquatic
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_aquatic
+
+ - type: marking
+   id: HumanFrillsAxolotl
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_axolotl
+
+ - type: marking
+   id: HumanFrillsBig
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_big
+
+ - type: marking
+   id: HumanFrillsDivinity
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_divinity
+
+ - type: marking
+   id: HumanFrillsShort
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_short
+
+ - type: marking
+   id: HumanFrillsSimple
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: frills_simple
+
+ - type: marking
+   id: HumanHornsCurled
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_curled
+
+ - type: marking
+   id: HumanHornsDouble
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_double
+
+ - type: marking
+   id: HumanHornsRam
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_ram
+
+ - type: marking
+   id: HumanHornsShort
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_short
+
+ - type: marking
+   id: HumanHornsSimple
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_simple
+
+ - type: marking
+   id: HumanHornsDemon
+   bodyPart: HeadTop
+   markingCategory: HeadTop
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: horns_demon
+
+ - type: marking
+   id: HumanTailSmooth
+   bodyPart: Tail
+   markingCategory: Tail
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: tail_smooth
+
+ - type: marking
+   id: HumanTailSpikes
+   bodyPart: Tail
+   markingCategory: Tail
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: tail_spikes
+
+ - type: marking
+   id: HumanTailLTiger
+   bodyPart: Tail
+   markingCategory: Tail
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: tail_ltiger
+
+ - type: marking
+   id: HumanTailDTiger
+   bodyPart: Tail
+   markingCategory: Tail
+   speciesRestriction: [Human]
+   sprites:
+   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+     state: tail_dtiger
