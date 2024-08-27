@@ -1,11 +1,11 @@
 - type: marking
-   id: HumanFrillsAquatic
-   bodyPart: HeadTop
-   markingCategory: HeadTop
-   speciesRestriction: [Human]
-   sprites:
-   - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
-     state: frills_aquatic
+  id: HumanFrillsAquatic
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Human]
+  sprites:
+  - sprite: _SpaceCats\Mobs\Customization\custom_parts.rsi
+    state: frills_aquatic
 
  - type: marking
    id: HumanFrillsAxolotl
