@@ -201,7 +201,6 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Human]
-  #sponsorOnly: false # AdventureTime-Sponsors
   coloring:
     default:
       type:
