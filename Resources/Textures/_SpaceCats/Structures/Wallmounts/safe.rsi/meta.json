@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora.3 at https://github.com/Aurorastation/Aurora.3/blob/faca6da7397d1a2051a2edb4d17c564037a1e516/icons/obj/storage/misc.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "safe"
+    },
+    {
+      "name": "safe0"
+    },
+    {
+      "name": "safeb",
+      "delays": [
+        [
+          1.5,
+          1.5
+        ]
+      ]
+    },
+    {
+      "name": "safespark",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wall_safe_door"
+    },
+    {
+      "name": "wall_safe_open"
+    }
+  ]
+}

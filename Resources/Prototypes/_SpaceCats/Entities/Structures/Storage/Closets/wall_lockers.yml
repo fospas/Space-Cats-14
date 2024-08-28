@@ -1,0 +1,29 @@
+- type: entity
+  id: LockerWallSafe
+  parent: BaseWallCloset
+  name: сейф
+  components:
+  - type: AccessReader
+  - type: Lock
+  - type: LockVisuals
+  - type: Appearance
+  - type: Sprite
+    sprite: _SpaceCats/Structures/Wallmounts/safe.rsi
+    layers:
+    - state: wall_safe_open
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: wall_safe_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: safe
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe
+    stateDoorOpen: wall_safe_open
+    stateDoorClosed: wall_safe_door
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
