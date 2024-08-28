@@ -526,15 +526,3 @@
           sprite: Backmen/Mobs/Silicon/cameramob.rsi
           state: ai_camera
           shader: unshaded
-    - type: ShowJobIcons
-    - type: ShowMindShieldIcons
-    - type: ShowCriminalRecordIcons
-    - type: ShowHealthBars
-      damageContainers:
-      - Biological
-      - HalfSpirit
-    - type: ShowHealthIcons
-      damageContainers:
-      - Biological
-      - Inorganic
-      - Silicon
