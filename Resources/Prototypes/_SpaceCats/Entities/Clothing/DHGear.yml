@@ -1,0 +1,39 @@
+- type: entity
+  parent: DrinkMREFlask
+  id: DHFlask
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Omnizine # потом попытаюсь сделать регенерацию здоровья,пока что так.
+          Quantity: 150
+
+- type: entity
+  parent: ClothingOuterRobesCult #лень спрайтить,потом доделаю
+  id: ClothingDemonHunterRobe
+  name: плащ охотника на демонов
+  description: Аномально вместительный плащ охотника на демонов.(ВАШЕ ОРУЖИЕ ХРАНИТСЯ ТУТ,ОН НЕ СНИМАЕТСЯ!!)
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.2
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: StorageFill
+    contents:
+      - id: IvoryDHGun
+      - id: EbonyDHGun
+      - id: AnarchistDHGun
+      - id: DHSword
+      - id: DHFlask

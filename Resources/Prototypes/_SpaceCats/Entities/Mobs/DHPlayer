@@ -1,0 +1,55 @@
+- type: entity
+  save: false
+  name: Охотник на Демонов # никогда не любил создание списка имен,так что пусть будет так.
+  parent: BaseMobHuman
+  id: MobDH
+  - type: Bloodstream
+    bloodMaxVolume: 800 # исключительно боевая единица,поэтому повышено количество крови в теле
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      185: Critical # лор. Потом допишу скину.
+      285: Dead
+- type: SlowOnDamage
+    speedModifierThresholds:
+      165: 0.8
+- type: Eye
+    drawFov: false
+- type: InstantAction
+    icon: Interface/VerbIcons/vv.svg.192dpi.png
+    clientExclusive: true
+    checkCanInteract: false
+    event: !type:ToggleFoVActionEvent
+- type: Loadout
+    prototype: DHGear
+
+- type: ghostRole
+  id: MobDHGhost
+  name: ghost-role-information-syndicate-kobold-reinforcement-name
+  description: ghost-role-information-syndicate-kobold-reinforcement-description
+  rules: Убивайте вампиров на станции. Если не уверенны в своих действиях-напишите в f1.
+  entityPrototype: MobDH
+
+- type: startingGear
+  id: DHGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    shoes: ClothingShoesBootsCombat
+    eyes: ClothingEyesGlassesSecurity
+    outerClothing: ClothingDemonHunterRobe
+    ears: ClothingHeadsetSecurity
+    gloves: ClothingHandsGlovesCombat
+
+- type: job
+  id: DHSpawn
+  name: Охотник на Демонов
+  description: Убейте этих тварей!
+  setPreference: false
+  startingGear: DHGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
