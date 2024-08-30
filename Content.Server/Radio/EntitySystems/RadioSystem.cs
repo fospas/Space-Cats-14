@@ -15,6 +15,11 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using Content.Shared.Access.Components;
+using Content.Shared.Humanoid;
+using Content.Shared.Inventory;
+using Content.Shared.PDA;
+using System.Globalization;
 
 namespace Content.Server.Radio.EntitySystems;
 
@@ -29,6 +34,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -105,8 +111,14 @@ public sealed class RadioSystem : EntitySystem
             ("fontSize", speech.FontSize),
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
             ("channel", $"\\[{channel.LocalizedName}\\]"),
-            ("name", name),
-            ("message", content));
+            ("name", formattedName),
+            ("message", FormattedMessage.EscapeText(message))
+
+        var formattedName = name;
+        if (TryComp<HumanoidAppearanceComponent>(messageSource, out var humanoidComp))
+        {
+            formattedName = $"[color={humanoidComp.SpeakerColor.ToHex()}]{GetIdCardName(messageSource)}{name}[/color]";
+        }
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
         var chat = new ChatMessage(
@@ -163,6 +175,30 @@ public sealed class RadioSystem : EntitySystem
 
         _replay.RecordServerMessage(chat);
         _messages.Remove(message);
+    }
+
+    private string GetIdCardName(EntityUid senderUid)
+    {
+        var idCardTitle = Loc.GetString("chat-radio-no-id");
+
+        if (_inventorySystem.TryGetSlotEntity(senderUid, "id", out var idUid))
+        {
+            if (EntityManager.TryGetComponent(idUid, out PdaComponent? pda) && pda.ContainedId is not null)
+            {
+                // PDA
+                idCardTitle = pda.ContainedId.JobTitle ?? idCardTitle;
+            }
+            else if (EntityManager.TryGetComponent(idUid, out IdCardComponent? id))
+            {
+                // ID Card
+                idCardTitle = id.JobTitle ?? idCardTitle;
+            }
+        }
+
+        var textInfo = CultureInfo.CurrentCulture.TextInfo;
+        idCardTitle = textInfo.ToTitleCase(idCardTitle);
+
+        return $"\\[{idCardTitle}\\] ";
     }
 
     /// <inheritdoc cref="TelecomServerComponent"/>
