@@ -112,7 +112,7 @@ public sealed class RadioSystem : EntitySystem
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
             ("channel", $"\\[{channel.LocalizedName}\\]"),
             ("name", formattedName),
-            ("message", FormattedMessage.EscapeText(message));
+            ("message", FormattedMessage.EscapeText(content));
 
         var formattedName = name;
         if (TryComp<HumanoidAppearanceComponent>(messageSource, out var humanoidComp))
