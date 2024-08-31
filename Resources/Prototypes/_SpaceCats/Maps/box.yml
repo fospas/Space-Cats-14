@@ -68,5 +68,5 @@
 #            Deliveryman: [ 0, 1 ] # backmen-Deliveryman
 #            Prisoner: [ 2, 2] # backmen-Prisoner
             
-            Brigmedic: [ 0, 1 ] # backmen-Brigmedic
+            Brigmedic: [ 1, 1 ] # backmen-Brigmedic
 
