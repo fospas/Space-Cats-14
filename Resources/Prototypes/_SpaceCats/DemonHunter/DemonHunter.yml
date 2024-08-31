@@ -163,6 +163,11 @@
   components:
   - type: Sprite
     sprite: Objects/Guns/DemonHunter/DemonHunterShotgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 666 #вероятно самое мощное оружие охотника на демонов,однако требует скилла
     availableModes:
@@ -175,10 +180,6 @@
   - type: Battery
     maxCharge: 200
     startingCharge: 200
-    - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
