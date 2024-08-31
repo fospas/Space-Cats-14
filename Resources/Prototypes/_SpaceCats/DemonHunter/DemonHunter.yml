@@ -18,7 +18,7 @@
   description: Аномально прочная и при этом лёгкая форма охотника на демонов.
   components:
   - type: Sprite #вау я сделал это >W<
-    sprite: Clothing/DemonHunter/DemonHunterRobe.rsi
+    sprite: _SpaceCats/Clothing/DemonHunter/DemonHunterRobe.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -42,7 +42,7 @@
   components:
   - type: Sharp
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/DHSword.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/DHSword.rsi
   - type: MeleeWeapon
     wideAnimationRotation: -155
     attackRate: 1
@@ -89,7 +89,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/Ivory.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ivory.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -99,7 +99,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Clothing
-    sprite: Objects/Weapons/Guns/DemonHunter/Ivory.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ivory.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -129,7 +129,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/Ebony.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ebony.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -139,7 +139,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Clothing
-    sprite: Objects/Weapons/Guns/DemonHunter/Ebony.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ebony.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -153,44 +153,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 60
-  - type: AmmoCounter
-
-- type: entity
-  name: "Анархист"
-  parent: BaseItem
-  id: AnarchistDHGun # 30 августа 2024-сделал переключение между типами патронов. Теперь можно использовать не только взрывные , но еще и ослепляющие(4 тайла радиус)
-  description: Обрез,начинённый потусторонней энергией,использует специальные боеприпасы калибра .50. Восстанавливает патроны со скоростью 1 в 10 секунд.
-  components:
-  - type: Sprite
-    sprite: Objects/Guns/DemonHunter/DemonHunterShotgun.rsi
-  - type: Gun
-    fireRate: 666 #вероятно самое мощное оружие охотника на демонов,однако требует скилла
-    availableModes:
-      - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
-  - type: ProjectileBatteryAmmoProvider
-    proto: BulletDH50
-    fireCost: 100
-  - type: Battery
-    maxCharge: 200
-    startingCharge: 200
-    - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/DemonHunter/DemonHunterShotgun.rsi
-    quickEquip: false
-    slots:
-    - Belt
-    - Back
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 10
   - type: AmmoCounter
 
 # собственно тушка охотника и всякая лабуда для него
