@@ -8,8 +8,6 @@
   - type: LockVisuals
   - type: Sprite
     sprite: Structures/Storage/closet.rsi
-    snapCardinals: false
-    defaultSnap: true
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]

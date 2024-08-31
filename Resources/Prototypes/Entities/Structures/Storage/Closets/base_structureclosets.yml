@@ -10,7 +10,7 @@
     noRot: true
   - type: Sprite
     snapCardinals: false
-    defaultSnap: true
+    defaultSnap: 
     sprite: Structures/Storage/closet.rsi
     layers:
     - state: generic
