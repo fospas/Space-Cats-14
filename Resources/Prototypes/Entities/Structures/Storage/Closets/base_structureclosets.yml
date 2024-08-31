@@ -9,8 +9,8 @@
   - type: Transform
     noRot: true
   - type: Sprite
-    noRot: true
     snapCardinals: false
+    defaultSnap: true
     sprite: Structures/Storage/closet.rsi
     layers:
     - state: generic

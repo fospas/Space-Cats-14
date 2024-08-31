@@ -9,7 +9,7 @@
   - type: Sprite
     sprite: Structures/Storage/closet.rsi
     snapCardinals: false
-    noRot: true
+    defaultSnap: true
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
