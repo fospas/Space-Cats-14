@@ -77,7 +77,4 @@
     delay: 5
   - type: PNV
 
-- type: entity
-  id: ClothingHeadHelmetHardsuitSecurityRed
-  components:
-  - type: NTHud #топ сикрет шлем с НТхудом без НТхуда это такой конец)
+
