@@ -18,7 +18,7 @@
   description: Аномально прочная и при этом лёгкая форма охотника на демонов.
   components:
   - type: Sprite #вау я сделал это >W<
-    sprite: Clothing/DemonHunter/DemonHunterRobe.rsi
+    sprite: _SpaceCats/Clothing/DemonHunter/DemonHunterRobe.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -42,7 +42,7 @@
   components:
   - type: Sharp
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/DHSword.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/DHSword.rsi
   - type: MeleeWeapon
     wideAnimationRotation: -155
     attackRate: 1
@@ -89,7 +89,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/Ivory.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ivory.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -99,7 +99,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Clothing
-    sprite: Objects/Weapons/Guns/DemonHunter/Ivory.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ivory.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -129,7 +129,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: Sprite
-    sprite: Objects/Weapons/Guns/DemonHunter/Ebony.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ebony.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -139,7 +139,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Clothing
-    sprite: Objects/Weapons/Guns/DemonHunter/Ebony.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/DemonHunter/Ebony.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -163,11 +163,6 @@
   components:
   - type: Sprite
     sprite: Objects/Guns/DemonHunter/DemonHunterShotgun.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 666 #вероятно самое мощное оружие охотника на демонов,однако требует скилла
     availableModes:
@@ -180,6 +175,10 @@
   - type: Battery
     maxCharge: 200
     startingCharge: 200
+    - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
