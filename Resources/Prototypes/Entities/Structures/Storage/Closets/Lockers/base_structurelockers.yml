@@ -8,7 +8,6 @@
   - type: LockVisuals
   - type: Sprite
     sprite: Structures/Storage/closet.rsi
-    noRot: true
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
