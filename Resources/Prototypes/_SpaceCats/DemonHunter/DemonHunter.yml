@@ -194,6 +194,20 @@
   - type: AmmoCounter
 
 # собственно тушка охотника и всякая лабуда для него
+- type: startingGear
+  id: DHGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    shoes: ClothingShoesBootsCombat
+    eyes: ClothingEyesGlassesSecurity
+    outerClothing: ClothingDemonHunterRobe
+    ears: ClothingHeadsetCentComm
+    gloves: ClothingHandsGlovesCombat
+    back: DHSword
+    belt: AnarchistDHGun
+    pocket1: IvoryDHGun
+    pocket2: EbonyDHGun
+
  type: entity
   name: Охотник на Демонов # никогда не любил создание списка имен,так что пусть будет так.
   parent: BaseMobHuman
@@ -215,32 +229,8 @@
 - type: ghostRole
   id: MobDHGhost
   name: Охотник на Демонов
-  description: Специалист по паранормальным явлениям. Специальный оперативник.
+  description: Специалист по паранормальным явлениям. Убивайте монстров.
   rules: Убивайте вампиров на станции. Если не уверенны в своих действиях-напишите в f1. Декапать(гибать) можно,если вампир слишком опасный и натворил много дел.
   entityPrototype: MobDH
 
-- type: startingGear
-  id: DHGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitSec
-    shoes: ClothingShoesBootsCombat
-    eyes: ClothingEyesGlassesSecurity
-    outerClothing: ClothingDemonHunterRobe
-    ears: ClothingHeadsetCentComm
-    gloves: ClothingHandsGlovesCombat
-    back: ClothingDemonHunterBackpack
-
-- type: job
-  id: DHSpawn
-  name: Охотник на Демонов
-  description: Убейте этих тварей!
-  setPreference: false
-  startingGear: DHGear
-  icon: "JobIconNanotrasen"
-  supervisors: Вы и непосредственно ЦК
-  canBeAntag: false
-  accessGroups:
-  - AllAccess
-  access:
-  - CentralCommand
 
