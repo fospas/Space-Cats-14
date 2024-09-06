@@ -17,17 +17,18 @@
     snapCardinals: false
     layers:
     - state: closed
-      map: [ "enum.DoorVisualLayers.Base" ]
-    - state: unlit
+      map: ["enum.DoorVisualLayers.Base"]
+    - state: closed_unlit
+      shader: unshaded
       map: ["enum.DoorVisualLayers.BaseUnlit"]
     - state: welded
-      map: [ "enum.WeldableLayers.BaseWelded" ]
-    - state: locked
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: bolted_unlit
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseBolted"]
-    - state: spark
-      shader: unshaded
+    - state: emergency_unlit
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
+      shader: unshaded
     - state: panel_open
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AnimationPlayer
