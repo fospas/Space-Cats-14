@@ -147,7 +147,6 @@
     closedSpriteState: door_closed
     openingSpriteState: door_opening
     closingSpriteState: door_closing
-    emaggingSpriteState: unlit
   - type: Sprite
     sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/basic.rsi
     snapCardinals: false
