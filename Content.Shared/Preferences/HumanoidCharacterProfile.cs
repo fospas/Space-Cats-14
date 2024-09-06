@@ -71,6 +71,13 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public string FlavorText { get; set; } = string.Empty;
+        [DataField("species")]
+
+        [DataField("height")]
+        public float Height { get; private set; }
+
+        [DataField("width")]
+        public float Width { get; private set; }
 
         /// <summary>
         /// Associated <see cref="SpeciesPrototype"/> for this profile.
@@ -133,6 +140,8 @@ namespace Content.Shared.Preferences
             string name,
             string flavortext,
             string species,
+            float height,
+            float width,
             string voice, // Corvax-TTS
             int age,
             Sex sex,
@@ -148,6 +157,8 @@ namespace Content.Shared.Preferences
             Name = name;
             FlavorText = flavortext;
             Species = species;
+            Height = height;
+            Width = width;
             Voice = voice; // Corvax-TTS
             Age = age;
             Sex = sex;
@@ -180,6 +191,8 @@ namespace Content.Shared.Preferences
             : this(other.Name,
                 other.FlavorText,
                 other.Species,
+                other.Height, 
+                other.Width
                 other.Voice,
                 other.Age,
                 other.Sex,
@@ -238,10 +251,14 @@ namespace Content.Shared.Preferences
 
             var sex = Sex.Unsexed;
             var age = 18;
+            var height = 1f;
+            var width = 1f;
             if (prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesPrototype))
             {
                 sex = random.Pick(speciesPrototype.Sexes);
                 age = random.Next(speciesPrototype.MinAge, speciesPrototype.OldAge); // people don't look and keep making 119 year old characters with zero rp, cap it at middle aged
+                height = random.NextFloat(speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+                width = random.NextFloat(speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
             }
 
             // Corvax-TTS-Start
@@ -271,6 +288,8 @@ namespace Content.Shared.Preferences
                 Name = name,
                 Sex = sex,
                 Age = age,
+                Height = height
+                Width = width
                 Gender = gender,
                 Species = species,
                 Voice = voiceId, // Corvax-TTS
@@ -306,6 +325,16 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithSpecies(string species)
         {
             return new(this) { Species = species };
+        }
+
+        public HumanoidCharacterProfile WithHeight(float height)
+        {
+            return new(this) { Height = height };
+        }
+
+        public HumanoidCharacterProfile WithWidth(float width)
+        {
+            return new(this) { Width = width };
         }
 
         // Corvax-TTS-Start
@@ -483,6 +512,8 @@ namespace Content.Shared.Preferences
             if (Voice != other.Voice) return false;
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
+            if (Height != other.Height) return false;
+            if (Width != other.Width) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
@@ -579,6 +610,14 @@ namespace Content.Shared.Preferences
                 flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText);
             }
 
+            var height = Height;
+            if (speciesPrototype != null)
+                height = Math.Clamp(Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+
+            var width = Width;
+            if (speciesPrototype != null)
+                width = Math.Clamp(Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
+
             var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, Sex, sponsorPrototypes);
 
             var prefsUnavailableMode = PreferenceUnavailable switch
@@ -628,6 +667,8 @@ namespace Content.Shared.Preferences
             Name = name;
             FlavorText = flavortext;
             Age = age;
+            Height = height;
+            Width = width;
             Sex = sex;
             Gender = gender;
             Appearance = appearance;
@@ -757,6 +798,9 @@ namespace Content.Shared.Preferences
             hashCode.Add((int)Gender);
             hashCode.Add(Appearance);
             hashCode.Add((int)SpawnPriority);
+            hashCode.Add(Height);
+            hashCode.Add(Width);
+            PreferenceUnavailable,
             hashCode.Add((int)PreferenceUnavailable);
             return hashCode.ToHashCode();
         }
