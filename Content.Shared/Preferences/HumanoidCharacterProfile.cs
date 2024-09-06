@@ -192,7 +192,7 @@ namespace Content.Shared.Preferences
                 other.FlavorText,
                 other.Species,
                 other.Height, 
-                other.Width
+                other.Width,
                 other.Voice,
                 other.Age,
                 other.Sex,
@@ -288,8 +288,8 @@ namespace Content.Shared.Preferences
                 Name = name,
                 Sex = sex,
                 Age = age,
-                Height = height
-                Width = width
+                Height = height,
+                Width = width,
                 Gender = gender,
                 Species = species,
                 Voice = voiceId, // Corvax-TTS
@@ -800,7 +800,6 @@ namespace Content.Shared.Preferences
             hashCode.Add((int)SpawnPriority);
             hashCode.Add(Height);
             hashCode.Add(Width);
-            PreferenceUnavailable,
             hashCode.Add((int)PreferenceUnavailable);
             return hashCode.ToHashCode();
         }
