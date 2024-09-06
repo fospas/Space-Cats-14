@@ -143,8 +143,6 @@
   components:
   - type: Sprite
     sprite: _SpaceCats/Structures/Doors/Airlocks/Glass/basic.rsi
-    snapCardinals: false
-    offset: 0.5,0
   - type: Fixtures
     fixtures:
       fix1:
