@@ -71,7 +71,9 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public string FlavorText { get; set; } = string.Empty;
+        
         [DataField("species")]
+        public string Species { get; private set; }
 
         [DataField("height")]
         public float Height { get; private set; }
