@@ -66,8 +66,8 @@
   - type: Weldable
     time: 3
   - type: Airlock
-    openingSpriteState: unlit
-    closingSpriteState: unlit
+    openingSpriteState: opening_unlit
+    closingSpriteState: closing_unlit
     denySpriteState: door_deny
   - type: DoorBolt
   - type: Appearance
