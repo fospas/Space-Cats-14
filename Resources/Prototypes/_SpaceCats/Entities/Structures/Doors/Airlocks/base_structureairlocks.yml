@@ -143,10 +143,10 @@
   components:
   - type: CMDoubleDoor
   - type: Door
-    openSpriteState: door_open
-    closedSpriteState: door_closed
-    openingSpriteState: door_opening
-    closingSpriteState: door_closing
+    openSpriteState: open
+    closedSpriteState: closed
+    openingSpriteState: opening
+    closingSpriteState: сlosing
   - type: Sprite
     sprite: _SpaceCats/Structures/Doors/Airlocks/Standard/basic.rsi
     snapCardinals: false
