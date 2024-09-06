@@ -1,5 +1,4 @@
 - type: entity
-  abstract: true
   parent: BaseStructure
   id: AirlockDooble
   name: door
