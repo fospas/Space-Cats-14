@@ -68,7 +68,7 @@
   - type: Airlock
     openingSpriteState: opening_unlit
     closingSpriteState: closing_unlit
-    denySpriteState: door_deny
+    denySpriteState: deny_unlit
   - type: DoorBolt
   - type: Appearance
   - type: WiresVisuals
