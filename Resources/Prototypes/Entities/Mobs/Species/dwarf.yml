@@ -25,7 +25,7 @@
     prototype: Dwarf
     requiredLegs: 2
   - type: TypingIndicator
-    proto: dwarf
+    proto: dworf
   - type: Butcherable
     butcheringType: Spike
     spawned:
