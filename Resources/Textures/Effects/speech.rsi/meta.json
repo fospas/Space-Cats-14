@@ -736,7 +736,7 @@
         },
         {
             "name": "felinid0",
-            "delays":[
+            "delays": [
                 [
                     0.2,
                     0.2,
