@@ -1,7 +1,7 @@
 ﻿- type: typingIndicator
   id: default
-  typingState: default0
-  idleState: default3 # Corvax-TypingIndicator
+  typingState: people0
+  idleState: people3 # SpaceCats-TypingIndicator
 
 
 - type: typingIndicator
@@ -52,7 +52,7 @@
 - type: typingIndicator
   id: lizard
   typingState: lizard0
-  idleState: lizard3 # Corvax-TypingIndicator
+  idleState: lizard3 # SpaceCats-TypingIndicator
   offset: 0, 0.0625
 
 - type: typingIndicator
@@ -60,3 +60,37 @@
   typingState: slime0
   idleState: slime3 # Corvax-TypingIndicator
   offset: 0, 0.125
+
+- type: typingIndicator
+  id: felinid
+  typingState: felinid0
+  idleState: felinid3
+  offset: 0, 0.2 # SpaceCats-TypingIndicator
+
+- type: typingIndicator
+  id: dworf
+  typingState: dworf0
+  idleState: dworf0
+  offset: 0, 0.2 # SpaceCats-TypingIndicator
+
+- type: typingIndicator
+  id: shadow
+  typingState: shadow0
+  idleState: shadow3 # SpaceCats-TypingIndicator
+
+- type: typingIndicator
+  id: vulp
+  typingState: vulp0
+  idleState: vulp3 # SpaceCats-TypingIndicator
+
+- type: typingIndicator
+  id: skeleton
+  typingState: skeleton0
+  idleState: skeleton3
+  offset: 0, 0.2 # SpaceCats-TypingIndicator
+
+- type: typingIndicator
+  id: Swarms
+  spritePath: _SpaceCats/Swarmers/Typing.rsi
+  typingState: swarmbot0
+  idleState: swarmbot3 # SpaceCats-TypingIndicator

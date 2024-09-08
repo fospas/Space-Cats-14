@@ -122,6 +122,8 @@
     bloodReagent: DemonsBlood
   - type: BloodSucker
     webRequired: true
+  - type: TypingIndicator
+    proto: spider
   - type: Arachne
   - type: DamageVisuals
     thresholds: [ 10, 20, 30, 50, 70, 100 ]
