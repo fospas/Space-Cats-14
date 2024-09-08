@@ -20,8 +20,6 @@
         - FullTileMask
         layer:
         - WallLayer
-  - type: Transform
-    noRot: false
   - type: Occluder
   - type: PlacementReplacement
     key: walls
