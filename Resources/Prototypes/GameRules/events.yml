@@ -134,7 +134,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-clerical-error-announcement
+    startAnnouncement: station-event-mouse-migration-announcement
     minimumPlayers: 15
     weight: 5
     duration: 1
@@ -287,9 +287,11 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAnnouncement: station-event-mouse-migration-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/infestation.ogg
+      params:
+        volume: -4
     earliestStart: 15
     weight: 6
     duration: 50
@@ -332,11 +334,11 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAnnouncement: station-event-mouse-migration-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 6
-    duration: 50
+      path: /Audio/Announcements/infestation.ogg
+      params:
+        volume: -4
   - type: VentCrittersRule
     entries:
     - id: MobCockroach
@@ -453,9 +455,9 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    #startAudio:
-    #  path: /Audio/Announcements/attention.ogg
+    startAnnouncement: station-event-mouse-migration-announcement
+    startAudio:
+      path: /Audio/Announcements/infestation.ogg
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -474,9 +476,9 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAnnouncement: station-event-mouse-migration-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/infestation.ogg
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -491,9 +493,9 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAnnouncement: station-event-mouse-migration-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/infestation.ogg
     earliestStart: 20
     minimumPlayers: 20
     weight: 1.5
