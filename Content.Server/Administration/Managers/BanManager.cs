@@ -70,7 +70,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
 
         _netManager.RegisterNetMessage<MsgRoleBans>();
-        _cfg.OnValueChanged(AccVars.DiscordBanWebhook, OnWebhookChanged, true);
+        _cfg.OnValueChanged(CVars.DiscordBanWebhook, OnWebhookChanged, true);
         _cfg.OnValueChanged(CVars.GameHostName, OnServerNameChanged, true);
     }
     private void OnServerNameChanged(string obj)
