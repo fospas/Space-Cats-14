@@ -1,6 +1,7 @@
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Content.Server.NPC.Components;
+using Content.Shared.NPC.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
 
 namespace Content.Server._Cats.ClothingWhitelist;
