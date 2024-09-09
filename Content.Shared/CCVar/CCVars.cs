@@ -2220,11 +2220,5 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
-
-        public static readonly CVarDef<string> DiscordBanWebhook =
-        CVarDef.Create("discord.ban_webhook", "", CVar.SERVERONLY);
-
-        public static readonly CVarDef<float> SiliconNpcUpdateTime =
-        CVarDef.Create("silicon.npcupdatetime", 1.5f, CVar.SERVERONLY);
     }
 }
