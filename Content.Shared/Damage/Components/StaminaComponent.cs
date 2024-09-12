@@ -15,7 +15,7 @@ public sealed partial class StaminaComponent : Component
     /// Have we reached peak stamina damage and been paralyzed?
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public bool Critical;
+    public StunnedState State;
 
     /// <summary>
     /// How much stamina reduces per second.
@@ -39,7 +39,7 @@ public sealed partial class StaminaComponent : Component
     /// How much stamina damage is required to entire stam crit.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public float CritThreshold = 100f;
+    public float CritThreshold = 50f;
 
     /// <summary>
     /// How long will this mob be stunned for?
@@ -56,4 +56,11 @@ public sealed partial class StaminaComponent : Component
 
     [DataField]
     public ProtoId<AlertPrototype> StaminaAlert = "Stamina";
+}
+
+public enum StunnedState
+{
+    None,
+    Crawling,
+    Critical
 }
