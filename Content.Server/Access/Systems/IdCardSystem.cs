@@ -24,6 +24,7 @@ public sealed class IdCardSystem : SharedIdCardSystem
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<IdCardComponent, BeingMicrowavedEvent>(OnMicrowaved);
     }
 
@@ -44,7 +45,8 @@ public sealed class IdCardSystem : SharedIdCardSystem
                 {
                     _popupSystem.PopupCoordinates(Loc.GetString("id-card-component-microwave-burnt", ("id", uid)),
                      transformComponent.Coordinates, PopupType.Medium);
-                    EntityManager.SpawnEntity("FoodBadRecipe", transformComponent.Coordinates);
+                    EntityManager.SpawnEntity("FoodBadRecipe",
+                        transformComponent.Coordinates);
                 }
                 _adminLogger.Add(LogType.Action, LogImpact.Medium,
                     $"{ToPrettyString(args.Microwave)} burnt {ToPrettyString(uid):entity}");
@@ -52,7 +54,7 @@ public sealed class IdCardSystem : SharedIdCardSystem
                 return;
             }
 
-            // Explode if the microwave can't handle it
+            //Explode if the microwave can't handle it
             if (!micro.CanMicrowaveIdsSafely)
             {
                 _microwave.Explode((args.Microwave, micro));
@@ -82,9 +84,11 @@ public sealed class IdCardSystem : SharedIdCardSystem
             Dirty(uid, access);
 
             _adminLogger.Add(LogType.Action, LogImpact.Medium,
-                $"{ToPrettyString(args.Microwave)} added {random.ID} access to {ToPrettyString(uid):entity}");
+                    $"{ToPrettyString(args.Microwave)} added {random.ID} access to {ToPrettyString(uid):entity}");
+
         }
     }
+}
 
     /// <summary>
     /// Attempts to change the color of an ID card.
