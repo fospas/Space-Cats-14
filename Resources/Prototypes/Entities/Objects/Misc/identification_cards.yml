@@ -472,8 +472,14 @@
     - state: idcentcom
   - type: Item
     heldPrefix: blue
-#  - type: PresetIdCard
-#    job: CentralCommandOfficial
+  - type: IdCard
+    jobTitle: Офицер ЦентКом
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
 
 - type: entity
   parent: IDCardStandard
@@ -766,6 +772,7 @@
     - state: idcluwne
   - type: IdCard
     jobTitle: Cluwne
+    jobColor: "#AA0000"
   - type: Unremoveable
 
 - type: entity
