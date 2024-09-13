@@ -88,7 +88,6 @@ public sealed class IdCardSystem : SharedIdCardSystem
 
         }
     }
-}
 
     /// <summary>
     /// Attempts to change the color of an ID card.
