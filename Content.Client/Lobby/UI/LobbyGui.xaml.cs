@@ -22,23 +22,35 @@ namespace Content.Client.Lobby.UI
 
             LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
 
-            LeaveButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
             OptionsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().ToggleWindow();
+            // cats start
+            /*DiscordButton.OnPressed += _ => _stalinManager.RequestUri();*/
+            ChangelogButton.OnPressed += _ => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
+            QuitButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
+            // cats end
         }
 
         public void SwitchState(LobbyGuiState state)
         {
-            DefaultState.Visible = false;
-            CharacterSetupState.Visible = false;
-
             switch (state)
             {
                 case LobbyGuiState.Default:
-                    DefaultState.Visible = true;
                     RightSide.Visible = true;
+                    // cats start
+                    CharacterSetupState.Visible = false;
+                    Center.Visible = true;
+                    LabelName.Visible = true;
+                    Changelog.Visible = true;
+                    // cats end
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
+                    // cats start
+                    Center.Visible = false;
+                    RightSide.Visible = true;
+                    LabelName.Visible = false;
+                    Changelog.Visible = false;
+                    // cats end
 
                     var actualWidth = (float) UserInterfaceManager.RootControl.PixelWidth;
                     var setupWidth = (float) LeftSide.PixelWidth;
