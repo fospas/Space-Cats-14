@@ -1463,7 +1463,6 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSilver
   heatCapacity: 10000
-  0
 
 - type: tile
   id: FloorGlass
