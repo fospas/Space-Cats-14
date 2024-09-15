@@ -1569,7 +1569,7 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
-  weather: tru
+  weather: true
 
 - type: tile
   id: FloorGrassJungle
