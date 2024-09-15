@@ -1557,13 +1557,19 @@
   id: FloorGrass
   name: tiles-planet-grass-floor
   sprite: /Textures/Tiles/grass.png
+  variants: 4 #Corvax
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
-  weather: true
+  weather: tru
 
 - type: tile
   id: FloorGrassJungle
@@ -2038,7 +2044,6 @@
   deconstructTools: [ Prying ]
   itemDrop: FloorTileItemAstroSnow
 
-
 - type: tile
   id: FloorWoodLarge
   name: tiles-wood-large
@@ -2058,4 +2063,3 @@
     collection: BarestepWood
   itemDrop: FloorTileItemWoodLarge
   heatCapacity: 10000
-
