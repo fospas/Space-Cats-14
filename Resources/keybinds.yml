@@ -584,7 +584,6 @@ binds:
   type: State
   key: MouseRight
   canFocus: true
-  #WD EDIT
 - function: LookUp
   type: State
   key: Space
