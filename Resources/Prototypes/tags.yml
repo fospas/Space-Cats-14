@@ -1487,9 +1487,6 @@
   id: GygaxRLeg
 
 - type: Tag
-  id: GygaxRArm
-
-- type: Tag
   id: DurandPeripheralsControlModule
 
 - type: Tag
@@ -1503,9 +1500,6 @@
 
 - type: Tag
   id: DurandRLeg
-
-- type: Tag
-  id: DurandRArm
 
 - type: Tag
   id: GygaxRArm
