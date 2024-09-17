@@ -83,5 +83,3 @@ research-technology-modern-combat-mechs = Модернизированные б�
 
 uplink-mauler-name = Боевой мех маулер
 uplink-mauler-desc = Украденный и перекрашенный Синдикатом Мародёр.
-research-technology-military-machinery = Боевая машинерия
-research-technology-modern-combat-mechs = Модернизированные боевые мехи
