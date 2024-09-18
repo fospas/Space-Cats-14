@@ -454,68 +454,116 @@ namespace Content.Server.GameTicking
         }
 
         private string GenerateRoundEndSummary(string gamemodeTitle, string roundEndText, RoundEndMessageEvent.RoundEndPlayerInfo[] playerInfoArray)
+{
+    var roundEndTextMarkdown = ConvertBBCodeToMarkdown(roundEndText);
+    var stringBuilder = new System.Text.StringBuilder();
+
+    stringBuilder.AppendLine($"**Режим**: {gamemodeTitle}\n");
+
+    if (!string.IsNullOrWhiteSpace(roundEndTextMarkdown))
+    {
+        stringBuilder.AppendLine($"**Информация**: {roundEndTextMarkdown}\n");
+    }
+
+    var groupedPlayers = playerInfoArray
+        .GroupBy(p => new { p.PlayerOOCName, p.PlayerICName })
+        .Select(g => new
         {
-            var roundEndTextMarkdown = ConvertBBCodeToMarkdown(roundEndText);
-            var stringBuilder = new System.Text.StringBuilder();
+            PlayerOOCName = g.Key.PlayerOOCName,
+            PlayerICName = g.Key.PlayerICName,
+            Roles = string.Join(", ", g.Select(p => p.Role).Distinct())
+        })
+        .ToList();
 
-            stringBuilder.AppendLine($"**Режим**: {gamemodeTitle}\n");
+    int totalPlayers = groupedPlayers.Count;
 
-            if (!string.IsNullOrWhiteSpace(roundEndTextMarkdown))
+    stringBuilder.AppendLine($"**Всего было игроков**: {totalPlayers}\n");
+    stringBuilder.AppendLine($"**Игроки**:\n");
+
+    foreach (var playerInfo in groupedPlayers)
+    {
+        stringBuilder.AppendLine($"*{playerInfo.PlayerOOCName}* '**{playerInfo.PlayerICName}**' в роли: {playerInfo.Roles}");
+    }
+
+    return stringBuilder.ToString();
+}
+
+private async void SendRoundEndDiscordMessage(string roundEndSummary)
+{
+    try
+    {
+        if (_webhookIdentifier == null)
+            return;
+
+        var duration = RoundDuration();
+        var content = $"**Раунд {RoundId} завершен!**\n" +
+                      $"**Продолжительность**: {Math.Truncate(duration.TotalHours)} часов {duration.Minutes} минут {duration.Seconds} секунд\n" +
+                      $"{roundEndSummary}";
+
+        if (content.Length > 2000)
+        {
+            var mainContent = $"**Раунд {RoundId} завершен!**\n" +
+                              $"**Продолжительность**: {Math.Truncate(duration.TotalHours)} часов {duration.Minutes} минут {duration.Seconds} секунд\n";
+
+            var playerStats = $"{roundEndSummary}";
+
+            var payload = new WebhookPayload { Content = mainContent };
+            await _discord.CreateMessage(_webhookIdentifier.Value, payload);
+
+            if (playerStats.Length > 2000)
             {
-                stringBuilder.AppendLine($"**Информация**: {roundEndTextMarkdown}\n");
-            }
-
-            var groupedPlayers = playerInfoArray
-                .GroupBy(p => new { p.PlayerOOCName, p.PlayerICName })
-                .Select(g => new
+                var parts = SplitMessage(playerStats, 2000);
+                foreach (var part in parts)
                 {
-                    PlayerOOCName = g.Key.PlayerOOCName,
-                    PlayerICName = g.Key.PlayerICName,
-                    Roles = string.Join(", ", g.Select(p => p.Role).Distinct())
-                })
-                .ToList();
-
-            int totalPlayers = groupedPlayers.Count;
-
-            stringBuilder.AppendLine($"**Всего было игроков**: {totalPlayers}\n");
-            stringBuilder.AppendLine($"**Игроки**:\n");
-
-            foreach (var playerInfo in groupedPlayers)
-            {
-                stringBuilder.AppendLine($"*{playerInfo.PlayerOOCName}* '**{playerInfo.PlayerICName}**' в роли: {playerInfo.Roles}");
+                    payload = new WebhookPayload { Content = part };
+                    await _discord.CreateMessage(_webhookIdentifier.Value, payload);
+                }
             }
-
-            return stringBuilder.ToString();
+            else
+            {
+                payload = new WebhookPayload { Content = playerStats };
+                await _discord.CreateMessage(_webhookIdentifier.Value, payload);
+            }
+        }
+        else
+        {
+            var payload = new WebhookPayload { Content = content };
+            await _discord.CreateMessage(_webhookIdentifier.Value, payload);
         }
 
-        private async void SendRoundEndDiscordMessage(string roundEndSummary)
-        {
-            try
-            {
-                if (_webhookIdentifier == null)
-                    return;
+        if (DiscordRoundEndRole == null)
+            return;
 
-                var duration = RoundDuration();
-                var content = $"**Раунд {RoundId} завершен!**\n" +
-                              $"**Продолжительность**: {Math.Truncate(duration.TotalHours)} часов {duration.Minutes} минут {duration.Seconds} секунд\n" +
-                              $"{roundEndSummary}";
-                var payload = new WebhookPayload { Content = content };
-                await _discord.CreateMessage(_webhookIdentifier.Value, payload);
-
-                if (DiscordRoundEndRole == null)
-                    return;
-
-                content = Loc.GetString("discord-round-notifications-end-ping", ("roleId", DiscordRoundEndRole));
+        content = Loc.GetString("discord-round-notifications-end-ping", ("roleId", DiscordRoundEndRole));
                 payload = new WebhookPayload { Content = content };
                 payload.AllowedMentions.AllowRoleMentions();
 
-                await _discord.CreateMessage(_webhookIdentifier.Value, payload);
-            }
-            catch (Exception e)
+        await _discord.CreateMessage(_webhookIdentifier.Value, payload);
+    }
+    catch (Exception e)
+    {
+        Log.Error($"Error while sending discord round end message:\n{e}");
+    }
+}
+
+        private List<string> SplitMessage(string message, int maxLength)
+        {
+            var result = new List<string>();
+        
+            while (message.Length > maxLength)
             {
-                Log.Error($"Error while sending discord round end message:\n{e}");
+                var splitIndex = message.LastIndexOf('\n', maxLength);
+                if (splitIndex == -1) splitIndex = maxLength;
+        
+                var part = message.Substring(0, splitIndex);
+                result.Add(part);
+                message = message.Substring(splitIndex).TrimStart();
             }
+
+            result.Add(message);
+            return result;
         }
+
 
         public void RestartRound()
         {
