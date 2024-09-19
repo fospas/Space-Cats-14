@@ -777,7 +777,7 @@ namespace Content.Shared.CCVar
         /// Should the server play a quick sound to the active admins whenever a new player joins?
         /// </summary>
         public static readonly CVarDef<bool> AdminNewPlayerJoinSound =
-            CVarDef.Create("admin.new_player_join_sound", false, CVar.SERVERONLY);
+            CVarDef.Create("admin.new_player_join_sound", true, CVar.SERVERONLY);
 
         /// <summary>
         /// The amount of days before the note starts fading. It will slowly lose opacity until it reaches stale. Set to 0 to disable.
@@ -885,7 +885,7 @@ namespace Content.Shared.CCVar
         ///     If 0, appearing as a new player is disabled.
         /// </summary>
         public static readonly CVarDef<int> NewPlayerThreshold =
-            CVarDef.Create("admin.new_player_threshold", 0, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("admin.new_player_threshold", 60, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
         /// How long an admin client can go without any input before being considered AFK.
@@ -1122,7 +1122,7 @@ namespace Content.Shared.CCVar
         ///     Whether gas differences will move entities.
         /// </summary>
         public static readonly CVarDef<bool> SpaceWind =
-            CVarDef.Create("atmos.space_wind", false, CVar.SERVERONLY);
+            CVarDef.Create("atmos.space_wind", true, CVar.SERVERONLY);
 
         /// <summary>
         ///     Divisor from maxForce (pressureDifference * 2.25f) to force applied on objects.
@@ -1882,7 +1882,7 @@ namespace Content.Shared.CCVar
         /// Control displaying SSD indicators near players
         /// </summary>
         public static readonly CVarDef<bool> ICShowSSDIndicator =
-            CVarDef.Create("ic.show_ssd_indicator", true, CVar.CLIENTONLY);
+            CVarDef.Create("ic.show_ssd_indicator", false, CVar.CLIENTONLY);
 
         /*
          * Salvage
@@ -2026,7 +2026,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("ghost.role_time", 1f, CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
         /// If ghost role lotteries should be made near-instanteous.
