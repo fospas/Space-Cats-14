@@ -14,12 +14,12 @@
             prefixCreator: 'TG'
         - type: StationJobs
           availableJobs:
-            BKCCOperator: [ 1, 1]
-            BKCCSecGavna: [ 1, 1]
-            BKCCCargo: [ 1, 2]
-            BKCCSecOfficer: [ 2, 2]
-            BKCCAssistant: [ 2, 4]
-            BKCCAdmiral: [ 1, 1]
+            BKCCOperator: [ 0, 0]
+            BKCCSecGavna: [ 0, 0]
+            BKCCCargo: [ 0, 0]
+            BKCCSecOfficer: [ 0, 0]
+            BKCCAssistant: [ 0, 0]
+            BKCCAdmiral: [ 0, 0]
 
 - type: gameMap
   id: CentCommv2
@@ -37,12 +37,12 @@
           prefixCreator: 'CX'
       - type: StationJobs
         availableJobs:
-          BKCCOperator: [ 1, 1]
-          BKCCSecGavna: [ 1, 1]
-          BKCCCargo: [ 1, 2]
-          BKCCSecOfficer: [ 2, 2]
-          BKCCAssistant: [ 2, 4]
-          BKCCAdmiral: [ 1, 1]
+          BKCCOperator: [ 0, 0]
+          BKCCSecGavna: [ 0, 0]
+          BKCCCargo: [ 0, 0]
+          BKCCSecOfficer: [ 0, 0]
+          BKCCAssistant: [ 0, 0]
+          BKCCAdmiral: [ 0, 0]
 
 - type: gameMap
   id: CentCommv3
@@ -60,11 +60,11 @@
           prefixCreator: 'B'
       - type: StationJobs
         availableJobs:
-          BKCCOfficial: [ 1, 1]
-          BKCCOperator: [ 1, 1]
-          BKCCSecGavna: [ 1, 1]
-          BKCCCargo: [ 1, 2]
-          BKCCSecOfficer: [ 2, 3]
-          BKCCAssistant: [ 2, 4]
-          BKCCAdmiral: [ 1, 1]
+          BKCCOfficial: [ 0, 0]
+          BKCCOperator: [ 0, 0]
+          BKCCSecGavna: [ 0, 0]
+          BKCCCargo: [ 0, 0]
+          BKCCSecOfficer: [ 0, 0]
+          BKCCAssistant: [ 0, 0]
+          BKCCAdmiral: [ 0, 0]
 
