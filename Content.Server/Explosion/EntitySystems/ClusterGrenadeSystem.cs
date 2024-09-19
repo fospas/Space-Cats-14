@@ -4,7 +4,6 @@ using Content.Shared.Interaction;
 using Content.Shared.Throwing;
 using Robust.Shared.Containers;
 using Robust.Shared.Random;
-using Robust.Shared.Spawners; // Ataraxia
 using Content.Server.Weapons.Ranged.Systems;
 using System.Numerics;
 using Content.Shared.Explosion.Components;
@@ -115,7 +114,8 @@ public sealed class ClusterGrenadeSystem : EntitySystem
                         RaiseLocalEvent(uid, ref ev);
                     }
                 }
-                QueueDel(uid); // Ataraxia-EDIT
+                // delete the empty shell of the clusterbomb
+                Del(uid);
             }
         }
     }
