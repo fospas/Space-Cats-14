@@ -13,7 +13,7 @@
     - BKCCCargo
     - BKCCAssistant
     - BKCCAdmiral
-    - BlueShield
+  editorHidden: true
   accountNumber: 1350  #backmen: currency
 
 - type: department
@@ -26,4 +26,5 @@
   roles:
     - BKBPLATech
     - BKBPLAMED
+  editorHidden: true
   accountNumber: 1351  #backmen: currency
