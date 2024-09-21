@@ -54,8 +54,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 360
-    startingCharge: 360
+    maxCharge: 2000
+    startingCharge: 2000
 
 - type: entity
   id: BigPowerCellPrinted
@@ -71,7 +71,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 360
+    maxCharge: 2000
     startingCharge: 0
 
 - type: entity
@@ -89,8 +89,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 720
-    startingCharge: 720
+    maxCharge: 2500
+    startingCharge: 2500
 
 - type: entity
   id: BigPowerCellMediumPrinted
@@ -106,7 +106,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 720
+    maxCharge: 2500
     startingCharge: 0
 
 - type: entity
@@ -124,8 +124,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 1080
-    startingCharge: 1080
+    maxCharge: 3000
+    startingCharge: 3000
 
 - type: entity
   id: BigPowerCellHighPrinted
@@ -141,7 +141,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 1080
+    maxCharge: 3000
     startingCharge: 0
 
 - type: entity
@@ -159,8 +159,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 1800
-    startingCharge: 1800
+    maxCharge: 4000
+    startingCharge: 4000
 
 - type: entity
   id: BigPowerCellHyperPrinted
@@ -176,7 +176,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 1800
+    maxCharge: 4000
     startingCharge: 0
 
 - type: entity
@@ -194,11 +194,11 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 1300
-    startingCharge: 1300
+    maxCharge: 3000
+    startingCharge: 3000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 14 # takes 1 minute to charge itself back to full
+    autoRechargeRate: 30 # takes 1 minute to charge itself back to full
 
 - type: entity
   id: BigPowerCellMicroreactorPrinted
@@ -214,5 +214,5 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 1300
+    maxCharge: 3000
     startingCharge: 0

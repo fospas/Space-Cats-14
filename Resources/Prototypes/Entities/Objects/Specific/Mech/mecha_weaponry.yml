@@ -12,8 +12,8 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: Battery
-    maxCharge: 5
-    startingCharge: 5
+    maxCharge: 30
+    startingCharge: 30
   - type: Appearance
   - type: StaticPrice
     price: 500
@@ -40,11 +40,11 @@
         path: /Audio/Weapons/Guns/Gunshots/taser2.ogg # TODO: change to a more intimidating sound
     - type: ProjectileBatteryAmmoProvider
       proto: EmitterBolt
-      fireCost: 16 # I would think a laser pulse would be less energy expenssive than a full beam
+      fireCost: 36 # I would think a laser pulse would be less energy expenssive than a full beam
     - type: Appearance
     - type: Battery
-      maxCharge: 17
-      startingCharge: 17
+      maxCharge: 40
+      startingCharge: 40
     - type: Tag
       tags:
       - CombatMech
@@ -62,7 +62,7 @@
       map: ["enum.GunVisualLayers.Base"]
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 5
+    fireCost: 20
   - type: Appearance
 
 - type: entity
@@ -85,10 +85,10 @@
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
-    fireCost: 9
+    fireCost: 30
   - type: Battery
-    maxCharge: 10
-    startingCharge: 10
+    maxCharge: 30
+    startingCharge: 30
   - type: Appearance
 
 - type: entity
@@ -114,7 +114,7 @@
         path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
     - type: ProjectileBatteryAmmoProvider
       proto: BulletPistol
-      fireCost: 14
+      fireCost: 28
     - type: Appearance
     - type: Tag
       tags:
@@ -143,10 +143,10 @@
         path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
     - type: ProjectileBatteryAmmoProvider
       proto: BulletPistolIncendiary
-      fireCost: 16
+      fireCost: 35
     - type: Battery
-      maxCharge: 17
-      startingCharge: 17
+      maxCharge: 40
+      startingCharge: 40
     - type: Appearance
     - type: Tag
       tags:
@@ -171,10 +171,10 @@
         path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
     - type: ProjectileBatteryAmmoProvider
       proto: BulletWeakRocket
-      fireCost: 19
+      fireCost: 40
     - type: Battery
-      maxCharge: 20
-      startingCharge: 20
+      maxCharge: 50
+      startingCharge: 50
     - type: Appearance
     - type: Tag
       tags:
@@ -199,10 +199,10 @@
         path: /Audio/Weapons/Guns/Misc/selector.ogg
     - type: ProjectileBatteryAmmoProvider
       proto: TeslaGunBullet
-      fireCost: 19
+      fireCost: 40
     - type: Battery
-      maxCharge: 20
-      startingCharge: 20
+      maxCharge: 50
+      startingCharge: 50
     - type: Appearance
     - type: Tag
       tags:
