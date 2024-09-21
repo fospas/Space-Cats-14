@@ -1,0 +1,37 @@
+- type: latheRecipe
+  id: BigPowerCellPrinted
+  result: BigPowerCellPrinted
+  completetime: 10
+  materials:
+    Steel: 900
+    Plastic: 900
+    Gold: 500
+
+- type: latheRecipe
+  id: BigPowerCellMediumPrinted
+  result: BigPowerCellMediumPrinted
+  completetime: 10
+  materials:
+    Steel: 1300
+    Plastic: 1300
+    Gold: 1000
+
+- type: latheRecipe
+  id: BigPowerCellHighPrinted
+  result: BigPowerCellHighPrinted
+  completetime: 10
+  materials:
+    Steel: 1700
+    Plastic: 1700
+    Gold: 1000
+    Plasma: 1300
+
+- type: latheRecipe
+  id: BigPowerCellHyperPrinted
+  result: BigPowerCellHyperPrinted
+  completetime: 10
+  materials:
+    Steel: 2700
+    Plastic: 2700
+    Gold: 1500
+    Plasma: 2000
