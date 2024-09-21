@@ -1,0 +1,218 @@
+- type: entity
+  id: BasePowerBigCell
+  abstract: true
+  parent: BaseItem
+  components:
+  - type: Item
+    size: Ginormous
+    storedRotation: -90
+  - type: MultiHandedItem
+  - type: Battery
+    pricePerJoule: 0.15
+  - type: PowerCell
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 400
+    intensitySlope: 1.5
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Power/powerbig_cells.rsi
+  - type: SolutionContainerManager
+    solutions:
+      battery:
+        maxVol: 5
+  - type: InjectableSolution
+    solution: battery
+  - type: DrawableSolution
+    solution: battery
+  - type: Extractable
+    juiceSolution:
+      reagents:
+        - ReagentId: Zinc
+          Quantity: 5
+  - type: Tag
+    tags:
+      - PowerBigCell
+  - type: Appearance
+  - type: PowerCellVisuals
+  - type: Riggable
+  - type: HitscanBatteryAmmoProvider
+    proto: RedLightLaser
+    fireCost: 50
+
+- type: entity
+  name: big-capacity power cell
+  description: A rechargeable power cell. This is the cheapest kind you can find.
+  id: BigPowerCell
+  suffix: Full
+  parent: BasePowerBigCell
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: cellbig
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 360
+    startingCharge: 360
+
+- type: entity
+  id: BigPowerCellPrinted
+  suffix: Empty
+  parent: BigPowerCell
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: cellbig
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 360
+    startingCharge: 0
+
+- type: entity
+  name: Big medium-capacity power cell
+  description: A rechargeable power cell. This is the popular and reliable version.
+  id: BigPowerCellMedium
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: hcellbig
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 720
+    startingCharge: 720
+
+- type: entity
+  id: BigPowerCellMediumPrinted
+  suffix: Empty
+  parent: BigPowerCellMedium
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: hcellbig
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 720
+    startingCharge: 0
+
+- type: entity
+  name: Big high-capacity power cell
+  description: A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
+  id: BigPowerCellHigh
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: hpcellbig
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 1080
+    startingCharge: 1080
+
+- type: entity
+  id: BigPowerCellHighPrinted
+  suffix: Empty
+  parent: BigPowerCellHigh
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: scellbig
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 1080
+    startingCharge: 0
+
+- type: entity
+  name: Big hyper-capacity power cell
+  description: A rechargeable standardized power cell. This one looks like a rare and powerful prototype.
+  id: BigPowerCellHyper
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: hyper
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 1800
+    startingCharge: 1800
+
+- type: entity
+  id: BigPowerCellHyperPrinted
+  suffix: Empty
+  parent: BigPowerCellHyper
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: hyper
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 1800
+    startingCharge: 0
+
+- type: entity
+  parent: BasePowerCell
+  id: BigPowerCellMicroreactor
+  name: Big microreactor power cell
+  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
+  suffix: Full
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: bscellbig
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 1300
+    startingCharge: 1300
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 14 # takes 1 minute to charge itself back to full
+
+- type: entity
+  id: BigPowerCellMicroreactorPrinted
+  suffix: Empty
+  parent: BigPowerCellMicroreactor
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: bscellbig
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 1300
+    startingCharge: 0
