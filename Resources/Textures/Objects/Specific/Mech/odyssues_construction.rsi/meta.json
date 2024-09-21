@@ -1,0 +1,101 @@
+{
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
+  "license" : "CC-BY-SA-3.0",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "odyssues_chassis"
+    },
+    {
+      "name": "odyssues_harness"
+    },
+    {
+      "name": "odyssues_harness+o"
+    },
+    {
+      "name": "odyssues_r_arm"
+    },
+    {
+      "name": "odyssues_r_arm+o"
+    },
+    {
+      "name": "odyssues_l_arm"
+    },
+    {
+      "name": "odyssues_l_arm+o"
+    },
+    {
+      "name": "odyssues_r_leg"
+    },
+    {
+      "name": "odyssues_r_leg+o"
+    },
+    {
+      "name": "odyssues_l_leg"
+    },
+    {
+      "name": "odyssues_l_leg+o"
+    },
+    {
+      "name": "odyssues0"
+    },
+    {
+      "name": "odyssues1"
+    },
+    {
+      "name": "odyssues2"
+    },
+    {
+      "name": "odyssues3"
+    },
+    {
+      "name": "odyssues4"
+    },
+    {
+      "name": "odyssues5"
+    },
+    {
+      "name": "odyssues6"
+    },
+    {
+      "name": "odyssues7"
+    },
+    {
+      "name": "odyssues8"
+    },
+    {
+      "name": "odyssues9"
+    },
+    {
+      "name": "odyssues10"
+    },
+    {
+      "name": "odyssues11"
+    },
+    {
+      "name": "odyssues12"
+    },
+    {
+      "name": "odyssues13"
+    },
+    {
+      "name": "odyssues14"
+    },
+    {
+      "name": "odyssues15"
+    },
+    {
+      "name": "odyssues16"
+    },
+    {
+      "name": "odyssues17"
+    },
+    {
+      "name": "odyssues18"
+    }
+  ]
+}

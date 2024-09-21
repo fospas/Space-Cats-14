@@ -1,0 +1,101 @@
+{
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
+  "license" : "CC-BY-SA-3.0",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "marauder_chassis"
+    },
+    {
+      "name": "marauder_harness"
+    },
+    {
+      "name": "marauder_harness+o"
+    },
+    {
+      "name": "marauder_r_arm"
+    },
+    {
+      "name": "marauder_r_arm+o"
+    },
+    {
+      "name": "marauder_l_arm"
+    },
+    {
+      "name": "marauder_l_arm+o"
+    },
+    {
+      "name": "marauder_r_leg"
+    },
+    {
+      "name": "marauder_r_leg+o"
+    },
+    {
+      "name": "marauder_l_leg"
+    },
+    {
+      "name": "marauder_l_leg+o"
+    },
+    {
+      "name": "marauder0"
+    },
+    {
+      "name": "marauder1"
+    },
+    {
+      "name": "marauder2"
+    },
+    {
+      "name": "marauder3"
+    },
+    {
+      "name": "marauder4"
+    },
+    {
+      "name": "marauder5"
+    },
+    {
+      "name": "marauder6"
+    },
+    {
+      "name": "marauder7"
+    },
+    {
+      "name": "marauder8"
+    },
+    {
+      "name": "marauder9"
+    },
+    {
+      "name": "marauder10"
+    },
+    {
+      "name": "marauder11"
+    },
+    {
+      "name": "marauder12"
+    },
+    {
+      "name": "marauder13"
+    },
+    {
+      "name": "marauder14"
+    },
+    {
+      "name": "marauder15"
+    },
+    {
+      "name": "marauder16"
+    },
+    {
+      "name": "marauder17"
+    },
+    {
+      "name": "marauder18"
+    }
+  ]
+}
