@@ -172,6 +172,10 @@
       - TrashBag
       - PowerCellSmall
       - PowerCellMedium
+      - BigPowerCellPrinted # cats
+      - BigPowerCellMediumPrinted # cats
+      - BigPowerCellHighPrinted # cats
+      - BigPowerCellHyperPrinted # cats
       - RollerBedSpawnFolded
       - CheapRollerBedSpawnFolded
       - EmergencyRollerBedSpawnFolded

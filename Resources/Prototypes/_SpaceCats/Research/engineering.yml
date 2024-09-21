@@ -1,0 +1,55 @@
+- type: technology
+  id: BigPowerCell
+  name: cats-research-technology-basebig-powercells
+  icon:
+    sprite: _SpaceCats/Objects/Power/powerbig_cells.rsi
+    state: cellbig
+  discipline: Powercells
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - BigPowerCellPrinted
+  technologyPrerequisites:
+  - AdvancedPowercells
+
+- type: technology
+  id: BigPowerCellMedium
+  name: cats-research-technology-mediumbig-powercells
+  icon:
+    sprite: _SpaceCats/Objects/Power/powerbig_cells.rsi
+    state: hpcellbig
+  discipline: Powercells
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - BigPowerCellMediumPrinted
+  technologyPrerequisites:
+  - BigPowerCell
+
+- type: technology
+  id: BigPowerCellHigh
+  name: cats-research-technology-highbig-powercells
+  icon:
+    sprite: _SpaceCats/Objects/Power/powerbig_cells.rsi
+    state: scellbig
+  discipline: Powercells
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - BigPowerCellHighPrinted
+  technologyPrerequisites:
+  - BigPowerCellMedium
+
+- type: technology
+  id: BigPowerCellHyper
+  name: cats-research-technology-hyperbig-powercells
+  icon:
+    sprite: _SpaceCats/Objects/Power/powerbig_cells.rsi
+    state: hyper
+  discipline: Powercells
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - BigPowerCellHyperPrinted
+  technologyPrerequisites:
+  - BigPowerCellHigh
