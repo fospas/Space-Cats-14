@@ -294,13 +294,13 @@
   # - MeteorSwarmScheduler
   - RampingStationEventScheduler
 
-- type: gamePreset
-  id: Calm
-  name: calm-title
-  showInVote: true
-  description: calm-description
-  rules:
-  - BasicStationEventScheduler
-  - WageScheduler #backmen: currency
-  #- CalmMeteorSwarmSchedule
-  - BasicRoundstartVariation
+#- type: gamePreset
+#  id: Calm
+#  name: calm-title
+#  showInVote: true
+#  description: calm-description
+#  rules:
+#  - BasicStationEventScheduler
+#  - WageScheduler #backmen: currency
+#  - CalmMeteorSwarmSchedule
+#  - BasicRoundstartVariation
