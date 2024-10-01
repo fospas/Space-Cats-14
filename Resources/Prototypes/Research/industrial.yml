@@ -167,8 +167,6 @@
     - WelderExperimental
     - RnDPowerDrill
     - RnDJawsOfLife
-    - BorgModuleAdvancedTool
-    - BorgModuleRCD
 
 - type: technology
   id: MassExcavation
