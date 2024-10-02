@@ -12,8 +12,6 @@
   recipeUnlocks:
   - MiningDrill
   - MineralScannerEmpty
-  - BorgModuleMining
-  - BorgModuleGrapplingGun
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
 
@@ -165,6 +163,7 @@
   cost: 10000
   recipeUnlocks:
     - WelderExperimental
+    - BorgModuleAdvancedTool
     - RnDPowerDrill
     - RnDJawsOfLife
 
