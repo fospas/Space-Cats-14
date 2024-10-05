@@ -70,6 +70,42 @@
     canShuttle: false
     title: comms-console-announcement-title-station-ai
     color: "#2ed2fd"
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - Binary
+    - TauCetiBasic
+    - Freespeak
+    - Slime
+    - Dragon
+    - Moffic
+    - SolCommon
+    - Dwarven
+    - RootSpeak
+    - Spider
+    - Nekomimetic
+    - Canilunzt
+    - Dog
+    - Garpy
+    - Shadokin
+    understands:
+    - Binary
+    - TauCetiBasic
+    - Freespeak
+    - Slime
+    - Dragon
+    - Moffic
+    - SolCommon
+    - Dwarven
+    - RootSpeak
+    - Spider
+    - Nekomimetic
+    - Canilunzt
+    - Dog
+    - Garpy
+    - Shadokin
+
 
 # Ai
 - type: entity
@@ -94,7 +130,7 @@
         # anyway it's just a quality of life thing.
         showEnts: True
 
-# Boards
+# Boardss
 - type: entity
   id: AsimovCircuitBoard
   parent: BaseElectronics
@@ -372,39 +408,11 @@
     tags:
     - HideContextMenu
     - StationAi
-  - type: LanguageSpeaker #backmen: languages. FIXED :)
-    currentLanguage: TauCetiBasic
-  - type: LanguageKnowledge
-    speaks:
-    - Binary
-    - TauCetiBasic
-    - SolCommon
-    - RootSpeak
-    - Dwarven
-    - Garpy
-    - Moffic
-    - Nekomimetic
-    - Dragon
-    - Shadokin
-    - Slime
-    - Canilunzt
-    - Freespeak
-    - Spider
-    understands:
-    - Binary
-    - TauCetiBasic
-    - SolCommon
-    - RootSpeak
-    - Dwarven
-    - Garpy
-    - Moffic
-    - Nekomimetic
-    - Dragon
-    - Shadokin
-    - Slime
-    - Canilunzt
-    - Freespeak
-    - Spider
+  - type: HighlightWordsInChat
+    highlightWords:
+      '#e00':
+      - hl-words-ai-1
+      - hl-words-ai-2
 
 # Hologram projection that the AI's eye tracks.
 - type: entity
@@ -512,9 +520,35 @@
     speaks:
     - Binary
     - TauCetiBasic
+    - Freespeak
+    - Slime
+    - Dragon
+    - Moffic
+    - SolCommon
+    - Dwarven
+    - RootSpeak
+    - Spider
+    - Nekomimetic
+    - Canilunzt
+    - Dog
+    - Garpy
+    - Shadokin
     understands:
     - Binary
     - TauCetiBasic
+    - Freespeak
+    - Slime
+    - Dragon
+    - Moffic
+    - SolCommon
+    - Dwarven
+    - RootSpeak
+    - Spider
+    - Nekomimetic
+    - Canilunzt
+    - Dog
+    - Garpy
+    - Shadokin
 
 - type: entity
   name: drone

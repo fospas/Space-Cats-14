@@ -307,5 +307,7 @@ uplink-cameraBug-name = Camera bug
 uplink-cameraBug-desc = A portable device that allows you to view the station's cameras.
 uplink-combat-bakery-name = Набор боевой выпечки
 uplink-combat-bakery-desc = Набор подпольного печёного оружия. Содержит меч-багет, пару метательных круассанов и микроволновую плату Синдиката для изготовления новых. Когда дело будет сделано, съешьте все улики.
+uplink-syndicate-teleporter-name = Ручний телепортер синдиката
+uplink-syndicate-teleporter-desc = Экспериментальный телепортер. Телепортирует на небольшое расстояние. Будьте осторожны чтобы не оказаться в стене!
 uplink-business-card-name = Syndicate business card.
 uplink-business-card-desc = A business card that you can give to someone to demonstrate your involvement in the syndicate or leave at the crime scene in order to make fun of the detective. You can buy no more than three of them.

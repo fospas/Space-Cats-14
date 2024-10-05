@@ -19,6 +19,9 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: AstroNavCartridge
+    - id: PlushieLolyItsMyLife
+      prob: 0.33
 
 - type: entity
   id: LockerQuarterMasterFilled

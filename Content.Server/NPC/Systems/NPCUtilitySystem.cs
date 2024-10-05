@@ -8,6 +8,8 @@ using Content.Server.Nutrition.Components;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Storage.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Cuffs;
+using Content.Shared.Cuffs.Components;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
 using Content.Shared.Fluids.Components;
@@ -53,6 +55,7 @@ public sealed class NPCUtilitySystem : EntitySystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly MobThresholdSystem _thresholdSystem = default!;
+    [Dependency] private readonly SharedCuffableSystem _cuffableSystem = default!;
 
     private EntityQuery<PuddleComponent> _puddleQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -352,12 +355,16 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                 return 0f;
             }
-            case TargetOnFireCon:
+            case TargetIsCuffableCon:
+            {
+                if (TryComp<CuffableComponent>(targetUid, out var cuffable))
                 {
-                    if (TryComp(targetUid, out FlammableComponent? fire) && fire.OnFire)
-                        return 1f;
-                    return 0f;
+                    if(_cuffableSystem.IsCuffed((targetUid, cuffable), true))
+                        return 0f;
+                    return 1f;
                 }
+                return 0f;
+            }
             default:
                 throw new NotImplementedException();
         }
