@@ -1,4 +1,3 @@
-using Content.Client.Actions;
 using Content.Client.Mapping;
 using Content.Client.Markers;
 using JetBrains.Annotations;
@@ -25,7 +24,7 @@ internal sealed class MappingClientSideSetupCommand : LocalizedCommands
             _entitySystemManager.GetEntitySystem<MarkerSystem>().MarkersVisible = true;
             _lightManager.Enabled = false;
             shell.ExecuteCommand("showsubfloorforever");
-            _entitySystemManager.GetEntitySystem<ActionsSystem>().LoadActionAssignments("/mapping_actions.yml", false);
+            _stateManager.RequestStateChange<MappingState>();
         }
     }
 }
