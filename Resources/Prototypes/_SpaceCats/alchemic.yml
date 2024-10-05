@@ -285,10 +285,10 @@
         damage:
           groups:
             Brute: -2.5
-            Heat: -2.5
             Poison: -2.5
           types:
             Bloodloss: -5
+            Heat: -2.5
       - !type:MovespeedModifier
         walkSpeedModifier: 0.75
         sprintSpeedModifier: 0.75
@@ -343,11 +343,11 @@
         damage:
           groups:
             Brute: -10000
-            Heat: -10000
             Poison: -10000
           types:
             Bloodloss: -10000
             Asphyxiation: -10000
+            Heat: -10000
       - !type:MovespeedModifier
         walkSpeedModifier: 1
         sprintSpeedModifier: 1
