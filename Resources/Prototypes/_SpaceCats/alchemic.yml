@@ -129,7 +129,7 @@
       - !type:PopupMessage
         visualType: Medium
         messages: ["Выглядит неспокойно", "Слегка трясётся", "Кажется бодрым"]
-        type: Local
+        type: Pvs
         probability: 0.2
       - !type:GenericStatusEffect
         key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
@@ -171,7 +171,7 @@
       - !type:PopupMessage
         visualType: Medium
         messages: ["Выглядит неспокойно", "Слегка трясётся", "Кажется умирающим"]
-        type: Global
+        type: Pvs
         probability: 0.5
       - !type:AdjustReagent
         reagent: DexalinePlus #у тебя сердечко остановилось,никакой дексалин плюс не поможет.
@@ -253,7 +253,7 @@
       - !type:PopupMessage
         visualType: Medium
         messages: ["Выглядит быстрым", "Слегка трясётся", "Кажется бодрым"]
-        type: Global
+        type: Pvs
         probability: 0.2
       - !type:GenericStatusEffect
         key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
