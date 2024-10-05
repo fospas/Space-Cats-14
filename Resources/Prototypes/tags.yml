@@ -16,6 +16,9 @@
   id: Ambrosia
 
 - type: Tag
+  id: AnomalyHost
+
+- type: Tag
   id: AppraisalTool
 
 - type: Tag
@@ -618,6 +621,12 @@
   id: FirelockElectronics
 
 - type: Tag
+  id: FireExtinguisher
+
+- type: Tag
+  id: FireHelmet
+
+- type: Tag
   id: Flare
 
 - type: Tag
@@ -646,6 +655,9 @@
 
 - type: Tag
   id: ForceNoFixRotations # fixrotations command WON'T target this
+
+- type: Tag
+  id: FreezerElectronics
 
 - type: Tag
   id: Fruit

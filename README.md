@@ -5,7 +5,7 @@
 <h1 align="center">Space Station 14</h1>
 
 <div align="center">
-  
+
   [![Discord](https://img.shields.io/discord/1203769510599856138?label=Join%20our%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/vYFHfrdQQC)
   [![Wiki](https://img.shields.io/badge/Wiki-Explore%20Our%20Wiki-blue?style=for-the-badge)](https://wiki.backmen.ru/)
   [![Steam](https://img.shields.io/badge/Steam-Play%20on%20Steam-blue?style=for-the-badge)](https://store.steampowered.com/app/1255460/Space_Station_14/)
@@ -55,11 +55,6 @@
 
 ## GptChat
 
-### chat.openai.com
-TODO
-
-### GigaChat
-
 ```toml
 [gpt]
 enabled = true
@@ -68,14 +63,17 @@ model = "GigaChat"
 token = ""
 giga_token = "ВСТАВИТЬ СЮДА СЕКРЕТНЫЙ КЛЮЧ"
 ```
-[Получить секретный ключ тут](https://developers.sber.ru/portal/products/gigachat-api)
 
-токен запрашивается автоматически по секретному ключу и автоматически обновляется
+[Токен](https://developers.sber.ru/portal/products/gigachat-api)
+ запрашивается автоматически по секретному ключу и автоматически обновляется.
+
+---
 
 ## Лицензия
 Весь код репозитория лицензирован под [AGPLv3](https://github.com/Rxup/space-station-14/blob/master/LICENSE-AGPLv3.TXT).
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/space-syndicate/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+Большинство ресурсов лицензировано под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Лицензия и авторские права на ресурсах указаны в файле метаданных.
+[Example](./Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
 

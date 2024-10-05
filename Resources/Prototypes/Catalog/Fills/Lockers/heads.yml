@@ -17,6 +17,7 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
+    - id: AstroNavCartridge
     - id: PrinterDocFlatpack # Corvax-Printer
 
 - type: entity
@@ -241,6 +242,7 @@
     - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: FlatpackMetempsychoticMachine # backmen
+    - id: MedTekCartridge
 #    - id: genguns # space cats
 
 # Hardsuit table, used for suit storage as well
@@ -358,6 +360,7 @@
     - id: AntiPsychicKnife # backmen
     - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: WantedListCartridge
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion
     - id: PlushieAcolyte16 # пасхалко
       prob: 0.66
