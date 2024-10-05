@@ -129,7 +129,7 @@
       - !type:PopupMessage
         visualType: Medium
         messages: ["Выглядит неспокойно", "Слегка трясётся", "Кажется бодрым"]
-        type: Global
+        type: Local
         probability: 0.2
       - !type:GenericStatusEffect
         key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
