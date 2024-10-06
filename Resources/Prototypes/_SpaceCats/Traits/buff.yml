@@ -1,0 +1,9 @@
+- type: trait
+  id: cosmonaut
+  name: trait-cosmonaut-name
+  description: trait-cosmonaut-desc
+  category: BuffTraits
+  cost: 3
+  components:
+  - type: MovementSpeedModifier
+    weightlessAcceleration: 0.6 # Move around more easily in space.

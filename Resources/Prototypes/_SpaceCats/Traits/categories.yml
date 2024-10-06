@@ -1,0 +1,7 @@
+- type: traitCategory
+  id: BuffTraits
+  name: trait-category-buff
+
+- type: traitCategory
+  id: deBuffTraits
+  name: trait-category-debuff
