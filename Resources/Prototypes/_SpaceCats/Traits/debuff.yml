@@ -27,7 +27,6 @@
     Heat: 0.8
   blacklist:
     components:
-      - BaseMobMoth
       - BSSDrone #backmen: bssdrone
       - StationAI # backmen: AI
       - BorgChassis
