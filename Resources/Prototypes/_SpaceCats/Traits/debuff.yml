@@ -4,6 +4,7 @@
   description: trait-cosmonaut-desc
   category: deBuffTraits
   components:
+  - type: Accentless
     removes:
     - type: LanguageKnowledge #backmen: languages
       speaks:
