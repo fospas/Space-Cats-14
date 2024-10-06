@@ -7,3 +7,6 @@
   components:
   - type: MovementSpeedModifier
     weightlessAcceleration: 0.6 # Move around more easily in space.
+  blacklist:
+    components:
+      - BaseMobMoth
