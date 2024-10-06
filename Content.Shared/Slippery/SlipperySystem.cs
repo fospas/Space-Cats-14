@@ -128,6 +128,11 @@ public sealed class SlipperySystem : EntitySystem
 
         _stun.TryParalyze(other, TimeSpan.FromSeconds(component.ParalyzeTime), true);
 
+        // Cats-starbound start
+        var evSlipped = new SlippedEvent(other);
+        RaiseLocalEvent(other, ref evSlipped);
+        // Cats-starbound end
+
         RaiseLocalEvent(other, new ParkSlipEvent(uid));
 
         // Preventing from playing the slip sound when you are already knocked down.
@@ -169,3 +174,8 @@ public readonly record struct SlipEvent(EntityUid Slipped);
 ///     This is an event raised on an entity after they slip. Duh.
 /// </summary>
 public readonly record struct ParkSlipEvent(EntityUid Tripper);
+
+// Cats-starbound start
+[ByRefEvent]
+public readonly record struct SlippedEvent(EntityUid Target);
+// Cats-starbound end

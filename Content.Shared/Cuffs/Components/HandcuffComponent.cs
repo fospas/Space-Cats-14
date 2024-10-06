@@ -106,6 +106,15 @@ public record struct UncuffAttemptEvent(EntityUid User, EntityUid Target)
     public bool Cancelled = false;
 }
 
+// Cats-starbound start
+[ByRefEvent]
+public record struct CuffedEvent(EntityUid User, EntityUid Target)
+{
+    public readonly EntityUid User = User;
+    public readonly EntityUid Target = Target;
+}
+// Cats-starbound end
+
 /// <summary>
 /// Event raised on an entity being uncuffed to determine any modifiers to the amount of time it takes to uncuff them.
 /// </summary>

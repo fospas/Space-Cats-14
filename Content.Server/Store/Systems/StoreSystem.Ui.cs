@@ -175,7 +175,13 @@ public sealed partial class StoreSystem
                 component.BalanceSpent.TryAdd(currency, FixedPoint2.Zero);
 
                 component.BalanceSpent[currency] += value;
+
+            // Cats-starbound start 
+            var ev = new SubtractCashEvent(buyer, currency, value);
+            RaiseLocalEvent(buyer, ref ev);
+            // Cats-starbound end
             }
+            
         // start-backmen: currency
         }
         else
@@ -192,8 +198,10 @@ public sealed partial class StoreSystem
         if (listing.ProductEntity != null)
         {
             var product = Spawn(listing.ProductEntity, Transform(buyer).Coordinates);
+
             var ev = new ItemPurchasedEvent(buyer);
             RaiseLocalEvent(product, ref ev);
+            
             _hands.PickupOrDrop(buyer, product);
 
             HandleRefundComp(uid, component, product);

@@ -183,6 +183,13 @@ public sealed partial class StoreSystem : EntitySystem
     }
 }
 
+// Cats-starbound start
+[ByRefEvent]
+public readonly record struct ItemPurchasedEvent(EntityUid Purchaser);
+[ByRefEvent]
+public readonly record struct SubtractCashEvent(EntityUid Purchaser, string Currency, FixedPoint2 Cost);
+// Cats-starbound end
+
 public sealed class CurrencyInsertAttemptEvent : CancellableEntityEventArgs
 {
     public readonly EntityUid User;

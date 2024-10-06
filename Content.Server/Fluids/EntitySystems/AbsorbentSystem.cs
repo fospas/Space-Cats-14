@@ -322,6 +322,11 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         _melee.DoLunge(user, used, Angle.Zero, localPos, null, false);
 
+        // Cats-starbound start
+        var ev = new AbsorberPudleEvent(user);
+        RaiseLocalEvent(user, ref ev);
+        // Cats-starbound end
+
         return true;
     }
 }

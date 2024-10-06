@@ -39,3 +39,11 @@ public sealed partial class AbsorbentComponent : Component
             Params = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(-3f),
         };
 }
+
+// Cats-starbound start
+[ByRefEvent]
+public record struct AbsorberPudleEvent(EntityUid User)
+{
+    public readonly EntityUid User = User;
+}
+// Cats-starbound end
