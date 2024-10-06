@@ -1,6 +1,7 @@
 - type: traitCategory
   id: BuffTraits
   name: trait-category-buff
+  maxTraitPoints: 10
 
 - type: traitCategory
   id: deBuffTraits
