@@ -1,0 +1,17 @@
+- type: trait
+  id: carried-explosion
+  name: trait-carried-explosion-name
+  description: trait-cosmonaut-desc
+  category: deBuffTraits
+  components:
+    removes:
+    - type: LanguageKnowledge #backmen: languages
+      speaks:
+      - TauCetiBasic
+      understands:
+      - TauCetiBasic
+  blacklist:
+    components:
+      - BSSDrone #backmen: bssdrone
+      - StationAI # backmen: AI
+      - BorgChassis
