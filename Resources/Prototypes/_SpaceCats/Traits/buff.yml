@@ -13,3 +13,20 @@
       - BSSDrone #backmen: bssdrone
       - StationAI # backmen: AI
       - BorgChassis
+
+- type: trait
+  id: fire-resiste
+  name: trait-fire-resiste-name
+  description: trait-fire-resiste-desc
+  category: BuffTraits
+  cost: 3
+  components:
+  - type: damageModifierSet
+    coefficients:
+    Heat: 1.1
+  blacklist:
+    components:
+      - BaseMobMoth
+      - BSSDrone #backmen: bssdrone
+      - StationAI # backmen: AI
+      - BorgChassis
