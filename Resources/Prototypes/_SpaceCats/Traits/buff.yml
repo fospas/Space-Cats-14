@@ -10,3 +10,6 @@
   blacklist:
     components:
       - BaseMobMoth
+      - BSSDrone #backmen: bssdrone
+      - StationAI # backmen: AI
+      - BorgChassis
