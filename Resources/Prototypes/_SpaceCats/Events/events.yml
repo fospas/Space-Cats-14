@@ -8,8 +8,8 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     endAnnouncement: station-event-bluespace-vault-end-announcement
-    earliestStart: 180
-    minimumPlayers: 30
+    earliestStart: 30
+    minimumPlayers: 5
     weight: 2
     startDelay: 10
     duration: 1020
