@@ -5,7 +5,7 @@ using Robust.Shared.Audio;
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Server._Cats.BoomBox;
+namespace Content.Server.BoomBox;
 
 
 [RegisterComponent, Access(typeof(BoomBoxSystem))]

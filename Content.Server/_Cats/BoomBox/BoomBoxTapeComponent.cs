@@ -4,7 +4,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 using Robust.Shared.Audio;
 using Content.Shared.Containers.ItemSlots;
 
-namespace Content.Server._Cats.BoomBox;
+namespace Content.Server.BoomBox;
 
 
 [RegisterComponent]

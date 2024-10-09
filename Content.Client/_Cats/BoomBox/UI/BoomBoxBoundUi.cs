@@ -2,7 +2,7 @@ using Content.Shared._Cats.BoomBox;
 using JetBrains.Annotations;
 using Robust.Client.GameObjects;
 
-namespace Content.Client._Cats.BoomBox.UI;
+namespace Content.Client.BoomBox.UI;
 
 [UsedImplicitly]
 public sealed class BoomBoxBoundUi : BoundUserInterface

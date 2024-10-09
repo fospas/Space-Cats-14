@@ -24,7 +24,7 @@ using Content.Server.Radio.Components;
 using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceLinking.Systems;
 
-namespace Content.Server._Cats.BoomBox;
+namespace Content.Server.BoomBox;
 
 public sealed class BoomBoxSystem : EntitySystem
 {

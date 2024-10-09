@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Cats.BoomBox;
+namespace Content.Shared.BoomBox;
 
 [Serializable, NetSerializable]
 public enum BoomBoxUiKey : byte
