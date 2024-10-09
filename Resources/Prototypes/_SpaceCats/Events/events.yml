@@ -1,7 +1,7 @@
 - type: entity
   id: BluespaceVaultError
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: station-event-bluespace-vault-start-announcement
