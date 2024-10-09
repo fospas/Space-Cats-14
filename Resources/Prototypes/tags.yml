@@ -73,6 +73,9 @@
   id: Book
 
 - type: Tag
+  id: BoomBoxTape
+
+- type: Tag
   id: BorgArm
 
 - type: Tag
