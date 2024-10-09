@@ -29,6 +29,7 @@ public sealed class BluespaceErrorRuleComponent : Component
     /// </summary>
     [DataField("gridUid")]
     public EntityUid? GridUid = null;
+    
     /// <summary>
     /// How much the grid is appraised at upon entering into existance, set after starting the event
     /// </summary>
