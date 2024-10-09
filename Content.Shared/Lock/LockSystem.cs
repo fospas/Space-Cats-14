@@ -43,6 +43,7 @@ public sealed class LockSystem : EntitySystem
         SubscribeLocalEvent<LockComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<LockComponent, GetVerbsEvent<AlternativeVerb>>(AddToggleLockVerb);
         SubscribeLocalEvent<LockComponent, GotEmaggedEvent>(OnEmagged);
+        SubscribeLocalEvent<LockComponent, GotUnEmaggedEvent>(OnUnEmagged); // cats deEmag
         SubscribeLocalEvent<LockComponent, LockDoAfter>(OnDoAfterLock);
         SubscribeLocalEvent<LockComponent, UnlockDoAfter>(OnDoAfterUnlock);
         SubscribeLocalEvent<LockComponent, StorageInteractAttemptEvent>(OnStorageInteractAttempt);
@@ -291,8 +292,21 @@ public sealed class LockSystem : EntitySystem
         var ev = new LockToggledEvent(false);
         RaiseLocalEvent(uid, ref ev, true);
 
-        RemComp<LockComponent>(uid); //Literally destroys the lock as a tell it was emagged
+        //RemComp<LockComponent>(uid); //Literally destroys the lock as a tell it was emagged // Frontier - Has to remove this to allow fixing locks
+        component.Locked = false; // Disable lock
         args.Handled = true;
+    }
+
+    private void OnUnEmagged(EntityUid uid, LockComponent component, ref GotUnEmaggedEvent args) // Frontier - DEMAG
+    {
+        if (HasComp<EmaggedComponent>(uid))
+        {
+            _audio.PlayPredicted(component.UnlockSound, uid, null, AudioParams.Default.WithVolume(-5));
+            _appearanceSystem.SetData(uid, StorageVisuals.Locked, true);
+            //EnsureComp<LockComponent>(uid); //Literally addes the lock as a tell it was emagged
+            component.Locked = true;
+            args.Handled = true;
+        }
     }
 
     private void OnDoAfterLock(EntityUid uid, LockComponent component, LockDoAfter args)

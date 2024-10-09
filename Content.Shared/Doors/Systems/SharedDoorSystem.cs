@@ -5,7 +5,7 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Damage;
 using Content.Shared.Database;
 using Content.Shared.Doors.Components;
-using Content.Shared.Emag.Systems;
+using Content.Shared.Emag.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
@@ -24,6 +24,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
+using Content.Shared.Emag.Systems; // cats deEmag
 
 namespace Content.Shared.Doors.Systems;
 
@@ -80,6 +81,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
 
         SubscribeLocalEvent<DoorComponent, OnAttemptEmagEvent>(OnAttemptEmag);
         SubscribeLocalEvent<DoorComponent, GotEmaggedEvent>(OnEmagged);
+        SubscribeLocalEvent<DoorComponent, GotUnEmaggedEvent>(OnUnEmagged); // cats deEmag
     }
 
     protected virtual void OnComponentInit(Entity<DoorComponent> ent, ref ComponentInit args)
@@ -352,6 +354,23 @@ public abstract partial class SharedDoorSystem : EntitySystem
         }
 
         return true;
+    }
+
+    private void OnUnEmagged(EntityUid uid, DoorComponent door, ref GotUnEmaggedEvent args) // Frontier - Added DEMUG
+    {
+        if (TryComp<AirlockComponent>(uid, out var airlockComponent))
+        {
+            if (HasComp<EmaggedComponent>(uid))
+            {
+                if (TryComp<DoorBoltComponent>(uid, out var doorBoltComponent))
+                {
+                    _bolts.SetBoltsDown(uid, doorBoltComponent, !doorBoltComponent.BoltsDown);
+                    SetState(uid, DoorState.Closing, door);
+                }
+                PlaySound(uid, door.SparkSound, AudioParams.Default.WithVolume(8), args.UserUid, false);
+                args.Handled = true;
+            }
+        }
     }
 
     /// <summary>
