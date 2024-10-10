@@ -182,16 +182,14 @@ namespace Content.Shared.Cuffs
             _actionBlocker.UpdateCanMove(uid);
 
             if (component.CanStillInteract)
-                _alerts.ClearAlert(uid, component.CuffedAlert);
-            else
-                _alerts.ShowAlert(uid, component.CuffedAlert);
-
             {
+                _alerts.ClearAlert(uid, component.CuffedAlert);
                 _alerts.ClearAlert(uid, AlertType.Handcuffed);
                 RaiseLocalEvent(uid, new MoodRemoveEffectEvent("Handcuffed"));
             }
             else
             {
+                _alerts.ShowAlert(uid, component.CuffedAlert);
                 _alerts.ShowAlert(uid, AlertType.Handcuffed);
                 RaiseLocalEvent(uid, new MoodEffectEvent("Handcuffed"));
             }
