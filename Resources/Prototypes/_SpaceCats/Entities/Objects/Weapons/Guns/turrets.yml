@@ -266,7 +266,6 @@
 - type: entity # deployed turret
   parent:
   - WeaponTurretAsmgtNtDeployed
-  - UnregisteredFirearmBase
   id: WeaponTurretAsmgtHostileUniversallyDeployed
   suffix: Universally Hostile
   components:
@@ -285,7 +284,6 @@
 - type: entity # folded turret
   parent:
   - WeaponTurretAsmgtNtPacked
-  - UnregisteredFirearmBase
   id: WeaponTurretAsmgtHostileUniversallyPacked
   suffix: Universally Hostile, Packed
   description: |-
