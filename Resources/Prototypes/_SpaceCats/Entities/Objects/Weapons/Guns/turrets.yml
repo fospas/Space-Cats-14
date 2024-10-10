@@ -38,7 +38,6 @@
    A disassembled and packed Contraband Denying Energy Turret (CDET).
   suffix: NT, Packed
   components:
-  - type: WeaponCaseInsertable
   - type: MultiHandedItem
   - type: SpawnAfterInteract
     prototype: WeaponTurretContrabandDenyingDeployed
@@ -109,7 +108,6 @@
    A disassembled and packed Self-Recharging Laser Auto Turret (SLAT).
   suffix: NT, Packed
   components:
-  - type: WeaponCaseInsertable
   - type: MultiHandedItem
   - type: SpawnAfterInteract
     prototype: WeaponTurretLaserNanoTrasenDeployed
@@ -229,7 +227,6 @@
    A disassembled and packed Autonomous Sentry Machine Gun Turret (ASMGT).
   suffix: NT, Packed
   components:
-  - type: WeaponCaseInsertable
   - type: MultiHandedItem
   - type: SpawnAfterInteract
     prototype: WeaponTurretAsmgtNtDeployed
@@ -289,7 +286,6 @@
   description: |-
    A disassembled and packed Autonomous Sentry Machine Gun Turret (ASMGT). WARNING! Unpacked turret will be hostile towards anyone who wasn't in close proximity (within 3 m) after unpacking!
   components:
-  - type: WeaponCaseInsertable
   - type: MultiHandedItem
   - type: SpawnAfterInteract
     prototype: WeaponTurretAsmgtHostileUniversallyDeployed
