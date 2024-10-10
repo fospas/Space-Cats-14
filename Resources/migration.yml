@@ -623,10 +623,17 @@ RightLegBorgMining: RightLegBorg
 HeadBorgMining: LightHeadBorg
 TorsoBorgMining: TorsoBorg
 
+LeftArmBorgService: LeftArmBorg
+RightArmBorgService: RightArmBorg
 LeftLegBorgService: LeftLegBorg
 RightLegBorgService: RightLegBorg
 HeadBorgService: LightHeadBorg
 TorsoBorgService: TorsoBorg
+
+LeftLegBorgJanitor: LeftLegBorg
+RightLegBorgJanitor: RightLegBorg
+HeadBorgJanitor: LightHeadBorg
+TorsoBorgJanitor: TorsoBorg
 
 # 2024-10-04
 BaseAdvancedPen: Pen
