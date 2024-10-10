@@ -602,3 +602,7 @@ BaseAdvancedPen: Pen
 # 2024-10-07 Space Cats
 AirlockHydroponicsLocked: AirlockHydroGlassLocked
 AirlockHydroponics: AirlockHydroponicsGlass
+
+# 2024-10-10 Space Cats
+WeaponTurretSyndicateDisposable: Null
+WeaponTurretXeno: Null

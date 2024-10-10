@@ -17,8 +17,6 @@
       cost: 3
       prob: 0.02
     - proto: MobXenoSpitter
-    - proto: WeaponTurretXeno
-      prob: 0.1
   configs:
     DefenseStructure: XenoWardingTower
     Megafauna: MobXenoQueen

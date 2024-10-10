@@ -24,7 +24,7 @@
     fireCost: 10
   - type: NpcFactionMember
     factions:
-    - ContrabandDetection
+    - NanoTrasen
   - type: Construction
     deconstructionTarget: null
     graph: WeaponTurretContrabandDenyingPackingGraph
@@ -171,7 +171,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - HostileUniversally
+    - SimpleHostile
 
 ## Magazine fed, deployable NanoTrasen turret
 - type: entity # deployed turret
@@ -272,7 +272,7 @@
       - HumanoidAppearance
   - type: NpcFactionMember
     factions:
-    - HostileUniversally
+    - SimpleHostile
   - type: Construction
     deconstructionTarget: null
     graph: WeaponTurretAsmgtHostileUniversallyPackingGraph

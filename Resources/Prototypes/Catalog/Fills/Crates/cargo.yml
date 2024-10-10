@@ -155,9 +155,6 @@
     - id: WeaponWaterBlaster
       prob: 0.01
       orGroup: Weapons
-    - id: WeaponTurretXeno
-      prob: 0.01
-      orGroup: Weapons
     - id: WeaponRifleFoam
       prob: 0.03
       orGroup: Weapons
