@@ -923,6 +923,9 @@
   id: MagazineShotgun
 
 - type: Tag
+  id: MagazineAsmgt
+
+- type: Tag
   id: MagazineMagnumSubMachineGun
 
 - type: Tag
