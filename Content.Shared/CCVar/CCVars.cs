@@ -2353,43 +2353,6 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
 
-        /// <summary>
-        ///     Passive glimmer drain per second.
-        ///     Note that this is randomized and this is an average value.
-        /// </summary>
-        public static readonly CVarDef<float> GlimmerLostPerSecond =
-            CVarDef.Create("glimmer.passive_drain_per_second", 0.1f, CVar.SERVERONLY);
-
-        /// <summary>
-        ///     Whether random rolls for psionics are allowed.
-        ///     Guaranteed psionics will still go through.
-        /// </summary>
-        public static readonly CVarDef<bool> PsionicRollsEnabled =
-            CVarDef.Create("psionics.rolls_enabled", true, CVar.SERVERONLY);
-
-        /// <summary>
-        ///     Whether height & width sliders adjust a character's Fixture Component
-        /// </summary>
-        public static readonly CVarDef<bool> HeightAdjustModifiesHitbox =
-            CVarDef.Create("heightadjust.modifies_hitbox", true, CVar.SERVERONLY);
-
-        /// <summary>
-        ///     Whether height & width sliders adjust a player's max view distance
-        /// </summary>
-        public static readonly CVarDef<bool> HeightAdjustModifiesZoom =
-            CVarDef.Create("heightadjust.modifies_zoom", false, CVar.SERVERONLY);
-
-        /// <summary>
-        ///     Enables station goals
-        /// </summary>
-        public static readonly CVarDef<bool> StationGoalsEnabled =
-            CVarDef.Create("game.station_goals", true, CVar.SERVERONLY);
-
-        /// <summary>
-        ///     Chance for a station goal to be sent
-        /// </summary>
-        public static readonly CVarDef<float> StationGoalsChance =
-            CVarDef.Create("game.station_goals_chance", 0.1f, CVar.SERVERONLY);
             
         #region Mood System
 
