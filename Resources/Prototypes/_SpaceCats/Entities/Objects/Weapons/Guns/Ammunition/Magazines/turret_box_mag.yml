@@ -24,7 +24,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Turret/box_mag.rsi
+    sprite: _SpaceCats/Objects/Weapons/Guns/Ammunition/Magazine/Turret/box_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
