@@ -17,6 +17,10 @@ uplink-fire-axe-flaming-name = Пылающий топор
 uplink-fire-axe-flaming-desc = Классическое оружие, оснащённое передовой атмос-технологией, позволяющей ему поджигать цели. Теперь с прочной прорезиненной рукояткой!
 uplink-gloves-north-star-name = Перчатки Полярной звезды
 uplink-gloves-north-star-desc = Пара перчаток, которые значительно сокращают время между ударами, позволяя избивать людей до смерти шквалом ударов.
+uplink-mech-teleporter-heavy-name = Телепорт тяжелого меха
+uplink-mech-teleporter-heavy-desc = Содержит тяжелобронированный мех Cybersan с интегрированными цепным мечом, Ultra AC-2, LBX AC 10 "Картечь", ракетной установкой BRM-6 и пушкой P-X Tesla.
+uplink-mech-teleporter-assault-name = Телепорт штурмового меха
+uplink-mech-teleporter-assault-desc = Содержит легкобронированный мех Cybersan с интегрированными цепным мечом, LBX AC 10 "Картечь", легкой ракетной установкой SRM-8 и пушкой P-X Tesla.
 # Explosives
 uplink-explosive-grenade-name = Разрывная граната
 uplink-explosive-grenade-desc = Простая граната с 3,5-секундным запалом, ориентированная на поражение личного состава. Наносит минимальные повреждения стенам и полу.
