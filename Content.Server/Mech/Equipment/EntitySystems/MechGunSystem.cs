@@ -43,7 +43,7 @@ public sealed class MechGunSystem : EntitySystem
     {
         if (!TryComp<MechEquipmentComponent>(uid, out var mechEquipment)
             || mechEquipment.EquipmentOwner is null
-            || !TryComp<MechComponent>(mechEquipment.EquipmentOwner.Value, out var mech))а
+            || !TryComp<MechComponent>(mechEquipment.EquipmentOwner.Value, out var mech))
             return;
 
         var chargeDelta = component.MaxCharge - component.CurrentCharge;
