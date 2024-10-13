@@ -637,3 +637,11 @@ BaseAdvancedPen: Pen
 # 2024-10-07 Space Cats
 AirlockHydroponicsLocked: AirlockHydroGlassLocked
 AirlockHydroponics: AirlockHydroponicsGlass
+
+# 2024-10-13 Space Cats
+SpawnPointCargoBorg: null
+SpawnPointEngenerBorg: null
+SpawnPointJanitorBorg: null
+SpawnPointMedIcalBorg: null
+SpawnPointServiceBorg: null
+SpawnPointSecurityBorg: null
