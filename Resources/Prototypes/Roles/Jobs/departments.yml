@@ -142,12 +142,7 @@
   description: department-Silicon-description
   color: "#D381C9"
   roles:
-  - CargoBorg
-  - EngenerBorg
-  - JanitorBorg
-  - MedIcalBorg
-  - ServiceBorg
-  - SecurityBorg
+  - Borg
   - StationAi
 
 - type: department
