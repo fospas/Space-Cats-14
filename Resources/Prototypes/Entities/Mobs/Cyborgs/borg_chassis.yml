@@ -42,7 +42,7 @@
     selectedBorgType: generic
 
 - type: entity
-  id: BorgChassisGeneric
+  id: BorgChassisSecurity
   parent: BorgChassisSelectable
   name: security cyborg
   components:
