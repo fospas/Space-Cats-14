@@ -60,7 +60,7 @@
   extraModuleCount: 5
   moduleWhitelist:
     tags:
-    - BaseModuleSec
+    - SecModul
   defaultModules:
   - ModuleSec
   radioChannels:
@@ -77,70 +77,3 @@
   spriteToggleLightState: robot_l
   petSuccessString: petting-success-generic-cyborg
   petFailureString: petting-failure-generic-cyborg
-  components:
-  - type: SiliconLawProvider
-    laws: SecurityCrewsimov
-  - type: Sprite
-    sprite: _SpaceCats/SecBorg/Borg.rsi
-    layers:
-    - state: sec
-    - state: sec_e_r
-      map: ["enum.BorgVisualLayers.Light"]
-      shader: unshaded
-      visible: false
-    - state: sec_l
-      shader: unshaded
-      map: ["light"]
-      visible: false
-  - type: BorgChassis
-    maxModules: 5
-    moduleWhitelist:
-      tags:
-      - BorgModuleCargo
-      - BorgModuleJanitor
-      - BorgModuleEngineering
-      - BorgModuleSyndicate
-      - BorgModuleGeneric
-      - BorgModuleSyndicateAssault
-      - BorgModuleService
-      - BorgModuleMedical
-      - SecModul
-    hasMindState: sec_e
-    noMindState: sec_e_r
-  - type: PointLight
-    autoRot: true
-    netsync: false
-    color: "#ffeead"
-    radius: 4
-    energy: 2
-  - type: BorgTransponder
-    sprite:
-      sprite: _SpaceCats/SecBorg/Borg.rsi
-      state: sec
-    name: киборг-охранник
-  - type: Construction
-    node: engineer
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - Security
-    - Binary
-    - Common
-    - Science
-  - type: ActiveRadio
-    channels:
-    - Security
-    - Binary
-    - Common
-    - Science
-  - type: AccessReader
-    access: [["Security"], ["Command"], ["Research"]]
-  - type: Inventory
-    templateId: borgShort
-  - type: InteractionPopup
-    interactSuccessString: petting-success-engineer-cyborg
-    interactFailureString: petting-failure-engineer-cyborg
-    interactSuccessSound:
-      path: /Audio/Ambience/Objects/periodic_beep.ogg
-  - type: ShowCriminalRecordIcons
-  - type: StationAiVision
-  - type: FlashImmunity

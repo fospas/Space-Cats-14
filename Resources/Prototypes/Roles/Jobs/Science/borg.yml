@@ -6,7 +6,7 @@
   playTimeTracker: JobStationAi
   requirements:
   - !type:RoleTimeRequirement
-    role: Borg
+    role: JobBorg
     time: 1200
   canBeAntag: false
   icon: JobIconStationAi
