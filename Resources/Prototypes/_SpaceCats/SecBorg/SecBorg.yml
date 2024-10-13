@@ -54,10 +54,29 @@
   - type: ShowMindShieldIcons
   - type: StationAiVision
 
-- type: entity
-  id: BorgChassisSecurity
-  parent: BaseBorgChassisNTs
-  name: киборг-охранник
+- type: borgType
+  id: security
+  dummyPrototype: BorgChassisGeneric
+  extraModuleCount: 5
+  moduleWhitelist:
+    tags:
+    - BaseModuleSec
+  defaultModules:
+  - ModuleSec
+  radioChannels:
+  - Security
+  - Binary
+  - Common
+  - Science
+  - Medical
+  - Command
+  inventoryTemplateId: borgShort
+  spriteBodyState: robot
+  spriteHasMindState: robot_e
+  spriteNoMindState: robot_e_r
+  spriteToggleLightState: robot_l
+  petSuccessString: petting-success-generic-cyborg
+  petFailureString: petting-failure-generic-cyborg
   components:
   - type: SiliconLawProvider
     laws: SecurityCrewsimov

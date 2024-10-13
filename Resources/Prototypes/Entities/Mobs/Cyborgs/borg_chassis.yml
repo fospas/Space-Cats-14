@@ -42,6 +42,14 @@
     selectedBorgType: generic
 
 - type: entity
+  id: BorgChassisGeneric
+  parent: BorgChassisSelectable
+  name: security cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: security
+
+- type: entity
   id: BorgChassisMining
   parent: BorgChassisSelectable
   name: salvage cyborg
