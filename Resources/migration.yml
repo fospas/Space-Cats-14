@@ -639,9 +639,9 @@ AirlockHydroponicsLocked: AirlockHydroGlassLocked
 AirlockHydroponics: AirlockHydroponicsGlass
 
 # 2024-10-13 Space Cats
-SpawnPointCargoBorg: null
-SpawnPointEngenerBorg: null
-SpawnPointJanitorBorg: null
-SpawnPointMedIcalBorg: null
-SpawnPointServiceBorg: null
-SpawnPointSecurityBorg: null
+SpawnPointCargoBorg: SpawnPointBorg
+SpawnPointEngenerBorg: SpawnPointBorg
+SpawnPointJanitorBorg: SpawnPointBorg
+SpawnPointMedIcalBorg: SpawnPointBorg
+SpawnPointServiceBorg: SpawnPointBorg
+SpawnPointSecurityBorg: SpawnPointBorg
