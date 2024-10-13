@@ -596,10 +596,6 @@ BookPaperworkP4: null
 # 2024-09-19
 BlueprintFlare: null
 
-# 2024-08-28 backmen
-SpawnPointStationAI: PlayerStationAi
-WeaponTurretLaserNanoTrasenAI: WeaponTurretSyndicateBroken
-
 # 2024-10-01
 # Removal of separate borg chassis parts, replace them with generic borg parts.
 LeftArmBorgEngineer: LeftArmBorg
