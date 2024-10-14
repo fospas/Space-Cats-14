@@ -30,6 +30,19 @@
     solutions:
       steel:
         canReact: false
+  - type: UserInterface # Cats Start
+    interfaces:
+    - key: enum.ShortConstructionUiKey.Key
+      type: ShortConstructionMenuBUI
+  - type: ActivatableUI
+    key: enum.ShortConstructionUiKey.Key
+  - type: ShortConstruction
+    prototypes:
+    - Girder
+    - MetalRod
+    - TileSteel
+    - TileWhite
+    - TileDark # Cats end
 
 - type: entity
   parent: SheetMetalBase
@@ -69,19 +82,6 @@
           Quantity: 9
         - ReagentId: Carbon
           Quantity: 1
-  - type: UserInterface # Cats Start
-    interfaces:
-    - key: enum.ShortConstructionUiKey.Key
-      type: ShortConstructionMenuBUI
-  - type: ActivatableUI
-    key: enum.ShortConstructionUiKey.Key
-  - type: ShortConstruction
-    prototypes:
-    - Girder
-    - MetalRod
-    - TileSteel
-    - TileWhite
-    - TileDark # Cats end
 
 - type: entity
   parent: SheetSteel
