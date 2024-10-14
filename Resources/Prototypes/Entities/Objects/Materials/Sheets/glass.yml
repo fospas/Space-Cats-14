@@ -85,6 +85,15 @@
         reagents:
         - ReagentId: Silicon
           Quantity: 10
+  - type: UserInterface # Cats Start
+    interfaces:
+    - key: enum.ShortConstructionUiKey.Key
+      type: ShortConstructionMenuBUI
+  - type: ActivatableUI
+    key: enum.ShortConstructionUiKey.Key
+  - type: ShortConstruction
+    prototypes:
+    - Window # Cats end
 
 - type: entity
   parent: SheetGlass
@@ -171,6 +180,15 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: UserInterface # Cats Start
+    interfaces:
+    - key: enum.ShortConstructionUiKey.Key
+      type: ShortConstructionMenuBUI
+  - type: ActivatableUI
+    key: enum.ShortConstructionUiKey.Key
+  - type: ShortConstruction
+    prototypes:
+    - ReinforcedWindow # Cats end
 
 - type: entity
   parent: SheetRGlass
