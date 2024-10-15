@@ -36,7 +36,7 @@ public sealed class HypospraySystem : SharedHypospraySystem
 
         SubscribeLocalEvent<HyposprayComponent, AfterInteractEvent>(OnAfterInteract);
         SubscribeLocalEvent<HyposprayComponent, MeleeHitEvent>(OnAttack,
-            after: new[] {typeof(MeleeBlockSystem)}); // CATS EDIT
+            after: new[] { typeof(MeleeBlockSystem) }); // CATS EDIT
         SubscribeLocalEvent<HyposprayComponent, UseInHandEvent>(OnUseInHand);
     }
 
@@ -115,7 +115,7 @@ public sealed class HypospraySystem : SharedHypospraySystem
         }
 
         // CATS START
-        if (HasInjectionProtection(target))
+        if (HasInjectionProtection(target) && !IsSyndiHypo(entity))
         {
             _popup.PopupEntity(Loc.GetString("hypospray-component-inject-target-protected"), target, user);
             return false;
@@ -214,7 +214,7 @@ public sealed class HypospraySystem : SharedHypospraySystem
             if (relevantSlots.Count != requiredSlotFlags.Length)
                 return false;
 
-                foreach (var slotDef in relevantSlots)
+            foreach (var slotDef in relevantSlots)
             {
                 if (_invSystem.TryGetSlotEntity(entity, slotDef.Name, out var slotEntity, inv))
                 {
@@ -227,16 +227,26 @@ public sealed class HypospraySystem : SharedHypospraySystem
             return true;
         }
 
-
         return false;
+    }
+
+    private bool IsSyndiHypo(Entity<HyposprayComponent> entity)
+    {
+        return EntityManager.TryGetComponent<MetaDataComponent>(entity.Owner, out var meta) &&
+               meta.EntityPrototype?.ID == "SyndiHypo";
     }
     // CATS END
 
     private bool EligibleEntity(EntityUid entity, IEntityManager entMan, HyposprayComponent component)
     {
-        // TODO: Does checking for BodyComponent make sense as a "can be hypospray'd" tag?
-        // In SS13 the hypospray ONLY works on mobs, NOT beakers or anything else.
-        // But this is 14, we dont do what SS13 does just because SS13 does it.
+        // CATS EDIT
+        if (EntityManager.HasComponent<MetaDataComponent>(entity) &&
+            EntityManager.GetComponent<MetaDataComponent>(entity).EntityPrototype?.ID == "SyndiHypo")
+        {
+            return true;
+        }
+        // CATS EDIT
+
         return component.OnlyAffectsMobs
             ? entMan.HasComponent<SolutionContainerManagerComponent>(entity) &&
               entMan.HasComponent<MobStateComponent>(entity)
