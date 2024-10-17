@@ -1,1 +1,0 @@
-research-technology-chemical-Implant = Chemical Implant
