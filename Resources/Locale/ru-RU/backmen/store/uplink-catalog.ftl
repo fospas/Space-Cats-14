@@ -19,6 +19,9 @@ uplink-psi-grenade-bundle-desc = Набор содержит вещь мешок
 uplink-anti-psi-grenade-bundle-name = набор анти-психических гранат
 uplink-anti-psi-grenade-bundle-desc = Полный вещьмешок ани-психических гранат.
 
+uplink-stimulants-implant-name = { ent-StimulantsImplant }
+uplink-stimulants-implant-desc = Продвинутый имплант Cybersun, содержащий три капсулы первокласного стимулирующего вещества, моментально вводимые в кровь по желанию носителя.
+
 store-category-bundles = Наборы
 
 # wizard
