@@ -49,6 +49,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
     [Dependency] private readonly PdaSystem _pdaSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly SharedJobSystem _jobSystem = default!; // CATS EDIT
 
     private bool _randomizeCharacters;
 
@@ -230,6 +231,15 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
+
+        // CATS EDIT START
+        var color = jobPrototype.Color is not null ? jobPrototype.Color
+					: _jobSystem.TryGetDepartment(jobPrototype.ID, out var department) ? department.Color 
+					: null;
+
+		if (color is not null)
+			_cardSystem.TryChangeColor(cardId, color);
+        // CATS EDIT END
 
         if (_prototypeManager.TryIndex(jobPrototype.Icon, out var jobIcon))
             _cardSystem.TryChangeJobIcon(cardId, jobIcon, card);
