@@ -28,6 +28,7 @@
     - alertType: Magboots
     - alertType: Pacified
     - alertType: Offer #Ataraxia
+    - alertType: RecentlyBlocked # CATS EDIT
 
 - type: entity
   id: AlertSpriteView
@@ -447,6 +448,13 @@
     state: heart-on
   name: alerts-adrenaline-name
   description: alerts-adrenaline-desc
+
+# CATS EDIT
+- type: alert
+  id: RecentlyBlocked
+  icons: [ /Textures/Objects/Weapons/Melee/shields.rsi/buckler-icon.png ]
+  name: alerts-blocked-name
+  description: alerts-blocked-desc
 
 - type: alert
   id: Debug1

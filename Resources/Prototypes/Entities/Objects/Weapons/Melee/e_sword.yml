@@ -71,6 +71,10 @@
   - type: Reflect
   - type: IgnitionSource
     temperature: 700
+  - type: MeleeBlock # CATS EDIT
+    delay: 6.1
+    blockSound:
+      path: /Audio/Weapons/eblade1.ogg
 # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:
@@ -109,6 +113,13 @@
       map: [ "blade" ]
   - type: Item
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
+  - type: Construction # CATS EDIT
+    deconstructionTarget: null
+    graph: EnergyDoubleSwordGraph
+    node: esword
+  - type: Tag # CATS EDIT
+    tags:
+    - EnergySword
 
 - type: entity
   name: energy dagger
@@ -243,6 +254,8 @@
   - type: Tag
     tags:
     - Write
+  - type: MeleeBlock # CATS EDIT
+    delay: 12.1
 # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:
@@ -378,9 +391,17 @@
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
-  - type: Reflect
-    reflectProb: .75
+  - type: Reflect # CATS EDIT
+    reflectProb: .6
     spread: 75
+    reflects:
+      - Energy
+  - type: Construction # CATS EDIT
+    deconstructionTarget: null
+    graph: EnergyDoubleSwordGraph
+    node: desword
+  - type: MeleeBlock # CATS EDIT
+    delay: 3.1
   # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:

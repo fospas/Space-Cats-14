@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprited by TheGypsyBaron",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "admiral"
+        },
+        {
+            "name": "assistant"
+        },
+        {
+            "name": "gryzan"
+        },
+        {
+            "name": "head_securety"
+        },
+        {
+            "name": "operator"
+        },
+        {
+            "name": "privat_officer"
+        },
+        {
+            "name": "revvizor"
+        }
+    ]
+}

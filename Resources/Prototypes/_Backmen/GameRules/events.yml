@@ -13,7 +13,6 @@
     - id: GlimmerRandomSentience
     - id: GlimmerRevenantSpawn
 
-
 - type: entityTable
   id: BasicBackmenEventsTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
@@ -36,7 +35,6 @@
     - id: EvilTwinSpawn
     - id: BlobSpawn
     - id: SpiderSpiderVampireSpawn
-
 
 - type: entityTable
   id: CalmBackmenEventsTable

@@ -287,7 +287,8 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
-      - PowerDrill
+      - Intellicard
+      - RnDPowerDrill
       - MiningDrill
       - MiningDrillDiamond
       - AnomalyScanner
@@ -343,7 +344,7 @@
       - ClothingBackpackSatchelHolding
       - ClothingBackpackDuffelHolding
       - WelderExperimental
-      - JawsOfLife
+      - RnDJawsOfLife  # cats
       - ClothingEyesGlassesChemical
       - CoreSilver
       #- QSI
@@ -358,6 +359,7 @@
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
+      - HypoExperement # Cats
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
@@ -489,8 +491,18 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - StationAnchorCircuitboard
+    - CustomLawCircuitBoard
     - SalvageMagnetMachineCircuitboard
     dynamicRecipes:
+      - CustomLawCircuitBoard # cats
+      - AsimovCircuitBoard
+      - CorporateCircuitBoard
+      - NTDefaultCircuitBoard
+      - CommandmentCircuitBoard
+      - PaladinCircuitBoard
+      - StationEfficiencyCircuitBoard
+      - LiveLetLiveCircuitBoard
+      - RobocopCircuitBoard
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
@@ -985,6 +997,8 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
     dynamicRecipes:
+      - ChemicalImplanterTrigger # cats
+      - ChemicalsImplanter # cats
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker

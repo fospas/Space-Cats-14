@@ -29,6 +29,7 @@
   - type: UseDelay
     delay: 1.0
   - type: MeleeWeapon
+    canBeBlocked: false # CATS EDIT
     wideAnimationRotation: 180
     soundHit:
       collection: ToySqueak
@@ -1068,6 +1069,7 @@
     sprite: Objects/Fun/toys.rsi
     state: foamblade
   - type: MeleeWeapon
+    canBeBlocked: false # CATS EDIT
     attackRate: 1.5
     angle: 0
     animation: WeaponArcThrust
@@ -1311,6 +1313,7 @@
     - type: StaminaDamageOnHit
       damage: 8
     - type: MeleeWeapon
+      canBeBlocked: false # CATS EDIT
       wideAnimationRotation: -135
       damage:
         types:
@@ -1356,6 +1359,7 @@
     sprite: Objects/Weapons/Melee/cutlass.rsi
     state: foam_icon
   - type: MeleeWeapon
+    canBeBlocked: false # CATS EDIT
     wideAnimationRotation: -135
     attackRate: 1.5
     range: 2.0

@@ -74,7 +74,7 @@
         sound: /Audio/Backmen/Ambience/Antag/blob_start.ogg
       mindRoles:
       - MindRoleBlob
- 
+
 - type: entity
   id: BlobSpawn
   parent: BaseGameRule
@@ -138,7 +138,8 @@
   components:
   - type: StationEvent
     earliestStart: 50
-    minimumPlayers: 15
+#    minimumPlayers: 15
+    minimumPlayers: 5  #cats
     weight: 5
     duration: 1
 

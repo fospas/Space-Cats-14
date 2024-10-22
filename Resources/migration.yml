@@ -612,3 +612,7 @@ ShotGunCabinetFilledOpen: ShotGunCabinetFilledOpenBackmen
 # 2024-10-05 - Corvax
 SheetPrinter: SheetPaper
 SheetPrinter1: SheetPaper1
+
+# 2024-10-07 Space Cats
+AirlockHydroponicsLocked: AirlockHydroGlassLocked
+AirlockHydroponics: AirlockHydroponicsGlass
