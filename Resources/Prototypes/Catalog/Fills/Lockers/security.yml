@@ -32,7 +32,6 @@
         amount: 2
       - id: ClothingHeadCageSec # cats
         amount: 3
-      - id: BoxImpantsDead # cats
 
 - type: entity
   id: LockerWardenFilled
@@ -70,7 +69,6 @@
         amount: 2
       - id: ClothingHeadCageSec # cats
         amount: 3
-      - id: BoxImpantsDead # cats
 
 - type: entity
   id: LockerSecurityFilled
