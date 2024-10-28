@@ -29,13 +29,13 @@
           tags:
             - SubdermalImplant
     - type: Sprite
-      sprite: Objects/Specific/Medical/implanter.rsi
-      state: implanter0
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter# Backmen-implanter
+      state: implanter
       layers:
-        - state: implanter0
+        - state: implanter
           map: [ "implantOnly" ]
           visible: true
-        - state: implanter1
+        - state: implantstorage_freedom
           map: [ "implantFull" ]
           visible: false
     - type: Item
@@ -83,12 +83,12 @@
   components:
     - type: Sprite
       sprite: Objects/Specific/Medical/implanter.rsi
-      state: implanter0
+      state: implanter
       layers:
-        - state: implanter1
+        - state: implanter
           map: [ "implantFull" ]
           visible: true
-        - state: implanter0
+        - state: implantstorage_tracking
           map: [ "implantOnly" ]
     - type: Implanter
       currentMode: Inject
@@ -103,16 +103,16 @@
   components:
     - type: Item
       #sprite: Objects/Specific/Medical/syndi_implanter.rsi
-      sprite: Objects/Specific/Medical/implanter.rsi #Corvax MRP anti-meta
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
     - type: Sprite
       #sprite: Objects/Specific/Medical/syndi_implanter.rsi
-      sprite: Objects/Specific/Medical/implanter.rsi #Corvax MRP anti-meta
-      state: implanter1
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
       layers:
-        - state: implanter0
+        - state: implanter
           map: [ "implantFull" ]
           visible: true
-        - state: implanter1
+        - state: implantstorage_uplink
           map: [ "implantOnly" ]
     - type: GenericVisualizer
       visuals:
@@ -122,8 +122,8 @@
             False: {visible: false}
         enum.ImplanterImplantOnlyVisuals.ImplantOnly:
           implantOnly:
-            True: {state: broken}
-            False: {state: implanter1}
+            True: {state: implanter}
+            False: {state: implantstorage_uplink}
     - type: Tag
       tags: []
 
@@ -216,6 +216,16 @@
   components:
     - type: Implanter
       implant: TrackingImplant
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_deathalarm
+          map: [ "implantOnly" ]
     - type: HiddenDescription #Corvax MRP Hidden Description
       entries:
       - label: corvax-hidden-desc-LegalImplants-medical
@@ -244,6 +254,16 @@
   components:
     - type: Implanter
       implant: StorageImplant
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_storage
+          map: [ "implantOnly" ]
     - type: HiddenDescription #Corvax MRP Hidden Description
       entries:
       - label: corvax-hidden-desc-IllegalImplants-medical
@@ -270,6 +290,16 @@
   components:
     - type: Implanter
       implant: FreedomImplant
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_freedom
+          map: [ "implantOnly" ]
     - type: HiddenDescription #Corvax MRP Hidden Description
       entries:
       - label: corvax-hidden-desc-IllegalImplants-medical
@@ -314,6 +344,16 @@
         components:
           - TraitorRole
           - NukeOperative
+  - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_uplink
+          map: [ "implantOnly" ]
 
 - type: entity
   id: EmpImplanter
@@ -340,6 +380,17 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_uplink
+          map: [ "implantOnly" ]
+
 
 - type: entity
   id: ScramImplanter
@@ -366,6 +417,17 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_uplink
+          map: [ "implantOnly" ]
+
 
 - type: entity
   id: DnaScramblerImplanter
@@ -392,6 +454,17 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_uplink
+          map: [ "implantOnly" ]
+
 
 #Nuclear Operative/Special implanters
 
@@ -420,6 +493,17 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_explosive
+          map: [ "implantOnly" ]
+
 
 - type: entity
   id: MacroBombImplanter
@@ -446,6 +530,16 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_explosive
+          map: [ "implantOnly" ]
 
 - type: entity
   id: DeathRattleImplanter
@@ -472,6 +566,16 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_explosive
+          map: [ "implantOnly" ]
 
 - type: entity
   id: DeathAcidifierImplanter
@@ -498,6 +602,16 @@
         components:
           - TraitorRole
           - NukeOperative
+  - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_explosive
+          map: [ "implantOnly" ]
 
 # Security and Command implanters
 
@@ -526,3 +640,14 @@
           components:
             - TraitorRole
             - NukeOperative
+    - type: Sprite
+      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+      state: implanter
+      layers:
+        - state: implanter
+          map: [ "implantFull" ]
+          visible: true
+        - state: implantstorage_excel
+          map: [ "implantOnly" ]
+

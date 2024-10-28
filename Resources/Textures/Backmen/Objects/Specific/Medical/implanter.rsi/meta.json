@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CEV-Eris at https://github.com/discordia-space/CEV-Eris/blob/8009c1d3db5ca5244f14899ffafaae93be0e318d/icons/obj/items.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "implanter"
+    },
+    {
+      "name": "implantstorage_uplink"
+    },
+    {
+      "name": "implantstorage_tracking"
+    },
+    {
+      "name": "implantstorage_deathalarm"
+    },
+    {
+      "name": "implantstorage_freedom"
+    },
+    {
+      "name": "implantstorage_explosive"
+    },
+    {
+      "name": "implantstorage_excel"
+    },
+    {
+      "name": "implantstorage_storage"
+    },
+    {
+      "name": "implantstorage_chem"
+    }
+  ]
+}
