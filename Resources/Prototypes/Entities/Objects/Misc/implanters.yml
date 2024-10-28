@@ -51,8 +51,8 @@
             False: {visible: false}
         enum.ImplanterImplantOnlyVisuals.ImplantOnly:
           implantOnly:
-            True: {state: broken}
-            False: {state: implanter0}
+            True: {state: implanter}
+            False: {state: implanter}
 
 - type: entity
   id: Implanter
@@ -82,7 +82,7 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: Objects/Specific/Medical/implanter.rsi
+      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
       state: implanter
       layers:
         - state: implanter
@@ -123,7 +123,7 @@
         enum.ImplanterImplantOnlyVisuals.ImplantOnly:
           implantOnly:
             True: {state: implanter}
-            False: {state: implantstorage_uplink}
+            False: {state: implanter}
     - type: Tag
       tags: []
 
