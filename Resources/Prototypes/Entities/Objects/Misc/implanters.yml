@@ -345,15 +345,15 @@
           - TraitorRole
           - NukeOperative
   - type: Sprite
-      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
-      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
-      state: implanter
-      layers:
-        - state: implanter
-          map: [ "implantFull" ]
-          visible: true
-        - state: implantstorage_uplink
-          map: [ "implantOnly" ]
+    #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+    sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+    state: implanter
+    layers:
+      - state: implanter
+        map: [ "implantFull" ]
+        visible: true
+      - state: implantstorage_uplink
+        map: [ "implantOnly" ]
 
 - type: entity
   id: EmpImplanter
@@ -603,15 +603,15 @@
           - TraitorRole
           - NukeOperative
   - type: Sprite
-      #sprite: Objects/Specific/Medical/syndi_implanter.rsi
-      sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
-      state: implanter
-      layers:
-        - state: implanter
-          map: [ "implantFull" ]
-          visible: true
-        - state: implantstorage_explosive
-          map: [ "implantOnly" ]
+    #sprite: Objects/Specific/Medical/syndi_implanter.rsi
+    sprite: Backmen/Objects/Specific/Medical/implanter.rsi # Backmen-implanter
+    state: implanter
+    layers:
+      - state: implanter
+        map: [ "implantFull" ]
+        visible: true
+      - state: implantstorage_explosive
+        map: [ "implantOnly" ]
 
 # Security and Command implanters
 
