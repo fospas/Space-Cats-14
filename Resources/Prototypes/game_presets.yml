@@ -155,7 +155,7 @@
   alias:
     - sandbox
   name: sandbox-title
-  showInVote: false # secret
+  showInVote: true # secret
   maxPlayers: 5
   description: sandbox-description
 #  showInVote: true # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
