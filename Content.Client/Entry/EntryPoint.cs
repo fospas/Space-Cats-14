@@ -140,6 +140,7 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("specForceTeam");
             // End Backmen.
             _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
+            _prototypeManager.RegisterIgnore("additionalMap"); // Cats-Edit
 
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
