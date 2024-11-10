@@ -1,14 +1,15 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared.Backmen.Clothing;
-
-[RegisterComponent]
-public sealed partial class ClothingGrantComponent : Component
+namespace Content.Shared.Backmen.Clothing
 {
-    [DataField("component", required: true)]
-    [AlwaysPushInheritance]
-    public ComponentRegistry Components { get; private set; } = new();
+    [RegisterComponent]
+    public sealed partial class ClothingGrantComponentComponent : Component
+    {
+        [DataField("component", required: true)]
+        [AlwaysPushInheritance]
+        public ComponentRegistry Components { get; private set; } = new();
 
-    [ViewVariables(VVAccess.ReadWrite)]
-    public bool IsActive = false;
+        [ViewVariables(VVAccess.ReadWrite)]
+        public bool IsActive = false;
+    }
 }

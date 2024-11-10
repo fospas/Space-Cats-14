@@ -9,21 +9,24 @@ public sealed class ClothingGrantingSystem : EntitySystem
 {
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
     [Dependency] private readonly ISerializationManager _serializationManager = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<ClothingGrantComponent, GotEquippedEvent>(OnCompEquip);
-        SubscribeLocalEvent<ClothingGrantComponent, GotUnequippedEvent>(OnCompUnequip);
+
+        SubscribeLocalEvent<ClothingGrantComponentComponent, GotEquippedEvent>(OnCompEquip);
+        SubscribeLocalEvent<ClothingGrantComponentComponent, GotUnequippedEvent>(OnCompUnequip);
+
+        SubscribeLocalEvent<ClothingGrantTagComponent, GotEquippedEvent>(OnTagEquip);
+        SubscribeLocalEvent<ClothingGrantTagComponent, GotUnequippedEvent>(OnTagUnequip);
     }
 
-    private void OnCompEquip(EntityUid uid, ClothingGrantComponent component, GotEquippedEvent args)
+    private void OnCompEquip(EntityUid uid, ClothingGrantComponentComponent component, GotEquippedEvent args)
     {
-        if (!TryComp<ClothingComponent>(uid, out var clothing))
-            return;
+        if (!TryComp<ClothingComponent>(uid, out var clothing)) return;
 
-        if (!clothing.Slots.HasFlag(args.SlotFlags))
-            return;
+        if (!clothing.Slots.HasFlag(args.SlotFlags)) return;
 
         if (component.Components.Count > 1)
         {
@@ -48,7 +51,7 @@ public sealed class ClothingGrantingSystem : EntitySystem
         }
     }
 
-    private void OnCompUnequip(EntityUid uid, ClothingGrantComponent component, GotUnequippedEvent args)
+    private void OnCompUnequip(EntityUid uid, ClothingGrantComponentComponent component, GotUnequippedEvent args)
     {
         if (!component.IsActive) return;
 
@@ -58,6 +61,31 @@ public sealed class ClothingGrantingSystem : EntitySystem
 
             RemComp(args.Equipee, newComp.GetType());
         }
+
+        component.IsActive = false;
+    }
+
+
+    private void OnTagEquip(EntityUid uid, ClothingGrantTagComponent component, GotEquippedEvent args)
+    {
+        if (!TryComp<ClothingComponent>(uid, out var clothing))
+            return;
+
+        if (!clothing.Slots.HasFlag(args.SlotFlags))
+            return;
+
+        EnsureComp<TagComponent>(args.Equipee);
+        _tagSystem.AddTag(args.Equipee, component.Tag);
+
+        component.IsActive = true;
+    }
+
+    private void OnTagUnequip(EntityUid uid, ClothingGrantTagComponent component, GotUnequippedEvent args)
+    {
+        if (!component.IsActive)
+            return;
+
+        _tagSystem.RemoveTag(args.Equipee, component.Tag);
 
         component.IsActive = false;
     }
