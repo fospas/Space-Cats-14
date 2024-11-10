@@ -223,7 +223,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: PNV
 
 - type: entity
   parent: ClothingOuterHardsuitSyndieElite

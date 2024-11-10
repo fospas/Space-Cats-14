@@ -17,3 +17,8 @@
   id: ShockWave
   kind: source
   path: "/Textures/Backmen/Shaders/shock_wave.swsl"
+
+- type: shader
+  id: NightVision
+  kind: source
+  path: "/Textures/Backmen/Shaders/nightvision.swsl"

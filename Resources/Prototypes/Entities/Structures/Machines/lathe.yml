@@ -359,6 +359,10 @@
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
+# BACKMEN EDIT START EYE
+      - ClothingEyesNightVisionGoggles
+      - ClothingEyesThermalVisionGoggles
+# BACKMEN EDIT END EYE
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator

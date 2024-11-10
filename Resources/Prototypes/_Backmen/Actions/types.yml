@@ -199,3 +199,31 @@
   - type: InstantAction
     icon: { sprite: Objects/Weapons/Melee/e_shield.rsi, state: eshield-on }
     event: !type:ToggleActionEvent
+
+- type: entity
+  id: ToggleNightVision
+  name: Switch night vision
+  description: Switches night vision.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Backmen/Clothing/Eyes/Goggles/nightvision.rsi
+      state: icon
+    event: !type:ToggleNightVisionEvent
+
+- type: entity
+  id: ToggleThermalVision
+  name: Switch Thermal vision
+  description: Switches Thermal vision.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Backmen/Clothing/Eyes/Goggles/thermal.rsi
+      state: icon
+    event: !type:ToggleThermalVisionEvent
