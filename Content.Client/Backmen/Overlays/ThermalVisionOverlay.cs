@@ -4,6 +4,7 @@ using Content.Client.Stealth;
 using Content.Shared.Backmen.Overlays;
 using Content.Shared.Body.Components;
 using Content.Shared.Stealth.Components;
+using Robust.Shared.Maths;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
