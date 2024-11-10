@@ -1,6 +1,7 @@
 using Content.Shared.Backmen.Overlays;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
+using Robust.Shared.Maths;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
