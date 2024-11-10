@@ -31,8 +31,8 @@ ent-ActionSpinWeb = action-name-spin-web
 ent-ActionHairball = hairball-action
     .desc = hairball-action-desc
 
-ent-ActivateSmokeImplant = Переключить ночное зрение
+ent-ToggleNightVision = Переключить ночное зрение
     .desc = Переключает ночное зрение.
 
-ent-ActivateSmokeImplant = Переключить термальное зрение
+ent-ToggleThermalVision = Переключить термальное зрение
     .desc = Переключает термальное зрение.
