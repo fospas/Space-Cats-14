@@ -8,7 +8,6 @@ using Content.Shared.IdentityManagement.Components;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
-using Content.Shared.Backmen.Eye.NightVision.Systems; // NightVision
 using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Overlays;
 using Content.Shared.Radio;
@@ -47,10 +46,6 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, GetEyeProtectionEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, GetBlurEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, SolutionScanEvent>(RelayInventoryEvent);
-
-        // NightVision-Start
-        SubscribeLocalEvent<InventoryComponent, CanVisionAttemptEvent>(RelayInventoryEvent);
-        // NightVision-End
 
         // ComponentActivatedClientSystems
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowJobIconsComponent>>(RelayInventoryEvent);

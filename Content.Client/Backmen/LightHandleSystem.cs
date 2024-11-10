@@ -1,6 +1,5 @@
 ﻿using Content.Shared.Backmen.Blob;
 using Content.Shared.Backmen.Blob.Components;
-using Content.Shared.Backmen.Eye.NightVision.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Mobs.Components;
@@ -53,9 +52,6 @@ public sealed class LightHandleSystem : EntitySystem
             return;
         if (TryComp<BlindableComponent>(plr, out var blindableComponent) && blindableComponent.LightSetup)
             return;
-        if (TryComp<NightVisionComponent>(plr, out var nightVisionComponent) && nightVisionComponent.IsNightVision)
-            return;
-
         _light.Enabled = true;
         _light.DrawShadows = true;
         _light.DrawHardFov = true;
