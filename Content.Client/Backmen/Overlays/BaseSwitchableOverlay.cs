@@ -1,7 +1,6 @@
 using Content.Shared.Backmen.Overlays;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
-using Robust.Shared.Maths;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
@@ -39,7 +38,6 @@ public class BaseSwitchableOverlay<TComp> : Overlay
 
         var worldHandle = args.WorldHandle;
 
-        worldHandle.SetTransform(Matrix3.Identity);
         worldHandle.UseShader(_shader);
         worldHandle.DrawRect(args.WorldBounds, component.Color);
         worldHandle.UseShader(null);

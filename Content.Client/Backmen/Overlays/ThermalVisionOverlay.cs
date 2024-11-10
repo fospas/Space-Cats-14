@@ -4,7 +4,6 @@ using Content.Client.Stealth;
 using Content.Shared.Backmen.Overlays;
 using Content.Shared.Body.Components;
 using Content.Shared.Stealth.Components;
-using Robust.Shared.Maths;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
@@ -89,7 +88,7 @@ public sealed class ThermalVisionOverlay : Overlay
             Render(entry.Ent, entry.Map, worldHandle, entry.EyeRot);
         }
 
-        worldHandle.SetTransform(Matrix3.Identity);
+        worldHandle.UseShader(null);
     }
 
     private void Render(Entity<SpriteComponent, TransformComponent, BodyComponent> ent,
