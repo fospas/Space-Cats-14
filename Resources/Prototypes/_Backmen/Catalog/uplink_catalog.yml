@@ -174,7 +174,7 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkArmor
+  - UplinkWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
@@ -189,7 +189,7 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkArmor
+  - UplinkWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -206,7 +206,7 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkArmor
+  - UplinkWeaponry
 
 - type: listing
   id: UplinkThermalGogglesNukie
@@ -216,7 +216,7 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkArmor
+  - UplinkWeaponry
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:

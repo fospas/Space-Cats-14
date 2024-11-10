@@ -204,7 +204,6 @@
   id: ToggleNightVision
   name: Switch night vision
   description: Switches night vision.
-  noSpawn: true
   components:
   - type: InstantAction
     itemIconStyle: BigAction
@@ -218,7 +217,6 @@
   id: ToggleThermalVision
   name: Switch Thermal vision
   description: Switches Thermal vision.
-  noSpawn: true
   components:
   - type: InstantAction
     itemIconStyle: BigAction
