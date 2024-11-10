@@ -10,7 +10,7 @@
     sprite: Backmen/Clothing/Eyes/Goggles/nightvision.rsi
   - type: Clothing
     sprite: Backmen/Clothing/Eyes/Goggles/nightvision.rsi
-  - type: ClothingGrant
+  - type: ClothingGrantComponent
     component:
     - type: NightVision
 
@@ -46,7 +46,7 @@
     sprite: Backmen/Clothing/Eyes/Goggles/thermal.rsi
   - type: Clothing
     sprite: Backmen/Clothing/Eyes/Goggles/thermal.rsi
-  - type: ClothingGrant
+  - type: ClothingGrantComponent
     component:
     - type: ThermalVision
 
