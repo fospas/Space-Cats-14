@@ -723,12 +723,6 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
-    # BACKMEN EDIT START
-  - type: ClothingGrantComponent
-    component:
-    - type: ThermalVision
-    - type: NightVision
-  # BACKMEN EDIT END
 
 #MISC. HARDSUITS
 #Clown Hardsuit
