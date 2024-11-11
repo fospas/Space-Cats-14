@@ -2,6 +2,7 @@
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 
+// Author: by TornadoTech
 namespace Content.Server._Cats.AdditionalMapLoader;
 
 public sealed class AdditionalMapLoaderSystem : EntitySystem
@@ -20,7 +21,6 @@ public sealed class AdditionalMapLoaderSystem : EntitySystem
     private void OnGetMaps(LoadingMapsEvent args)
     {
         var firstMap = args.Maps[0];
-
         if (!_prototypeManager.TryIndex<AdditionalMapPrototype>(firstMap.ID, out var proto))
             return;
 
@@ -30,14 +30,11 @@ public sealed class AdditionalMapLoaderSystem : EntitySystem
             {
                 Log.Error($"Prototype not found with ID '{mapProtoId.Id}' in '{proto.ID}'. " +
                 $"Please ensure this prototype exists in '- type: additionalMap' check `maps:`!!");
-
                 continue;
             }
-
             CreateAndInitializeMap(mapProto);
         }
     }
-
     private void CreateAndInitializeMap(Maps.GameMapPrototype mapProto)
     {
         var map = _mapManager.CreateMap();

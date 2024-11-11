@@ -1,6 +1,7 @@
 using Content.Server.Maps;
 using Robust.Shared.Prototypes;
 
+// Author: by TornadoTech
 namespace Content.Server._Cats.AdditionalMapLoader;
 
 [Prototype("additionalMap")]
