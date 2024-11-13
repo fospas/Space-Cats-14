@@ -1,7 +1,7 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Audio;
 
-namespace Content.Shared._Сфеы.DNAGunLocker;
+namespace Content.Shared._Cats.DNAGunLocker;
 
 [RegisterComponent]
 [NetworkedComponent]
