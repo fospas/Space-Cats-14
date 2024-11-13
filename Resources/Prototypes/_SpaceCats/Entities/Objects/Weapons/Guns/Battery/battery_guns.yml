@@ -86,7 +86,7 @@
       fireCost: 50
       name: disable
       state: disabler
-    - proto: RedHeavyLaser
+    - proto: X01Attack
       fireCost: 100
       name: lethal
       state: lethal
