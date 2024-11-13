@@ -75,8 +75,8 @@
     soundEmpty:
       path: /Audio/_Cats/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 500
-    startingCharge: 500
+    maxCharge: 1000
+    startingCharge: 1000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 50
@@ -102,3 +102,4 @@
           Disabler: { state: mode-disabler }
           Lethal: { state: mode-lethal }
           Special: { state: mode-stun }
+  - type: DNAGunLocker
