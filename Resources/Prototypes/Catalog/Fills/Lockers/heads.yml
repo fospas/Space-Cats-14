@@ -19,6 +19,7 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: AstroNavCartridge
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -172,6 +173,7 @@
     - id: ClothingEyesGlassesMeson
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
+    - id: ClothingHeadHatBeretChiefEngineering
     - id: DoorRemoteEngineering
     - id: RCD
     - id: RCDAmmo
@@ -243,6 +245,7 @@
     - id: FlatpackMetempsychoticMachine # backmen
     - id: MedicalBiofabMachineBoard # backmen
     - id: MedTekCartridge
+#    - id: genguns # space cats
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -299,6 +302,7 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: FlatpackOracle # backmen
     - id: FlatpackSophie # backmen
+    - id: AnomalyPinpointer # cats
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -361,7 +365,6 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: WantedListCartridge
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-      prob: 0.5
     - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
     - id: BookBusido # Corvax-Books
 

@@ -296,6 +296,7 @@
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons
+  - type: StationAiVision
 
 - type: entity
   id: BaseBorgChassisSyndicate
