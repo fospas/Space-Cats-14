@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from paradise station at commit https://github.com/ParadiseSS13/Paradise/pull/8613/commits/980d452f1c5a2b5ca195118182758f81aab64a2d",
+  "copyright": "Made by MegaDaimond",
   "size": {
     "x": 32,
     "y": 32
@@ -23,7 +23,8 @@
 			"name": "mode-stun"
 		},
 		{
-			"name": "mag-unshaded-0"
+			"name": "mag-unshaded-0",
+            "delays": [[ 0.3, 0.3 ]]
 		},
 		{
 			"name": "mag-unshaded-1"
@@ -59,10 +60,6 @@
 		},
 		{
 			"name": "special-inhand-right",
-			"directions": 4
-		},
-		{
-			"name": "equipped-BELT",
 			"directions": 4
 		}
 	]
