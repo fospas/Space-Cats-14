@@ -474,6 +474,7 @@
   - HeadofSecurityOuterClothing
   - SecurityShoes
   - SecurityOfficerPocket #Backmen
+  - SecurityOfficerPocket2 #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -493,7 +494,8 @@
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
-  - SecurityOfficerPocket #Backmen
+  - SecurityPocket #Backmen
+  - SecurityPocket2 #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -514,7 +516,8 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
-  - SecurityOfficerPocket #Backmen
+  - SecurityPocket #Backmen
+  - SecurityPocket2 #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
