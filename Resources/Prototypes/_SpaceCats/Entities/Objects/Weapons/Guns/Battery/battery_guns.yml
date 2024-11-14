@@ -69,6 +69,10 @@
       map: [ "Firemode" ]
   - type: Clothing
     sprite: _SpaceCats/Objects/Weapons/Guns/Battery/dominator.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: Gun
     soundGunshot:
       path: /Audio/_Cats/Weapons/Guns/Gunshots/laser.ogg
