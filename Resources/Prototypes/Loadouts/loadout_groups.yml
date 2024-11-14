@@ -1013,22 +1013,7 @@
   id: SecurityOfficerPocket
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponPistolMk58
-  - WeaponPistolG22
-  - WeaponPistolACP14
-  - WeaponPistolG23
-  - WeaponPistolM1911
-  - WeaponPistolVP78
-  - WeaponRevolverMatebaNew
-
-- type: loadoutGroup #Backmen
-  id: SecurityOfficerPocket2
-  name: loadout-group-security-pocket2
-  minLimit: 0
-  loadouts:
-  - MagazinePistol
-  - MagazinePistolHighCapacity
-  - SpeedLoaderMagnum
+  - WeaponEnergyGunDominator
 
 - type: loadoutGroup
   id: WardenHead
