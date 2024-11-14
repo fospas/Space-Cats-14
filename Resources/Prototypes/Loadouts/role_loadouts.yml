@@ -473,8 +473,7 @@
   - SecurityBelt
   - HeadofSecurityOuterClothing
   - SecurityShoes
-  - SecurityOfficerPocket #Backmen
-  - SecurityOfficerPocket2 #Backmen
+  - SecurityPocket #backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -485,7 +484,7 @@
 - type: roleLoadout
   id: JobWarden
   groups:
-  - Werx #backmen
+#  - Werx #backmen
   - Niz #backmen
   - Socks #backmen
   - WardenHead
@@ -495,7 +494,6 @@
   - WardenOuterClothing
   - SecurityShoes
   - SecurityPocket #Backmen
-  - SecurityPocket2 #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -506,7 +504,7 @@
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
-  - Werx #backmen
+#  - Werx #backmen
   - Niz #backmen
   - Socks #backmen
   - SecurityHead
@@ -517,7 +515,6 @@
   - SecurityPDA
   - SecurityBelt
   - SecurityPocket #Backmen
-  - SecurityPocket2 #Backmen
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
@@ -528,7 +525,7 @@
 - type: roleLoadout
   id: JobDetective
   groups:
-  - Werx #backmen
+#  - Werx #backmen
   - Niz #backmen
   - Socks #backmen
   - GroupTankHarness
@@ -549,11 +546,12 @@
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
-  - Werx #backmen
+#  - Werx #backmen
   - Niz #backmen
   - Socks #backmen
   - SecurityCadetJumpsuit
   - SecurityBackpack
+  - SecurityPocket
   - Medals #backmen
   - SurvivalSecurity
   - Trinkets
