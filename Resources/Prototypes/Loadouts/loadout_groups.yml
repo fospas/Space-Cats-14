@@ -1105,18 +1105,7 @@
   id: SecurityPocket
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponPistolMk58
-  - WeaponPistolG22
-  - WeaponPistolACP14
-  - WeaponPistolG23
-  - WeaponPistolM1911
-
-- type: loadoutGroup #Backmen
-  id: SecurityPocket2
-  name: loadout-group-security-pocket2
-  minLimit: 0
-  loadouts:
-  - MagazinePistol
+  - WeaponEnergyGunDominator
 
 - type: loadoutGroup
   id: DetectiveHead
