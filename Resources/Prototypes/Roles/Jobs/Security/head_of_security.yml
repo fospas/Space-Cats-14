@@ -57,6 +57,7 @@
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
+    pocket1: WeaponEnergyGunDominator # cats
   storage:
     back:
     - Flash
