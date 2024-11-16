@@ -288,7 +288,6 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
-      - Intellicard
       - RnDPowerDrill
       - MiningDrill
       - MiningDrillDiamond
@@ -492,7 +491,6 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - StationAnchorCircuitboard
-    - CustomLawCircuitBoard
     - SalvageMagnetMachineCircuitboard
     dynamicRecipes:
       - AsimovCircuitBoard
