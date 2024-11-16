@@ -23,6 +23,13 @@ public sealed partial class IdCardComponent : Component
     [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
     public LocId? JobTitle;
 
+    // CATS RADIO
+    [DataField("jobColor"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
+    public Color JobColor { get; set; } = Color.FromHex("#FFFFFF");
+    // CATS RADIO
+
     private string? _jobTitle;
 
     [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWriteExecute)]

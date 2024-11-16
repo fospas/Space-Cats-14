@@ -5,6 +5,7 @@ using Content.Server.Power.Components;
 using Content.Server.Radio.Components;
 using Content.Shared.Backmen.Language;
 using Content.Server.VoiceMask;
+using Content.Shared.Access.Systems; // cats radio
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
@@ -28,6 +29,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly SharedIdCardSystem _cardSystem = default!; // cats radio
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
@@ -128,6 +130,23 @@ public sealed class RadioSystem : EntitySystem
 
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
+        
+        // CATS RADIO START
+        if (_cardSystem.TryFindIdCard(messageSource, out var idCard))
+		{
+			var color = idCard.Comp.JobColor;
+			var job = idCard.Comp.JobTitle;
+
+			if (job is not null)
+				name = Loc.GetString("chat-radio-format-name-by-title", 
+					("jobTitle", job[0].ToString().ToUpper() + job.Substring(1)), 
+					("name", name));
+
+			name = Loc.GetString("chat-radio-format-name-by-color", 
+				("jobColor", color.ToHex()), 
+				("name", name));
+		}
+        // CATS RADIO END
 
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
