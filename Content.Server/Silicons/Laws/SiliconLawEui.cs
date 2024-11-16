@@ -33,7 +33,7 @@ public sealed class SiliconLawEui : BaseEui
     public void UpdateLaws(SiliconLawBoundComponent? lawBoundComponent, EntityUid player)
     {
         if (!IsAllowed())
-            return;  # cats ai
+            return;
 
         var laws = _siliconLawSystem.GetLaws(player, lawBoundComponent);
         _laws = laws.Laws;
@@ -49,7 +49,7 @@ public sealed class SiliconLawEui : BaseEui
         }
 
         if (!IsAllowed())
-            return; # cats ai
+            return;
 
         var player = _entityManager.GetEntity(message.Target);
         if (_entityManager.TryGetComponent<SiliconLawProviderComponent>(player, out var playerProviderComp))
