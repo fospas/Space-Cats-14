@@ -125,10 +125,10 @@ public sealed class RadioSystem : EntitySystem
         if (!_messages.Add(message))
             return;
 
-        var evt = new TransformSpeakerNameEvent(messageSource, MetaData(messageSource).EntityName);
-        RaiseLocalEvent(messageSource, evt);
+        var name = TryComp(messageSource, out VoiceMaskComponent? mask) && mask.Enabled
+            ? mask.VoiceName
+            : MetaData(messageSource).EntityName;
 
-        var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
         
         // CATS RADIO START
@@ -149,8 +149,13 @@ public sealed class RadioSystem : EntitySystem
         // CATS RADIO END
 
         SpeechVerbPrototype speech;
-        if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
-            speech = evntProto;
+        if (mask != null
+            && mask.Enabled
+            && mask.SpeechVerb != null
+            && _prototype.TryIndex<SpeechVerbPrototype>(mask.SpeechVerb, out var proto))
+        {
+            speech = proto;
+        }
         else
             speech = _chat.GetSpeechVerb(messageSource, message);
 

@@ -44,7 +44,7 @@
   id: ClothingMaskGasVoiceChameleon
   suffix: Voice Mask, Chameleon
   components:
-    - type: VoiceMask
+    - type: VoiceMasker
     - type: HideLayerClothing
       slots:
       - Snout
