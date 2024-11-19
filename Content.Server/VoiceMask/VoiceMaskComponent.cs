@@ -20,18 +20,29 @@ public sealed partial class VoiceMaskComponent : Component
     /// </summary>
     [DataField]
     public string? VoiceMaskName = null;
+    /// <summary>
+    ///     The speech verb that will override an entities default one. If null, it will use the entities default verb.
+    /// </summary>
+
+    /// <summary>
+    ///     The name that will override an entities default name. If null, it will use the default override.
+    /// </summary>
+    [DataField]
+    public string? VoiceMaskName = null;
 
     /// <summary>
     ///     The speech verb that will override an entities default one. If null, it will use the entities default verb.
     /// </summary>
     [DataField]
-    public ProtoId<SpeechVerbPrototype>? VoiceMaskSpeechVerb;
+    [ViewVariables(VVAccess.ReadWrite)]
+    public bool Enabled = true;
 
     /// <summary>
     ///     The action that gets displayed when the voice mask is equipped.
     /// </summary>
     [DataField]
-    public EntProtoId Action = "ActionChangeVoiceMask";
+    [ViewVariables(VVAccess.ReadWrite)]
+    public string VoiceName = "Unknown";
 
     // Corvax-TTS-Start
     [DataField]
@@ -43,5 +54,6 @@ public sealed partial class VoiceMaskComponent : Component
     ///     Reference to the action.
     /// </summary>
     [DataField]
-    public EntityUid? ActionEntity;
+    [ViewVariables(VVAccess.ReadWrite)]
+    public ProtoId<SpeechVerbPrototype>? SpeechVerb;
 }

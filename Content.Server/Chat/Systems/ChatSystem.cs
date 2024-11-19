@@ -6,6 +6,7 @@ using Content.Server.Administration.Managers;
 using Content.Server.Backmen.Chat;
 using Content.Server.Backmen.Language;
 using Content.Server.Chat.Managers;
+using Content.Server.Examine;
 using Content.Server.Corvax.TTS;
 using Content.Server.GameTicking;
 using Content.Server.Players;
@@ -25,6 +26,7 @@ using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.Ghost;
+using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Systems;
@@ -478,7 +480,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             var nameEv = new TransformSpeakerNameEvent(source, Name(source));
             RaiseLocalEvent(source, nameEv);
-            name = nameEv.VoiceName;
+            name = nameEv.Name;
             // Check for a speech verb override
             if (nameEv.SpeechVerb != null && _prototypeManager.TryIndex<SpeechVerbPrototype>(nameEv.SpeechVerb, out var proto))
                 speech = proto;
@@ -552,7 +554,7 @@ private void SendEntityWhisper(
         {
             var nameEv = new TransformSpeakerNameEvent(source, Name(source));
             RaiseLocalEvent(source, nameEv);
-            name = nameEv.VoiceName;
+            name = nameEv.Name;
         }
         name = FormattedMessage.EscapeText(name);
 
@@ -1139,6 +1141,19 @@ private void SendEntityWhisper(
 /// </summary>
 public record ExpandICChatRecipientsEvent(EntityUid Source, float VoiceRange, Dictionary<ICommonSession, ChatSystem.ICChatRecipientData> Recipients)
 {
+}
+
+public sealed class TransformSpeakerNameEvent : EntityEventArgs
+{
+    public EntityUid Sender;
+    public string Name;
+    public string? SpeechVerb;
+    public TransformSpeakerNameEvent(EntityUid sender, string name, string? speechVerb = null)
+    {
+        Sender = sender;
+        Name = name;
+        SpeechVerb = speechVerb;
+    }
 }
 
 /// <summary>

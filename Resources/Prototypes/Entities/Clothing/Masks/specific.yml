@@ -44,7 +44,7 @@
   id: ClothingMaskGasVoiceChameleon
   suffix: Voice Mask, Chameleon
   components:
-    - type: VoiceMask
+    - type: VoiceMasker
     - type: HideLayerClothing
       slots:
       - Snout
@@ -52,8 +52,6 @@
       interfaces:
         enum.ChameleonUiKey.Key:
           type: ChameleonBoundUserInterface
-        enum.VoiceMaskUIKey.Key:
-          type: VoiceMaskBoundUserInterface
 # Corvax-HiddenDesc-Start
     - type: HiddenDescription
       entries:

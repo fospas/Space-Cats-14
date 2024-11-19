@@ -3,6 +3,7 @@ using Content.Server.Backmen.Language;
 using Content.Server.Chat.Systems;
 using Content.Server.Power.Components;
 using Content.Server.Radio.Components;
+using Content.Server.VoiceMask;
 using Content.Shared.Backmen.Language;
 using Content.Server.VoiceMask;
 using Content.Shared.Chat;
@@ -123,15 +124,20 @@ public sealed class RadioSystem : EntitySystem
         if (!_messages.Add(message))
             return;
 
-        var evt = new TransformSpeakerNameEvent(messageSource, MetaData(messageSource).EntityName);
-        RaiseLocalEvent(messageSource, evt);
+        var name = TryComp(messageSource, out VoiceMaskComponent? mask) && mask.Enabled
+            ? mask.VoiceName
+            : MetaData(messageSource).EntityName;
 
-        var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
 
         SpeechVerbPrototype speech;
-        if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
-            speech = evntProto;
+        if (mask != null
+            && mask.Enabled
+            && mask.SpeechVerb != null
+            && _prototype.TryIndex<SpeechVerbPrototype>(mask.SpeechVerb, out var proto))
+        {
+            speech = proto;
+        }
         else
             speech = _chat.GetSpeechVerb(messageSource, message);
 
