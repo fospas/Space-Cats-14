@@ -1,7 +1,7 @@
 using Content.Server.Access.Systems;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Imperial.Radio;
+namespace Content.Server._Cats.Radio;
 
 /// <summary>
 /// Данный класс отвечает за отображения должностей в канале рации. То есть, если ошибка в Content.Radi.EnitySystem - вам сюда. Так же в самом оригинальном коде рации есть способ быстро востановить его оригинальную работу без моего класса
