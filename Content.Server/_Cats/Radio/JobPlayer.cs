@@ -191,7 +191,7 @@ public sealed class JobPlayer : EntitySystem
         if (_idCardSystem.TryFindIdCard(uid, out var id))
         {
             // Мы сохраняем работу
-            string? playerJob = id.Comp.JobTitle;
+            string? playerJob = id.Comp.LocalizedJobTitle;
             // Если работа нашлась верно, мы начинаем основной процесс
             if (playerJob != null)
             {
