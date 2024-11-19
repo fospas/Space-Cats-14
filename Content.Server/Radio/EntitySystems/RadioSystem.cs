@@ -132,26 +132,26 @@ public sealed class RadioSystem : EntitySystem
         name = FormattedMessage.EscapeText(name);
 
         if (_cardSystem.TryFindIdCard(messageSource, out var idCard))
-		{
-			var color = idCard.Comp.JobColor;
-			var job = idCard.Comp.LocalizedJobTitle;
+        {
+            var color = idCard.Comp.JobColor;
+            var job = idCard.Comp.LocalizedJobTitle;
 
-			if (job.HasValue)
-			{
-			    var jobTitle = job.Value.ToString();
-    
-			    name = Loc.GetString("chat-radio-format-name-by-title", 
-			        ("jobTitle", jobTitle.Substring(0, 1).ToUpper() + jobTitle.Substring(1)),
-			        ("name", name));
-			}
-			else
-			{
-			    name = Loc.GetString("chat-radio-format-name-by-title", 
-			        ("jobTitle", "Unknown"), 
-			        ("name", name));
-		    }
+            if (!string.IsNullOrEmpty(job))
+            {
+                var jobTitle = job.Substring(0, 1).ToUpper() + job.Substring(1);
+
+                name = Loc.GetString("chat-radio-format-name-by-title",
+                    ("jobTitle", jobTitle),
+                    ("name", name));
+            }
+            else
+            {
+                name = Loc.GetString("chat-radio-format-name-by-title",
+                    ("jobTitle", "Unknown"),
+                    ("name", name));
+            }
         }
-        
+
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
             speech = evntProto;
