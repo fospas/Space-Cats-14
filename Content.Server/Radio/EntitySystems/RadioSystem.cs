@@ -134,7 +134,7 @@ public sealed class RadioSystem : EntitySystem
         if (_cardSystem.TryFindIdCard(messageSource, out var idCard))
 		{
 			var color = idCard.Comp.JobColor;
-			var job = idCard.Comp.JobTitle;
+			var job = idCard.Comp.LocalizedJobTitle;
 
 			if (job.HasValue)
 			{
