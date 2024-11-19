@@ -4,6 +4,7 @@
   id: ChiefMedicalOfficer
   name: job-name-cmo
   description: job-description-cmo
+  color: "#7FC7FF"
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
     - !type:RoleTimeRequirement

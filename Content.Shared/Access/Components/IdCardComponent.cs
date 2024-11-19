@@ -28,6 +28,11 @@ public sealed partial class IdCardComponent : Component
     [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWriteExecute)]
     public string? LocalizedJobTitle { set => _jobTitle = value; get => _jobTitle ?? Loc.GetString(JobTitle ?? string.Empty); }
 
+    [DataField("jobColor"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
+    public Color JobColor { get; set; } = Color.FromHex("#FFFFFF");
+
     /// <summary>
     /// The state of the job icon rsi.
     /// </summary>
