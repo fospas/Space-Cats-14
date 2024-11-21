@@ -19,7 +19,7 @@
     - state: unshaded
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-      visible: fals
+      visible: false
   - type: Transform
     anchored: true
   - type: LitOnPowered
