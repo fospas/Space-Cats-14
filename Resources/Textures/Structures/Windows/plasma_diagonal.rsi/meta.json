@@ -4,8 +4,8 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-4.0",
-    "copyright": "Made by S_k_R_i_M_e_X",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/",
     "states": [
         {
             "name": "state0"
