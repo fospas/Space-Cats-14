@@ -22,6 +22,10 @@
       visible: false
   - type: Transform
     anchored: true
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
   - type: LitOnPowered
   - type: ApcPowerReceiver
     powerLoad: 400
