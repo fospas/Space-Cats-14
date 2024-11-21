@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-4.0",
-  "copyright": "Made by WWDP Team",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/",
   "size": {
     "x": 32,
     "y": 32
@@ -23,25 +23,25 @@
       "name": "frosted_window",
       "directions": 4
     },
-	{
-	  "name": "clock_window",
-	  "directions": 4
-	},
-	{
-	  "name": "plasma_window",
-	  "directions": 4
-	},
     {
-        "name": "plasma_reinforced_window",
-        "directions": 4
+      "name": "clock_window",
+      "directions": 4
     },
     {
-        "name": "uranium_window",
-        "directions": 4
+      "name": "plasma_window",
+      "directions": 4
     },
     {
-        "name": "uranium_reinforced_window",
-        "directions": 4
+      "name": "plasma_reinforced_window",
+      "directions": 4
+    },
+    {
+      "name": "uranium_window",
+      "directions": 4
+    },
+    {
+      "name": "uranium_reinforced_window",
+      "directions": 4
     }
   ]
 }
