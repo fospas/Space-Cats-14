@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: _SpaceCats/Clothing/OuterClothing/reactive.rsi
   - type: Clothing
-    sprite: _SpaceCatsd/Clothing/OuterClothing/reactive.rsi
+    sprite: _SpaceCats/Clothing/OuterClothing/reactive.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: Armor
