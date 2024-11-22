@@ -80,9 +80,9 @@
     entries:
     - label: corvax-hidden-desc-EnergySword-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-EnergySword-security
       jobRequired:
         - HeadOfSecurity
@@ -261,9 +261,9 @@
     entries:
     - label: corvax-hidden-desc-EnergyDagger-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-EnergyDagger-research
       jobRequired:
         - ResearchAssistant
@@ -407,9 +407,9 @@
     entries:
     - label: corvax-hidden-desc-EnergySword-syndicate
       whitelistMind:
-        mindRoles:
+        components:
         - TraitorRole
-        - NukeopsRole
+        - NukeOperative
     - label: corvax-hidden-desc-EnergySword-security
       jobRequired:
       - HeadOfSecurity

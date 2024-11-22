@@ -22,7 +22,7 @@ public sealed partial class BanManager
         string? targetUsername,
         NetUserId? banningAdmin,
         (IPAddress, int)? addressRange,
-        ImmutableTypedHwid? hwid,
+        ImmutableArray<byte>? hwid,
         string role,
         uint? minutes,
         NoteSeverity severity,

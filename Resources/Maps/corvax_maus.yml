@@ -454,26 +454,11 @@ entities:
         version: 2
         nodes:
         - node:
-            zIndex: 10
-            angle: 3.141592653589793 rad
-            color: '#DE3A3AFF'
-            id: Arrows
-          decals:
-            5882: -107,-57
-            5883: -107,-57
-            5884: -107,-57
-        - node:
             color: '#FFFFFFFF'
             id: Arrows
           decals:
             207: -19,-26
             210: -14,-26
-        - node:
-            zIndex: 10
-            color: '#FFFFFFFF'
-            id: Arrows
-          decals:
-            5881: -107,-59
         - node:
             angle: 1.5707963267948966 rad
             color: '#FFFFFFFF'
@@ -9799,8 +9784,7 @@ entities:
           -3,-1:
             0: 36044
           -2,0:
-            0: 65456
-            3: 64
+            0: 65520
           -2,1:
             0: 24560
           -2,2:
@@ -10105,13 +10089,14 @@ entities:
             0: 2
           -19,0:
             0: 7
-            4: 1792
+            3: 1792
           -19,1:
-            5: 7
+            4: 7
             2: 1792
           -19,2:
-            2: 1031
-            6: 768
+            2: 7
+            5: 256
+            0: 1536
           -19,3:
             2: 7
             0: 4096
@@ -10833,9 +10818,9 @@ entities:
             0: 65535
           -10,-9:
             0: 47
-            7: 60928
+            6: 60928
           -10,-8:
-            7: 3276
+            6: 3276
             0: 4368
           -9,-8:
             0: 1638
@@ -11296,21 +11281,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.6852
-          - 81.57766
           - 0
           - 0
           - 0
@@ -14253,6 +14223,12 @@ entities:
       parent: 5934
     - type: InstantAction
       container: 5934
+  - uid: 8361
+    components:
+    - type: Transform
+      parent: 7387
+    - type: InstantAction
+      container: 7387
   - uid: 18252
     components:
     - type: Transform
@@ -19877,11 +19853,6 @@ entities:
     - type: Transform
       pos: -61.5,24.5
       parent: 2
-  - uid: 19221
-    components:
-    - type: Transform
-      pos: -73.5,10.5
-      parent: 2
   - uid: 19900
     components:
     - type: Transform
@@ -20104,11 +20075,6 @@ entities:
     components:
     - type: Transform
       pos: -75.5,10.5
-      parent: 2
-  - uid: 10254
-    components:
-    - type: Transform
-      pos: -74.5,10.5
       parent: 2
 - proto: Autolathe
   entities:
@@ -34202,12 +34168,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -14.462952,2.6248531
       parent: 17265
-  - uid: 19225
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -37.017067,-90.84752
-      parent: 2
 - proto: CableApcStack10
   entities:
   - uid: 6305
@@ -44951,7 +44911,7 @@ entities:
   - uid: 4755
     components:
     - type: Transform
-      pos: -3.429844,1.4731994
+      pos: -3.267089,2.9951859
       parent: 2
   - uid: 13766
     components:
@@ -52179,13 +52139,6 @@ entities:
     - type: Transform
       pos: -40.331936,-71.47984
       parent: 2
-- proto: ClothingHeadHelmetBasic
-  entities:
-  - uid: 19223
-    components:
-    - type: Transform
-      pos: -13.712228,-6.266108
-      parent: 2
 - proto: ClothingHeadHelmetCult
   entities:
   - uid: 7438
@@ -52202,13 +52155,29 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingHeadHelmetRiot
+- proto: ClothingHeadHelmetHardsuitWarden
   entities:
-  - uid: 19222
+  - uid: 7387
     components:
+    - type: MetaData
+      name: красный бронешлем
     - type: Transform
-      pos: -13.286184,-6.256197
+      pos: -13.765395,-6.5724363
       parent: 2
+    - type: HandheldLight
+      toggleActionEntity: 8361
+    - type: Item
+      heldPrefix: off
+      inhandVisuals: {}
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 8361
+    missingComponents:
+    - BreathMask
+    - TemperatureProtection
 - proto: ClothingHeadHelmetSyndicate
   entities:
   - uid: 5941
@@ -52793,20 +52762,42 @@ entities:
     - type: Transform
       pos: -7.0623865,-13.339912
       parent: 2
-- proto: ClothingOuterArmorBulletproof
+- proto: ClothingOuterArmorHeavyRed
   entities:
   - uid: 6725
     components:
     - type: Transform
-      pos: -13.672596,-6.6328077
+      pos: -13.289016,-6.5054703
       parent: 2
-- proto: ClothingOuterArmorRiot
-  entities:
-  - uid: 7387
-    components:
-    - type: Transform
-      pos: -13.256461,-6.6328077
-      parent: 2
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: Понижает вашу скорость на [color=yellow]10%[/color].
+          priority: 0
+          component: ClothingSpeedModifier
+        - message: >-
+            Обеспечивает следующую защиту:
+
+            - [color=yellow]Ударный[/color] урон снижается на [color=lightblue]80%[/color].
+
+            - [color=yellow]Режущий[/color] урон снижается на [color=lightblue]80%[/color].
+
+            - [color=yellow]Колющий[/color] урон снижается на [color=lightblue]80%[/color].
+
+            - [color=yellow]Высокотемпературный[/color] урон снижается на [color=lightblue]50%[/color].
+
+            - [color=yellow]Радиационный[/color] урон снижается на [color=lightblue]100%[/color].
+
+            - [color=yellow]Кислотный[/color] урон снижается на [color=lightblue]25%[/color].
+          priority: 0
+          component: Armor
+        title: null
 - proto: ClothingOuterCardborg
   entities:
   - uid: 5978
@@ -90974,8 +90965,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.8856695
-        - 7.0937095
+        - 1.7459903
+        - 6.568249
         - 0
         - 0
         - 0
@@ -92344,7 +92335,7 @@ entities:
     components:
     - type: Transform
       rot: 0.7853981633974483 rad
-      pos: -13.880681,-1.2529867
+      pos: -13.880681,-1.2029867
       parent: 2
   - uid: 11437
     components:
@@ -95479,16 +95470,21 @@ entities:
       parent: 2
 - proto: PlasmaCanister
   entities:
-  - uid: 8361
-    components:
-    - type: Transform
-      pos: -74.5,10.5
-      parent: 2
   - uid: 10253
     components:
     - type: Transform
       pos: -66.5,-12.5
       parent: 2
+  - uid: 10254
+    components:
+    - type: Transform
+      pos: -74.5,10.5
+      parent: 2
+    - type: GasCanister
+      releaseValve: True
+      releasePressure: 100
+    - type: Lock
+      locked: False
   - uid: 10255
     components:
     - type: Transform
@@ -110140,6 +110136,11 @@ entities:
     - type: Transform
       pos: -14.5,-37.5
       parent: 2
+  - uid: 12039
+    components:
+    - type: Transform
+      pos: -20.5,13.5
+      parent: 2
 - proto: SpawnPointDetective
   entities:
   - uid: 11354
@@ -111480,13 +111481,6 @@ entities:
         - 0
         - 0
         - 0
-- proto: SuperSynthesizerInstrument
-  entities:
-  - uid: 19224
-    components:
-    - type: Transform
-      pos: -34.44334,-29.653538
-      parent: 2
 - proto: SurveillanceCameraAssembly
   entities:
   - uid: 18967
@@ -115123,13 +115117,6 @@ entities:
     - type: Transform
       pos: -51.438374,2.4718113
       parent: 2
-- proto: ToyFigurineParamedic
-  entities:
-  - uid: 12039
-    components:
-    - type: Transform
-      pos: -65.646835,-27.512451
-      parent: 2
 - proto: ToyFigurineQuartermaster
   entities:
   - uid: 12559
@@ -115157,13 +115144,6 @@ entities:
     components:
     - type: Transform
       pos: -9.447259,-43.298065
-      parent: 2
-- proto: ToyFigurineWarden
-  entities:
-  - uid: 19226
-    components:
-    - type: Transform
-      pos: -19.48106,6.135928
       parent: 2
 - proto: ToyFireRipley
   entities:

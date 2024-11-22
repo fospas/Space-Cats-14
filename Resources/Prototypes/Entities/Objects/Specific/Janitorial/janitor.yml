@@ -195,9 +195,9 @@
     entries:
     - label: corvax-hidden-desc-WetFloorSignMineExplosive-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-WetFloorSignMineExplosive-research
       jobRequired:
         - ResearchAssistant

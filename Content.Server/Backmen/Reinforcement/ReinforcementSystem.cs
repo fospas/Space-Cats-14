@@ -16,7 +16,6 @@ using Content.Shared.Backmen.Cryostorage;
 using Content.Shared.Backmen.Reinforcement;
 using Content.Shared.Backmen.Reinforcement.Components;
 using Content.Shared.Database;
-using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;

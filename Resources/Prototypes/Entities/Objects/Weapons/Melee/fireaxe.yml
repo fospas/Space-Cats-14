@@ -73,9 +73,9 @@
     entries:
     - label: corvax-hidden-desc-FireAxeFlaming-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-FireAxeFlaming-research
       jobRequired:
         - ResearchAssistant

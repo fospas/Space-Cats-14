@@ -26,9 +26,9 @@
       entries:
       - label: corvax-hidden-desc-Chameleon-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-Chameleon-research
         jobRequired:
           - ResearchAssistant
@@ -50,22 +50,22 @@
     entries:
     - label: corvax-hidden-desc-Chameleon-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-ThievingGloves-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-Chameleon-thief
       whitelistMind:
-        mindRoles:
-        - ThiefRole
+        components:
+          - ThiefRole
     - label: corvax-hidden-desc-ThievingGloves-thief
       whitelistMind:
-        mindRoles:
-        - ThiefRole
+        components:
+          - ThiefRole
     - label: corvax-hidden-desc-Chameleon-research
       jobRequired:
         - ResearchAssistant

@@ -138,8 +138,8 @@
     entries:
     - label: corvax-hidden-desc-NoSlip-ninja
       whitelistMind:
-        mindRoles:
-        - NinjaRole
+        components:
+          - NinjaRole
     - label: corvax-hidden-desc-NoSlip-research
       jobRequired:
         - ResearchAssistant
@@ -214,9 +214,9 @@
       entries:
       - label: corvax-hidden-desc-Chameleon-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-Chameleon-research
         jobRequired:
           - ResearchAssistant
@@ -238,14 +238,14 @@
     entries:
     - label: corvax-hidden-desc-Chameleon-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-NoSlip-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-Chameleon-research
       jobRequired:
         - ResearchAssistant

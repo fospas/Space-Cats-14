@@ -25,6 +25,3 @@ rules_file = "CorvaxRuleset"
 
 [discord]
 rich_main_icon_id = "corvax"
-
-[admin]
-see_own_notes = true

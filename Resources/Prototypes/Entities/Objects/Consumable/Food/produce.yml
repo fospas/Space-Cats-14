@@ -1780,9 +1780,9 @@
     entries:
     - label: corvax-hidden-desc-Gatfruit-syndicate
       whitelistMind:
-        mindRoles:
+        components:
         - TraitorRole
-        - NukeopsRole
+        - NukeOperative
     - label: corvax-hidden-desc-Gatfruit-botanist
       jobRequired:
       - Botanist

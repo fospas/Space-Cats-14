@@ -32,7 +32,6 @@
     - state: closed_unlit
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseUnlit"]
-      visible: false
     - state: welded
       map: ["enum.WeldableLayers.BaseWelded"]
     - state: bolted_unlit
@@ -165,7 +164,6 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
-      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -226,7 +224,6 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
-      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -282,7 +279,6 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
-      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -343,7 +339,6 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
-      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -399,7 +394,6 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
-      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit

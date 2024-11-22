@@ -26,6 +26,6 @@
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
-  jobEntity: PlayerBorgBattery
+  jobEntity: PlayerBorgGeneric
   startingGear: RobotGear # backmen
   applyTraits: false
