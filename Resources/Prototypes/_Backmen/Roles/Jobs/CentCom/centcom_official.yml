@@ -14,6 +14,8 @@
   whitelisted: true
   discordRequired: true
   requirements:
+    - !type:AgeRequirement
+      requiredAge: 21 # cats
     - !type:DepartmentTimeRequirement
       department: CentCom
       time: 1

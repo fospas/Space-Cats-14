@@ -116,7 +116,7 @@
         # anyway it's just a quality of life thing.
         showEnts: True
 
-# Boards
+# Boardss
 - type: entity
   id: AsimovCircuitBoard
   parent: BaseElectronics
@@ -447,7 +447,6 @@
   categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
-  - type: NoFTL
   - type: WarpPoint
     follow: true
   - type: Eye
