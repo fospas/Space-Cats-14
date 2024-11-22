@@ -40,9 +40,9 @@
     entries:
     - label: corvax-hidden-desc-ReinforcementRadioSyndicate-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-ReinforcementRadio-engineering
       jobRequired:
         - ChiefEngineer
@@ -93,9 +93,9 @@
     entries:
     - label: corvax-hidden-desc-ReinforcementRadioSyndicateMonkey-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-ReinforcementRadio-engineering
       jobRequired:
         - ChiefEngineer
@@ -157,9 +157,9 @@
       entries:
       - label: corvax-hidden-desc-ReinforcementRadioSyndicateCyborgAssault-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-ReinforcementRadio-engineering
         jobRequired:
           - ChiefEngineer

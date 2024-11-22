@@ -28,9 +28,9 @@
       entries:
       - label: corvax-hidden-desc-Chameleon-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-Chameleon-research
         jobRequired:
           - ResearchAssistant
@@ -59,14 +59,14 @@
       entries:
       - label: corvax-hidden-desc-Chameleon-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-VoiceMasker-syndicate
         whitelistMind:
-          mindRoles:
-          - TraitorRole
-          - NukeopsRole
+          components:
+            - TraitorRole
+            - NukeOperative
       - label: corvax-hidden-desc-Chameleon-research
         jobRequired:
           - ResearchAssistant

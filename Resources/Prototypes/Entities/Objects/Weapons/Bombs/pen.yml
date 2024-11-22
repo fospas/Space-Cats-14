@@ -25,9 +25,9 @@
     entries:
     - label: corvax-hidden-desc-PenExploding-syndicate
       whitelistMind:
-        mindRoles:
-        - TraitorRole
-        - NukeopsRole
+        components:
+          - TraitorRole
+          - NukeOperative
     - label: corvax-hidden-desc-PenExploding-research
       jobRequired:
         - ResearchAssistant
