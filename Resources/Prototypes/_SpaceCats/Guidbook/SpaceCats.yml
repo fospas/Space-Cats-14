@@ -3,4 +3,4 @@
   name: guide-entry-spacecats
   text: "/ServerInfo/_SpaceCats/Guidebook/SpaceCats.xml"
   children:
-  - SpaceCatspecies
+  - SpaceCatsSpecies

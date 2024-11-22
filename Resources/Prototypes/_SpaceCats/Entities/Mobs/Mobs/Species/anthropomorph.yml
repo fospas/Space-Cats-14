@@ -3,7 +3,7 @@
   name: Urist McAnthropomorph
   parent: BaseMobSpeciesOrganic
   id: BaseMobAnthropomorph
-  abstract: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
     species: Anthropomorph
