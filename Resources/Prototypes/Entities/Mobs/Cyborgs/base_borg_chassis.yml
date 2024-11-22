@@ -304,6 +304,7 @@
   - type: InteractionPopup
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+  - type: StationAiVision
 
 - type: entity
   id: BaseBorgChassisSyndicate

@@ -5,6 +5,7 @@ using Content.Server.Chat;
 using Content.Server.Chat.Systems;
 using Content.Server.Emoting.Systems;
 using Content.Server.Speech.EntitySystems;
+using Content.Shared._Cats.Blocking;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.Cloning;
 using Content.Shared.Damage;
@@ -57,7 +58,8 @@ namespace Content.Server.Zombies
             SubscribeLocalEvent<ZombieComponent, EmoteEvent>(OnEmote, before:
                 new[] { typeof(VocalSystem), typeof(BodyEmotesSystem) });
 
-            SubscribeLocalEvent<ZombieComponent, MeleeHitEvent>(OnMeleeHit);
+            SubscribeLocalEvent<ZombieComponent, MeleeHitEvent>(OnMeleeHit,
+                after: new[] {typeof(MeleeBlockSystem)}); // CATS EDIT
             SubscribeLocalEvent<ZombieComponent, MobStateChangedEvent>(OnMobState);
             SubscribeLocalEvent<ZombieComponent, CloningEvent>(OnZombieCloning);
             SubscribeLocalEvent<ZombieComponent, TryingToSleepEvent>(OnSleepAttempt);
@@ -216,6 +218,9 @@ namespace Content.Server.Zombies
 
         private void OnMeleeHit(EntityUid uid, ZombieComponent component, MeleeHitEvent args)
         {
+            if (args.Handled) // CATS EDIT
+                return;
+
             if (!TryComp<ZombieComponent>(args.User, out _))
                 return;
 
