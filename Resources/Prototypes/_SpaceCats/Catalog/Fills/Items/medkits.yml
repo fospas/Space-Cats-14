@@ -1,0 +1,24 @@
+- type: entity
+  name: аптечка продвинутых иньекторов #пополнение припасов СБ. Одна такая будет в шкафу БМ
+  id: MedkitEmergencyMedipenSecurity
+  suffix: иньекторы суфентанила
+  parent: MedkitCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: EmergencyMedipenSecurity
+        amount: 8
+
+- type: entity
+  name: аптечка наёмника #покупка в карго
+  id: MedkitEmergencyMercenary
+  suffix: иньекторы суфентанила
+  parent: MedkitCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: Gauze
+      - id: Cautery
+      - id: SyringeEphedrine
+      - id: SyringeSaline
+      - id: RegenerativeMesh
