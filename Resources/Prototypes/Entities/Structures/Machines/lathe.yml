@@ -163,6 +163,7 @@
       - FoodPlateSmallPlastic
       - FoodBowlBig
       - FoodPlateTin
+      - FoodPlateMuffinTin
       - FoodKebabSkewer
       - SprayBottle
       - MopItem
@@ -200,11 +201,9 @@
       - WetFloorSign
       - ClothingHeadHatCone
       - FreezerElectronics
-      - Flare
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
-      - BoxShotgunFlare
       - BoxShotgunSlug
       - CombatKnife
       - CashMachineCircuitboard
@@ -289,7 +288,6 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
-      - Intellicard
       - RnDPowerDrill
       - MiningDrill
       - MiningDrillDiamond
@@ -493,10 +491,8 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - StationAnchorCircuitboard
-    - CustomLawCircuitBoard
     - SalvageMagnetMachineCircuitboard
     dynamicRecipes:
-      - CustomLawCircuitBoard # cats
       - AsimovCircuitBoard
       - CorporateCircuitBoard
       - NTDefaultCircuitBoard
@@ -573,6 +569,7 @@
       - ShipyardCircuitboard # backmen
       - ReagentGrinderIndustrialMachineCircuitboard
       - JukeboxCircuitBoard
+      - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -786,7 +783,6 @@
     runningState: icon
     staticRecipes:
       - BoxLethalshot
-      - BoxShotgunFlare
       - BoxShotgunPractice
       - BoxShotgunSlug
       - ClothingEyesHudSecurity
@@ -823,6 +819,7 @@
       - TargetHuman
       - TargetSyndicate
       - WeaponDisablerPractice
+      - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
     dynamicRecipes:
@@ -914,7 +911,6 @@
       runningState: icon
       staticRecipes:
         - BoxLethalshot
-        - BoxShotgunFlare
         - BoxShotgunSlug
         - BoxShellTranquilizer
         - MagazineBoxLightRifle
@@ -993,6 +989,7 @@
       - MedkitRadiation
       - MedkitCombat
       - Scalpel
+      - BoneGel # backmen
       - Retractor
       - Cautery
       - Drill
@@ -1004,10 +1001,9 @@
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker
-#      - BluespaceBeaker1
       - SyringeBluespace
       - SyringeCryostasis
-      - BluespacePillCanister # Backmen
+      - BluespacePillCanister # backmen
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
@@ -1249,8 +1245,6 @@
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
-    insertOnInteract: false
-    canEjectStoredMaterials: false
   - type: ProduceMaterialExtractor
   - type: ItemSlots
     slots:

@@ -47,22 +47,12 @@ public sealed class SponsorsManager : ISharedSponsorsManager
         Reset();
 
 #if DEBUG
-        Prototypes.Add("tier1");
-        Prototypes.Add("tier2");
-        Prototypes.Add("tier01");
-        Prototypes.Add("tier02");
-        Prototypes.Add("tier03");
-        Prototypes.Add("tier04");
-        Prototypes.Add("tier05");
-        Prototypes.Add("tier06");
-        Prototypes.Add("tier07");
-        Prototypes.Add("tier08");
-        Prototypes.Add("tier09");
-        Prototypes.Add("tier10");
-        Prototypes.Add("tier11");
-        Prototypes.Add("tier12");
-        Prototypes.Add("tier13");
-        Prototypes.Add("tier14");
+
+        foreach (var ghostProto in IoCManager.Resolve<Robust.Shared.Prototypes.IPrototypeManager>().EnumeratePrototypes<Shared.Backmen.GhostTheme.GhostThemePrototype>())
+        {
+            Prototypes.Add(ghostProto.ID);
+        }
+
 #endif
 
         if (message.Info == null)

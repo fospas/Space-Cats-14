@@ -51,26 +51,28 @@
   wageDepartment: CentCom
   wage: 75
 
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconCCPrivate
-  icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: privat_officer
-
 - type: startingGear
   id: CentComPrivateOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSec
-    back: ClothingBackpackSecurity
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
+    jumpsuit: ClothingUniformJumpsuitCentcomPrivateOfficer
+    back: ClothingCentcomBackpack
+    shoes: ClothingShoesBootsCentcom
+    neck: CombatKnifeSpetsnaz
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHelmetBasic
-    outerClothing: ClothingOuterVestArmorSec # Corvax-Resprite
+    gloves: ClothingHandsGlovesCombat
+    head: ClothingHeadHelmetCentcom
+    outerClothing: ClothingOuterArmorCentcom
+    suitstorage: WeaponRifleFamas
     id: CentComPrivateOfficerPDA
     ears: ClothingHeadsetCentComCC
     belt: ClothingBeltSecuritySuper
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponPistolG23
+    pocket2: MagazinePistol
+  storage:
+    back:
+    - MedkitCombatFilled
+    - BoxSurvivalSecurity
+    - MagazineRifle
   #innerClothingSkirt: ClothingUniformJumpskirtSec
   #satchel: ClothingBackpackSatchelSecurityFilled
   #duffelbag: ClothingBackpackDuffelSecurityFilled

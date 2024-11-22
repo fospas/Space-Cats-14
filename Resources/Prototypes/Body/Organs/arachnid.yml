@@ -34,8 +34,13 @@
   - type: Sprite
     sprite: Mobs/Species/Arachnid/organs.rsi
     state: stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
   - type: Stomach
     updateInterval: 1.5
+  - type: Organ
+    slotId: stomach
   - type: SolutionContainerManager
     solutions:
       stomach:
@@ -59,6 +64,8 @@
       - state: lung-l
       - state: lung-r
   - type: Lung
+  - type: Organ
+    slotId: lungs
   - type: Metabolizer
     updateInterval: 1.5
     removeEmpty: true
@@ -91,6 +98,9 @@
   components:
   - type: Sprite
     state: heart-on
+  - type: Heart
+  - type: Organ
+    slotId: heart
   - type: Metabolizer
     updateInterval: 1.5
     maxReagents: 2
@@ -107,8 +117,14 @@
   description: "Pairing suggestion: chianti and fava beans."
   categories: [ HideSpawnMenu ]
   components:
+  - type: Item
+    size: Small
+    heldPrefix: liver
   - type: Sprite
     state: liver
+  - type: Liver
+  - type: Organ
+    slotId: liver
   - type: Metabolizer # The liver metabolizes certain chemicals only, like alcohol.
     updateInterval: 1.5
     maxReagents: 1
@@ -129,6 +145,9 @@
       - state: kidney-l
       - state: kidney-r
   # The kidneys just remove anything that doesn't currently have any metabolisms, as a stopgap.
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
   - type: Metabolizer
     updateInterval: 1.5
     maxReagents: 5
@@ -145,6 +164,9 @@
     layers:
       - state: eyeball-l
       - state: eyeball-r
+  - type: Eyes
+  - type: Organ
+    slotId: eyes
 
 - type: entity
   id: OrganArachnidTongue

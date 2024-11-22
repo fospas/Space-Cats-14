@@ -78,7 +78,7 @@
   - type: EmagSiliconLaw
     stunTime: 5
   - type: SiliconLawProvider
-    laws: NTDefault
+    laws: NTDefault # Corvax-NTDefault
   - type: IonStormTarget
   - type: Inventory
     templateId: borg
@@ -233,6 +233,7 @@
   - type: Emoting
   - type: TTS # Corvax-TTS
     voice: Borgs
+  - type: LayingDown # backmen: LayingDown
   - type: GuideHelp
     guides:
     - Cyborgs
@@ -296,7 +297,6 @@
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons
-  - type: ShowMindShieldIcons
   - type: StationAiVision
 
 - type: entity

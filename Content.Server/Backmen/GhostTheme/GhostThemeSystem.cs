@@ -1,18 +1,10 @@
-﻿using System.Linq;
-using Content.Corvax.Interfaces.Server;
-using Content.Corvax.Interfaces.Shared;
-using Content.Server.Mind;
+﻿using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Backmen.GhostTheme;
-using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
-using Content.Shared.Players;
 using Robust.Server.Configuration;
-using Robust.Shared;
-using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
-using Robust.Shared.Timing;
 
 #pragma warning disable CS0618 // Type or member is obsolete
 
@@ -39,22 +31,11 @@ public sealed class GhostThemeSystem : EntitySystem
             if (!_sponsorsMgr.TryGetServerPrototypes(args.Player.UserId, out var items))
             {
                 items = new List<string>();
-                items.Add("tier1");
-                items.Add("tier2");
-                items.Add("tier01");
-                items.Add("tier02");
-                items.Add("tier03");
-                items.Add("tier04");
-                items.Add("tier05");
-                items.Add("tier06");
-                items.Add("tier07");
-                items.Add("tier08");
-                items.Add("tier09");
-                items.Add("tier10");
-                items.Add("tier11");
-                items.Add("tier12");
-                items.Add("tier13");
-                items.Add("tier14");
+                
+                foreach (var ghostProto in IoCManager.Resolve<IPrototypeManager>().EnumeratePrototypes<GhostThemePrototype>())
+                {
+                    items.Add(ghostProto.ID);
+                }
             }
             if (!items.Contains(prefGhost))
             {

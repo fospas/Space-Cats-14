@@ -38,19 +38,10 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 300
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-      - !type:ExplodeBehavior
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ScrapAirlock1:
-            min: 0
-            max: 1
-          ScrapAirlock2:
-            min: 0
-            max: 1
   - type: Construction
     graph: Airlock
     node: assembly

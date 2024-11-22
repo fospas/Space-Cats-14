@@ -566,9 +566,9 @@ SpawnPointStationAI: PlayerStationAi
 WeaponTurretLaserNanoTrasenAI: WeaponTurretSyndicateBroken
 
 # 2024-08-22
-ComputerShuttleSalvage: null
-SalvageShuttleConsoleCircuitboard: null
-SalvageShuttleCircuitboardStealObjective: null
+# ComputerShuttleSalvage: null # Corvax reverted
+# SalvageShuttleConsoleCircuitboard: null
+# SalvageShuttleCircuitboardStealObjective: null
 
 # 2024-08-28
 ClothingBackpackDuffelSyndicateCostumeCentcom: null
@@ -609,6 +609,14 @@ GunSafeLaserCarbine: GunSafeLaserCarbineUEG
 ShotGunCabinetFilled: ShotGunCabinetFilledBackmen
 ShotGunCabinetFilledOpen: ShotGunCabinetFilledOpenBackmen
 
-# 2024-10-07 Space Cats
-AirlockHydroponicsLocked: AirlockHydroGlassLocked
-AirlockHydroponics: AirlockHydroponicsGlass
+# 2024-10-05 - Corvax
+SheetPrinter: SheetPaper
+SheetPrinter1: SheetPaper1
+
+# 2024-11-16 - Space Cats
+SpawnPointCargoBorg: null
+SpawnPointEngenerBorg: null
+SpawnPointJanitorBorg: null
+SpawnPointMedIcalBorg: null
+SpawnPointServiceBorg: null
+SpawnPointSecurityBorg: null

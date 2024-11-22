@@ -1,5 +1,9 @@
-﻿using Content.Shared.Body.Components;
+using Content.Shared.Backmen.Surgery.Tools;
+using Content.Shared.Backmen.Targeting;
+using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
+using Content.Shared.Containers.ItemSlots;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -8,7 +12,7 @@ namespace Content.Shared.Body.Part;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedBodySystem))]
-public sealed partial class BodyPartComponent : Component
+public sealed partial class BodyPartComponent : Component, ISurgeryToolComponent
 {
     // Need to set this on container changes as it may be several transform parents up the hierarchy.
     /// <summary>
@@ -16,6 +20,12 @@ public sealed partial class BodyPartComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public EntityUid? Body;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? OriginalBody;
+
+    [DataField, AutoNetworkedField]
+    public BodyPartSlot? ParentSlot;
 
     [DataField, AutoNetworkedField]
     public BodyPartType PartType = BodyPartType.Other;
@@ -28,8 +38,21 @@ public sealed partial class BodyPartComponent : Component
     [DataField("vital"), AutoNetworkedField]
     public bool IsVital;
 
+    /// <summary>
+    /// Amount of damage to deal when the part gets removed.
+    /// Only works if IsVital is true.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public FixedPoint2 VitalDamage = 100;
+
     [DataField, AutoNetworkedField]
     public BodyPartSymmetry Symmetry = BodyPartSymmetry.None;
+
+    [DataField]
+    public string ToolName { get; set; } = "A body part";
+
+    [DataField, AutoNetworkedField]
+    public bool? Used { get; set; } = null;
 
     /// <summary>
     /// Child body parts attached to this body part.
@@ -42,6 +65,72 @@ public sealed partial class BodyPartComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public Dictionary<string, OrganSlot> Organs = new();
+
+    /// <summary>
+    /// What's the max health this body part can have?
+    /// </summary>
+    [DataField]
+    public float MinIntegrity;
+
+    /// <summary>
+    /// Whether this body part is enabled or not.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool Enabled = true;
+
+    /// <summary>
+    /// How long it takes to run another self heal tick on the body part.
+    /// </summary>
+    [DataField]
+    public float HealingTime = 30;
+
+    /// <summary>
+    /// How long it has been since the last self heal tick on the body part.
+    /// </summary>
+    public float HealingTimer;
+
+    /// <summary>
+    /// How much health to heal on the body part per tick.
+    /// </summary>
+    [DataField]
+    public float SelfHealingAmount = 5;
+
+    [DataField]
+    public string ContainerName { get; set; } = "part_slot";
+
+    [DataField, AutoNetworkedField]
+    public ItemSlot ItemInsertionSlot = new();
+
+
+    /// <summary>
+    ///     Current species. Dictates things like body part sprites.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string Species { get; set; } = "";
+
+    /// <summary>
+    /// The total damage that has to be dealt to a body part
+    /// to make possible severing it.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float SeverIntegrity = 90;
+
+    /// <summary>
+    /// On what TargetIntegrity we should re-enable the part.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public TargetIntegrity EnableIntegrity = TargetIntegrity.ModeratelyWounded;
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<TargetIntegrity, float> IntegrityThresholds = new()
+    {
+        { TargetIntegrity.CriticallyWounded, 90 },
+        { TargetIntegrity.HeavilyWounded, 75 },
+        { TargetIntegrity.ModeratelyWounded, 60 },
+        { TargetIntegrity.SomewhatWounded, 40},
+        { TargetIntegrity.LightlyWounded, 20 },
+        { TargetIntegrity.Healthy, 10 },
+    };
 
     /// <summary>
     /// These are only for VV/Debug do not use these for gameplay/systems

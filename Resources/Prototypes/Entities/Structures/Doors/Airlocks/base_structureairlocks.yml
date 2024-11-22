@@ -13,6 +13,7 @@
   - type: InteractionOutline
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/basic.rsi
+    snapCardinals: true
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -125,7 +126,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 500
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -133,15 +134,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
-      - !type:ExplodeBehavior
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          AirlockAssembly:
-            min: 1
-            max: 1
-          DoorElectronics:
-            min: 1
-            max: 1
   - type: Construction
     graph: Airlock
     node: airlock
@@ -149,9 +141,6 @@
     - board
   - type: PlacementReplacement
     key: walls
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
   - type: PaintableAirlock
     group: Standard
     department: Civilian

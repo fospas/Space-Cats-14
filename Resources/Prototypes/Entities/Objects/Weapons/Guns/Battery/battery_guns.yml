@@ -166,7 +166,6 @@
     fireRate: 1.7
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    personable: true
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5

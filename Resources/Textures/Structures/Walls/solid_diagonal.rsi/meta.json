@@ -4,16 +4,16 @@
         "x": 32,
         "y": 32
     },
-    "license": "CLA",
-    "copyright": "Sprited by TheGypsyBaron https://github.com/SemkaGamez, especially for the Space Cats server",
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Made by WWDP Team",
     "states": [
         {
             "name": "state0",
-            "directions": 4
+			"directions": 4
         },
         {
             "name": "state1",
-            "directions": 4
+			"directions": 4
         }
     ]
 }

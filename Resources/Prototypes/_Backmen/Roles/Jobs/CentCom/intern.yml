@@ -5,7 +5,7 @@
   playTimeTracker: JobCentralCommandAssistant
   setPreference: true
   startingGear: CentComInternGear
-  icon: JobIconCCIntern
+  icon: JobIconServiceWorker
   supervisors: job-supervisors-centcommembers
   canBeAntag: false
   weight: 1
@@ -51,13 +51,6 @@
   maxBankBalance: 250
   wageDepartment: CentCom
   wage: 75
-
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconCCIntern
-  icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: assistant
 
 - type: startingGear
   id: CentComInternGear
