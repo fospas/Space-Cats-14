@@ -54,9 +54,3 @@
   spritePath: _SpaceCats/Typing.rsi
   typingState: vox0
   idleState: vox3
-
-- type: typingIndicator
-  id: Swarms
-  spritePath: _SpaceCats/Swarmers/Typing.rsi
-  typingState: swarmbot0
-  idleState: swarmbot3
