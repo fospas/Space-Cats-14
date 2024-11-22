@@ -1,1 +1,0 @@
-guide-entry-ataraxia = Аtaraxia

@@ -72,22 +72,22 @@
   - type: Inventory
     speciesId: reptilian
     displacements:
-      jumpsuit: # Ataraxia
+      jumpsuit:
         sizeMaps:
           32:
-            sprite: _Ataraxia/Mobs/Species/displacement.rsi
+            sprite: _SpaceCats/Mobs/Species/displacement.rsi
             state: jumpsuit
 
-      outerClothing: # Ataraxia
+      outerClothing:
         sizeMaps:
           32:
-            sprite: _Ataraxia/Mobs/Species/displacement.rsi
+            sprite: _SpaceCats/Mobs/Species/displacement.rsi
             state: jumpsuit
 
-      shoes: # Ataraxia
+      shoes:
         sizeMaps:
           32:
-            sprite: _Ataraxia/Mobs/Species/displacement.rsi
+            sprite: _SpaceCats/Mobs/Species/displacement.rsi
             state: shoes
 
     femaleDisplacements:
