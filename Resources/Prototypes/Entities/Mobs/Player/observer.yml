@@ -101,7 +101,6 @@
     - Binary
     - Flesh
     - Freelance
-    - Swarm
     globalReceive: true
   - type: Tag
     tags:
