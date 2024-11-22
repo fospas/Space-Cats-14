@@ -301,6 +301,7 @@
     - id: FlatpackOracle # backmen
     - id: FlatpackSophie # backmen
     - id: AnomalyPinpointer # cats
+    - id: ClothingOuterReactiveArmor # cats
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
