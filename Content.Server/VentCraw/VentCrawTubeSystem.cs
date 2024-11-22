@@ -194,10 +194,11 @@ namespace Content.Server.VentCraw
             foreach (var entity in tube.Contents.ContainedEntities.ToArray())
             {
                 if (query.TryGetComponent(entity, out var holder))
-                    {
+                {
                     var Exitev = new VentCrawExitEvent();
                     RaiseLocalEvent(entity, ref Exitev);
                 }
+            }
         }
 
         private bool TryInsert(EntityUid uid, EntityUid entity, VentCrawEntryComponent? entry = null)
