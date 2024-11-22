@@ -612,3 +612,11 @@ ShotGunCabinetFilledOpen: ShotGunCabinetFilledOpenBackmen
 # 2024-10-05 - Corvax
 SheetPrinter: SheetPaper
 SheetPrinter1: SheetPaper1
+
+# 2024-11-16 - Space Cats
+SpawnPointCargoBorg: null
+SpawnPointEngenerBorg: null
+SpawnPointJanitorBorg: null
+SpawnPointMedIcalBorg: null
+SpawnPointServiceBorg: null
+SpawnPointSecurityBorg: null
