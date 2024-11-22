@@ -17,8 +17,8 @@ using Content.Shared.Backmen.Abilities;
 using Content.Shared.Backmen.Arrivals;
 using Content.Shared.Cargo.Components;
 using Content.Shared.CCVar;
-// using Content.Shared.Emag.Components;
-// using Content.Shared.Emag.Systems;
+using Content.Shared.Emag.Components;
+using Content.Shared.Emag.Systems;
 using Content.Shared.GameTicking;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -67,13 +67,12 @@ public sealed class CentcommSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        _sawmill = Logger.GetSawmill("centcom");
         SubscribeLocalEvent<ActorComponent, CentcomFtlAction>(OnFtlActionUsed);
         SubscribeLocalEvent<PreGameMapLoad>(OnPreGameMapLoad, after: new[] { typeof(StationSystem) });
         SubscribeLocalEvent<RoundStartingEvent>(OnCentComInit, before: new[] { typeof(EmergencyShuttleSystem) });
         SubscribeLocalEvent<RoundEndedEvent>(OnCentComEndRound);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnCleanup);
-//        SubscribeLocalEvent<ShuttleConsoleComponent, GotEmaggedEvent>(OnShuttleConsoleEmaged);
+        SubscribeLocalEvent<ShuttleConsoleComponent, GotEmaggedEvent>(OnShuttleConsoleEmaged);
         SubscribeLocalEvent<FTLCompletedEvent>(OnFTLCompleted);
         SubscribeLocalEvent<FtlCentComAnnounce>(OnFtlAnnounce);
         SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
@@ -141,17 +140,13 @@ public sealed class CentcommSystem : EntitySystem
             return; // not loaded centcom
         }
 
-        var transformQuery = EntityQueryEnumerator<TransformComponent, IFFConsoleComponent>();
-
         var shuttleName = "Неизвестный";
 
-        while (transformQuery.MoveNext(out var owner, out var transformComponent, out var iff))
-        {
-            if (transformComponent.GridUid != ev.Source)
-            {
-                continue;
-            }
+        _iFfConsoleEntities.Clear();
+        _lookup.GetGridEntities(ev.Source, _iFfConsoleEntities);
 
+        foreach (var (owner,iff) in _iFfConsoleEntities)
+        {
             var f = iff.AllowedFlags;
             if (f.HasFlag(IFFFlags.Hide))
             {
@@ -204,7 +199,7 @@ public sealed class CentcommSystem : EntitySystem
 
     [ValidatePrototypeId<EntityPrototype>]
     private const string StationShuttleConsole = "ComputerShuttle";
-/*
+
     private void OnShuttleConsoleEmaged(Entity<ShuttleConsoleComponent> ent, ref GotEmaggedEvent args)
     {
         if (Prototype(ent)?.ID != StationShuttleConsole)
@@ -228,7 +223,7 @@ public sealed class CentcommSystem : EntitySystem
         EnsureComp<AllowFtlToCentComComponent>(shuttle.Value); // для обновления консоли нужно чтобы компонент был до вызыва RefreshShuttleConsoles
         _console.RefreshShuttleConsoles();
     }
-*/ 
+
     private void OnGridFillChange(bool obj)
     {
         if (obj)
@@ -239,7 +234,7 @@ public sealed class CentcommSystem : EntitySystem
 
     private void OnCleanup(RoundRestartCleanupEvent ev)
     {
-        _sawmill.Info("OnCleanup");
+        Log.Info("OnCleanup");
         QueueDel(CentComGrid);
         CentComGrid = EntityUid.Invalid;
 
@@ -263,13 +258,13 @@ public sealed class CentcommSystem : EntitySystem
         if (!force && (_gameTicker.RunLevel != GameRunLevel.InRound || !_cfg.GetCVar(CCVars.GridFill)))
             return;
 
-        _sawmill.Info("EnsureCentcom");
+        Log.Info("EnsureCentcom");
         if (CentComGrid.IsValid())
         {
             return;
         }
 
-        _sawmill.Info("Start load centcom");
+        Log.Info("Start load centcom");
 
         if (CentComMap == MapId.Nullspace)
         {
@@ -296,7 +291,7 @@ public sealed class CentcommSystem : EntitySystem
 
         if (ent == null)
         {
-            _sawmill.Warning("No CentComm map found, skipping setup.");
+            Log.Warning("No CentComm map found, skipping setup.");
             return;
         }
 
