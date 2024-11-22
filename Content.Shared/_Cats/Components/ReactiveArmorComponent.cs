@@ -1,5 +1,5 @@
 /// Maded by Gorox for Enterprise. See CLA
-using Content.Shared.ReactiveArmor.Systems;
+using Content.Shared.ReactiveArmor;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
 using Content.Shared.Damage.Prototypes;
 
