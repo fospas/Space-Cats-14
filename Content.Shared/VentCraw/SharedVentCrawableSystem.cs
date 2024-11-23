@@ -39,19 +39,16 @@ public sealed class SharedVentCrawableSystem : EntitySystem
     /// <param name="uid">The EntityUid of the VentCrawHolderComponent.</param>
     /// <param name="component">The VentCrawHolderComponent instance.</param>
     /// <param name="args">The MoveInputEvent arguments.</param>
-    private void OnMoveInput(EntityUid uid, VentCrawHolderComponent component, ref MoveInputEvent args)
+    private void OnMoveInput(EntityUid uid, VentCrawHolderComponent holder, ref MoveInputEvent args)
     {
-        if (!TryComp<VentCrawHolderComponent>(uid, out var holder))
-            return;
-
         if (!EntityManager.EntityExists(holder.CurrentTube))
         {
             var ev = new VentCrawExitEvent();
             RaiseLocalEvent(uid, ref ev);
         }
 
-        component.IsMoving = args.State;
-        component.CurrentDirection = args.Dir;
+        holder.IsMoving = args.State;
+        holder.CurrentDirection = args.Dir;
     }
 
     /// <summary>
@@ -146,6 +143,8 @@ public sealed class SharedVentCrawableSystem : EntitySystem
             RaiseLocalEvent(holderUid, ref ev);
             return false;
         }
+        if (TryComp<PhysicsComponent>(holderUid, out var physBody))
+            _physicsSystem.SetCanCollide(holderUid, false, body: physBody);
 
         if (holder.CurrentTube != null)
         {
