@@ -239,8 +239,11 @@
     - type: Sprite
       granularLayersRendering: true
       layers:
-        - state: freezerOff
-          map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+        - state: freezerOn # Cats edit
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+        - state: freezer-Unshaded
+          shader: unshaded
+          map: ["freezing"]
         - state: freezerPanelOpen
           map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
         - state: pipe
@@ -250,8 +253,11 @@
       visuals:
         enum.PowerDeviceVisuals.Powered:
           enum.PowerDeviceVisualLayers.Powered:
-            True: { state: freezerOn }
-            False: { state: freezerOff }
+            True: { visible: true } # Cats edit
+            False: { visible: false }
+          freezing:
+            True: { visible: true }
+            False: { visible: false }
     - type: GasThermoMachine
       coefficientOfPerformance: -3.9
     - type: ApcPowerReceiver
@@ -262,6 +268,11 @@
       prefix: device-address-prefix-freezer
     - type: StealTarget
       stealGroup: FreezerHeater
+    - type: LitOnPowered
+    - type: PointLight
+      radius: 1.5
+      energy: 1.5
+      color: "#47bfff"
 
 - type: entity
   parent: GasThermoMachineFreezer
@@ -307,6 +318,11 @@
       prefix: device-address-prefix-heater
     - type: StealTarget
       stealGroup: FreezerHeater
+    - type: LitOnPowered
+    - type: PointLight
+      radius: 1.5
+      energy: 1.5
+      color: "#ffc747"
 
 - type: entity
   parent: GasThermoMachineHeater
@@ -325,6 +341,28 @@
   components:
   - type: Sprite
     sprite: _SpaceCats/Structures/Piping/Atmospherics/hellfirethermomachine.rsi # Cats edit
+    granularLayersRendering : true
+    layers:
+      - state: freezerOff
+      - state: freezerOn
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: freezer-Unshaded
+        shader: unshaded
+        map: ["hellfreezing"]
+      - state: freezerPanelOpen
+        map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      - state: pipe
+        map: [ "enum.PipeVisualLayers.Pipe" ]
+        renderingStrategy: Default
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+        hellfreezing:
+          True: { visible: true }
+          False: { visible: false }
   - type: GasThermoMachine
     minTemperature: 23.15
     heatCapacity: 40000
@@ -340,6 +378,28 @@
   components:
   - type: Sprite
     sprite: _SpaceCats/Structures/Piping/Atmospherics/hellfirethermomachine.rsi # Cats edit
+    granularLayersRendering : true
+    layers:
+      - state: heaterOff
+      - state: heaterOn
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: heater-Unshaded
+        shader: unshaded
+        map: ["hellheating"]
+      - state: heaterPanelOpen
+        map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      - state: pipe
+        map: [ "enum.PipeVisualLayers.Pipe" ]
+        renderingStrategy: Default
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+        hellheating:
+          True: { visible: true }
+          False: { visible: false }
   - type: GasThermoMachine
     maxTemperature: 1193.15
     heatCapacity: 40000
