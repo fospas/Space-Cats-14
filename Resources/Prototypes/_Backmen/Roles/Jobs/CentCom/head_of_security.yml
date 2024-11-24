@@ -12,6 +12,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   whitelisted: true
+  discordRequired: false
   requirements:
     - !type:RoleTimeRequirement
       role: JobCentralCommandAssistant
@@ -58,8 +59,8 @@
   parent: JobIcon
   id: JobIconCCHeadOfSecurity
   icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: head_securety
+    sprite: /Textures/Backmen/Icons/jobicon.rsi
+    state: Security
 
 - type: startingGear
   id: HeadOfSecurityCentComGear

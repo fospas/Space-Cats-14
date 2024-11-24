@@ -69,6 +69,9 @@
         type: BorgBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+      # Only used for NT borgs that can switch type, defined here to avoid copy-pasting the rest of this component.
+      enum.BorgSwitchableTypeUiKey.SelectBorgType:
+        type: BorgSelectTypeUserInterface
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -78,7 +81,7 @@
   - type: EmagSiliconLaw
     stunTime: 5
   - type: SiliconLawProvider
-    laws: NTDefault
+    laws: NTDefault # Corvax-NTDefault
   - type: IonStormTarget
   - type: Inventory
     templateId: borg
@@ -157,6 +160,7 @@
       collection: FootstepBorg
   - type: Construction
     graph: Cyborg
+    node: cyborg
     containers:
     - part-container
     - cell_slot
@@ -233,6 +237,7 @@
   - type: Emoting
   - type: TTS # Corvax-TTS
     voice: Borgs
+  - type: LayingDown # backmen: LayingDown
   - type: GuideHelp
     guides:
     - Cyborgs
@@ -262,24 +267,6 @@
     receiveFrequencyId: CyborgControl
     transmitFrequencyId: RoboticsConsole
     savableAddress: false
-  - type: OnUseTimerTrigger
-    delay: 10
-    examinable: false
-    beepSound:
-      path: /Audio/Effects/Cargo/buzz_two.ogg
-      params:
-        volume: -4
-  # prevent any funnies if someone makes a cyborg item...
-  - type: AutomatedTimer
-  - type: ExplodeOnTrigger
-  # explosion does most of its damage in the center and less at the edges
-  - type: Explosive
-    explosionType: Minibomb
-    deleteAfterExplosion: false # let damage threshold gib the borg
-    totalIntensity: 30
-    intensitySlope: 20
-    maxIntensity: 20
-    canCreateVacuum: false # its for killing the borg not the station
 
 - type: entity
   id: BaseBorgChassisNT
@@ -296,7 +283,9 @@
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons
-  - type: StationAiVision
+  - type: InteractionPopup
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
 
 - type: entity
   id: BaseBorgChassisSyndicate

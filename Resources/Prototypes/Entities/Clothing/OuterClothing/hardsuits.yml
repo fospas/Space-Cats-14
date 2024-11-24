@@ -919,6 +919,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: DiseaseProtection #Backmen & Ataraxia anti viral
+    protection: 1
   - type: DNALocker # Cats edit
 
 #CBURN Hardsuit
@@ -958,6 +960,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURN
+  - type: DiseaseProtection #Backmen & Ataraxia anti viral
+    protection: 0.6
   - type: DNALocker # Cats edit
 
 #MISC. HARDSUITS

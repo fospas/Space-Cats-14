@@ -8,6 +8,7 @@
   - SpaceLaw # Corvax-HyperLink
   - FlowerWreath
   - Hairflower
+  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - Lighter
@@ -65,7 +66,6 @@
   - TowelColorPurple
   - TowelColorRed
   - TowelColorSilver
-  - TowelColorLightBlue
   - TowelColorWhite
   - TowelColorYellow
 
@@ -1007,7 +1007,6 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
-  - ClothingOuterWinterSeniorOfficer # cats
 
 - type: loadoutGroup #Backmen
   id: SecurityOfficerPocket
@@ -1051,7 +1050,6 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
-  - ClothingOuterWinterSeniorOfficer # cats
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1099,7 +1097,6 @@
   - ClothingOuterCoatSecurityOvercoat #Backmen
   - ClothingOuterCoatSecurityOfficerOvercoat #Backmen
   - SecurityOfficerWintercoat
-  - ClothingOuterWinterSeniorOfficer # cats
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1120,11 +1117,7 @@
   id: SecurityPocket
   name: loadout-group-security-pocket
   loadouts:
-  - WeaponPistolMk58
-  - WeaponPistolG22
-  - WeaponPistolACP14
-  - WeaponPistolG23
-  - WeaponPistolM1911
+  - WeaponEnergyGunDominator
 
 - type: loadoutGroup #Backmen
   id: SecurityPocket2

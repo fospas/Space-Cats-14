@@ -41,3 +41,14 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 5
+
+- type: listing
+  id: lushiesSponsorInventory5
+  productEntity: PlushieSilver
+  cost:
+    SpaceCash: 120
+  categories:
+    - PlushiesSponsor
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 5

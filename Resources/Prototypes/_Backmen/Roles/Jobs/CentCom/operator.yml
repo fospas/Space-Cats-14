@@ -5,13 +5,14 @@
   playTimeTracker: JobCentralCommandOperator
   setPreference: true
   startingGear: OperatorGavna
-  icon: JobIconCCOperator
+  icon: JobIconNanotrasen
   supervisors: job-supervisors-hoh
   canBeAntag: false
   weight: 1
   requireAdminNotify: true
   joinNotifyCrew: true
   whitelisted: true
+  discordRequired: false
   requirements:
     - !type:RoleTimeRequirement
       role: JobCentralCommandAssistant
@@ -52,12 +53,7 @@
   wageDepartment: CentCom
   wage: 75
 
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconCCOperator
-  icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: revvizor
+
 
 - type: entity
   parent: CentcomPDABackmen

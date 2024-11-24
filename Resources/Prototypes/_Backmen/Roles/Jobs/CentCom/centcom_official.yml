@@ -12,6 +12,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   whitelisted: true
+  discordRequired: false
   requirements:
     - !type:AgeRequirement
       requiredAge: 21 # cats
@@ -47,8 +48,8 @@
   parent: JobIcon
   id: JobIconNT
   icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: operator
+    sprite: /Textures/Backmen/Icons/jobicon.rsi
+    state: NT
 
 
 

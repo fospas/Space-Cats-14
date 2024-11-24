@@ -107,5 +107,5 @@
   parent: JobIcon
   id: JobIconBlueShield
   icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: privat_officer
+    sprite: /Textures/Backmen/Icons/jobicon.rsi
+    state: blueshield

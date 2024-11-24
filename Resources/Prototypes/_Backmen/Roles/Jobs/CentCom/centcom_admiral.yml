@@ -12,6 +12,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   whitelisted: true
+  discordRequired: false
   requirements:
     - !type:RoleTimeRequirement
       role: JobCentralCommandOperator
@@ -53,8 +54,8 @@
   parent: JobIcon
   id: JobIconNanotrasenHighOfficer
   icon:
-    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
-    state: admiral
+    sprite: /Textures/Backmen/Icons/jobicon.rsi
+    state: Nanotrasen
 
 - type: entity
   parent: CentcomPDABackmen

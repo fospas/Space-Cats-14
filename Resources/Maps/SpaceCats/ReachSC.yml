@@ -747,6 +747,13 @@ entities:
           decals:
             262: 2,13
         - node:
+            color: '#FFA500FF'
+            id: MiniTileWhiteLineS
+          decals:
+            402: -15,-2
+            403: -14,-2
+            404: -13,-2
+        - node:
             color: '#A4610696'
             id: QuarterTileOverlayGreyscale
           decals:
@@ -958,8 +965,6 @@ entities:
             161: -9,-2
             162: -10,-2
             163: -11,-2
-            164: -13,-2
-            165: -14,-2
             166: -15,-2
             179: -4,1
             180: -5,1
@@ -1226,6 +1231,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           immutable: True
           moles:
@@ -1241,6 +1254,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1256,10 +1277,26 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -1840,6 +1877,14 @@ entities:
     components:
     - type: Transform
       pos: 6.3718643,-0.34468752
+      parent: 407
+- proto: BookRandomStory
+  entities:
+  - uid: 1709
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.49187,-2.4316978
       parent: 407
 - proto: BoozeDispenser
   entities:
@@ -5162,6 +5207,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.5,2.5
       parent: 407
+- proto: CardBox
+  entities:
+  - uid: 1713
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -12.36687,-3.3698497
+      parent: 407
 - proto: Carpet
   entities:
   - uid: 1484
@@ -6097,6 +6150,11 @@ entities:
     - type: InsideEntityStorage
 - proto: ComfyChair
   entities:
+  - uid: 1693
+    components:
+    - type: Transform
+      pos: -12.5,-2.5
+      parent: 407
   - uid: 1703
     components:
     - type: Transform
@@ -6133,41 +6191,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -10.5,-2.5
       parent: 407
-  - uid: 1709
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -12.5,-4.5
-      parent: 407
-  - uid: 1710
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -12.5,-3.5
-      parent: 407
-  - uid: 1711
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -12.5,-2.5
-      parent: 407
   - uid: 1712
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,-4.5
-      parent: 407
-  - uid: 1713
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,-3.5
-      parent: 407
-  - uid: 1714
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,-2.5
+      rot: 3.141592653589793 rad
+      pos: -12.5,-4.5
       parent: 407
   - uid: 1757
     components:
@@ -8997,8 +9025,6 @@ entities:
     - type: Transform
       pos: -22.5,-2.5
       parent: 407
-    - type: GravityGenerator
-      charge: 100
     - type: PointLight
       radius: 175.75
 - proto: Grille
@@ -10559,6 +10585,14 @@ entities:
       parent: 407
     - type: ApcPowerReceiver
       powerLoad: 0
+- proto: PoweredlightOrange
+  entities:
+  - uid: 1710
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,-3.5
+      parent: 407
 - proto: PoweredlightSodium
   entities:
   - uid: 1477
@@ -11731,6 +11765,13 @@ entities:
     - type: Transform
       pos: -9.5,5.5
       parent: 407
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 1695
+    components:
+    - type: Transform
+      pos: -14.5,-3.5
+      parent: 407
 - proto: SpaceHeater
   entities:
   - uid: 1114
@@ -12268,20 +12309,11 @@ entities:
       parent: 407
 - proto: TableCarpet
   entities:
-  - uid: 1693
-    components:
-    - type: Transform
-      pos: -13.5,-4.5
-      parent: 407
   - uid: 1694
     components:
     - type: Transform
-      pos: -13.5,-3.5
-      parent: 407
-  - uid: 1695
-    components:
-    - type: Transform
-      pos: -13.5,-2.5
+      rot: 1.5707963267948966 rad
+      pos: -12.5,-3.5
       parent: 407
   - uid: 1696
     components:
@@ -12466,6 +12498,14 @@ entities:
     components:
     - type: Transform
       pos: 24.5,1.5
+      parent: 407
+- proto: TableReinforcedGlass
+  entities:
+  - uid: 1711
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,-2.5
       parent: 407
 - proto: TableWood
   entities:
@@ -14142,6 +14182,13 @@ entities:
     components:
     - type: Transform
       pos: 18.5,-1.5
+      parent: 407
+- proto: WardrobeGreenFilled
+  entities:
+  - uid: 1714
+    components:
+    - type: Transform
+      pos: -14.5,-4.5
       parent: 407
 - proto: WarningN2
   entities:

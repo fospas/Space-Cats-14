@@ -73,3 +73,28 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Animals/fox_squeak.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSilver
+  name: плюшевый Сильвер Соул
+  description: "А бикаридин это же от кислотных?"
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/silver.rsi
+    state: plushie_silver
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/Chemistry/bubbles.ogg
