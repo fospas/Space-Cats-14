@@ -284,9 +284,9 @@
   rules:
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
   # Oh my god.
-  - KesslerSyndromeScheduler
+#  - KesslerSyndromeScheduler
   # - MeteorSwarmMildScheduler
   # - MeteorSwarmScheduler
   - RampingStationEventScheduler
