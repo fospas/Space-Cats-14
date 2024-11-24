@@ -25,6 +25,4 @@
   roles:
     - BKBPLATech
     - BKBPLAMED
-    - Borg
-    - StationAi
   accountNumber: 1351  #backmen: currency
