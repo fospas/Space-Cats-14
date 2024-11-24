@@ -6,7 +6,7 @@ using Content.Shared._Cats.CCVars;
 using Robust.Server.Player;
 using Content.Server.GameTicking;
 
-namespace Content.Server._CorvaxNext.AutoVote;
+namespace Content.Server._Cats.AutoVote;
 
 public sealed class AutoVoteSystem : EntitySystem
 {
