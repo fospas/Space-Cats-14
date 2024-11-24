@@ -2,7 +2,7 @@ using Robust.Shared.Configuration;
 using Content.Server.Voting.Managers;
 using Content.Shared.GameTicking;
 using Content.Shared.Voting;
-using Content.Shared._Cats.ССVars;
+using Content.Shared._Cats.CCVars;
 using Robust.Server.Player;
 using Content.Server.GameTicking;
 
