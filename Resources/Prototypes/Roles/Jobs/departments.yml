@@ -64,6 +64,7 @@
   accountNumber: 1317 #backmen: currency
   roles:
   - Captain
+  - BlueShield # Backmen
   - IAA # Corvax-IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
