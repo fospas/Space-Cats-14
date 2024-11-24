@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: true # secret
+  showInVote: false # secret
   description: survival-description
   rules:
     #- MeteorSwarmScheduler
@@ -11,7 +11,7 @@
     - WageScheduler #backmen: currency
 #    - SpaceTrafficControlEventScheduler
 #    - SpaceTrafficControlFriendlyEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: KesslerSyndrome
@@ -24,10 +24,10 @@
   description: kessler-syndrome-description
   rules:
     - WageScheduler #backmen: currency
-    - KesslerSyndromeScheduler
+#    - KesslerSyndromeScheduler
     - RampingStationEventScheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: AllAtOnce
@@ -47,10 +47,10 @@
     - Traitor
     - Revolutionary
     - Zombie
-    - KesslerSyndromeScheduler
+#    - KesslerSyndromeScheduler
     - RampingStationEventScheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     #- MeteorSwarmScheduler
 
 - type: gamePreset
@@ -77,13 +77,13 @@
     - Revolutionary
     - Zombie
     - BasicStationEventScheduler
-    - KesslerSyndromeScheduler
+  #  - KesslerSyndromeScheduler
   #  - MeteorSwarmMildScheduler
   #  #- MeteorSwarmScheduler
     - RampingStationEventScheduler
 #    - SpaceTrafficControlEventScheduler
 #    - SpaceTrafficControlFriendlyEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Extended
@@ -98,7 +98,7 @@
   - WageScheduler #backmen: currency
 #  - MeteorSwarmScheduler
 #  - SpaceTrafficControlEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Greenshift
@@ -106,11 +106,11 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: true #4boring4vote
+  showInVote: false #4boring4vote
   description: greenshift-description
   rules:
 #  - SpaceTrafficControlFriendlyEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -136,7 +136,7 @@
     - WageScheduler #backmen: currency
 #    - MeteorSwarmScheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
@@ -148,7 +148,7 @@
   rules:
   - WageScheduler #backmen: currency
 #  - SpaceTrafficControlFriendlyEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Sandbox
@@ -158,7 +158,6 @@
   showInVote: true # secret
   maxPlayers: 5
   description: sandbox-description
-#  showInVote: true # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
   rules:
     - Sandbox
 
@@ -169,7 +168,7 @@
     - tator
   name: traitor-title
   description: traitor-description
-  showInVote: true
+  showInVote: false
   minPlayers: 6
   rules:
     - Traitor
@@ -178,7 +177,7 @@
     - WageScheduler #backmen: currency
 #    - MeteorSwarmScheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Deathmatch
@@ -209,7 +208,7 @@
     - WageScheduler #backmen: currency
 #    - CalmMeteorSwarmScheduler #backmen: calm-scheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Revolutionary
@@ -219,7 +218,7 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: true
+  showInVote: false
   minPlayers: 10
   rules:
     - Revolutionary
@@ -227,7 +226,7 @@
     - BasicStationEventScheduler
 #    - MeteorSwarmScheduler
 #    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -240,7 +239,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: true
+  showInVote: false
   minPlayers: 10
   rules:
   - Zombie
@@ -248,7 +247,7 @@
   - WageScheduler #backmen: currency
 #  - MeteorSwarmScheduler
 #  - SpaceTrafficControlEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
 
 - type: gamePreset
   id: Zombieteors
@@ -263,6 +262,6 @@
   - WageScheduler #backmen: currency
   - Zombie
   - BasicStationEventScheduler
-  - KesslerSyndromeScheduler
+#  - KesslerSyndromeScheduler
 #  - SpaceTrafficControlEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
