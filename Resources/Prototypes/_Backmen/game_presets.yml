@@ -18,7 +18,7 @@
   - bloodsucker
   name: vampires-title
   description: vampires-description
-  showInVote: true
+  showInVote: false
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
@@ -34,7 +34,7 @@
   name: blob-title
   description: blob-description
   minPlayers: 10
-  showInVote: true
+  showInVote: false
   rules:
   - BlobGameMode
   - BasicStationEventScheduler
@@ -51,7 +51,7 @@
   name: flesh-cult-title
   description: flesh-cult-description
   minPlayers: 10
-  showInVote: true
+  showInVote: false
   rules:
   - FleshCult
   - BasicStationEventScheduler
@@ -211,7 +211,7 @@
   - changeling
   name: changeling-gamemode-title
   description: changeling-gamemode-description
-  showInVote: true
+  showInVote: false
   minPlayers: 5
   rules:
   - WageScheduler #backmen: currency
@@ -296,7 +296,7 @@
 - type: gamePreset
   id: Calm
   name: calm-title
-  showInVote: true
+  showInVote: false
   description: calm-description
   rules:
   - CalmStationEventScheduler
@@ -309,7 +309,7 @@
   name: babelTower-title
   description: babelTower-description
   minPlayers: 5
-  showInVote: true
+  showInVote: false
   rules:
     - BabelTower
     - BasicStationEventScheduler
