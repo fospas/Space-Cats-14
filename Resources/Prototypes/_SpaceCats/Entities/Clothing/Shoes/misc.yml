@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesFlippersRubber
+  name: тапочки
+  description: Пара резиновых тапочек. Носки в комплект не входят.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Shoes/Misc/flippers.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Shoes/Misc/flippers.rsi

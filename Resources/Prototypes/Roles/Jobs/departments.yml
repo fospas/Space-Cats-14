@@ -144,7 +144,6 @@
   color: "#D381C9"
   roles:
   - Borg
-  - StationAi
 
 - type: department
   id: Specific

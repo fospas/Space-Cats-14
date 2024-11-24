@@ -214,6 +214,9 @@
   id: Carpet
 
 - type: Tag
+  id: Card
+
+- type: Tag
   id: CarpetBlack
 
 - type: Tag
@@ -513,6 +516,9 @@
   id: Enzyme
 
 - type: Tag
+  id: EnergySword
+
+- type: Tag
   id: ExplosivePassable
 
 - type: Tag
@@ -727,7 +733,7 @@
 
 - type: Tag
   id: Igniter
-
+  
 - type: Tag
   id: Ingredient
 
@@ -1024,6 +1030,9 @@
   id: Powerdrill
 
 - type: Tag
+  id: PockerChips
+
+- type: Tag
   id: PrisonUniform
 
 - type: Tag
@@ -1164,6 +1173,9 @@
 
 - type: Tag
   id: Spear
+
+- type: Tag
+  id: SpearRatvar
 
 - type: Tag
   id: SpeedLoaderCap

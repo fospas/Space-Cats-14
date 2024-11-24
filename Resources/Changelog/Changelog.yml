@@ -1,4 +1,284 @@
-﻿Entries:
+Entries:
+- author: Spessmann
+  changes:
+  - message: Added Cog, a new midpop map based on Cogmap from ss13
+    type: Add
+  id: 7105
+  time: '2024-08-13T19:27:25.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30840
+- author: PoorMansDreams
+  changes:
+  - message: Throngler Plushie looks like a plushie
+    type: Tweak
+  id: 7106
+  time: '2024-08-13T20:32:53.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30969
+- author: IProduceWidgets
+  changes:
+  - message: shuttle events have been separated from other midround events and can
+      now happen concurrently.
+    type: Tweak
+  - message: Cargo Gift events should be less likely.
+    type: Tweak
+  - message: meteors have been changed to be more responsive to player count.
+    type: Tweak
+  - message: 'Game mode: Kessler syndrome - What if survival but also the apocalypse?'
+    type: Add
+  - message: 'Game mode: Zombeteors - Zombies and a meteor shower all at once!'
+    type: Add
+  id: 7107
+  time: '2024-08-14T05:21:02.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29320
+- author: Blackern5000
+  changes:
+  - message: Combat medical kits now contain saline syringes.
+    type: Add
+  id: 7108
+  time: '2024-08-14T06:25:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29954
+- author: TheShuEd
+  changes:
+  - message: added morbilliard variants of procedural tacos and kebabs
+    type: Add
+  - message: removed all microwave taco and kebabs recipes (except for the taco shell
+      itself)
+    type: Remove
+  - message: you can fight with a skewer (even if it has food on it)
+    type: Tweak
+  - message: now you can't put more than 10 layers on a burger. (20 before)
+    type: Tweak
+  id: 7109
+  time: '2024-08-14T13:04:00.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30905
+- author: themias
+  changes:
+  - message: Fixed lizards being unable to eat custom burgers
+    type: Fix
+  id: 7110
+  time: '2024-08-14T19:47:04.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31005
+- author: Erisfiregamer1
+  changes:
+  - message: New chemical, Sedin. It restores seeds on plants 20% of the time with
+      other adverse effects included.
+    type: Add
+  id: 7111
+  time: '2024-08-15T00:38:24.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27110
+- author: PoorMansDreams
+  changes:
+  - message: Added Star sticker in loadouts for Secoffs
+    type: Add
+  id: 7112
+  time: '2024-08-15T01:50:55.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29767
+- author: FATFSAAM2
+  changes:
+  - message: added 7 new figurine voice lines.
+    type: Add
+  - message: changed a hos figurine voice line to not include a typo.
+    type: Fix
+  id: 7113
+  time: '2024-08-15T12:34:41.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30865
+- author: to4no_fix
+  changes:
+  - message: Added a new electropack that shocks when a trigger is triggered
+    type: Add
+  - message: Added a new shock collar that shocks when a trigger is triggered
+    type: Add
+  - message: Two shock collars and two remote signallers added to the warden's locker
+    type: Add
+  - message: Shock collar added as a new target for the thief
+    type: Add
+  - message: A new Special Means technology has been added to the Arsenal research
+      branch at the 1st research level. Its research opens up the possibility of producing
+      electropacks at security techfab. The cost of technology research is 5000
+    type: Add
+  id: 7114
+  time: '2024-08-15T14:30:39.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30529
+- author: Mervill
+  changes:
+  - message: The Gas Analyzer won't spuriously shut down for seemly no reason.
+    type: Tweak
+  - message: The Gas Analyzer will always switch to the device tab when a new object
+      is scanned.
+    type: Tweak
+  - message: The Gas Analyzer's interaction range is now equal to the standard interaction
+      range
+    type: Fix
+  - message: Clicking the Gas Analyzer when it's in your hand has proper enable/disable
+      behavior.
+    type: Fix
+  id: 7115
+  time: '2024-08-15T14:45:13.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30763
+- author: Nimfar11
+  changes:
+  - message: Adds a gold toilet
+    type: Add
+  - message: Adds a target for the Thief to steal the golden toilet
+    type: Add
+  - message: Corrected the sprite image for the normal toilet.
+    type: Fix
+  id: 7116
+  time: '2024-08-15T19:23:59.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31049
+- author: themias
+  changes:
+  - message: Raw meat cutlets can be cooked on a grill
+    type: Tweak
+  id: 7117
+  time: '2024-08-15T19:30:09.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31048
+- author: IProduceWidgets
+  changes:
+  - message: Meteor dust should more consistently happen instead of meteors.
+    type: Tweak
+  id: 7118
+  time: '2024-08-15T19:33:17.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31018
+- author: Emisse
+  changes:
+  - message: Atlas, Cluster, Europa, & Saltern removed from the game.
+    type: Remove
+  id: 7119
+  time: '2024-08-15T21:10:07.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31058
+- author: Emisse
+  changes:
+  - message: Origin removed from the game.
+    type: Remove
+  id: 7120
+  time: '2024-08-15T22:22:02.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31059
+- author: Psychpsyo
+  changes:
+  - message: You can now be German on ze space station! (added German accent)
+    type: Add
+  id: 7121
+  time: '2024-08-15T23:30:21.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30541
+- author: EmoGarbage404
+  changes:
+  - message: Reduced the amount of ore on the mining asteroid and expeditions.
+    type: Tweak
+  - message: Increased the amount of ore on magnet asteroids.
+    type: Tweak
+  - message: Each piece of ore now only has enough material to create 1 sheet.
+    type: Tweak
+  - message: The salvage magnet now accurately reports the contents of asteroids.
+    type: Fix
+  id: 7122
+  time: '2024-08-16T01:43:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30920
+- author: metalgearsloth
+  changes:
+  - message: Fix mains light on wires not being lit.
+    type: Fix
+  id: 7123
+  time: '2024-08-16T03:59:46.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31066
+- author: IgorAnt028
+  changes:
+  - message: The dead and knocked down now stop holding objects
+    type: Fix
+  id: 7124
+  time: '2024-08-16T04:53:34.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31009
+- author: SlamBamActionman
+  changes:
+  - message: Nar'Sie is satiated; moppable blood will no longer duplicate.
+    type: Fix
+  id: 7125
+  time: '2024-08-16T10:47:53.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30983
+- author: Blackern5000
+  changes:
+  - message: Disabler SMGs no longer fit in combat boots
+    type: Fix
+  id: 7126
+  time: '2024-08-17T01:00:21.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31110
+- author: Mervill
+  changes:
+  - message: Fixed suffocation alerts not appearing.
+    type: Fix
+  id: 7127
+  time: '2024-08-17T02:02:51.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31115
+- author: TokenStyle
+  changes:
+  - message: Plant's scream mutation now have 10+ scream varieties.
+    type: Add
+  id: 7128
+  time: '2024-08-17T02:09:25.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30862
+- author: Boaz1111
+  changes:
+  - message: Phlogiston now also ignites people who consume it.
+    type: Add
+  id: 7129
+  time: '2024-08-17T02:49:11.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30955
+- author: slarticodefast
+  changes:
+  - message: Fixed borgs brains being teleported outside their chassis and PAIs outside
+      a PDA or pocket by the bluespace anomaly.
+    type: Fix
+  id: 7130
+  time: '2024-08-17T04:58:23.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30744
+- author: EmoGarbage404
+  changes:
+  - message: You can no longer see wreck names in the salvage magnet UI.
+    type: Tweak
+  id: 7131
+  time: '2024-08-17T05:09:21.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31087
+- author: EmoGarbage404
+  changes:
+  - message: You can now smelt ores in intervals smaller than 30.
+    type: Add
+  id: 7132
+  time: '2024-08-17T05:12:55.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31074
+- author: themias
+  changes:
+  - message: Added a recipe for croissants
+    type: Add
+  id: 7133
+  time: '2024-08-17T14:09:42.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30825
+- author: Ubaser
+  changes:
+  - message: Red crowbars no longer fit in pockets.
+    type: Fix
+  id: 7134
+  time: '2024-08-17T14:32:04.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30939
+- author: iztokbajcar
+  changes:
+  - message: Fixed some typos in the guidebook.
+    type: Fix
+  id: 7135
+  time: '2024-08-18T15:31:48.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31159
+- author: Unkn0wnGh0st333
+  changes:
+  - message: changed human male coughing
+    type: Tweak
+  id: 7136
+  time: '2024-08-18T16:00:42.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30893
+- author: EmoGarbage404
+  changes:
+  - message: Legends tell of horrifying Goliaths that roam the mining asteroid.
+    type: Add
+  id: 7137
+  time: '2024-08-18T16:22:36.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30839
 - author: Beck Thompson
   changes:
   - message: Cutting food now moves the sliced pieces a small amount!
