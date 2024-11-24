@@ -1,0 +1,619 @@
+- type: idColor
+  id: "неизвестно"
+  color: "lime"
+
+- type: idColor
+  id: "борг"
+  color: "white"
+
+- type: idColor
+  id: "юнит"
+  color: "white"
+
+- type: idColor
+  id: "ии"
+  color: "white"
+
+- type: idColor
+  id: "искусственный интеллект"
+  color: "white"
+
+- type: idColor
+  id: "капитан"
+  color: "yellow"
+
+- type: idColor
+  id: "врио капитан"
+  color: "yellow"
+
+- type: idColor
+  id: "цк"
+  color: "yellow"
+
+- type: idColor
+  id: "центральное командование"
+  color: "yellow"
+
+- type: idColor
+  id: "неко-горничная"
+  color: "yellow"
+
+- type: idColor
+  id: "агент центкома"
+  color: "yellow"
+
+- type: idColor
+  id: "адъютант"
+  color: "#3065e8"
+
+- type: idColor
+  id: "старший инженер"
+  color: "#3065e8"
+
+- type: idColor
+  id: "си"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио старший инженер"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио си"
+  color: "#3065e8"
+
+- type: idColor
+  id: "научный руководитель"
+  color: "#3065e8"
+
+- type: idColor
+  id: "нр"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио нр"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио научный руководитель"
+  color: "#3065e8"
+
+- type: idColor
+  id: "глава персонала"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио глава персонала"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио гп"
+  color: "#3065e8"
+
+- type: idColor
+  id: "гп"
+  color: "#3065e8"
+
+- type: idColor
+  id: "глава службы безопасности"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио глава службы безопасности"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио гсб"
+  color: "#3065e8"
+
+- type: idColor
+  id: "гсб"
+  color: "#3065e8"
+
+- type: idColor
+  id: "квартирмейстер"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио квартирмейстер"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио км"
+  color: "#3065e8"
+
+- type: idColor
+  id: "км"
+  color: "#3065e8"
+
+- type: idColor
+  id: "главный врач"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио главный врач"
+  color: "#3065e8"
+
+- type: idColor
+  id: "врио гв"
+  color: "#3065e8"
+
+- type: idColor
+  id: "гв"
+  color: "#3065e8"
+
+- type: idColor
+  id: "пцк"
+  color: "yellow"
+
+- type: idColor
+  id: "представитель цк"
+  color: "yellow"
+
+- type: idColor
+  id: "представитель центком"
+  color: "yellow"
+
+- type: idColor
+  id: "представитель центкома"
+  color: "yellow"
+
+- type: idColor
+  id: "представитель центрального командования"
+  color: "yellow"
+
+- type: idColor
+  id: "офицер сб"
+  color: "#ff2727"
+
+- type: idColor
+  id: "кадет сб"
+  color: "#ff2727"
+
+- type: idColor
+  id: "смотритель"
+  color: "#ff2727"
+
+- type: idColor
+  id: "детектив"
+  color: "#ff2727"
+
+- type: idColor
+  id: "старший офицер"
+  color: "#ff2727"
+
+- type: idColor
+  id: "со"
+  color: "#ff2727"
+
+- type: idColor
+  id: "бригмед"
+  color: "#ff2727"
+
+- type: idColor
+  id: "бригмедик"
+  color: "#ff2727"
+
+- type: idColor
+  id: "бм"
+  color: "#ff2727"
+
+- type: idColor
+  id: "инженер станции"
+  color: "orange"
+
+- type: idColor
+  id: "инженер"
+  color: "orange"
+
+- type: idColor
+  id: "атмосферный техник"
+  color: "orange"
+
+- type: idColor
+  id: "атмос"
+  color: "orange"
+
+- type: idColor
+  id: "ведущий инженер"
+  color: "orange"
+
+- type: idColor
+  id: "ви"
+  color: "orange"
+
+- type: idColor
+  id: "технический ассистент"
+  color: "orange"
+
+- type: idColor
+  id: "научный ассистент"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "учёный"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "ученый"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "робототехник"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "старший научный сотрудник"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "снс"
+  color: "mediumpurple"
+
+- type: idColor
+  id: "сервисный работник"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "зоотехник"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "репортёр"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "репортер"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "музыкант"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "мим"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "библиотекарь"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "юрист"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "уборщик"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "клоун"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "шеф-повар"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "шеф повар"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "священник"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "боксёр"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "боксер"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "ботаник"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "бармен"
+  color: "#aaeeaf"
+
+- type: idColor
+  id: "грузчик"
+  color: "#7b3f00"
+
+- type: idColor
+  id: "утилизатор"
+  color: "#7b3f00"
+
+- type: idColor
+  id: "интерн"
+  color: "skyblue"
+
+- type: idColor
+  id: "врач"
+  color: "skyblue"
+
+- type: idColor
+  id: "доктор"
+  color: "skyblue"
+
+- type: idColor
+  id: "химик"
+  color: "skyblue"
+
+- type: idColor
+  id: "парамедик"
+  color: "skyblue"
+
+- type: idColor
+  id: "хирург"
+  color: "skyblue"
+
+- type: idColor
+  id: "патологоанатом"
+  color: "skyblue"
+
+- type: idColor
+  id: "психолог"
+  color: "skyblue"
+
+- type: idColor
+  id: "ведущий врач"
+  color: "skyblue"
+
+- type: idColor
+  id: "агент внутренних дел"
+  color: "pink"
+
+- type: idColor
+  id: "авд"
+  color: "pink"
+
+- type: idColor
+  id: "магистрат"
+  color: "pink"
+
+- type: idColor
+  id: "офицер специальных операций"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "офицер спец операций"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "осо"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "дсо"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "эскадрон смерти"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "эс"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "уборщик обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "инженер обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "служба безопасности обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "медик обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "лидер обр"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "лидер рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "уборщик рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "инженер рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "служба безопасности рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "медик рхбзз"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "карантинный офицер центком"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "офицер синий щит"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "осщ"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "синий щит"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "офицер щит"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "заключённый"
+  color: "#BDB76B"
+
+- type: idColor
+  id: "беглец"
+  color: "#BDB76B"
+
+- type: idColor
+  id: "лидер РХБЗЗ"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "оперативник РХБЗЗ"
+  color: "#BDB76B"
+
+- type: idColor
+  id: "Omicron - 3"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Сотрудник Мобильной Группы"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Сотрудник Исследовательской Группы"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Агент Красного Ордена"
+  color: "#BDB76B"
+
+- type: idColor
+  id: "Представитель ОПЗ"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Офицер ОПЗ"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Epsilon-11"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Alpha-1"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Tay-39"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Omega-0"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Офицер Специальный Операций"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Sierra - 6"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Theta-9"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Войска РХБЗЗ Sierra-6"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Рядовой"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Капрал"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Сержант"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Младший унтер-офицер"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Унтер-офицер"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Штаб-офицер"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Лейтенант"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Старший лейтенант"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Майор"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Подполковник"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Полковник"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Генерал-Майор"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Генерал-Лейтенант"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Генерал-Полковник"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио научного руководителя"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио старшего инженера"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио главы безопасности"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио капитана"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио главы персонала"
+  color: "#C0C0C0"
+
+- type: idColor
+  id: "Врио главного врача"
+  color: "#C0C0C0"
