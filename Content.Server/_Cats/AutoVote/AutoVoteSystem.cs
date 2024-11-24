@@ -37,7 +37,7 @@ public sealed class AutoVoteSystem : EntitySystem
 
     private void CallAutovote()
     {
-        if (!_cfg.GetCVar(ССVars.AutoVoteEnabled))
+        if (!_cfg.GetCVar(CCVars.AutoVoteEnabled))
             return;
 
         if (_playerManager.PlayerCount == 0)
@@ -46,9 +46,9 @@ public sealed class AutoVoteSystem : EntitySystem
             return;
         }
 
-        if (_cfg.GetCVar(ССVars.MapAutoVoteEnabled))
+        if (_cfg.GetCVar(CCVars.MapAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Map);
-        if (_cfg.GetCVar(ССVars.PresetAutoVoteEnabled))
+        if (_cfg.GetCVar(CCVars.PresetAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
     }
 }
