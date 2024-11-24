@@ -32,6 +32,5 @@ public sealed class CCVars
         /// <summary>
         public static readonly CVarDef<bool> PresetAutoVoteEnabled =
             CVarDef.Create("vote.preset_autovote_enabled", false, CVar.SERVERONLY);
-
-        #endregion
+            
 }
