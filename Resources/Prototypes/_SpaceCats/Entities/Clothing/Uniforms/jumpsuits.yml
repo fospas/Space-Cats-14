@@ -8,7 +8,7 @@
     sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/captain_command.rsi
   - type: Clothing
     sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/captain_command.rsi
-    
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitWhiteCaptain
@@ -19,7 +19,7 @@
       sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/captain_white.rsi
     - type: Clothing
       sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/captain_white.rsi
-      
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSheriff
@@ -30,3 +30,17 @@
       sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/sheriff.rsi
     - type: Clothing
       sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/sheriff.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBridgeOfficer
+  name: bridge officer uniform
+  description: More stylish than advanced, this formal suit serves as a great display of power.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/bridgeofficer.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Uniforms/Jumpsuit/bridgeofficer.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

@@ -49938,6 +49938,13 @@ entities:
     - type: Transform
       pos: 23.743336,21.526909
       parent: 2
+- proto: CaptainDrobe
+  entities:
+  - uid: 10732
+    components:
+    - type: Transform
+      pos: -7.5,-6.5
+      parent: 2
 - proto: CarbonDioxideCanister
   entities:
   - uid: 7409
@@ -71088,13 +71095,6 @@ entities:
           - 9285
           - 9286
           - 9287
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 10732
-    components:
-    - type: Transform
-      pos: -7.5,-6.5
-      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 10733
@@ -110249,7 +110249,7 @@ entities:
     - type: Transform
       pos: -28.5,0.5
       parent: 2
-- proto: GunSafeSubMachineGunDrozd
+- proto: GunSafeSubMachineGunVector
   entities:
   - uid: 16476
     components:
@@ -132714,6 +132714,13 @@ entities:
     - type: Transform
       pos: 34.5,-36.5
       parent: 2
+- proto: SpawnPointBridgeOfficer
+  entities:
+  - uid: 20000
+    components:
+    - type: Transform
+      pos: -0.5,1.5
+      parent: 2
 - proto: SpawnPointBrigmedic
   entities:
   - uid: 19998
@@ -132727,13 +132734,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,-4.5
-      parent: 2
-- proto: SpawnPointCargoBorg
-  entities:
-  - uid: 20000
-    components:
-    - type: Transform
-      pos: 37.5,-1.5
       parent: 2
 - proto: SpawnPointCargoTechnician
   entities:
@@ -132811,13 +132811,6 @@ entities:
     - type: Transform
       pos: -26.5,-29.5
       parent: 2
-- proto: SpawnPointEngenerBorg
-  entities:
-  - uid: 20013
-    components:
-    - type: Transform
-      pos: -0.5,21.5
-      parent: 2
 - proto: SpawnPointHeadOfPersonnel
   entities:
   - uid: 20014
@@ -132848,13 +132841,6 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-27.5
-      parent: 2
-- proto: SpawnPointJanitorBorg
-  entities:
-  - uid: 20019
-    components:
-    - type: Transform
-      pos: -9.5,-28.5
       parent: 2
 - proto: SpawnPointLatejoin
   entities:
@@ -132916,13 +132902,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,24.5
-      parent: 2
-- proto: SpawnPointMedIcalBorg
-  entities:
-  - uid: 20031
-    components:
-    - type: Transform
-      pos: 48.5,-13.5
       parent: 2
 - proto: SpawnPointMedicalDoctor
   entities:
@@ -133106,18 +133085,6 @@ entities:
     components:
     - type: Transform
       pos: -44.5,-8.5
-      parent: 2
-- proto: SpawnPointSecurityBorg
-  entities:
-  - uid: 20063
-    components:
-    - type: Transform
-      pos: -31.5,-10.5
-      parent: 2
-  - uid: 20064
-    components:
-    - type: Transform
-      pos: 17.5,-30.5
       parent: 2
 - proto: SpawnPointSecurityCadet
   entities:
