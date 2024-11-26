@@ -889,11 +889,6 @@
     - Passive
   - type: Body
     prototype: AnimalRuminant
-  - type: SurgeryTarget # Shitmed
-  - type: UserInterface # Shitmed
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: HTN
     rootTask:
       task: RuminantCompound
@@ -977,8 +972,9 @@
       task: RuminantCompound
   - type: Body
     prototype: AnimalHemocyanin
-  - type: SurgeryTarget # Shitmed
-  - type: UserInterface # Shitmed
+  # start-backmen: surgery
+  - type: SurgeryTarget
+  - type: UserInterface
     interfaces:
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
