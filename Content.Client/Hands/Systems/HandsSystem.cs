@@ -4,7 +4,6 @@ using Content.Client.DisplacementMap;
 using Content.Client.Examine;
 using Content.Client.Strip;
 using Content.Client.Verbs.UI;
-using Content.Shared.Backmen.Surgery.Body.Events;
 using Content.Shared.Body.Part;
 using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
