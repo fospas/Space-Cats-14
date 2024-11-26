@@ -2,6 +2,6 @@
   parent: JobIcon
   id: JobIconBridgeOfficer
   icon:
-    sprite: Interface/Misc/job_icons.rsi
+    sprite: /Textures/Interface/Misc/job_icons.rsi
     state: BridgeOfficer
   jobName: job-name-bridgeofficer
