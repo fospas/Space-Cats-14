@@ -26,6 +26,8 @@
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
             #engineering
+            # Cats
+            BridgeOfficer: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 4, 4 ]

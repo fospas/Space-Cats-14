@@ -42,3 +42,12 @@
   components:
     - type: Sprite
       sprite: _SpaceCats/Clothing/Neck/Cloaks/white_captain_mantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBridgeOfficerMantle
+  name: bridge officer mantle
+  description: Elegant mantle in black colors.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Neck/Mantles/BridgeofficerMantle.rsi

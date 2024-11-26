@@ -65,6 +65,7 @@
   roles:
   - Captain
   - BlueShield # Backmen
+  - BridgeOfficer # Cats
   - IAA # Corvax-IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
