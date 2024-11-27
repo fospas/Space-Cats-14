@@ -6,7 +6,6 @@
   placement:
     mode: SnapgridCenter
   components:
-  - type: DrugInitializeMachine # Cats edit
   - type: Sprite
     sprite: Structures/Machines/diagnoser.rsi
     layers:
@@ -22,20 +21,6 @@
     idleState: icon
     runningState: running
   - type: Appearance
-  # cats edit
-  - type: GenericVisualizer
-    visuals:
-      enum.PowerDeviceVisuals.VisualState:
-        enum.DrugInitializeMachineVisualizerLayers.Base:
-          Idle: { state: "icon" }
-          Running: { state: "running" }
-        enum.DrugInitializeMachineVisualizerLayers.BaseUnlit:
-          Idle: { state: "unlit" }
-      enum.PowerDeviceVisuals.Powered:
-        enum.DrugInitializeMachineVisualizerLayers.BaseUnlit:
-          True: { visible: true }
-          False: { visible: false }
-  # cats edit
   - type: Machine
     board: DiagnoserMachineCircuitboard
 

@@ -6,7 +6,7 @@
   canBeAntag: false
   requireAdminNotify: true
   joinNotifyCrew: true
-  whitelisted: true
+  discordRequired: false
   requirements:
     - !type:RoleTimeRequirement
       role: JobHeadOfSecurity
