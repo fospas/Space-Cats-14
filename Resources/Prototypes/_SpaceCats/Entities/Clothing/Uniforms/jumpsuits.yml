@@ -5,6 +5,7 @@
   components:
   - type: VentCrawClothing
 
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCommandCaptain
   name: captain command jumpsuit
