@@ -64,6 +64,8 @@
   accountNumber: 1317 #backmen: currency
   roles:
   - Captain
+  - BlueShield # Backmen
+  - BridgeOfficer # Cats
   - IAA # Corvax-IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -110,6 +112,15 @@
   accountNumber: 1319 #backmen: currency
 
 - type: department
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
+  color: "#D381C9"
+  roles:
+  - Borg
+  - StationAi
+
+- type: department
   id: Security
   name: department-Security
   description: department-Security-description
@@ -136,15 +147,6 @@
   - Scientist
   - ResearchAssistant
   accountNumber: 1321  #backmen: currency
-
-- type: department
-  id: Silicon
-  name: department-Silicon
-  description: department-Silicon-description
-  color: "#D381C9"
-  roles:
-  - Borg
-  - StationAi
 
 - type: department
   id: Specific

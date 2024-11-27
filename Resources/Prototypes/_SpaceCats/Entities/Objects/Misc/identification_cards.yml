@@ -1,0 +1,11 @@
+- type: entity
+  parent: PassengerIDCard
+  id: BridgeOfficerIDCard
+  name: bridge officer ID card
+  components:
+  - type: PresetIdCard
+    job: BridgeOfficer
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idbridgeofficer

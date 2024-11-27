@@ -1,0 +1,41 @@
+- type: job
+  id: BridgeOfficer
+  name: job-name-bridgeofficer
+  description: job-description-bridgeofficer
+  playTimeTracker: JobBridgeOfficer
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 64000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 21600
+  startingGear: BridgeOfficerGear
+  icon: "JobIconBridgeOfficer"
+  supervisors: job-supervisors-command
+  canBeAntag: true
+  access:
+  - Command
+  - Maintenance
+  - External
+  - Security
+  - Brig
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: BridgeOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBridgeOfficer
+    back: ClothingBackpackSatchelSecurity
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesCombat
+    id: BridgeOfficerPDA
+    ears: ClothingHeadsetCommand
+    neck: ClothingNeckBridgeOfficerMantle
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponEnergyGunDominator
+
+
