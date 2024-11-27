@@ -73,7 +73,15 @@ excited_groups = false
 monstermos_equalization = false
 
 [shuttle]
+arrivals = true
+arrivals_map = "/Maps/Misc/kosmoport.yml"
+arrivals_returns = true
+auto_call_time = 150
+auto_call_extension_time = 70
+emergency_dock_time = 280
+emergency_authorize_time = 30
 emergency_early_launch_allowed = true
+arrivals_planet = false
 
 [ic]
 flavor_text = true
