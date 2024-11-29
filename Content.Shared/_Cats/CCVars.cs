@@ -32,5 +32,11 @@ public sealed class CCVars
         /// <summary>
         public static readonly CVarDef<bool> PresetAutoVoteEnabled =
             CVarDef.Create("vote.preset_autovote_enabled", false, CVar.SERVERONLY);
+
+        /// <summary>
+        /// URL of the Discord adminchat info to the channel.
+        /// </summary>
+        public static readonly CVarDef<string> DiscordAdminchatWebhook =
+            CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
             
 }
