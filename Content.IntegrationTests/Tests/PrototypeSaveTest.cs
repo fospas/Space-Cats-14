@@ -178,16 +178,19 @@ public sealed class PrototypeSaveTest
         }
 
         ValidationNode ITypeValidator<EntityUid, ValueDataNode>.Validate(ISerializationManager serializationManager,
-                ValueDataNode node, IDependencyCollection dependencies, ISerializationContext? context)
+        //        ValueDataNode node, IDependencyCollection dependencies, ISerializationContext? context)
+                ValueDataNode node, IDependencyCollection dependencies, ISerializationContext context)
         {
             return new ValidatedValueNode(node);
         }
 
         public DataNode Write(ISerializationManager serializationManager, EntityUid value,
             IDependencyCollection dependencies, bool alwaysWrite = false,
-            ISerializationContext? context = null)
+    //        ISerializationContext? context = null)
+            ISerializationContext context = null)
         {
-            if (WritingComponent != "Transform" && Prototype?.HideSpawnMenu == false)
+    //        if (WritingComponent != "Transform" && Prototype?.HideSpawnMenu == false)
+            if (WritingComponent != "Transform" && Prototype.HideSpawnMenu == false)
             {
                 // Maybe this will be necessary in the future, but at the moment it just indicates that there is some
                 // issue, like a non-nullable entityUid data-field. If a component MUST have an entity uid to work with,
@@ -202,7 +205,8 @@ public sealed class PrototypeSaveTest
             ValueDataNode node,
             IDependencyCollection dependencies,
             SerializationHookContext hookCtx,
-            ISerializationContext? context, ISerializationManager.InstantiationDelegate<EntityUid>? instanceProvider)
+    //        ISerializationContext? context, ISerializationManager.InstantiationDelegate<EntityUid>? instanceProvider)
+            ISerializationContext context, ISerializationManager.InstantiationDelegate<EntityUid> instanceProvider)
         {
             return EntityUid.Parse(node.Value);
         }
