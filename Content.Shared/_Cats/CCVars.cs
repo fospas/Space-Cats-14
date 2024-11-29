@@ -1,4 +1,5 @@
 using Robust.Shared.Configuration;
+using Robust.Shared;
 
 namespace Content.Shared._Cats.CCVars;
 
@@ -7,7 +8,7 @@ namespace Content.Shared._Cats.CCVars;
 /// </summary>
 [CVarDefs]
 // ReSharper disable once InconsistentNaming
-public sealed class CCVars
+public sealed class CCVars : CVars
 {
         /*
         * AUTOVOTE SYSTEM
@@ -32,5 +33,4 @@ public sealed class CCVars
         /// <summary>
         public static readonly CVarDef<bool> PresetAutoVoteEnabled =
             CVarDef.Create("vote.preset_autovote_enabled", false, CVar.SERVERONLY);
-            
 }

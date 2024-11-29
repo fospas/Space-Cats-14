@@ -65,4 +65,10 @@ public sealed partial class CCVars
             "",
             CVar.SERVER | CVar.SERVERONLY | CVar.ARCHIVE,
             "A message broadcast to each player that joins the lobby.");
+    
+    /// <summary>
+    /// URL of the Discord adminchat info to the channel.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordAdminchatWebhook =
+        CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);      
 }
