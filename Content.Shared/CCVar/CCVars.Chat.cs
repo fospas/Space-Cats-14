@@ -70,5 +70,11 @@ public sealed partial class CCVars
     /// URL of the Discord adminchat info to the channel.
     /// </summary>
     public static readonly CVarDef<string> DiscordAdminchatWebhook =
-        CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);      
+        CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
+    /// <summary>
+    /// URL of the Discord OOC info to the channel.
+    /// </summary>
+    public static readonly CVarDef<string> OocChatWebhook =
+        CVarDef.Create("discord.ooc_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);    
 }
