@@ -19,7 +19,6 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
-using Content.Shared._Cats.CCVars;
 using Content.Server.Discord;
 
 namespace Content.Server.Chat.Managers;
