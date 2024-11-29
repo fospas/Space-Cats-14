@@ -19,7 +19,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
-using Content.Shared._Cats.CCVar;
+using Content.Shared._Cats.CCVars;
 using Content.Server.Discord;
 
 namespace Content.Server.Chat.Managers;
@@ -305,9 +305,9 @@ internal sealed partial class ChatManager : IChatManager
 
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
         // Cats admin log - start
-        if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+        if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
         {
-            var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+            var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
 
             if (webhookUrl == null)
                 return;
