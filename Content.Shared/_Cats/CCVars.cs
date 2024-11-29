@@ -7,7 +7,7 @@ namespace Content.Shared._Cats.CCVars;
 /// </summary>
 [CVarDefs]
 // ReSharper disable once InconsistentNaming
-public sealed class CCVars
+public sealed class CCVars : CVars
 {
         /*
         * AUTOVOTE SYSTEM
