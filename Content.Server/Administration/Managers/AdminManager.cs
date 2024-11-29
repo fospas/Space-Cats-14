@@ -102,9 +102,9 @@ namespace Content.Server.Administration.Managers
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
             // Cats admin log - start
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 if (webhookUrl == null)
                     return;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
@@ -189,9 +189,9 @@ namespace Content.Server.Administration.Managers
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
             // Cats admin log - start
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 if (webhookUrl == null)
                     return;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
@@ -399,9 +399,9 @@ namespace Content.Server.Administration.Managers
         // Cats admin log - start
         private async void DisconnectedAdminMaybe(ICommonSession session)
         {
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 var senderName = session.Name;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
                     return;
@@ -454,9 +454,9 @@ namespace Content.Server.Administration.Managers
                         _chat.SendAdminAnnouncement(Loc.GetString("admin-manager-admin-login-message",
                             ("name", session.Name)));
                         // Cats admin log - start
-                        if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+                        if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
                         {
-                            var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                            var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                             var senderAdmin = GetAdminData(session);
                             if (senderAdmin == null)
                                 return;
