@@ -112,6 +112,7 @@
         pipeDirection: Longitudinal
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawTransit
   - type: ContainerContainer
     containers:
@@ -151,6 +152,7 @@
         pipeDirection: SWBend
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawBend
   - type: ContainerContainer
     containers:
@@ -221,6 +223,7 @@
       collection: MetalThud
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawJunction
     degrees:
       - 0
@@ -252,6 +255,7 @@
     node: fourway
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawJunction
     degrees:
       - 0

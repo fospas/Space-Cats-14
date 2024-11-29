@@ -73,6 +73,7 @@
       path: /Audio/Ambience/Objects/gas_pump.ogg
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawTransit
   - type: ContainerContainer
     containers:
@@ -136,6 +137,7 @@
     - type: WiredNetworkConnection
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawTransit
     - type: ContainerContainer
       containers:
@@ -171,6 +173,7 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawTransit
     - type: ContainerContainer
       containers:
@@ -225,6 +228,7 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawTransit
     - type: ContainerContainer
       containers:
@@ -290,6 +294,7 @@
       path: /Audio/Ambience/Objects/gas_hiss.ogg
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawTransit
   - type: ContainerContainer
     containers:
@@ -325,6 +330,7 @@
       node: port
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawJunction
       degrees:
         - 0

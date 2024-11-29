@@ -73,6 +73,7 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawJunction
       degrees:
         - 0
@@ -127,6 +128,7 @@
         pipeDirection: North
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawJunction
     degrees:
       - 0
@@ -181,6 +183,7 @@
         path: /Audio/Ambience/Objects/gas_hiss.ogg
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawJunction
       degrees:
         - 0
@@ -234,6 +237,7 @@
     node: mixerflipped
   - type: VentCrawTube
     containerId: VentCrawTube
+    connected: true
   - type: VentCrawJunction
     degrees:
       - 0
@@ -300,6 +304,7 @@
       node: pneumaticvalve
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawJunction
       degrees:
         - 0
