@@ -19,12 +19,12 @@
     children:
     - !type:NestedSelector
       tableId: PsiBackmenEventsTable
-    - id: EvilTwinSpawn
+#    - id: EvilTwinSpawn
     - id: FugitiveSpawn
     - id: NoosphericStorm
     - id: BluespaceGoat
     - id: SpiderSpiderVampireSpawn
-    - id: DiseaseOutbreak
+#    - id: DiseaseOutbreak
 
 - type: entityTable
   id: NormalBackmenEventsTable
@@ -32,7 +32,7 @@
     children:
     - !type:NestedSelector
       tableId: BasicBackmenEventsTable
-    - id: EvilTwinSpawn
+#    - id: EvilTwinSpawn
     - id: BlobSpawn
     - id: SpiderSpiderVampireSpawn
 
