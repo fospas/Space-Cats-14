@@ -32,6 +32,7 @@
       time: 3
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawEntry
     - type: ContainerContainer
       containers:
@@ -112,6 +113,7 @@
       time: 3
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawEntry
     - type: ContainerContainer
       containers:
@@ -197,6 +199,7 @@
       - enum.LightLayers.Unshaded
     - type: VentCrawTube
       containerId: VentCrawTube
+      connected: true
     - type: VentCrawJunction
       degrees:
         - 0
