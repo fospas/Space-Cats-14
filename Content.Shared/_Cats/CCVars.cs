@@ -38,6 +38,5 @@ public sealed class CCVars : CVars
         /// URL of the Discord adminchat info to the channel.
         /// </summary>
         public static readonly CVarDef<string> DiscordAdminchatWebhook =
-            CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
-            
+            CVarDef.Create("discord.adminchat_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);         
 }

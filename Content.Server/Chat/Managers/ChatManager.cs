@@ -47,9 +47,9 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private readonly INetConfigurationManager _netConfigManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly PlayerRateLimitManager _rateLimitManager = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!; // Cats admin log
-    [Dependency] private readonly DiscordWebhook _discord = default!; // Cats admin log
     private ISharedSponsorsManager? _sponsorsManager; // Corvax-Sponsors
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly DiscordWebhook _discord = default!;
 
     /// <summary>
     /// The maximum length a player-sent message can be sent
@@ -304,7 +304,7 @@ internal sealed partial class ChatManager : IChatManager
         }
 
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
-        // Cats admin log - start
+
         if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
         {
             var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
@@ -320,7 +320,6 @@ internal sealed partial class ChatManager : IChatManager
             };
             var identifier = webhookData.ToIdentifier();
             await _discord.CreateMessage(identifier, payload);
-        // Cats admin log - end
         }
     }
 
