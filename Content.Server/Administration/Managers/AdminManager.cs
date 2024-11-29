@@ -20,7 +20,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Toolshed.Errors;
 using Robust.Shared.Utility;
-using Content.Shared._Cats.CCVar;
+using Content.Shared._Cats.CCVars;
 using Content.Server.Discord;
 using Serilog;
 
