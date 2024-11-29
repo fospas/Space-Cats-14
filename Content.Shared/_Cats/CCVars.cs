@@ -1,4 +1,5 @@
 using Robust.Shared.Configuration;
+using Robust.Shared;
 
 namespace Content.Shared._Cats.CCVars;
 
