@@ -9,7 +9,7 @@
   supportedMaps: ShipVsShipMapPool
   rules:
   - ShipVsShip
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
 
 - type: gamePreset
   id: SecretSVS
@@ -21,7 +21,7 @@
   supportedMaps: ShipVsShipMapPool
   rules:
   - ShipVsShip
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
 
 - type: gameMapPool
   id: ShipVsShipMapPool
