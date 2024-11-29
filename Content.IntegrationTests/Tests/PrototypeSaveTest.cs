@@ -168,7 +168,8 @@ public sealed class PrototypeSaveTest
         public bool WritingReadingPrototypes { get; set; }
 
         public string WritingComponent = string.Empty;
-        public EntityPrototype? Prototype;
+    //   public EntityPrototype? Prototype;
+        public EntityPrototype Prototype;
 
         public TestEntityUidContext()
         {
