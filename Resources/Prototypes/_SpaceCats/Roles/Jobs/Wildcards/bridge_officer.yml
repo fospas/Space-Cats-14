@@ -12,7 +12,7 @@
   startingGear: BridgeOfficerGear
   icon: "JobIconBridgeOfficer"
   supervisors: job-supervisors-command
-  canBeAntag: true
+  canBeAntag: false
   access:
   - Command
   - Maintenance
@@ -23,6 +23,8 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: BridgeOfficerGear
