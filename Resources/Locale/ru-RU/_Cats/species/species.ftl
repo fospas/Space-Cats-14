@@ -1,0 +1,1 @@
+ent-MobAnthropomorph = Урист МакАнтропоморф

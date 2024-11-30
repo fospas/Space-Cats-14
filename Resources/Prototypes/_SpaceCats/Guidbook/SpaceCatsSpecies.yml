@@ -1,0 +1,13 @@
+# ИГРОВЫЕ РАСЫ
+
+- type: guideEntry
+  id: SpaceCatsSpecies
+  name: guide-entry-species
+  text: "/ServerInfo/_SpaceCats/Guidebook/Species/Species.xml"
+  children:
+    - Anthropomorph
+
+- type: guideEntry
+  id: Anthropomorph
+  name: species-name-anthropomorph
+  text: "/ServerInfo/_SpaceCats/Guidebook/Species/Anthropomorph/Anthropomorph.xml"
