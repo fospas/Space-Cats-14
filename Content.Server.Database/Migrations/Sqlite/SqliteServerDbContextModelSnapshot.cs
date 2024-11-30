@@ -1238,6 +1238,61 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("server_unban", (string)null);
                 });
 
+            // Cats-BookPrinter-Start
+            modelBuilder.Entity("Content.Server.Database.BookPrinterEntry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("book_printer_entry_id");
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("content");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("description");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("name");
+                    b.Property<string>("StampState")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("stamp_state");
+                    b.HasKey("Id")
+                        .HasName("PK_book_printer_entry");
+                    b.HasIndex("Id")
+                        .IsUnique();
+                    b.ToTable("book_printer_entry", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.StampedData", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("stamped_data_id");
+                    b.Property<int?>("BookPrinterEntryId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("book_printer_entry_id");
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("color");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("name");
+                    b.HasKey("Id")
+                        .HasName("PK_stamped_data");
+                    b.HasIndex("BookPrinterEntryId")
+                        .HasDatabaseName("IX_stamped_data_book_printer_entry_id");
+                    b.ToTable("stamped_data", (string)null);
+                });
+            // Cats-BookPrinter-End
+
             modelBuilder.Entity("Content.Server.Database.Trait", b =>
                 {
                     b.Property<int>("Id")
@@ -1382,6 +1437,16 @@ namespace Content.Server.Database.Migrations.Sqlite
 
                     b.Navigation("Player");
                 });
+
+            // Cats-BookPrinter-Start
+            modelBuilder.Entity("Content.Server.Database.StampedData", b =>
+                {
+                    b.HasOne("Content.Server.Database.BookPrinterEntry", null)
+                        .WithMany("StampedBy")
+                        .HasForeignKey("BookPrinterEntryId")
+                        .HasConstraintName("FK_stamped_data_book_printer_entry_book_printer_entry_id");
+                });
+            // Cats-BookPrinter-End
 
             modelBuilder.Entity("Content.Server.Database.AdminMessage", b =>
                 {
@@ -1952,6 +2017,13 @@ namespace Content.Server.Database.Migrations.Sqlite
                 {
                     b.Navigation("Profiles");
                 });
+
+            // Cats-BookPrinter-Start
+            modelBuilder.Entity("Content.Server.Database.BookPrinterEntry", b =>
+                {
+                    b.Navigation("StampedBy");
+                });
+            // Cats-BookPrinter-End
 
             modelBuilder.Entity("Content.Server.Database.Profile", b =>
                 {

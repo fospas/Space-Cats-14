@@ -310,6 +310,15 @@ namespace Content.Server.Database
 
         #endregion
 
+        // Cats-BookPrinter-Start
+        #region BookPrinter
+
+        Task<List<BookPrinterEntry>> GetBookPrinterEntriesAsync();
+        Task UploadBookPrinterEntryAsync(BookPrinterEntry bookEntry);
+
+        #endregion
+        // Cats-BookPrinter-End
+
         #region Job Whitelists
 
         Task AddJobWhitelist(Guid player, ProtoId<JobPrototype> job);
@@ -990,6 +999,20 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.RemoveJobWhitelist(player, job));
         }
+
+        // Cats-BookPrinter-Start
+        public Task<List<BookPrinterEntry>> GetBookPrinterEntriesAsync()
+		{
+			DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetBookPrinterEntries());
+		}
+
+        public Task UploadBookPrinterEntryAsync(BookPrinterEntry bookEntry)
+		{
+			DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.UploadBookPrinterEntry(bookEntry));
+		}
+        // Cats-BookPrinter-Start
 
         public void SubscribeToNotifications(Action<DatabaseNotification> handler)
         {

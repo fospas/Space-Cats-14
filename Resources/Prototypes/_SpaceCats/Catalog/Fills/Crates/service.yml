@@ -1,0 +1,7 @@
+- type: entity
+  id: CrateServicePrinterInkCartridge
+  parent: CratePlastic
+  components:
+  - type: StorageFill
+    contents:
+      - id: BookPrinterInkCartridge
