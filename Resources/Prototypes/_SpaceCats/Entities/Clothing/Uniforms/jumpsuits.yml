@@ -1,4 +1,11 @@
 - type: entity
+  parent: ClothingUniformJumpsuitAtmos
+  id: ClothingUniformJumpsuitAtmosSyndie
+  name: Contortionist's Jumpsuit
+  components:
+  - type: VentCrawClothing
+
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCommandCaptain
   name: captain command jumpsuit
