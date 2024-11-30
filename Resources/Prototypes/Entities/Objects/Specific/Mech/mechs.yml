@@ -127,9 +127,6 @@
     openState: ripley-open
     brokenState: ripley-broken
     mechToPilotDamageMultiplier: 0.75
-    pilotWhitelist:
-      components:
-        - HumanoidAppearance
   - type: MeleeWeapon
     hidden: true
     attackRate: 1

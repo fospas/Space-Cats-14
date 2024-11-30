@@ -93,10 +93,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: MedicatedSuture
-      - id: RegenerativeMesh
       - id: SyringeEphedrine
       - id: SyringeSaline
+      - id: ReliableContainerBruteFilled  # cats
+      - id: ReliableContainerBurnFilled   # cats
       - id: BruteAutoInjector
       - id: BurnAutoInjector
 

@@ -1,0 +1,80 @@
+- type: vessel
+  id: SalvageStamp
+  name: NT-Mail-"Марка" №4522
+  description: Утилизаторский шаттл
+  price: 5000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageStampMrIzo.yml
+
+- type: vessel
+  id: SalvageHearse
+  name: NT-Salv-"Катафалк" №3
+  description: Утилизаторский шаттл
+  price: 9000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageHearseMrIzo.yml
+
+- type: vessel
+  id: SalvageTrawl
+  name: NT-Carg-"Трал" №19
+  description: Утилизаторский шаттл
+  price: 10000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageTrawlMrIzo.yml
+
+- type: vessel
+  id: SalvageShell
+  name: NT-Salv-"Обушок" №5
+  description: Утилизаторский шаттл
+  price: 15000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageShellMrIzo.yml
+
+- type: vessel
+  id: SalvageCalendula
+  name: NT-Carg-"Календула" №22
+  description: Утилизаторский шаттл
+  price: 17000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageCalendulaMrIzo.yml
+
+- type: vessel
+  id: SalvageSmuggler
+  name: NT-Carg-"Контрабандист" №2
+  description: Утилизаторский шаттл
+  price: 20000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSmugglerMrIzo.yml
+
+- type: vessel
+  id: SalvageSantaMaria
+  name: AI-Carg-"Санта-Мария" №1492
+  description: Утилизаторский шаттл
+  price: 25000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSantaMariaMrIzo.yml
+
+- type: vessel
+  id: SalvagePostmaster
+  name: NT-Mail-"Почтмейстер" №5
+  description: Утилизаторский шаттл
+  price: 33000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePostmasterMrIzo.yml
+
+- type: vessel
+  id: SalvageMarkShader
+  name: IA-Salv-"МаркШейдер" №1
+  description: Утилизаторский шаттл
+  price: 48000
+  category: Small
+  group: Salvage
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageMarkShaderMrIzo.yml
