@@ -176,7 +176,7 @@ namespace Content.Server.VentCraw
                 return;
             }
 
-            tube.Connected = false;
+            tube.Connected = true;
         }
 
 
