@@ -10,6 +10,15 @@
     - state: icon
       map: ["base"]
   - type: Appearance
+  - type: HolidayVisuals
+    holidays:
+      festive:
+      - FestiveSeason
+  - type: GenericVisualizer
+    visuals:
+      enum.HolidayVisuals.Holiday:
+        base:
+          festive: { state: festive }
   - type: Fixtures
     fixtures:
       fix1:
