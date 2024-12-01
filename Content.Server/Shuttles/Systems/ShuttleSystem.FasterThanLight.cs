@@ -237,13 +237,8 @@ public sealed partial class ShuttleSystem
             TryComp(shuttleUid, out PhysicsComponent? shuttlePhysics) &&
             shuttlePhysics.Mass > FTLMassLimit)
         {
-
-            // Too large to FTL
-            if (FTLMassLimit > 0 &&  shuttlePhysics.Mass > FTLMassLimit)
-            {
-                reason = Loc.GetString("shuttle-console-mass");
-                return false;
-            }
+            reason = Loc.GetString("shuttle-console-mass");
+            return false;
         }
 
         if (HasComp<PreventPilotComponent>(shuttleUid))
@@ -962,14 +957,7 @@ public sealed partial class ShuttleSystem
                     continue;
                 }
 
-                // If it's on our grid ignore it.
-                if (!_xformQuery.TryComp(ent, out var childXform) || childXform.GridUid == uid)
-                {
-                    continue;
-                }
-
-                // If it has the FTLSmashImmuneComponent ignore it.
-                if (_immuneQuery.HasComponent(ent))
+                if (_ghostQuery.HasComponent(ent) || _beaconQuery.HasComponent(ent))
                 {
                     continue;
                 }
