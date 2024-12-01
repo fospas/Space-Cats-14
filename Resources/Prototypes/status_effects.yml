@@ -73,3 +73,9 @@
 - type: statusEffect
   id: Adrenaline
   alert: Adrenaline
+
+# CATS EDIT
+- type: statusEffect
+  id: RecentlyBlocked
+  alwaysAllowed: true
+  alert: RecentlyBlocked

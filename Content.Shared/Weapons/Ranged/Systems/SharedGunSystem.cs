@@ -34,6 +34,9 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared._Cats.DNAGunLocker;
+using Content.Shared.Electrocution;
+using Content.Shared.CombatMode;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -65,6 +68,13 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected readonly ThrowingSystem ThrowingSystem = default!;
     [Dependency] private   readonly UseDelaySystem _useDelay = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    // CATS-personale_gun-Start
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedElectrocutionSystem _electrocutionSystem = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly SharedCombatModeSystem _combatModeOff = default!;
+    // CATS-personale_gun-End
 
     private const float InteractNextFire = 0.3f;
     private const double SafetyNextFire = 0.5;
@@ -237,6 +247,22 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (gun.FireRateModified <= 0f ||
             !_actionBlockerSystem.CanAttack(user))
             return;
+        ///Cats-Personal-Gun block start
+        if (TryComp<DNAGunLockerComponent>(gunUid, out var dnaGunComp) && !dnaGunComp.IsEmagged)
+        {
+            if (dnaGunComp.GunOwner?.Id != user.Id)
+            {
+                _electrocutionSystem.TryDoElectrocution(user, null, 10, TimeSpan.FromSeconds(15), refresh: true, ignoreInsulation: true);
+                _popup.PopupClient(Loc.GetString("gun-personalize-fuck"), user);
+                _audio.PlayPredicted(dnaGunComp.ElectricSound, gunUid, user);
+
+                if (TryComp<CombatModeComponent>(user, out var combatModeComp))
+                    _combatModeOff.SetInCombatMode(user, false);
+
+                return;
+            }
+        }
+        ///Cats-Personal-Gun block end
 
         var toCoordinates = gun.ShootCoordinates;
 
