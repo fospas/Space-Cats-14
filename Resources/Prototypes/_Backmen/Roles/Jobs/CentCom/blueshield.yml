@@ -44,6 +44,7 @@
     - AllAccessWithOutHeads
   access:
     - CCOfficer
+    - CentralCommand
   #start-backmen: currency
   minBankBalance: 900
   maxBankBalance: 1600
