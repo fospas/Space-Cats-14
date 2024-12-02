@@ -119,25 +119,3 @@
     - !type:ListingLimitedStockCondition
       stock: 2
 
-- type: listing
-  id: NaborSponsornventory11
-  productEntity: gearbundleshotgun
-  cost:
-    SpaceCash: 2500
-  categories:
-    - Nabor
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2
-
-- type: listing
-  id: NaborSponsornventory12
-  productEntity: gearbundlemosin
-  cost:
-    SpaceCash: 2500
-  categories:
-    - Nabor
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2
-
