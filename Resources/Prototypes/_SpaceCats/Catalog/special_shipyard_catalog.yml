@@ -133,14 +133,15 @@
   group: Salvage
   shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAtlant.yml
 
-- type: vessel
-  id: SalvageDreadnought
-  name: ST-Salv-"Дредноут" №4
-  description: Огромное шахтёрское судно прошлого века. Вы даже близко не можете представить, какие события происходили на его борту за все это время. Тип питания-полуавтономный - С.У.П.Е.Р.П.А.К.М.А.Н/РИТЭГ/Термоэлектрический генератор
-  price: 67000
-  category: Special
-  group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnought.yml
+
+#- type: vessel
+#  id: SalvageDreadnought
+#  name: ST-Salv-"Дредноут" №4
+#  description: Огромное шахтёрское судно прошлого века. Вы даже близко не можете представить, какие события происходили на его борту за все это время. Тип питания-полуавтономный - С.У.П.Е.Р.П.А.К.М.А.Н/РИТЭГ/Термоэлектрический генератор
+#  price: 67000
+#  category: Special
+#  group: Salvage
+#  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnought.yml
 
 - type: vessel
   id: SalvageColossus
