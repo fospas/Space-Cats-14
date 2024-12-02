@@ -19,7 +19,7 @@
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: 0
-    angleIncrease: -2
+    angleIncrease: -3
   - type: Gun
     angleDecay: 30
     angleIncrease: 5
@@ -284,6 +284,7 @@
     cameraRecoilScalar: 5
     minAngle: 24
     maxAngle: 45
+    fireRate: 6
     soundGunshot:
       path: /Audio/Weapons/Guns64/Rifles/m28.ogg
     soundEmpty:
@@ -807,7 +808,7 @@
     cameraRecoilScalar: 5
     minAngle: 24
     maxAngle: 45
-    fireRate: 8
+    fireRate: 5.3
     soundGunshot:
       path: /Audio/Weapons/Guns64/Rifles/T64.ogg
   - type: ItemSlots
