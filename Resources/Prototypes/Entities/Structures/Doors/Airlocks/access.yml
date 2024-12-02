@@ -358,7 +358,7 @@
       board: [ DoorElectronicsHeadOfPersonnel ]
 
 - type: entity
-  parent: ADTQuartiermeisterAirlock # Cats-Airlock
+  parent: QuartiermeisterAirlock # Cats-Airlock
   id: AirlockQuartermasterLocked
   suffix: Quartermaster, Locked
   components:
@@ -724,7 +724,7 @@
       board: [ DoorElectronicsHeadOfSecurity ]
 
 - type: entity
-  parent: ADTGlassResearchDirectorAirlock # Cats-Airlock
+  parent: GlassResearchDirectorAirlock # Cats-Airlock
   id: AirlockResearchDirectorGlassLocked
   suffix: ResearchDirector, Locked
   components:
@@ -742,7 +742,7 @@
       board: [ DoorElectronicsHeadOfPersonnel ]
 
 - type: entity
-  parent: ADTGlassQuartiermeisterAirlock # Cats-Airlock
+  parent: GlassQuartiermeisterAirlock # Cats-Airlock
   id: AirlockQuartermasterGlassLocked
   suffix: Quartermaster, Locked
   components:
