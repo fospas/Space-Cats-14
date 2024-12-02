@@ -5,7 +5,7 @@
   price: 5000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageStampMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageStamp.yml
 
 - type: vessel
   id: SalvageHearse
@@ -14,7 +14,7 @@
   price: 9000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageHearseMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageHearse.yml
 
 - type: vessel
   id: SalvageDeclarant
@@ -23,7 +23,7 @@
   price: 10000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDeclarantMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDeclarant.yml
 
 - type: vessel
   id: SalvageTrawl
@@ -32,7 +32,7 @@
   price: 10000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageTrawlMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageTrawl.yml
 
 - type: vessel
   id: SalvagePawn
@@ -41,7 +41,7 @@
   price: 13000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePawnMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePawn.yml
 
 - type: vessel
   id: SalvageShell
@@ -50,7 +50,7 @@
   price: 15000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageShellMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageShell.yml
 
 - type: vessel
   id: SalvageCalendula
@@ -59,7 +59,7 @@
   price: 17000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageCalendulaMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageCalendula.yml
 
 - type: vessel
   id: SalvageSmuggler
@@ -68,7 +68,7 @@
   price: 20000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSmugglerMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSmuggler.yml
 
 - type: vessel
   id: SalvageAlbatross
@@ -77,7 +77,7 @@
   price: 22000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAlbatrossMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAlbatross.yml
 
 - type: vessel
   id: SalvageSantaMaria
@@ -86,7 +86,7 @@
   price: 25000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSantaMariaMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageSantaMaria.yml
 
 - type: vessel
   id: SalvagePostmaster
@@ -95,7 +95,7 @@
   price: 33000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePostmasterMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvagePostmaster.yml
 
 - type: vessel
   id: SalvageGiant
@@ -104,7 +104,7 @@
   price: 38000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageGiantMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageGiant.yml
 
 - type: vessel
   id: SalvageForeman
@@ -113,7 +113,7 @@
   price: 45000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageForemanMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageForeman.yml
 
 - type: vessel
   id: SalvageMarkShader
@@ -122,7 +122,7 @@
   price: 48000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageMarkShaderMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageMarkShader.yml
 
 - type: vessel
   id: SalvageAtlant
@@ -131,7 +131,7 @@
   price: 50000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAtlantMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageAtlant.yml
 
 - type: vessel
   id: SalvageDreadnought
@@ -140,7 +140,7 @@
   price: 67000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnoughtMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnought.yml
 
 - type: vessel
   id: SalvageColossus
@@ -149,4 +149,4 @@
   price: 90000
   category: Small
   group: Salvage
-  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageColossusMrIzo.yml
+  shuttlePath: /Maps/SpaceCats/Shuttles/SalvageColossus.yml
