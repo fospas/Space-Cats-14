@@ -97,6 +97,7 @@
   - type: Clothing
     sprite: Clothing/Head/Misc/head_mirror.rsi
 
+
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatRichard
@@ -207,7 +208,6 @@
     sprite: Clothing/Head/Hats/catears.rsi
   - type: AddAccentClothing
     accent: OwOAccent
-
 - type: entity
   categories: [ Actions, HideSpawnMenu ]
   id: ActionBecomeValid
