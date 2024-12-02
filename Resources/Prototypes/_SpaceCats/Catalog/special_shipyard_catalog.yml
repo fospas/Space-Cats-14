@@ -138,7 +138,7 @@
   name: ST-Salv-"Дредноут" №4
   description: Огромное шахтёрское судно прошлого века. Вы даже близко не можете представить, какие события происходили на его борту за все это время. Тип питания-полуавтономный - С.У.П.Е.Р.П.А.К.М.А.Н/РИТЭГ/Термоэлектрический генератор
   price: 67000
-  category: Special etc
+  category: Special
   group: Salvage
   shuttlePath: /Maps/SpaceCats/Shuttles/SalvageDreadnought.yml
 
@@ -147,6 +147,6 @@
   name: IA-Carg-"Колосс" №1
   description: Один из флагманов Izo Aeronautics. Этот шаттл колоссального размера, в сути своей, является мобильным отделом снабжения, возможность продавать грузы тоже присутствует. Убедительная просьба-не устраивать Каргонию на нем. Тип питания-полуавтономный - ДАМ, СМЭС
   price: 90000
-  category: Special etc
+  category: Special
   group: Salvage
   shuttlePath: /Maps/SpaceCats/Shuttles/SalvageColossus.yml
