@@ -1,14 +1,21 @@
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckCloakBlueshield
+  name: blueshield cloak
+  description: A blue cape with an armored shoulder pad, especially for the protection of station heads.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Neck/Cloaks/blueshield_neck.rsi
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckCaptainWide
   name: captain wide overcoat
   description: Wide captain's greatcoat. It doesn't seem to fit you, but it will do as a cape on your shoulders.
   components:
     - type: Sprite
       sprite: _SpaceCats/Clothing/Neck/Cloaks/wide_captain_cloak.rsi
-      
-    - type: StealTarget
-      stealGroup: HeadCloak
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakRoyalCaptain
@@ -18,8 +25,6 @@
     - type: Sprite
       sprite: _SpaceCats/Clothing/Neck/Cloaks/royal_captain.rsi
 
-    - type: StealTarget
-      stealGroup: HeadCloak
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakSyndicateAdmiral
@@ -37,3 +42,12 @@
   components:
     - type: Sprite
       sprite: _SpaceCats/Clothing/Neck/Cloaks/white_captain_mantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBridgeOfficerMantle
+  name: bridge officer mantle
+  description: Elegant mantle in black colors.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Neck/Mantles/BridgeofficerMantle.rsi
