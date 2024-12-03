@@ -46,6 +46,11 @@
     active: False
   - type: LanguageSpeaker
   - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - SpaceMob
+    understands:
+    - TauCetiBasic
+    - SpaceMob
   - type: CanEscapeMech # ADT tweak
 
 - type: entity
