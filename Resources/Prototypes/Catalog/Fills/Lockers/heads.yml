@@ -367,6 +367,7 @@
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion
     - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
     - id: BookBusido # Corvax-Books
+    - id: BorgModuleLecter # Cats - Security Borg
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

@@ -135,6 +135,18 @@
     },
     {
       "name": "syndicate"
+    },
+    {
+      "name": "icon-combat"
+    },
+    {
+      "name": "icon-neutralization"
+    },
+    {
+      "name": "icon-security-supportive"
+    },
+    {
+      "name": "icon-neutralization-adv"
     }
   ]
 }
