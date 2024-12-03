@@ -30920,6 +30920,13 @@ entities:
     - type: Transform
       pos: 41.505302,37.40492
       parent: 2
+- proto: CaptainDrobe
+  entities:
+  - uid: 6281
+    components:
+    - type: Transform
+      pos: 37.5,40.5
+      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4556
@@ -41034,13 +41041,6 @@ entities:
           - 5405
           - 5406
           - 5403
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 6281
-    components:
-    - type: Transform
-      pos: 37.5,40.5
-      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 6282
@@ -42874,7 +42874,7 @@ entities:
       pos: 25.5,28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15108.06
+      secondsUntilStateChange: -15130.78
       state: Closing
   - uid: 6515
     components:
@@ -61694,7 +61694,7 @@ entities:
     - type: Transform
       pos: 41.5,26.5
       parent: 2
-- proto: GunSafeSubMachineGunDrozd
+- proto: GunSafeSubMachineGunVector
   entities:
   - uid: 9387
     components:
@@ -72939,6 +72939,13 @@ entities:
     - type: Transform
       pos: 44.5,-6.5
       parent: 2
+- proto: SpawnPointBridgeOfficer
+  entities:
+  - uid: 11226
+    components:
+    - type: Transform
+      pos: 26.5,46.5
+      parent: 2
 - proto: SpawnPointBrigmedic
   entities:
   - uid: 11224
@@ -72952,13 +72959,6 @@ entities:
     components:
     - type: Transform
       pos: 33.5,40.5
-      parent: 2
-- proto: SpawnPointCargoBorg
-  entities:
-  - uid: 11226
-    components:
-    - type: Transform
-      pos: 10.5,22.5
       parent: 2
 - proto: SpawnPointCargoTechnician
   entities:
@@ -73031,13 +73031,6 @@ entities:
     - type: Transform
       pos: 42.5,19.5
       parent: 2
-- proto: SpawnPointEngenerBorg
-  entities:
-  - uid: 11238
-    components:
-    - type: Transform
-      pos: 31.5,-31.5
-      parent: 2
 - proto: SpawnPointHeadOfPersonnel
   entities:
   - uid: 11239
@@ -73058,13 +73051,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-4.5
-      parent: 2
-- proto: SpawnPointJanitorBorg
-  entities:
-  - uid: 11242
-    components:
-    - type: Transform
-      pos: 6.5,-5.5
       parent: 2
 - proto: SpawnPointLatejoin
   entities:
@@ -73106,13 +73092,6 @@ entities:
     components:
     - type: Transform
       pos: 9.5,3.5
-      parent: 2
-- proto: SpawnPointMedIcalBorg
-  entities:
-  - uid: 11250
-    components:
-    - type: Transform
-      pos: 49.5,2.5
       parent: 2
 - proto: SpawnPointMedicalDoctor
   entities:
@@ -73270,13 +73249,6 @@ entities:
     - type: Transform
       pos: 55.5,24.5
       parent: 2
-- proto: SpawnPointSecurityBorg
-  entities:
-  - uid: 11277
-    components:
-    - type: Transform
-      pos: 34.5,24.5
-      parent: 2
 - proto: SpawnPointSecurityCadet
   entities:
   - uid: 11278
@@ -73305,13 +73277,6 @@ entities:
     components:
     - type: Transform
       pos: 37.5,18.5
-      parent: 2
-- proto: SpawnPointServiceBorg
-  entities:
-  - uid: 11283
-    components:
-    - type: Transform
-      pos: 18.5,5.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:

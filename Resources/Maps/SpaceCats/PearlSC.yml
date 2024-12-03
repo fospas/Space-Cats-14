@@ -65278,6 +65278,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 73.357185,33.35592
       parent: 2
+- proto: CaptainDrobe
+  entities:
+  - uid: 6067
+    components:
+    - type: Transform
+      pos: 31.5,25.5
+      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4060
@@ -73099,7 +73106,7 @@ entities:
       pos: 29.5,23.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -32689.953
+      secondsUntilStateChange: -32709.896
       state: Opening
 - proto: CurtainsBlueOpen
   entities:
@@ -73186,7 +73193,7 @@ entities:
       pos: -5.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1026.1326
+      secondsUntilStateChange: -1046.0753
       state: Closing
 - proto: CurtainsRed
   entities:
@@ -73295,7 +73302,7 @@ entities:
       pos: 89.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -149953.67
+      secondsUntilStateChange: -149973.61
       state: Closing
   - uid: 5177
     components:
@@ -78988,13 +78995,6 @@ entities:
     - type: Transform
       pos: 13.5,-3.5
       parent: 17245
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 6067
-    components:
-    - type: Transform
-      pos: 31.5,25.5
-      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 6068
@@ -114897,7 +114897,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: GunSafeSubMachineGunVector
+- proto: GunSafeSubMachineGunDrozd
   entities:
   - uid: 11663
     components:
@@ -116142,7 +116142,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-14.5
       parent: 18804
-- proto: LeftArmBorgMining
+- proto: LeftArmBorg
   entities:
   - uid: 11822
     components:
@@ -128362,7 +128362,7 @@ entities:
     - type: Transform
       pos: -11.530143,-12.189684
       parent: 17245
-- proto: RightArmBorgMining
+- proto: RightArmBorg
   entities:
   - uid: 13566
     components:
@@ -131715,6 +131715,13 @@ entities:
     - type: Transform
       pos: -6.5,7.5
       parent: 2
+- proto: SpawnPointBridgeOfficer
+  entities:
+  - uid: 13665
+    components:
+    - type: Transform
+      pos: 20.5,24.5
+      parent: 2
 - proto: SpawnPointBrigmedic
   entities:
   - uid: 14086
@@ -131728,13 +131735,6 @@ entities:
     components:
     - type: Transform
       pos: 27.5,24.5
-      parent: 2
-- proto: SpawnPointCargoBorg
-  entities:
-  - uid: 14088
-    components:
-    - type: Transform
-      pos: -4.5,47.5
       parent: 2
 - proto: SpawnPointCargoTechnician
   entities:
@@ -131847,13 +131847,6 @@ entities:
     - type: Transform
       pos: 10.5,-34.5
       parent: 2
-- proto: SpawnPointEngenerBorg
-  entities:
-  - uid: 14108
-    components:
-    - type: Transform
-      pos: 74.5,27.5
-      parent: 2
 - proto: SpawnPointHeadOfPersonnel
   entities:
   - uid: 14109
@@ -131880,13 +131873,6 @@ entities:
     - type: Transform
       pos: 79.5,-4.5
       parent: 2
-- proto: SpawnPointJanitorBorg
-  entities:
-  - uid: 14113
-    components:
-    - type: Transform
-      pos: 79.5,-3.5
-      parent: 2
 - proto: SpawnPointLawyer
   entities:
   - uid: 14114
@@ -131910,13 +131896,6 @@ entities:
     components:
     - type: Transform
       pos: 87.5,-8.5
-      parent: 2
-- proto: SpawnPointMedIcalBorg
-  entities:
-  - uid: 14118
-    components:
-    - type: Transform
-      pos: 33.5,-51.5
       parent: 2
 - proto: SpawnPointMedicalDoctor
   entities:
@@ -132208,13 +132187,6 @@ entities:
     - type: Transform
       pos: 20.5,47.5
       parent: 2
-- proto: SpawnPointSecurityBorg
-  entities:
-  - uid: 14171
-    components:
-    - type: Transform
-      pos: -6.5,-27.5
-      parent: 2
 - proto: SpawnPointSecurityCadet
   entities:
   - uid: 14172
@@ -132258,13 +132230,6 @@ entities:
     components:
     - type: Transform
       pos: -6.5,-26.5
-      parent: 2
-- proto: SpawnPointServiceBorg
-  entities:
-  - uid: 14180
-    components:
-    - type: Transform
-      pos: 48.5,21.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:

@@ -18,13 +18,13 @@
   - bloodsucker
   name: vampires-title
   description: vampires-description
-  showInVote: true
+  showInVote: false
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
   - SubGamemodesRule
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -34,12 +34,12 @@
   name: blob-title
   description: blob-description
   minPlayers: 10
-  showInVote: true
+  showInVote: false
   rules:
   - BlobGameMode
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   - SubGamemodesRule
   # - MeteorSwarmScheduler
 
@@ -51,12 +51,12 @@
   name: flesh-cult-title
   description: flesh-cult-description
   minPlayers: 10
-  showInVote: true
+  showInVote: false
   rules:
   - FleshCult
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   - SubGamemodesRule
   # - MeteorSwarmScheduler
 
@@ -73,7 +73,7 @@
   - Traitor
   - BasicStationEventScheduler
   #  -  #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -89,7 +89,7 @@
     - FleshCult
     - BasicStationEventScheduler
     #  -  #backmen: currency
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -107,7 +107,7 @@
     - BasicStationEventScheduler
     - Traitor
     #  -  #backmen: currency
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -125,7 +125,7 @@
     - BasicStationEventScheduler
     - Nukeops
     #  -  #backmen: currency
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -145,7 +145,7 @@
   - BasicStationEventScheduler
   #  -  #backmen: currency
   - Traitor
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -165,7 +165,7 @@
   - BasicStationEventScheduler
   #  -  #backmen: currency
   - Nukeops
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -183,7 +183,7 @@
     - BasicStationEventScheduler
     #  -  #backmen: currency
     - Traitor
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -199,7 +199,7 @@
     - RampingStationEventScheduler
     #  -  #backmen: currency
     - Nukeops
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
     # - MeteorSwarmScheduler
 
 
@@ -211,14 +211,14 @@
   - changeling
   name: changeling-gamemode-title
   description: changeling-gamemode-description
-  showInVote: true
+  showInVote: false
   minPlayers: 5
   rules:
   - WageScheduler #backmen: currency
   - Changeling
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -235,7 +235,7 @@
   - Traitor
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -251,7 +251,7 @@
   - ExtendedThief
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -268,7 +268,7 @@
   - Traitor
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
   # - MeteorSwarmScheduler
 
 - type: gamePreset
@@ -284,9 +284,9 @@
   rules:
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+#  # - BasicRoundstartVariation
   # Oh my god.
-  - KesslerSyndromeScheduler
+#  - KesslerSyndromeScheduler
   # - MeteorSwarmMildScheduler
   # - MeteorSwarmScheduler
   - RampingStationEventScheduler
@@ -296,25 +296,25 @@
 - type: gamePreset
   id: Calm
   name: calm-title
-  showInVote: true
+  showInVote: false
   description: calm-description
   rules:
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
 #  - CalmMeteorSwarmScheduler
-  - BasicRoundstartVariation
+  # - BasicRoundstartVariation
 
 - type: gamePreset
   id: BabelTower
   name: babelTower-title
   description: babelTower-description
   minPlayers: 5
-  showInVote: true
+  showInVote: false
   rules:
     - BabelTower
     - BasicStationEventScheduler
     - WageScheduler
-    - BasicRoundstartVariation
+    # - BasicRoundstartVariation
 #    - SpaceTrafficControlEventScheduler
 #    - SpaceTrafficControlFriendlyEventScheduler
     - ExtendedThief
