@@ -866,7 +866,11 @@
       - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
+      - BorgModuleNeutralization # Cats Security Borg
     dynamicRecipes:
+      - BorgModuleCombat # Cats: Security Borg
+      - BorgModuleSecurityControlling # Cats: Security Borg
+      - BorgModuleNeutralizationAdvanced # _Cats: Security Borg
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
