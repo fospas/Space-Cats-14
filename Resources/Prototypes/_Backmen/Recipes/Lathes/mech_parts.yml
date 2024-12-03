@@ -511,26 +511,26 @@
     Plastic: 150
     Glass: 300
 
-- type: latheRecipe
-  id: MechEquipmentDrill
-  result: MechEquipmentDrill
-  category: Mech
-  completetime: 3
-  materials:
-    Steel: 2050
-    Plastic: 150
-    Glass: 300
+#- type: latheRecipe
+#  id: MechEquipmentDrill
+#  result: MechEquipmentDrill
+#  category: Mech
+#  completetime: 3
+#  materials:
+#    Steel: 2050
+#    Plastic: 150
+#    Glass: 300
 
-- type: latheRecipe
-  id: MechEquipmentDiamondDrill
-  result: MechEquipmentDiamondDrill
-  category: Mech
-  completetime: 3
-  materials:
-    Steel: 2050
-    Plastic: 150
-    Glass: 300
-    Diamond: 500
+#- type: latheRecipe
+#  id: MechEquipmentDiamondDrill
+#  result: MechEquipmentDiamondDrill
+#  category: Mech
+#  completetime: 3
+#  materials:
+#    Steel: 2050
+#    Plastic: 150
+#    Glass: 300
+#    Diamond: 500
 
 # - type: latheRecipe
 #   id: MechEquipmentGravipult

@@ -701,8 +701,8 @@
     - ADTPhazonRLeg
     - ADTPhazonHead
     - ADTPhazonArmorPlates
-    - MechEquipmentDiamondDrill
-    - MechEquipmentDrill
+#    - MechEquipmentDiamondDrill
+#    - MechEquipmentDrill
     - MechEquipmentArmorMelee
     - MechEquipmentArmorRange
     - ADTMechWeaponCutter

@@ -171,29 +171,29 @@
   - ADTMechWeaponCutter
   - ADTBoxPlasmaBox
 
-- type: technology
-  id: ADTMechTechnologyDrill
-  name: research-technology-mech-drill
-  icon:
-    sprite: Objects/Specific/Mech/mecha_equipment.rsi
-    state: mecha_drill
-  discipline: Industrial
-  tier: 1
-  cost: 3500
-  recipeUnlocks:
-  - MechEquipmentDrill
+#- type: technology
+#  id: ADTMechTechnologyDrill
+#  name: research-technology-mech-drill
+#  icon:
+#    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+#    state: mecha_drill
+#  discipline: Industrial
+#  tier: 1
+#  cost: 3500
+#  recipeUnlocks:
+#  - MechEquipmentDrill
 
-- type: technology
-  id: ADTMechTechnologyDrillDiamond
-  name: research-technology-mech-diamond-drill
-  icon:
-    sprite: Objects/Specific/Mech/mecha_equipment.rsi
-    state: mecha_diamond_drill
-  discipline: Industrial
-  tier: 2
-  cost: 7500
-  recipeUnlocks:
-  - MechEquipmentDiamondDrill
+#- type: technology
+#  id: ADTMechTechnologyDrillDiamond
+#  name: research-technology-mech-diamond-drill
+#  icon:
+#    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+#    state: mecha_diamond_drill
+#  discipline: Industrial
+#  tier: 2
+#  cost: 7500
+#  recipeUnlocks:
+#  - MechEquipmentDiamondDrill
 
 - type: technology
   id: ADTMechTechnologyArmor
