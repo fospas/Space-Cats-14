@@ -84,8 +84,7 @@ namespace Content.Client.LateJoin
             if (!_gameTicker.DisallowedLateJoin && _gameTicker.StationNames.Count == 0)
                 Logger.Warning("No stations exist, nothing to display in late-join GUI");
 
-            foreach (var (id, name) in _gameTicker.StationNames
-                         .OrderBy(x=> x.Value.Contains("Central Command") ? 1 : -1) //backmen: centcom
+            foreach (var (id, name) in _gameTicker.StationNames)
                      )
             {
                 var jobList = new BoxContainer

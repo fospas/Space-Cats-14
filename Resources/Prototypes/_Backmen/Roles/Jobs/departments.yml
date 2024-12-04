@@ -3,7 +3,6 @@
   name: department-CentCom
   description: department-CentCom-description
   color: "#13db0f"
-  primary: true
   weight: -5
   roles:
     - BKCCSecGavna
@@ -13,6 +12,7 @@
     - BKCCCargo
     - BKCCAssistant
     - BKCCAdmiral
+  editorHidden: true
   accountNumber: 1350  #backmen: currency
 
 - type: department
@@ -20,9 +20,9 @@
   name: department-Silicons
   description: department-Silicons-description
   color: "#191e9e"
-  primary: true
   weight: 10
   roles:
     - BKBPLATech
     - BKBPLAMED
+  editorHidden: true
   accountNumber: 1351  #backmen: currency

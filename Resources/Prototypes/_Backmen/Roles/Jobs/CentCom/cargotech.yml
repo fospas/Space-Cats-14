@@ -10,7 +10,7 @@
   canBeAntag: false
   weight: 1
   requireAdminNotify: true
-  joinNotifyCrew: true
+  joinNotifyCrew: false
   discordRequired: false
   requirements:
     - !type:DepartmentTimeRequirement

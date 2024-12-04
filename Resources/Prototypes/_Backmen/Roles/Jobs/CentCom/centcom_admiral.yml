@@ -10,7 +10,7 @@
   canBeAntag: false
   weight: 1
   requireAdminNotify: true
-  joinNotifyCrew: true
+  joinNotifyCrew: false
   whitelisted: true
   discordRequired: false
   requirements:

@@ -1,9 +1,8 @@
 - type: gameMap
   id: CentComm
   mapName: 'Central Command'
-  mapPath: /Maps/centcomm.yml 
-  #mapPath: /Maps/SpaceCats/CentralCommand.yml  # Space Cats
-  minPlayers: 5
+  mapPath: /Maps/corvax_centcomm.yml
+  minPlayers: 30
   stations:
     centcomm:
       stationProto: NanotrasenCentralCommand
@@ -13,20 +12,12 @@
           nameGenerator:
             !type:NanotrasenCentComNameGenerator
             prefixCreator: 'SC'
-        - type: StationJobs
-          availableJobs:
-            BKCCOperator: [ 1, 1]
-            BKCCSecGavna: [ 1, 1]
-            BKCCCargo: [ 1, 2]
-            BKCCSecOfficer: [ 2, 2]
-            BKCCAssistant: [ 2, 4]
-            BKCCAdmiral: [ 1, 1]
 
 - type: gameMap
   id: CentCommv2
   mapName: 'Central Command'
-  mapPath: /Maps/Backmen/corvax_centcomm_bkm.yml
-  minPlayers: 20
+  mapPath: /Maps/corvax_centcomm.yml
+  minPlayers: 30
   stations:
     centcomm:
       stationProto: NanotrasenCentralCommand
@@ -36,20 +27,12 @@
         nameGenerator:
           !type:NanotrasenCentComNameGenerator
           prefixCreator: 'CX'
-      - type: StationJobs
-        availableJobs:
-          BKCCOperator: [ 1, 1]
-          BKCCSecGavna: [ 1, 1]
-          BKCCCargo: [ 1, 2]
-          BKCCSecOfficer: [ 2, 2]
-          BKCCAssistant: [ 2, 4]
-          BKCCAdmiral: [ 1, 1]
 
 - type: gameMap
   id: CentCommv3
   mapName: 'Central Command'
-  mapPath: /Maps/Backmen/CentComBackmen.yml
-  minPlayers: 20
+  mapPath: /Maps/corvax_centcomm.yml
+  minPlayers: 30
   stations:
     centcomm:
       stationProto: NanotrasenCentralCommand
@@ -59,13 +42,4 @@
         nameGenerator:
           !type:NanotrasenCentComNameGenerator
           prefixCreator: 'B'
-      - type: StationJobs
-        availableJobs:
-          BKCCOfficial: [ 1, 1]
-          BKCCOperator: [ 1, 1]
-          BKCCSecGavna: [ 1, 1]
-          BKCCCargo: [ 1, 2]
-          BKCCSecOfficer: [ 2, 3]
-          BKCCAssistant: [ 2, 4]
-          BKCCAdmiral: [ 1, 1]
 
