@@ -37,8 +37,6 @@
       implants: [ MindShieldImplant ]
     - !type:AddComponentSpecial
       components:
-        - type: SpecForce
-          actionBssActionName: ActionCentcomFtlAction
         - type: NpcFactionMember
           factions:
             - CentralCommand

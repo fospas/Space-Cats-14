@@ -6,8 +6,6 @@
   suffix: МТФ Egg
   id: MobHumanERTLeaderReadyV3
   components:
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -23,8 +21,6 @@
   suffix: МТФ Egg
   id: MobHumanERTEngineerReadyV3
   components:
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -40,8 +36,6 @@
   suffix: МТФ Egg
   id: MobHumanERTSecurityReadyV3
   components:
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -57,8 +51,6 @@
   suffix: МТФ Egg
   id: MobHumanERTMedicalReadyV3
   components:
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -74,8 +66,6 @@
   suffix: МТФ Egg
   id: MobHumanERTJunitorEggV3
   components:
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -125,8 +115,6 @@
         department: Command
         time: 9000
     job: ERTLeader
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -181,8 +169,6 @@
         department: Engineering
         time: 9000
     job: ERTEngineer
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -234,8 +220,6 @@
       - !type:OverallPlaytimeRequirement
         time: 16000
     job: ERTSecurity
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -290,8 +274,6 @@
         department: Medical
         time: 9000
     job: ERTMedical
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -346,8 +328,6 @@
         role: JobJanitor
         time: 1500
     job: ERTJanitor
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand

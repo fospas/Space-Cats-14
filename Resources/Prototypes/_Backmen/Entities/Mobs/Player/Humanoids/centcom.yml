@@ -32,8 +32,6 @@
     - type: NpcFactionMember
       factions:
         - CentralCommand
-    - type: SpecForce
-      actionBssActionName: ActionCentcomFtlAction
     - type: AntagImmune
 
 - type: entity
@@ -70,8 +68,6 @@
     - type: NpcFactionMember
       factions:
         - CentralCommand
-    - type: SpecForce
-      actionBssActionName: ActionCentcomFtlAction
     - type: AntagImmune
 
 - type: entity
@@ -102,8 +98,6 @@
         department: Command
         time: 18000
     job: SpecialOperationsOfficer
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -146,6 +140,4 @@
     - type: NpcFactionMember
       factions:
         - CentralCommand
-    - type: SpecForce
-      actionBssActionName: ActionCentcomFtlAction
     - type: AntagImmune

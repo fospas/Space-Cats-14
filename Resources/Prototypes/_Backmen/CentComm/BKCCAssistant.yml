@@ -48,8 +48,6 @@
     implants:
     - MindShieldImplant
     - FreedomImplant
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
     - CentralCommand
