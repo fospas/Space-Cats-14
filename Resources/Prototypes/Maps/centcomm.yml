@@ -1,10 +1,10 @@
 - type: gameMap
-  id: CentComm
+  id: CorvaxCentcomm
   mapName: 'Central Command'
   mapPath: /Maps/corvax_centcomm.yml
-  minPlayers: 10
+  minPlayers: 30
   stations:
-    centcomm:
+    centcommcorvax:
       stationProto: NanotrasenCentralCommand
       components:
         - type: StationNameSetup
