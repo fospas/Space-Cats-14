@@ -88,6 +88,9 @@ namespace Content.IntegrationTests.Tests
             "AspidSC",
             //end-spacecats
             //start-backmen
+            "ShwrAdventurer",
+            "ShwrBig",
+            "shwrDust",
             "BackmenTortuga",
             "BackmenHive",
 			"BackmenShoukou",
