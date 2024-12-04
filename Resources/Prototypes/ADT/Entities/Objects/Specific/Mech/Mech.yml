@@ -672,8 +672,8 @@
 - type: entity
   id: ADTMechpaddy
   parent: BaseMech
-  name: Paddy APLU
-  description: The APLU Paddy is a Security variant of Ripley Mk1. Designed for mass detainment it has a special compartment which can hold up to 4 people, to load them into the compartment you must arm it with a Hydraulic Claw which can catch people and handcuff them. Handcuffing them can be disabled so you can use the mech for transporting squad of Security Officers.
+  name: Падди APLU
+  description: Автозак APLU Падди - это охранный вариант Ripley Mk1. Он предназначен для массового задержания и имеет специальное отделение, в котором могут находиться до 4 человек. Чтобы погрузить их в отделение, необходимо вооружить его гидравлическим захватом, который может захватывать людей и надевать на них наручники. Надевание наручников на них может быть отключено, так что вы можете использовать робота для транспортировки отряда офицеров безопасности.
   components:
   - type: Sprite
     drawdepth: Mobs
