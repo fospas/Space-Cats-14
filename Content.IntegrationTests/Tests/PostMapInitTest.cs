@@ -87,8 +87,6 @@ namespace Content.IntegrationTests.Tests
             "AspidSC",
             //end-spacecats
             //start-backmen
-            "CentCommv2",
-            "CentCommv3",
             "ShwrAdventurer",
             "ShwrBig",
             "shwrDust",
