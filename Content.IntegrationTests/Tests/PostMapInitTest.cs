@@ -31,6 +31,7 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] NoSpawnMaps =
         {
+            "CentComm",
             "Dart"
         };
 
@@ -87,9 +88,6 @@ namespace Content.IntegrationTests.Tests
             "AspidSC",
             //end-spacecats
             //start-backmen
-            "ShwrAdventurer",
-            "ShwrBig",
-            "shwrDust",
             "BackmenTortuga",
             "BackmenHive",
 			"BackmenShoukou",
@@ -289,13 +287,7 @@ namespace Content.IntegrationTests.Tests
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
                     var comp = entManager.GetComponent<StationJobsComponent>(station);
-                    var jobs = new HashSet<ProtoId<JobPrototype>>(
-                        comp.SetupAvailableJobs
-                            .Where(x=>x.Value[0] > 0 || x.Value[0] == -1)
-                            .Select(x=>x.Key)
-                        .Where(x=>x != "Prisoner") // backmen: Fugitive
-                        .Where(x=>x != "Freelancer") // backmen: shipwrecked
-                    );
+                    var jobs = new HashSet<ProtoId<JobPrototype>>(comp.SetupAvailableJobs.Keys);
 
                     var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
                         .Where(x => x.SpawnType == SpawnPointType.Job && x.Job != null)
