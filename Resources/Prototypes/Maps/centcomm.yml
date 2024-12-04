@@ -2,7 +2,7 @@
   id: CentComm
   mapName: 'Central Command'
   mapPath: /Maps/corvax_centcomm.yml
-  minPlayers: 30
+  minPlayers: 10
   stations:
     centcomm:
       stationProto: NanotrasenCentralCommand
@@ -10,36 +10,5 @@
         - type: StationNameSetup
           mapNameTemplate: '{0} Central Command {1}'
           nameGenerator:
-            !type:NanotrasenCentComNameGenerator
-            prefixCreator: 'SC'
-
-- type: gameMap
-  id: CentCommv2
-  mapName: 'Central Command'
-  mapPath: /Maps/corvax_centcomm.yml
-  minPlayers: 30
-  stations:
-    centcomm:
-      stationProto: NanotrasenCentralCommand
-      components:
-      - type: StationNameSetup
-        mapNameTemplate: '{0} Central Command {1}'
-        nameGenerator:
-          !type:NanotrasenCentComNameGenerator
-          prefixCreator: 'CX'
-
-- type: gameMap
-  id: CentCommv3
-  mapName: 'Central Command'
-  mapPath: /Maps/corvax_centcomm.yml
-  minPlayers: 30
-  stations:
-    centcomm:
-      stationProto: NanotrasenCentralCommand
-      components:
-      - type: StationNameSetup
-        mapNameTemplate: '{0} Central Command {1}'
-        nameGenerator:
-          !type:NanotrasenCentComNameGenerator
-          prefixCreator: 'B'
-
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TG'
