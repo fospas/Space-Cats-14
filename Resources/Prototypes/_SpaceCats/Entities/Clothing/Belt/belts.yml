@@ -68,7 +68,7 @@
     sprite: _SpaceCats/Clothing/Belt/white_sheath.rsi
     state: sheath
   - type: Clothing
-    sprite: _SpaceCats//Clothing/Belt/white_sheath.rsi
+    sprite: _SpaceCats/Clothing/Belt/white_sheath.rsi
 
 - type: entity
   parent: ClothingBeltSheath
