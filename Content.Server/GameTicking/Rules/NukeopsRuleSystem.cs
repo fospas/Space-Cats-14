@@ -24,7 +24,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using System.Linq;
-using Content.Shared.Backmen.Mood;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Store.Components;
 
@@ -39,8 +38,6 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
     [Dependency] private readonly StoreSystem _store = default!;
     [Dependency] private readonly TagSystem _tag = default!;
-
-    [Dependency] private readonly Backmen.Arrivals.CentcommSystem _centcommSystem = default!; // backmen: centcom
 
     [ValidatePrototypeId<CurrencyPrototype>]
     private const string TelecrystalCurrencyPrototype = "Telecrystal";
@@ -133,19 +130,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                 if (TryComp(nukeops.TargetStation, out StationDataComponent? data))
                 {
                     var correctStation = false;
-                    var centcomStation = false; // backmen: centcom
                     foreach (var grid in data.Grids)
                     {
-                        // start-backmen: centcom
-                        if (_centcommSystem.CentComGrid == grid)
-                        {
-                            nukeops.WinConditions.Add(WinCondition.NukeExplodedOnCentComLocation);
-                            SetWinType((uid,nukeops), WinType.OpsMajor, true);
-                            centcomStation = true;
-                            break;
-                        }
-                        // end-backmen: centcom
-
                         if (grid != ev.OwningStation)
                         {
                             continue;
@@ -156,11 +142,9 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                         correctStation = true;
                     }
 
-                    if (correctStation || centcomStation) // backmen: centcom
+                    if (correctStation)
                         continue;
                 }
-
-
 
                 nukeops.WinConditions.Add(WinCondition.NukeExplodedOnIncorrectLocation);
             }
@@ -494,8 +478,6 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         var target = (ent.Comp.TargetStation is not null) ? Name(ent.Comp.TargetStation.Value) : "the target";
 
         RemComp<PacifiedComponent>(args.EntityUid); // Corvax-DionaPacifist: Allow dionas nukes to harm
-        RaiseLocalEvent(args.EntityUid, new MoodEffectEvent("NukeopsFocused")); // backmen: mood
-
         _antag.SendBriefing(args.Session,
             Loc.GetString("nukeops-welcome",
                 ("station", target),

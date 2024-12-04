@@ -67,7 +67,7 @@ namespace Content.Client.LateJoin
             {
                 var (station, jobId) = x;
                 Logger.InfoS("latejoin", $"Late joining as ID: {jobId}");
-                _consoleHost.ExecuteCommand($"notice {CommandParsing.Escape(jobId)} {station}");
+                _consoleHost.ExecuteCommand($"joingame {CommandParsing.Escape(jobId)} {station}");
                 Close();
             };
 
@@ -85,7 +85,6 @@ namespace Content.Client.LateJoin
                 Logger.Warning("No stations exist, nothing to display in late-join GUI");
 
             foreach (var (id, name) in _gameTicker.StationNames)
-                     )
             {
                 var jobList = new BoxContainer
                 {
