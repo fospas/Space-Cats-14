@@ -152,52 +152,6 @@
     duration: null # the rule has to last the whole round not 1 second
     occursDuringRoundEnd: false
 
-# Shipwrecked
-- type: entity
-  id: Shipwrecked
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GameRule
-      minPlayers: 1
-    - type: ShipwreckedRule
-      spawnPointTraveller: SpawnPointShipwreckTraveller
-      availableJobs:
-        - Explorer
-        - Freelancer
-        - Student
-      destinations:
-        - DesertWastes
-        - FrozenWastes
-        - Jungle
-        - Continental
-        - Lava
-        - RuinedMegacity
-      spawnPointHecate: SpawnPointShipwreckHecate
-      hecatePrototype: MobQuestHecateShipwrecked
-      eventSchedule:
-        - 13: AnnounceTransit
-        - 9: ShowHecate
-        - 1: IntroduceHecate
-        - 160: EncounterTurbulence
-        - 10: ShiftParallax
-        - 60: MidFlightDamage
-        - 6: Alert
-        - 16: DecoupleEngine
-        - 14: SendDistressSignal
-        - 16: InterstellarBody
-        - 16: EnteringAtmosphere
-        - 6: Crash
-        - 6: AfterCrash
-        - 12: Sitrep
-
-- type: gameMapPool
-  id: ShipwreckedPool
-  maps:
-    - ShwrAdventurer
-    - ShwrBig
-    - shwrDust
-
 - type: entity
   parent: BaseGameRule
   id: Changeling
