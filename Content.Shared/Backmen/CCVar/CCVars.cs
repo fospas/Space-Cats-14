@@ -118,12 +118,6 @@ public sealed class CCVars
     public static readonly CVarDef<bool> PsionicRollsEnabled =
         CVarDef.Create("psionics.rolls_enabled", true, CVar.SERVERONLY);
 
-    /// <summary>
-    /// Shipwrecked
-    /// </summary>
-    public static readonly CVarDef<int> ShipwreckedMaxPlayers =
-        CVarDef.Create("shipwrecked.max_players", 15);
-
     /*
  * FleshCult
  */

@@ -1,17 +1,4 @@
 - type: gamePreset
-  id: Shipwrecked
-  alias:
-    - schiffbruch
-  name: shipwrecked-title
-  description: shipwrecked-description
-  minPlayers: 1
-  showInVote: false
-  isMiniGame: false
-  supportedMaps: ShipwreckedPool
-  rules:
-    - Shipwrecked
-
-- type: gamePreset
   id: Vampires
   alias:
   - vamp
