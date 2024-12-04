@@ -125,8 +125,6 @@
       - !type:DepartmentTimeRequirement
         department: Command
         time: 18000
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -179,8 +177,6 @@
       - !type:DepartmentTimeRequirement
         department: Engineering
         time: 18000
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -229,8 +225,6 @@
         time: 36000
       - !type:OverallPlaytimeRequirement
         time: 36000
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -282,8 +276,6 @@
       - !type:DepartmentTimeRequirement
         department: Medical
         time: 18000
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
@@ -335,8 +327,6 @@
       - !type:RoleTimeRequirement
         role: JobJanitor
         time: 3000
-  - type: SpecForce
-    actionBssActionName: ActionCentcomFtlAction
   - type: NpcFactionMember
     factions:
       - CentralCommand
