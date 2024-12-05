@@ -24,7 +24,7 @@
 
 - type: technology
   id: NightVisionTech
-    name: research-technology-night-vision
+  name: research-technology-night-vision
   icon:
     sprite: _SpaceCatsClothing/Eyes/Goggles/nightvision.rsi
     state: icon
