@@ -361,6 +361,8 @@
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
       - HypoExperement # Cats
+      - ClothingEyesNightVisionGoggles # Cats
+      - ClothingEyesThermalVisionGoggles # Cats
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator

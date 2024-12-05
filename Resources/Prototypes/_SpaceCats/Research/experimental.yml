@@ -21,3 +21,27 @@
   cost: 10000
   recipeUnlocks:
   - MachineBluespaceHarvesterCircuitboard
+
+- type: technology
+  id: NightVisionTech
+    name: research-technology-night-vision
+  icon:
+    sprite: _SpaceCatsClothing/Eyes/Goggles/nightvision.rsi
+    state: icon
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingEyesNightVisionGoggles
+
+- type: technology
+  id: ThermalVisionTech
+  name: research-technology-thermal-vision
+  icon:
+    sprite: _SpaceCats/Clothing/Eyes/Goggles/thermal.rsi
+    state: icon
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingEyesThermalVisionGoggles
