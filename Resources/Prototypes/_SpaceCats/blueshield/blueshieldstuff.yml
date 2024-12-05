@@ -164,4 +164,3 @@
   - type: FlashImmunity
   - type: UseDelay
     delay: 5
-  - type: PNV
