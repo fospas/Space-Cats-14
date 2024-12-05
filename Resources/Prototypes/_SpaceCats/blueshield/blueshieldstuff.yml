@@ -164,3 +164,7 @@
   - type: FlashImmunity
   - type: UseDelay
     delay: 5
+  - type: ClothingGrantComponent
+    component:
+    - type: ThermalVision
+    - type: NightVision
