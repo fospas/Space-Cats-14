@@ -56541,6 +56541,15 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -52.743713,10.881062
       parent: 1668
+- proto: ClothingEyesVision
+  entities:
+  - uid: 2609
+    components:
+    - type: Transform
+      parent: 2601
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2622
     components:
     - type: Transform
