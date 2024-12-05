@@ -20,6 +20,6 @@
     itemIconStyle: BigAction
     priority: -20
     icon:
-      sprite: _SpaceCatsClothing/Eyes/Goggles/thermal.rsi
+      sprite: _SpaceCats/Clothing/Eyes/Goggles/thermal.rsi
       state: icon
     event: !type:ToggleThermalVisionEvent
