@@ -9,7 +9,7 @@
   - type: Sprite
     sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
   - type: Clothing
-    sprite: _SpaceCatsClothing/Eyes/Goggles/nightvision.rsi
+    sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
   - type: ClothingGrantComponent
     component:
     - type: NightVision
