@@ -27,6 +27,7 @@
     bodyType: Kinematic
   - type: Body
     prototype: Aghost
+    thermalVisibility: false # Cats -Next
   - type: Access
     groups:
     - AdminAllAccess

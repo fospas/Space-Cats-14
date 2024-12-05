@@ -41,4 +41,9 @@ public sealed partial class BodyComponent : Component
     [ViewVariables]
     [DataField, AutoNetworkedField]
     public HashSet<EntityUid> LegEntities = new();
+
+    // Cats-NightVision-Start
+    [DataField, AutoNetworkedField]
+    public bool ThermalVisibility = true;
+    // Cats-NightVision-End
 }
