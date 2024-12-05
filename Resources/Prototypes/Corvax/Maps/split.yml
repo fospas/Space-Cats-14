@@ -131,7 +131,6 @@
             CargoTechnician: [ 2, 3 ]
             # backmen
 #            
-            Brigmedic: [ 0, 1 ] # backmen-Brigmedic
         # backmen blob-config-start SMALL
         - type: StationBlobConfig
           stageBegin: 20
