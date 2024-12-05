@@ -130,7 +130,6 @@
             SalvageSpecialist: [ 1, 1 ]
             CargoTechnician: [ 2, 3 ]
             # backmen
-            Prisoner: [ 3, 6]
 #            
             Brigmedic: [ 0, 1 ] # backmen-Brigmedic
         # backmen blob-config-start SMALL
