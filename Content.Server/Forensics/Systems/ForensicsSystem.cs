@@ -284,7 +284,7 @@ namespace Content.Server.Forensics
             return DNA;
         }
 
-        private void ApplyEvidence(EntityUid user, EntityUid target)
+        public void ApplyEvidence(EntityUid user, EntityUid target) // Cats-DoorForensics
         {
             if (HasComp<IgnoresFingerprintsComponent>(target))
                 return;
