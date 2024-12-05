@@ -26,7 +26,7 @@
   id: NightVisionTech
   name: research-technology-night-vision
   icon:
-    sprite: _SpaceCatsClothing/Eyes/Goggles/nightvision.rsi
+    sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
     state: icon
   discipline: Experimental
   tier: 2
