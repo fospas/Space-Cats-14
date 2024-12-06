@@ -12,5 +12,5 @@ public abstract partial class BaseOverlayComponent : Component
     public virtual float Noise { get; set; } = 0.5f;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public virtual Color? Color { get; set; } = null;
+    public virtual Color Color { get; set; } = Color.White;
 }
