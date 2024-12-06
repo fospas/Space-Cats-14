@@ -36,4 +36,5 @@ public sealed partial class XenoBiologyComponent : Component
 
     /// Кем становится существо при делении, если имеет разум. Используйте прототип полиморфа
     [DataField("onMind", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public
+    public string OnMind = "RandomSlimePerson";
+}
