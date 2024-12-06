@@ -222,7 +222,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
                         var hitName = ToPrettyString(hitEntity);
                         if (dmg != null)
-                            dmg = Damageable.TryChangeDamage(hitEntity, dmg, origin: user);
+                            dmg = Damageable.TryChangeDamage(hitEntity, dmg, origin: user, canEvade: true); // backmen: surgery
 
                         // ADT hitscan bloodloss modifiers start
                         if (hitscan.BloodlossModifier.HasValue)
