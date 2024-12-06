@@ -81,3 +81,26 @@
     layers:
       - state: box_security
       - state: forensic
+
+- type: entity
+  name: коробка для магнитофона
+  parent: BoxCardboard
+  id: BoxTapeRecorder
+  description: Коробка с разноцветными кассетами и магнитофон.
+  components:
+  - type: StorageFill
+    contents:
+      - id: CassetteTape
+        amount: 1
+      - id: CassetteTape
+        amount: 1
+      - id: CassetteTape
+        amount: 1
+      - id: CassetteTape
+        amount: 1
+      - id: TapeRecorder
+        amount: 1
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: recorder

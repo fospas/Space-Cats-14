@@ -1,0 +1,137 @@
+- type: entity
+  parent: BaseItem
+  id: TapeRecorder
+  name: магнитофон
+  description: Все, что будет сказано в это устройство, может быть использовано против вас в суде по космическому праву.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/tape_recorder.rsi
+    layers:
+    - state: taperecorder_empty
+    - state: taperecorder_idle
+      map: ["tape"]
+      visible: false
+  - type: Item
+    size: Small
+  - type: TapeRecorder
+  - type: ActiveListener
+    range: 4
+  - type: UseDelay
+    delay: 1
+  - type: Speech
+  - type: ItemSlots
+    slots:
+      cassette_tape:
+        priority: 4
+        whitelist:
+          components:
+          - FitsInTapeRecorder
+  - type: ContainerContainer
+    containers:
+      cassette_tape: !type:ContainerSlot
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.TapeRecorderVisuals.Mode:
+        tape:
+          Stopped: { state: "taperecorder_idle" }
+          Playing: { state: "taperecorder_playing" }
+          Recording: { state: "taperecorder_recording" }
+          Rewinding: { state: "taperecorder_rewinding" }
+      enum.TapeRecorderVisuals.TapeInserted:
+        tape:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ActivatableUI
+    key: enum.TapeRecorderUIKey.Key
+    inHandsOnly: true
+    requireActiveHand: false
+  - type: UserInterface
+    interfaces:
+      enum.TapeRecorderUIKey.Key:
+        type: TapeRecorderBoundUserInterface
+
+- type: entity
+  parent: BaseItem
+  id: CassetteTape
+  name: cassette tape
+  description: A magnetic tape that can hold up to two minutes of content on either side.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/cassette_tapes.rsi
+    layers:
+    - state: tape_greyscale
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+    - state: tape_ribbonoverlay
+      map: [ "enum.ToggleVisuals.Layer" ]
+      visible: false
+  - type: Item
+    size: Tiny
+  - type: Damageable
+  - type: TapeCassette
+    maxCapacity: 180
+    repairWhitelist:
+      tags:
+      - Screwdriver
+      - Write
+  - type: FitsInTapeRecorder
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: RandomSprite
+    available:
+    - enum.DamageStateVisualLayers.Base:
+        tape_greyscale: Rainbow
+
+- type: entity
+  suffix: Интервью с Гарри Смошем
+  parent: CassetteTape
+  id: CassetteTapeInterview
+  components:
+  - type: Label
+    currentLabel: Интервью с Гарри Смошем
+  - type: TapeCassette
+    recordedData:
+      - timestamp: 2
+        name: Фил Дервин
+        message: Сейчас 11:43 утра, в комнате присутствуют Фил Дервин, детектив первого класса, офицер Белвью и Гарри Смош, подозреваемый в одном случае незаконного проникновения, четырёх случаях нападения, двух кражах и 85 случаях нарушения общественного порядка.
+      - timestamp: 6
+        name: Фил Дервин
+        message: Мистер Смош, понимаете ли вы обвинения, которые вам предъявлены?
+      - timestamp: 14
+        name: Гарри Смош
+        message: Мне всё равно, что вы говорите, я ничего не делал.
+      - timestamp: 18
+        name: Фил Дервин
+        message: Сэр, вас поймали с поличным в капитанской спальне, причём вы пытались украсть его запасы виски.
+      - timestamp: 23
+        name: Фил Дервин
+        message: Вам повезло, что он не застрелил вас за это.
+      - timestamp: 28
+        name: Гарри Смош
+        message: Я не видел никаких знаков, что мне нельзя там быть.
+      - timestamp: 34
+        name: Фил Дервин
+        message: Капитанская спальня? Думаю, не нужно вывешивать знаки, чтобы люди понимали, что туда входить нельзя — это очевидно.
+      - timestamp: 38
+        name: Фил Дервин
+        message: В любом случае, это не имеет значения. Даже если бы это место не было запретным, остаётся вопрос о запрещённых предметах, найденных при вас, и вашей попытке избежать ареста.
+      - timestamp: 42
+        name: Гарри Смош
+        message: Я ничего не делал.
+      - timestamp: 46
+        name: Офицер Белвью
+        message: Вы ускользнули от трёх офицеров, украли электродубинку и избили Иана. ГП был очень расстроен этим.
+      - timestamp: 50
+        name: Гарри Смош
+        message: Кто из вас дал ГП электрошокер?
+      - timestamp: 54
+        name: Фил Дервин
+        message: Надзиратель дал, как оказалось, это была хорошая идея, не так ли?
+      - timestamp: 58
+        name: Офицер Белвью
+        message: Я бы так сказал.
