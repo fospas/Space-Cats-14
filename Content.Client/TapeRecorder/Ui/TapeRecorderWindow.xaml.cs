@@ -49,7 +49,6 @@ public sealed partial class TapeRecorderWindow : FancyWindow
         {
             if (_updating) // don't tell server to change mode to the mode it told us
                 return;
-
             args.Button.Select(args.Id);
             var mode = args.Button.SelectedValue;
             OnModeChanged?.Invoke(mode);

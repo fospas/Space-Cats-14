@@ -395,7 +395,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         var hasData = false;
         var currentTime = 0f;
         var maxTime = 0f;
-        var cassetteName = "Unnamed";
+        var cassetteName = Loc.GetString("tape-recorder-menu-cassette-unnamed");
         var cooldown = comp.PrintCooldown;
 
         if (hasCassette)
