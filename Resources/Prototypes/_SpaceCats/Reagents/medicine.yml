@@ -1,0 +1,16 @@
+- type: reagent
+  id: RegenerateJelly
+  name: reagent-name-slime-regenerate-jelly
+  group: Medicine
+  desc: reagent-desc-slime-regenerate-jelly
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: medicine
+  color: "#6A5ACD"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -2
+            Brute: -2
