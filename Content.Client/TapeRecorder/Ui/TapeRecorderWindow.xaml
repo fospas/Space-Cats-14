@@ -1,4 +1,5 @@
-s="https://spacestation14.io"
+<controls:FancyWindow
+    xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     MinSize="440 220"
     SetSize="440 220"
