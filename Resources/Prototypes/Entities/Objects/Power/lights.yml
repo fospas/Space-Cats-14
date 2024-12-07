@@ -215,9 +215,9 @@
   description: A light fixture.
   components:
   - type: LightBulb
-    color: "#FFE4CE" # 5000K color temp
-    lightEnergy: 0.8
-    lightRadius: 10
+    color: "#bac9d6" # Cats edit
+    lightEnergy: 0.6
+    lightRadius: 7
     lightSoftness: 1
     PowerUse: 25
 

@@ -33,9 +33,9 @@
       shader: unshaded
     state: base
   - type: PointLight
-    color: "#FFE4CE" # 5000K color temp
-    energy: 0.8
-    radius: 10
+    color: "#bac9d6" # Cats edit 
+    energy: 0.6
+    radius: 7
     softness: 1
     offset: "0, -0.5"
   - type: Damageable
@@ -395,8 +395,8 @@
   components:
   - type: PointLight
     enabled: false
-    radius: 5
-    energy: 0.6
+    radius: 4
+    energy: 1
     offset: "0, 0.4"
     color: "#7CFC00"
     mask: /Textures/Effects/LightMasks/double_cone.png
@@ -407,7 +407,7 @@
     startingCharge: 0
   - type: EmergencyLight
   - type: RotatingLight
-    speed: 40
+    speed: 50
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/emergency_light.rsi
     layers:
