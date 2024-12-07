@@ -83,6 +83,7 @@
   - type: SurgeryTarget
   - type: TTS # Corvax-TTS
     voice: TrainingRobot
+  - type: Sanitized
 
 - type: entity
   id: BorgChassisService
