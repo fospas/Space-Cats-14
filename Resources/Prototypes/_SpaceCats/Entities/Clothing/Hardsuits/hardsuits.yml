@@ -46,4 +46,7 @@
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi
   - type: Clothing
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi
-  - type: PNV
+  - type: ClothingGrantComponent
+    component:
+    - type: ThermalVision
+    - type: NightVision
