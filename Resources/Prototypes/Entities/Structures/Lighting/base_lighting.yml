@@ -34,8 +34,8 @@
     state: base
   - type: PointLight
     color: "#bac9d6" # Cats edit 
-    energy: 0.6
-    radius: 7
+    energy: 0.7
+    radius: 8
     softness: 1
     offset: "0, -0.5"
   - type: Damageable
@@ -395,8 +395,8 @@
   components:
   - type: PointLight
     enabled: false
-    radius: 4
-    energy: 1
+    radius: 5
+    energy: 2
     offset: "0, 0.4"
     color: "#7CFC00"
     mask: /Textures/Effects/LightMasks/double_cone.png
