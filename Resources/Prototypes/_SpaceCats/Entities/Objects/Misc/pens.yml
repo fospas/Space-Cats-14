@@ -335,9 +335,6 @@
       - Screwing
     useSound:
       collection: Screwdriver
-  - type: Item
-    sprite: _SpaceCats/Objects/pens.rsi
-    state: fountain_black
 
 - type: entity
   name: medical fountain pen
