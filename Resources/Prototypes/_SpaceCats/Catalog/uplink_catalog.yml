@@ -81,3 +81,17 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: UplinkSyndicatePersonalNecoAI
+  name: uplink-syndicate-necopai-name
+  description: uplink-syndicate-necopai-desc
+  icon: { sprite: /Textures/_SpaceCats/Objects/Fun/pai-neco.rsi, state: syndicate-icon-pai-off }
+  productEntity: SyndicatePersonalNecoAI
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAllies
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
