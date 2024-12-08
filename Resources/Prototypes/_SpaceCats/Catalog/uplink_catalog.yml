@@ -86,7 +86,7 @@
   id: UplinkSyndicatePersonalNecoAI
   name: uplink-syndicate-necopai-name
   description: uplink-syndicate-necopai-desc
-  icon: { sprite: /Textures/_SpaceCats/Objects/Fun/pai-neco.rsi, state: ssyndicate-icon-pai-off }
+  icon: { sprite: /Textures/_SpaceCats/Objects/Fun/pai-neco.rsi, state: syndicate-icon-pai-off }
   productEntity: SyndicatePersonalNecoAI
   cost:
     Telecrystal: 1
