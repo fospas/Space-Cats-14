@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: ServiceBookPrinterCartridge
+  icon:
+    sprite: _SpaceCats/Objects/Misc/refill_cartridge.rsi
+    state: icon
+  product: CrateServicePrinterInkCartridge
+  cost: 1500
+  category: Service
+  group: market
