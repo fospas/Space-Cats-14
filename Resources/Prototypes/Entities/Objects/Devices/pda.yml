@@ -570,8 +570,6 @@
         - Write
   - type: PdaBorderColor
     borderColor: "#50645c"
-  - type: Icon
-    state: pda-iaa
 
 - type: entity
   parent: BasePDA
