@@ -109,3 +109,9 @@
   id: SaturationScale
   kind: source
   path: "/Textures/Shaders/saturationscale.swsl"
+
+# Base post-processing
+- type: shader
+  id: BasePostProcess
+  kind: source
+  path: "/Textures/Shaders/base_postprocess.swsl"
