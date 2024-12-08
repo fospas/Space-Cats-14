@@ -322,7 +322,6 @@
     tags:
     - Write
     - Pickaxe
-
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: fountain_black
@@ -339,7 +338,6 @@
   - type: Item
     sprite: _SpaceCats/Objects/pens.rsi
     state: fountain_black
-    size: 2
 
 - type: entity
   name: medical fountain pen
