@@ -302,7 +302,6 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: security_fountain2
-  - type: ItemCooldown
   - type: MeleeWeapon
     wideAnimationRotation: -45
     damage:
@@ -323,11 +322,10 @@
     tags:
     - Write
     - Pickaxe
-    
+
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: fountain_black
-  - type: ItemCooldown
   - type: MeleeWeapon
     wideAnimationRotation: -45
     damage:
