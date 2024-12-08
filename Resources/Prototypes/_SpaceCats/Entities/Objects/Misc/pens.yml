@@ -7,6 +7,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: atmos
+
 - type: entity
   name: booze pen
   parent: Pen
@@ -16,6 +17,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: bartender
+
 - type: entity
   name: cargo pen
   parent: Pen
@@ -25,6 +27,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: cargo
+
 - type: entity
   name: chaplain's pen
   parent: Pen
@@ -34,6 +37,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: chaplain
+
 - type: entity
   name: chemist's pen
   parent: Pen
@@ -43,6 +47,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: chemistry
+
 - type: entity
   name: engineering pen
   parent: Pen
@@ -52,6 +57,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: engineering
+
 - type: entity
   name: green pen
   parent: Pen
@@ -61,6 +67,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: green
+
 - type: entity
   name: hearts pen
   parent: Pen
@@ -70,6 +77,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: hearts
+
 - type: entity
   name: hydroponics pen
   parent: Pen
@@ -79,6 +87,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: hydroponics
+
 - type: entity
   name: janitorial pen
   parent: Pen
@@ -88,6 +97,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: janitor
+
 - type: entity
   name: light-blue pen
   parent: Pen
@@ -97,6 +107,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: medical1
+
 - type: entity
   name: medical pen
   parent: Pen
@@ -106,6 +117,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: medical2
+
 - type: entity
   name: cheap medical pen
   parent: Pen
@@ -115,6 +127,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: medical3
+
 - type: entity
   name: camouflage pen
   parent: Pen
@@ -124,6 +137,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: military
+
 - type: entity
   name: mime pen
   parent: Pen
@@ -133,6 +147,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: mime
+
 - type: entity
   name: pink pen
   parent: Pen
@@ -142,6 +157,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: pink
+
 - type: entity
   name: magic pen
   parent: Pen
@@ -151,6 +167,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: purple
+
 - type: entity
   name: rainbow fountain pen
   parent: Pen
@@ -160,6 +177,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: rainbow
+
 - type: entity
   name: media pen
   parent: Pen
@@ -169,6 +187,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: reporter
+
 - type: entity
   name: yellow pen
   parent: Pen
@@ -178,6 +197,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: yellow
+
 - type: entity
   name: violet pen
   parent: Pen
@@ -187,6 +207,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: violet
+
 - type: entity
   name: starry pen
   parent: Pen
@@ -196,6 +217,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: star
+
 - type: entity
   name: fountain science pen
   parent: Pen
@@ -205,6 +227,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: scientist_fountain
+
 - type: entity
   name: overpriced science pen
   parent: Pen
@@ -219,6 +242,7 @@
       - Screwing
     useSound:
       collection: Screwdriver
+
 - type: entity
   name: science pen
   parent: Pen
@@ -228,6 +252,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: scientist2
+
 - type: entity
   name: brigmedic pen
   parent: Pen
@@ -237,6 +262,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: security1
+
 - type: entity
   name: black security pen
   parent: Pen
@@ -246,6 +272,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: security2
+
 - type: entity
   name: red security pen
   parent: Pen
@@ -255,6 +282,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: security3
+
 - type: entity
   name: security fountain pen
   parent: Pen
@@ -264,6 +292,7 @@
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: security_fountain1
+
 - type: entity
   name: metallic fountain pen
   parent: Pen
@@ -283,6 +312,7 @@
     tags:
     - Write
     - Pickaxe
+
 - type: entity
   name: black fountain pen
   parent: BaseItem
@@ -293,6 +323,7 @@
     tags:
     - Write
     - Pickaxe
+    
   - type: Sprite
     sprite: _SpaceCats/Objects/pens.rsi
     state: fountain_black
