@@ -798,47 +798,8 @@
       sprite: _SpaceCats/Objects/pillows.rsi
       size: Huge
       heldPrefix: icon-one
-    - type: Blocking
-      passiveBlockFraction: 0.4
-      hidden: true
-      allowActiveBlocking: false
-      passiveBlockModifier:
-        coefficients:
-          Blunt: 0
-          Slash: 0.7
-          Piercing: 0.5
-      activeBlockModifier:
-        coefficients:
-          Blunt: 0
-          Slash: 0.7
-          Piercing: 0.5
-    - type: Damageable
-      damageContainer: Shield
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 40
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
-            damage: 20
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-            - !type:PlaySoundBehavior
-              sound: /Audio/Effects/woodhit.ogg
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                MaterialCloth:
-                  min: 5
-                  max: 5
-    - type: StaticPrice
-      price: 200
     - type: StaminaDamageOnHit
-      damage: 15
+      damage: 5
     - type: MeleeWeapon
       attackRate: 1
       damage:
@@ -849,12 +810,6 @@
         collection: BoxingHit
       angle: 50
       range: 1.2
-    - type: StaminaProtection
-      coefficient: 0.75
-    - type: ClothingSpeedModifier
-      walkModifier: 0.9
-      sprintModifier: 0.9
-    - type: HeldSpeedModifier
 
 - type: entity
   parent: Pillow1
