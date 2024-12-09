@@ -103,7 +103,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     }
 
     private const string StationGamma = "gamma";
-    private const string StationSigma = "sigma";
+    private const string StationSierra = "sierra";
 
     private void CheckChangeStage(
         Entity<StationBlobConfigComponent?> stationUid,
@@ -138,7 +138,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                     BlobDetectAudio,
                     Color.Red);
 
-                _alertLevelSystem.SetLevel(stationUid, StationSigma, true, true, true, true);
+                _alertLevelSystem.SetLevel(stationUid, StationSierra, true, true, true, true);
 
                 RaiseLocalEvent(stationUid,
                     new BlobChangeLevelEvent
