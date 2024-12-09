@@ -38,6 +38,7 @@
   spawnMarker: MarkerSpecforce
   announcementText: spec-forces-system-RXBZZ-annonce
   announcementTitle: spec-forces-system-RXBZZ-title
+  announcementSoundPath: /Audio/_Cats/StationEvents/spawn.ogg
   maxRolesAmount: 8
   raffleConfig:
     settings: short
