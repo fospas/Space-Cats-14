@@ -216,8 +216,8 @@
   components:
   - type: LightBulb
     color: "#bac9d6" # Cats edit
-    lightEnergy: 0.7
-    lightRadius: 8
+    lightEnergy: 0.8
+    lightRadius: 9
     lightSoftness: 1
     PowerUse: 25
 
