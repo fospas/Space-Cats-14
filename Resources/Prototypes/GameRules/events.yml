@@ -167,7 +167,7 @@
   components:
   - type: StationEvent
     weight: 6.5
-    earliestStart: 40
+    earliestStart: 60
     reoccurrenceDelay: 20
     minimumPlayers: 20
     duration: null
@@ -197,7 +197,7 @@
   - type: StationEvent
     weight: 6
     duration: null
-    earliestStart: 30
+    earliestStart: 60
     reoccurrenceDelay: 20
     minimumPlayers: 10
   - type: SpaceSpawnRule
@@ -476,7 +476,7 @@
   id: LoneOpsSpawn
   components:
   - type: StationEvent
-    earliestStart: 35
+    earliestStart: 50
     weight: 5.5
     minimumPlayers: 20
     duration: 1
@@ -511,9 +511,9 @@
   id: SleeperAgents
   components:
   - type: StationEvent
-    earliestStart: 30
+    earliestStart: 25
     weight: 8
-    minimumPlayers: 15
+    minimumPlayers: 10
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
@@ -606,7 +606,7 @@
   components:
   - type: StationEvent
     earliestStart: 0
-    minimumPlayers: 20
+    minimumPlayers: 10
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     weight: 5
   - type: MobReplacementRule
@@ -638,7 +638,7 @@
   components:
   - type: StationEvent
     weight: 5
-    earliestStart: 15
+    earliestStart: 30
     reoccurrenceDelay: 20
     minimumPlayers: 4
     duration: null
