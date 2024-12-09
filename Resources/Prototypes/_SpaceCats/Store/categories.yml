@@ -9,3 +9,7 @@
 - type: storeCategory
   id: Accessories
   name: store-category-vending-accessories
+
+- type: storeCategory
+  id: Daki
+  name: store-category-vending-daki
