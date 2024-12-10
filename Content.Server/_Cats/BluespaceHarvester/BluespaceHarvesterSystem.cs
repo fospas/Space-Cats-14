@@ -199,7 +199,7 @@ public sealed class BluespaceHarvesterSystem : EntitySystem
         var level = harvester.CurrentLevel;
         BluespaceHarvesterTap? max = null;
 
-        oreach (var tap in _taps)
+        foreach (var tap in _taps)
         {
             if (tap.Level > level)
                 continue;
