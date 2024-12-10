@@ -3,9 +3,9 @@ using Content.Shared.Audio;
 using Content.Shared._Cats.BluespaceHarvester;
 using Content.Shared.Destructible;
 using Content.Shared.Emag.Components;
-using Microsoft.CodeAnalysis;
 using Robust.Server.GameObjects;
 using Robust.Shared.Random;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Power.EntitySystems;
 using Robust.Shared.Audio.Systems;
@@ -106,7 +106,6 @@ public sealed class BluespaceHarvesterSystem : EntitySystem
         var query = EntityQueryEnumerator<BluespaceHarvesterComponent, PowerConsumerComponent>();
         while (query.MoveNext(out var uid, out var harvester, out var consumer))
         {
-
             // We start only after manual switching on.
             if (harvester is { Reset: false, CurrentLevel: 0 })
                 harvester.Reset = true;
@@ -170,7 +169,6 @@ public sealed class BluespaceHarvesterSystem : EntitySystem
             return;
 
         harvester.Comp.TargetLevel = args.TargetLevel;
-        harvester.Comp.Reseted = true; // We start only after manual switching on.
         UpdateUI(harvester.Owner, harvester.Comp);
     }
 
