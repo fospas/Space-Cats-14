@@ -394,6 +394,7 @@
       - EnergyScalpel # Shitmed Change
       - EnergyCautery # Shitmed Change
       - AdvancedRetractor # Shitmed Change
+       - ArtificialBluespaceCrystal # Cats
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -577,6 +578,7 @@
       - JukeboxCircuitBoard
       - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
       - MachineBluespaceHarvesterCircuitboard # Cats
+      - MachineBluespaceTransitorCircuitboard # Cats
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
