@@ -28,6 +28,9 @@
   id: ArtifactFragment
 
 - type: Tag
+  id: ArtificialBluespaceCrystal
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag

@@ -14,5 +14,6 @@ bluespace-harvester-window-points-total = Total points:
 bluespace-harvester-category-Industrial = Industrial
 bluespace-harvester-category-Technological = Technological
 bluespace-harvester-category-Biological = Biological
+research-technology-bluespace = Bluespace
 bluespace-harvester-category-Destruction = Destruction
 research-technology-bluespace-mining = Bluespace Mining
