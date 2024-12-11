@@ -46,13 +46,13 @@
   id: ScientificTopic
   name: Scientific Topic
   path:
-    path: Audio/_Cats/Admin_Abuse/Научная-тема.ogg
+    path: /Audio/_Cats/Admin_Abuse/Научная-тема.ogg
 
 - type: jukebox
   id: IronNanny
   name: Iron Nanny
   path:
-    path: Audio/_Cats/Admin_Abuse/железная-няня.ogg
+    path: /Audio/_Cats/Admin_Abuse/железная-няня.ogg
 
 - type: jukebox
   id: MysteriousTheme
