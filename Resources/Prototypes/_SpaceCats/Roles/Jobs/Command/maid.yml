@@ -4,28 +4,19 @@
   description: job-description-maid
   playTimeTracker: JobMaid
   requirements:
-  - !type:CharacterDepartmentTimeRequirement
-    department: Medical
-    min: 12000 # 20 ch
-  - !type:CharacterDepartmentTimeRequirement
+  - !type:DepartmentTimeRequirement
     department: Command
-    min: 12000 # 20 ch
-  - !type:CharacterSpeciesRequirement
-    species:
-    - Human
-    - Felinid
-    - Harpy
-  - !type:CharacterSexRequirement
-    sex:
-    - Female
-  - !type:GenderRequirement
-    gender:
-    - Female
+    time: 12000
+  - !type:OverallPlaytimeRequirement
+    time: 24000
+  - !type:AgeRequirement
+    requiredAge: 18
   weight: 20
   icon: "JobIconMaid"
   startingGear: MaidGear
   supervisors: job-supervisors-hop
   canBeAntag: false
+  joinNotifyCrew: true
   whitelisted: true
   accessGroups:
   - Command
@@ -35,12 +26,10 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
-  #cats: currency
   minBankBalance: 300
   maxBankBalance: 600
   wageDepartment: CentCom
   wage: 200
-  #cats: currency
 
 - type: startingGear
   id: MaidGear
