@@ -26,6 +26,7 @@
   startingGear: MaidGear
   supervisors: job-supervisors-hop
   canBeAntag: false
+  whitelisted: true
   accessGroups:
   - Command
   - Service
@@ -34,6 +35,12 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  #cats: currency
+  minBankBalance: 300
+  maxBankBalance: 600
+  wageDepartment: CentCom
+  wage: 200
+  #cats: currency
 
 - type: startingGear
   id: MaidGear
