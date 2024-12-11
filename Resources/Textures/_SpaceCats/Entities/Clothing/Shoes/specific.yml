@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingShoesBaseButcherable
-  id: ClothingShoesMaid
+  id: ClothingShoesMaids
   name: обувь служанки
   description: Туфли горничной. Блестящий.
   components:

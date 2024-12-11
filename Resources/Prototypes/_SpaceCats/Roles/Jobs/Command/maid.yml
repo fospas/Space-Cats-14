@@ -36,6 +36,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMaid
     back: ClothingBackpackSatchel
-    shoes: ClothingShoesMaid
+    shoes: ClothingShoesMaids
     ears: ClothingHeadsetCommand
     id: MaidPDA
