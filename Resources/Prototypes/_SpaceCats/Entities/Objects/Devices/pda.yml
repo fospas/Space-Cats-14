@@ -17,3 +17,13 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-bridgeofficer
+
+- type: entity
+  parent: BasePDA
+  id: MaidPDA
+  name: maid PDA
+  description: Shining from her own purity.
+  components:
+  - type: Pda
+    id: MaidIDCard
+    state: pda-maid

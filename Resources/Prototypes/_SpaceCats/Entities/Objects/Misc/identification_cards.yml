@@ -9,3 +9,15 @@
     layers:
     - state: silver
     - state: idbridgeofficer
+
+- type: entity
+  parent: IDCardStandard
+  id: MaidIDCard
+  name: Maid ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idmaid
+  - type: PresetIdCard
+    job: Maid
