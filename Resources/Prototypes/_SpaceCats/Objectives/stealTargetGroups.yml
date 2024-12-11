@@ -4,3 +4,31 @@
   sprite:
     sprite: Objects/Devices/pinpointer.rsi
     state: pinpointer-anomaly
+
+- type: stealTargetGroup
+  id: CaptainSabre
+  name: captain sabre
+  sprite:
+    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: StationBlueprints
+  name: station blueprints
+  sprite:
+    sprite: Objects/Tools/blueprint.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: KravMaga
+  name: krav maga
+  sprite:
+    sprite: _SpaceCats/Clothing/Hands/Gloves/krav.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: GlovesForensic
+  name: gloves forensic
+  sprite:
+    sprite: Clothing/Hands/Gloves/forensic.rsi
+    state: icon
