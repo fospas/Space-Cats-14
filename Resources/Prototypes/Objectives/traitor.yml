@@ -172,8 +172,6 @@
   components:
   - type: NotJobRequirement
     job: ResearchDirector
-  - type: NotJobRequirement
-    job: ResearchDirector
   - type: StealCondition
     owner: job-name-rd
 
