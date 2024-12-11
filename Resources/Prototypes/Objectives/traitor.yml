@@ -260,7 +260,7 @@
     job: Captain
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseCaptainObjective
   id: CaptainSabreObjective
   components:
