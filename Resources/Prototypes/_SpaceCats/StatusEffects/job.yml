@@ -12,4 +12,4 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Maid
-   jobName: job-name-maid
+  jobName: job-name-maid
