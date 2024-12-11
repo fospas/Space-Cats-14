@@ -870,25 +870,3 @@
     - type: Item
       sprite: _SpaceCats/Objects/pillows.rsi
       heldPrefix: icon-six
-
-- type: entity
-  parent: BasePillow
-  id: EsmiraPillow
-  name: ДАКИмакура Эсмира
-  description: я не знаю зачем она вам
-  components:
-  - type: Sprite
-    sprite: _SpaceCats/Objects/esmiradaki.rsi
-    state: esmira
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Items/Toys/toysqueak2.ogg

@@ -437,14 +437,3 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 5
-
-- type: listing
-  id: Daki41
-  productEntity: EsmiraPillow
-  cost:
-    SpaceCash: 100
-  categories:
-    - Daki
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 5
