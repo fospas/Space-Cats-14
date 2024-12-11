@@ -40,7 +40,10 @@
   - type: Tag
     tags:
     - CaptainSabre
+    - HighRiskItem
   - type: DisarmMalus
+  - type: StealTarget
+    stealGroup: CaptainSabre
   - type: MeleeBlock # CATS EDIT
     delay: 6.1
   - type: SentienceTarget
