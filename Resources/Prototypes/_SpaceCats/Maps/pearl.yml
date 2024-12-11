@@ -64,6 +64,7 @@
             Musician: [ 2, 2 ]
             ServiceWorker: [ 2, 2 ]
             Passenger: [ -1, -1 ]
+            Maid: [ 0, 1]
             #borgs
             Borg: [ 2, 2 ]
             # backmen
