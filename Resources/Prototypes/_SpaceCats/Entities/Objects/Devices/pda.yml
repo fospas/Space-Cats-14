@@ -1,8 +1,8 @@
 - type: entity
   parent: BasePDA
   id: BridgeOfficerPDA
-  name: bridge officer PDA
-  description: Raise shields!
+  name: PDA офицера мостика
+  description: Поднять щиты!
   components:
   - type: Pda
     id: BridgeOfficerIDCard
@@ -17,3 +17,13 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-bridgeofficer
+
+- type: entity
+  parent: BasePDA
+  id: MaidPDA
+  name: PDA горничной
+  description: Сияющая от своей собственной чистоты.
+  components:
+  - type: Pda
+    id: MaidIDCard
+    state: pda-maid

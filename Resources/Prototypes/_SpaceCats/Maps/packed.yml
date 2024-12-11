@@ -61,6 +61,7 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             # backmen
+            Maid: [ 0, 1]
             Brigmedic: [ 1, 1 ] # backmen-Brigmedic
             BlueShield: [1, 1] # backmen-BlueShield
             StationAi: [ 1, 1 ]
