@@ -13,7 +13,7 @@
 - type: entity
   parent: IDCardStandard
   id: MaidIDCard
-  name: ID карта служанки
+  name: ID карта горничной
   components:
   - type: Sprite
     layers:
