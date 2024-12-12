@@ -31,7 +31,7 @@
   - type: Clothing
     sprite: _SpaceCats/Clothing/Hands/Gloves/krav.rsi
   - type: MeleeWeapon
-    attackRate: 2
+    attackRate: 1.6
     damage:
       types:
        Blunt: 6
@@ -49,6 +49,6 @@
     tags:
     - HighRiskItem
   - type: StaminaDamageOnHit
-    damage: 33
+    damage: 29
   - type: StealTarget
     stealGroup: KravMaga
