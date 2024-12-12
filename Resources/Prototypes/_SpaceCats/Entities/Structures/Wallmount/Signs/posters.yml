@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseSign
-  id: PosterBase
+  id: PosterBases
   abstract: true
   components:
   - type: WallMount
@@ -30,7 +30,7 @@
 #легальные постеры
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLegitGreatFood
   name: Great Food
   description: "A poster advertising high-quality food from the station's kitchen."
@@ -39,7 +39,7 @@
     state: poster_adtgreatfood_legit #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLegitTurnOnSensors
   name: Turn on the sensors
   description: "A reminder from the paramedic to everyone at the station - turn on the sensors so that you are quickly found in case of trouble."
@@ -48,7 +48,7 @@
     state: poster_adtturnonsensors_legit #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLegitOktoberfest
   name: Oktoberfest!
   description: "A poster with a tayaran advertising the traditional October beer festival."
@@ -58,7 +58,7 @@
     state: poster_adtoktoberfest_legit #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLegitOktoberfest2
   name: Oktoberfest!
   description: "A poster with a beer mug advertising the traditional October beer festival."
@@ -70,7 +70,7 @@
 #контрабандные постеры
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandLustTayaran
   name: Lusty Tayaran
   description: "A poster with tayaran women of attractive appearance and in a provocative suit. Tayarans can also be beautiful!"
@@ -79,7 +79,7 @@
     state: poster_adtlusttayaran_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandFearThem
   name: Fear Them!
   description: "An elite squad of nuclear operatives will burn you to the ground. Leave NanoTrasen before it's too late!"
@@ -88,7 +88,7 @@
     state: poster_adtfearthem_contraband #Спрайт от Иллюми
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandSilence
   name: Don`t takl!
   description: "The Syndicate warns mime agents that you can be terribly tortured for divulging secrets."
@@ -97,7 +97,7 @@
     state: poster_adtsilence_contraband #Спрайт от Иллюми
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandLustUma
   name: Lusty Uma
   description: "A poster with vulpcanine women of attractive appearance and in a provocative suit."
@@ -106,7 +106,7 @@
     state: poster_adtlustuma_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandLustArDeco
   name: Tayaran ArDeco
   description: "A poster with tayaran women of attractive appearance and in ar deco suit."
@@ -117,7 +117,7 @@
 #Анимированные постеры
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterDontSitDown
   name: "Don not sit down"
   description: "Don not sit down"
@@ -132,7 +132,7 @@
     color: cyan
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterSingoPizza
   name: Pizza Time!
   description: Pizza Time!
@@ -142,7 +142,7 @@
     state: pizzatime
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLustyMoth
   name: lusty grey moth
   description: You think you see them somewhere
@@ -152,7 +152,7 @@
     state: lustymoth
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterWatchOutChem
   name: watch out chem
   description: watch out chem
@@ -166,7 +166,7 @@
     color: "#cc0022"
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterPanem
   name: panem et circenses
   description: panem et circenses
@@ -176,7 +176,7 @@
     state: panem
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterPapersPlease
   name: papers, please!
   description: papers, please!
@@ -186,7 +186,7 @@
     state: papersplease
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterDontTalkToArty
   name: dont talk
   description: dont talk
@@ -200,7 +200,7 @@
     color: "#c028fc"
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterWorkUnderWay
   name: work under way
   description: work under way
@@ -214,7 +214,7 @@
     color: "#d4b30f"
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterPlasmaMan
   name: plasma!
   description: plasma!
@@ -230,7 +230,7 @@
 #Плакаты ко дню рождения
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterOneYear1
   name: One Year!
   description: One Year!
@@ -241,7 +241,7 @@
     state: poster1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterOneYear2
   name: Birthday!
   description: Birthday!
@@ -252,7 +252,7 @@
     state: poster2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterOneYear3
   name: strange birthday poster
   description: strange birthday poster
@@ -263,7 +263,7 @@
     state: poster3
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterOneYear4
   name: strange birthday poster
   description: strange birthday poster
@@ -274,7 +274,7 @@
     state: poster4
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterPassTheBanana
   name: "Pass the banana down"
   description: "Pass the banana down"
@@ -291,7 +291,7 @@
 #Флажки ко дню рождения от Овая
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesPB1
   name: purple-blue triangles left
   description: purple-blue triangles left
@@ -302,7 +302,7 @@
     state: pbleft
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesPB2
   name: purple-blue triangles center
   description: purple-blue triangles center
@@ -313,7 +313,7 @@
     state: pbcenter
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesPB3
   name: purple-blue triangles right
   description: purple-blue triangles right
@@ -324,7 +324,7 @@
     state: pbright
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesRY1
   name: red-yellow triangles left
   description: red-yellow triangles left
@@ -335,7 +335,7 @@
     state: ryleft
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesRY2
   name: red-yellow triangles center
   description: red-yellow triangles center
@@ -346,7 +346,7 @@
     state: rycenter
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterBirhtdayTrianglesRY3
   name: red-yellow triangles right
   description: red-yellow triangles right
@@ -359,7 +359,7 @@
 #Постер от Иллюми про производительность
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterLegitEfficiency
   name: diagram of efficiency
   description: diagram of efficiency
@@ -370,7 +370,7 @@
 #Новогодние постеры
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterNewYear
   name: "2568"
   description: Poster that celebrates New Year on Earth.
@@ -385,7 +385,7 @@
     color: "#5469e6"
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterNewYear2
   name: happy new year
   description: Poster that celebrates New Year on Earth.
@@ -396,7 +396,7 @@
     state: new_year2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterNewYear3
   name: new year tayaran
   description: Poster that celebrates New Year on Earth.
@@ -409,7 +409,7 @@
 #Хеллоуинский декор
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenSpooky
   name: spooky poster
   description: spooky poster
@@ -420,7 +420,7 @@
     state: spooky
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenYummy
   name: yummy poster
   description: yummy poster
@@ -431,7 +431,7 @@
     state: yummy
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenSpider
   name: spider poster
   description: spider poster
@@ -442,7 +442,7 @@
     state: spider
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenSpiderWeb1
   name: spider web
   description: spider web
@@ -453,7 +453,7 @@
     state: spiderweb1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenSpiderWeb2
   name: spider web
   description: spider web
@@ -464,7 +464,7 @@
     state: spiderweb2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHappyHalloween
   name: happy halloween
   description: happy halloween
@@ -475,7 +475,7 @@
     state: happyhalloween
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterTayarHalloween
   name: happy halloween
   description: happy halloween
@@ -488,7 +488,7 @@
 #Флажки к хеллоуину
 #черно-оранжевые
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackOrange1
   name: black-orange triangles
   description: black-orange triangles
@@ -499,7 +499,7 @@
     state: blackorange1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackOrange2
   name: black-orange triangles
   description: black-orange triangles
@@ -510,7 +510,7 @@
     state: blackorange2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackOrange3
   name: black-orange triangles
   description: black-orange triangles
@@ -522,7 +522,7 @@
 
 #черно-белые
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackWhite1
   name: black-white triangles
   description: black-white triangles
@@ -533,7 +533,7 @@
     state: blackwhite1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackWhite2
   name: black-white triangles
   description: black-white triangles
@@ -544,7 +544,7 @@
     state: blackwhite2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesBlackWhite3
   name: black-white triangles
   description: black-white triangles
@@ -556,7 +556,7 @@
 
 #оранжево-желтые
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesOrangeYellow1
   name: orange-yellow triangles
   description: orange-yellow triangles
@@ -567,7 +567,7 @@
     state: orangeyellow1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesOrangeYellow2
   name: orange-yellow triangles
   description: orange-yellow triangles
@@ -578,7 +578,7 @@
     state: orangeyellow2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesOrangeYellow3
   name: orange-yellow triangles
   description: orange-yellow triangles
@@ -590,7 +590,7 @@
 
 #Счастливого хеллоуина
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesHappy1
   name: happy halloween triangles
   description: happy halloween triangles
@@ -601,7 +601,7 @@
     state: HPHW1
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesHappy2
   name: happy halloween triangles
   description: happy halloween triangles
@@ -612,7 +612,7 @@
     state: HPHW2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesHappy3
   name: happy halloween triangles
   description: happy halloween triangles
@@ -623,7 +623,7 @@
     state: HPHW3
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterHalloweenTrianglesHappy4
   name: happy halloween triangles
   description: happy halloween triangles
@@ -636,7 +636,7 @@
 #Флаги и плакаты СССП
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGerbBKF
   name: gerb BKF
   description: gerb BKF
@@ -647,7 +647,7 @@
     state: bkf
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGerbKDV
   name: gerb KDV
   description: gerb KDV
@@ -658,7 +658,7 @@
     state: kdv
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGerbKS
   name: gerb KS
   description: gerb KS
@@ -669,7 +669,7 @@
     state: ks
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGerbUSSP
   name: gerb USSP
   description: gerb USSP
@@ -680,7 +680,7 @@
     state: ussp
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGerbUSSP2
   name: gerb USSP
   description: gerb USSP
@@ -691,7 +691,7 @@
     state: ussp2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterUSSPRHBZ
   name: RHBZ poster
   description: gerb USSP
@@ -702,7 +702,7 @@
     state: rhbz
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterUSSPKS
   name: USSP KS
   description: gerb USSP
@@ -713,7 +713,7 @@
     state: ks2
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterUSSPKDV
   name: KDV poster
   description: gerb USSP
@@ -726,7 +726,7 @@
 # Own
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterQuadroElectronics
   name: "Quadro Electronics"
   description: "When you look at the poaster you want to wear an animal mask"
@@ -735,7 +735,7 @@
     state: quadro_electronics
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandRoza
   name: Roza
   description: "A face of Atmosia."
@@ -746,7 +746,7 @@
     scale: 0.25, 0.25
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterSpaceSec
   name: SPACE SEC logo
   description: "This is the logo of the SPACE SEC Corporation"
@@ -757,7 +757,7 @@
 
 # Странные постеры
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterError
   name: Error Poster
   description: This is an error poster.
@@ -767,7 +767,7 @@
     state: error
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterNoBad
   name: No Bad
   description: This poster promotes good behavior.
@@ -777,7 +777,7 @@
     state: nobad
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterNoGood
   name: No Good
   description: This poster warns against bad behavior.
@@ -787,7 +787,7 @@
     state: nogood
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterGasAttack
   name: Gas Attack
   description: This poster warns about gas attacks.
@@ -799,7 +799,7 @@
 #спонсорские контрабандные постеры с Умой
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaHot
   name: Uma`s poster 1
   description: Uma`s poster 1
@@ -809,7 +809,7 @@
     state: poster_umahot_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaPress
   name: Uma`s poster 2
   description: Uma`s poster 2
@@ -819,7 +819,7 @@
     state: poster_umapress_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaSport
   name: Uma`s poster 3
   description: Uma`s poster 3
@@ -829,7 +829,7 @@
     state: poster_umasport_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaAndAzalia
   name: Uma`s poster 4
   description: Uma`s poster 4
@@ -839,7 +839,7 @@
     state: poster_umaazalia_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaRabbit
   name: Uma`s poster 5
   description: Uma`s poster 5
@@ -849,7 +849,7 @@
     state: poster_umarabbit_contraband #Спрайт от Празата
 
 - type: entity
-  parent: PosterBase
+  parent: PosterBases
   id: PosterContrabandUmaOnBeach
   name: Uma`s poster 6
   description: Uma`s poster 6
