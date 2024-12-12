@@ -741,7 +741,7 @@
   description: "A face of Atmosia."
   components:
   - type: Sprite
-    sprite: _SpaceCats/Structures/Wallmounts/128x128posters.rsi
+    sprite: _SpaceCats/Structures/Wallmounts/128x128posterss.rsi
     state: roza
     scale: 0.25, 0.25
 
