@@ -9901,8 +9901,8 @@ entities:
           id: docking43669
           localAnchorB: -47.5,-40
           localAnchorA: 0.5,0
-          damping: 1560.5413
-          stiffness: 14007.387
+          damping: 1560.5502
+          stiffness: 14007.466
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 2133
@@ -111358,7 +111358,7 @@ entities:
     - type: Transform
       pos: -28.5,0.5
       parent: 60
-- proto: GunSafeSubMachineGunDrozd
+- proto: GunSafeSubMachineGunVector
   entities:
   - uid: 14212
     components:
@@ -134197,6 +134197,13 @@ entities:
     components:
     - type: Transform
       pos: -7.5,24.5
+      parent: 60
+- proto: SpawnPointMaid
+  entities:
+  - uid: 25444
+    components:
+    - type: Transform
+      pos: -0.5,1.5
       parent: 60
 - proto: SpawnPointMedicalDoctor
   entities:

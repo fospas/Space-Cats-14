@@ -57,7 +57,7 @@
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 2 ]
             #civillian
-            Maid: [ 0, 1]
+            Maid: [ 1, 1]
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
