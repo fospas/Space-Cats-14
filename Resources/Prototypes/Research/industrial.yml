@@ -59,7 +59,7 @@
   id: IndustrialEngineering
   name: research-technology-industrial-engineering
   icon:
-    sprite: Structures/Machines/protolathe_hypercon.rsi
+    sprite: _SpaceCats/Structures/Machines/protolathe_hypercon.rsi
     state: building
   discipline: Industrial
   tier: 1
