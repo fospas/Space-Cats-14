@@ -53,9 +53,9 @@
   - XenoAgentGameMode
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - BasicRoundstartVariation
+#  - BasicRoundstartVariation
   - SubGamemodesRule
-  - CalmMeteorSwarmScheduler
+#  - CalmMeteorSwarmScheduler
 
 - type: gamePreset
   id: FleshCult
