@@ -7,10 +7,10 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - Medals #backmen
   - Survival
-  - Trinkets
   - GroupSpeciesBreathTool
   - Inventory # Corvax-Loadouts
 
@@ -27,6 +27,7 @@
   - Medals #backmen
   - Inventory # Corvax-Loadouts
   - Survival
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - GroupSpeciesBreathTool
   - Inventory # Corvax-Loadouts
@@ -241,6 +242,7 @@
   - Glasses
   - Medals #backmen
   - Survival
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - GroupSpeciesBreathTool
   - Inventory # Corvax-Loadouts
@@ -288,6 +290,7 @@
   - ChiefEngineerShoes
   - Medals #backmen
   - SurvivalExtended
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - GroupSpeciesBreathTool
   - Inventory # Corvax-Loadouts
@@ -351,6 +354,7 @@
   - Glasses
   - Medals #backmen
   - Survival
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - GroupSpeciesBreathTool
   - Inventory # Corvax-Loadouts
@@ -401,6 +405,7 @@
   - SecurityPocket #backmen
   - Medals #backmen
   - SurvivalSecurity
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
@@ -487,6 +492,7 @@
   - Glasses
   - Medals #backmen
   - SurvivalMedical
+  - SelfDefenceDevices # Ataraxia
   - Trinkets
   - GroupSpeciesBreathToolMedical
   - Inventory # Corvax-Loadouts
