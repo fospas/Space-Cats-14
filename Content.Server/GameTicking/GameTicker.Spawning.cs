@@ -13,6 +13,8 @@ using Content.Shared.Players;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
+using Robust.Server.Audio;
+using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
@@ -27,6 +29,7 @@ namespace Content.Server.GameTicking
     {
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
+        [Dependency] private readonly AudioSystem _audioSystem = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
@@ -263,6 +266,14 @@ namespace Content.Server.GameTicking
                         Loc.GetString("latejoin-arrival-sender"),
                         playDefaultSound: false);
                 }
+
+                var audioParams = AudioParams.Default.WithVolume(-5f);
+
+                _audioSystem.PlayPvs(
+                    "/Audio/_Cats/StationEvents/announce_dig.ogg", 
+                    station.Transform.Coordinates, 
+                    audioParams);
+
             }
 
             if (player.UserId == new Guid("{e887eb93-f503-4b65-95b6-2f282c014192}"))
