@@ -17,12 +17,10 @@
   supervisors: job-supervisors-hop
   canBeAntag: false
   joinNotifyCrew: true
-  whitelisted: true
-  accessGroups:
-  - Command
-  - Service
   access:
   - Maintenance
+  - Command
+  - Service
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
