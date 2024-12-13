@@ -92,7 +92,7 @@
   description: It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
   components:
   - type: Sprite
-    sprite: Structures/Machines/autolathe.rsi
+    sprite: _SpaceCats/Structures/Machines/autolathe.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -248,7 +248,7 @@
   description: A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
-    sprite: Structures/Machines/autolathe_hypercon.rsi
+    sprite: _SpaceCats/Structures/Machines/autolathe_hypercon.rsi
   - type: Machine
     board: AutolatheHyperConvectionMachineCircuitboard
 
@@ -259,7 +259,7 @@
   description: Converts raw materials into advanced items.
   components:
   - type: Sprite
-    sprite: Structures/Machines/protolathe.rsi
+    sprite: _SpaceCats/Structures/Machines/protolathe.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -446,7 +446,7 @@
   description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
-    sprite: Structures/Machines/protolathe_hypercon.rsi
+    sprite: _SpaceCats/Structures/Machines/protolathe_hypercon.rsi
   - type: Machine
     board: ProtolatheHyperConvectionMachineCircuitboard
 
