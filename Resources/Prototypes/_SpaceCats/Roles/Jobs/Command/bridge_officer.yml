@@ -29,15 +29,16 @@
 - type: startingGear
   id: BridgeOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBridgeOfficer
-    back: ClothingBackpackSatchelSecurity
+    jumpsuit: ClothingBlackJumpsuit
+    back: ClothingBlackBackpack
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCombat
     id: BridgeOfficerPDA
-    ears: ClothingHeadsetCommand
-    neck: ClothingNeckBridgeOfficerMantle
-    belt: ClothingBeltSecurityFilled
+    ears: ClothingBlackHeadset
+    neck: ClothingNeckBlackMantle
+    belt: ClothingBlackWebbing
+    head: ClothingBlackBeret
     pocket1: WeaponEnergyGunDominator
 
 

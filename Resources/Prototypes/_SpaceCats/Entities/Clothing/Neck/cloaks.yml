@@ -45,9 +45,9 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckBridgeOfficerMantle
-  name: bridge officer mantle
-  description: Elegant mantle in black colors.
+  id: ClothingNeckBlackMantle
+  name: мантия офицера мостика
+  description: Элегантная мантия в черном цвете.
   components:
   - type: Sprite
-    sprite: _SpaceCats/Clothing/Neck/Mantles/BridgeofficerMantle.rsi
+    sprite: _SpaceCats/BridgeOfficer/BOMantle.rsi

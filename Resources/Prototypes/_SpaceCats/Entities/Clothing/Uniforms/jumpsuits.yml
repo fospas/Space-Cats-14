@@ -51,3 +51,17 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingBlackJumpsuit
+  name: комбинезон офицера
+  description: Довольно симпатичный официальный костюм из эластичных материалов.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/BridgeOfficer/BOJumpsuit.rsi
+  - type: Clothing
+    sprite: _SpaceCats/BridgeOfficer/BOJumpsuit.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

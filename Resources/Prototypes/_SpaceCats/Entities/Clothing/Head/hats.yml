@@ -47,3 +47,16 @@
   - type: Tag
     tags:
     - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingBlackBeret
+  name: берет офицера мостика
+  description: Это, пожалуй, единственный предмет одежды офицера, который не приносит особой пользы.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _SpaceCats/BridgeOfficer/BOBeret.rsi
+  - type: Clothing
+    sprite: _SpaceCats/BridgeOfficer/BOBeret.rsi
