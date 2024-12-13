@@ -1,0 +1,23 @@
+- type: entity
+  id: SpawnPointBridgeOfficer
+  parent: SpawnPointJobBase
+  name: bridgeofficer
+  components:
+  - type: SpawnPoint
+    job_id: BridgeOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: seniorofficer
+
+- type: entity
+  id: SpawnPointMaid
+  parent: SpawnPointJobBase
+  name: maid
+  components:
+  - type: SpawnPoint
+    job_id: Maid
+  - type: Sprite
+    layers:
+    - state: green
+    - state: maid

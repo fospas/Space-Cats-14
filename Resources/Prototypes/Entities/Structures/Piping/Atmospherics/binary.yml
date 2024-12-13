@@ -22,6 +22,7 @@
         !type:PipeNode
         nodeGroupID: Pipe
         pipeDirection: South
+  - type: StationAiWhitelist
 
 - type: entity
   parent: GasBinaryBase
@@ -73,6 +74,13 @@
     range: 5
     sound:
       path: /Audio/Ambience/Objects/gas_pump.ogg
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
 
 - type: entity
   parent: GasBinaryBase
@@ -130,6 +138,13 @@
       examinableAddress: true
       prefix: device-address-prefix-volume-pump
     - type: WiredNetworkConnection
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
 
 - type: entity
   parent: GasBinaryBase
@@ -159,6 +174,13 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_hiss.ogg
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
 
 - type: entity
   parent: GasBinaryBase
@@ -207,6 +229,13 @@
       range: 5
       sound:
         path: /Audio/Ambience/Objects/gas_hiss.ogg
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawTransit
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
 
 - type: entity
   parent: GasBinaryBase
@@ -266,6 +295,13 @@
     range: 5
     sound:
       path: /Audio/Ambience/Objects/gas_hiss.ogg
+  - type: VentCrawTube
+    containerId: VentCrawTube
+    connected: true
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
 
 - type: entity
   parent: GasBinaryBase
@@ -295,6 +331,15 @@
     - type: Construction
       graph: GasBinary
       node: port
+    - type: VentCrawTube
+      containerId: VentCrawTube
+      connected: true
+    - type: VentCrawJunction
+      degrees:
+        - 0
+    - type: ContainerContainer
+      containers:
+        VentCrawTube: !type:Container
 
 - type: entity
   parent: GasVentPump
@@ -305,6 +350,7 @@
     mode: SnapgridCenter
   components:
     - type: Sprite
+      noRot: true
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
       layers:
