@@ -269,10 +269,13 @@ namespace Content.Server.GameTicking
 
                 var audioParams = AudioParams.Default.WithVolume(-5f);
 
-                _audioSystem.PlayPvs(
-                    "/Audio/_Cats/StationEvents/announce_dig.ogg", 
-                    station.Transform.Coordinates, 
-                    audioParams);
+                if (EntityManager.TryGetComponent<TransformComponent>(station, out var transform))
+                {
+                    _audioSystem.PlayPvs(
+                        "/Audio/_Cats/StationEvents/announce_dig.ogg",
+                        transform.Coordinates,
+                        audioParams);
+                }
 
             }
 
