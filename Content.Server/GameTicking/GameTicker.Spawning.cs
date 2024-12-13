@@ -266,17 +266,6 @@ namespace Content.Server.GameTicking
                         Loc.GetString("latejoin-arrival-sender"),
                         playDefaultSound: false);
                 }
-
-                var audioParams = AudioParams.Default.WithVolume(-5f);
-
-                if (EntityManager.TryGetComponent<TransformComponent>(station, out var transform))
-                {
-                    _audioSystem.PlayPvs(
-                        "/Audio/_Cats/StationEvents/announce_dig.ogg",
-                        transform.Coordinates,
-                        audioParams);
-                }
-
             }
 
             if (player.UserId == new Guid("{e887eb93-f503-4b65-95b6-2f282c014192}"))
