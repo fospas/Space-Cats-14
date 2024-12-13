@@ -83,7 +83,7 @@
     sprite: _SpaceCats/Clothing/Belt/sheriff_sheath.rsi
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltSecurityWebbingFilled
   id: ClothingBlackWebbing
   name: РПС офицера мостика
   description: Это довольно удобно и не стесняет движений РПС.
@@ -92,13 +92,3 @@
     sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
   - type: Clothing
     sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
-  - type: Item
-    size: Large
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:NestedSelector
-        tableId: BeltSecurityEntityTable
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,5,3
