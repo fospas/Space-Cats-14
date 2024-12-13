@@ -1,6 +1,6 @@
 uniform sampler2D SCREEN_TEXTURE;
 
-const highp float RANGE = 0.005;    // Длина свечения
+const highp float RANGE = 0.003;    // Длина свечения
 const highp float STEPS = 0.001;    // Шаг выборки текстуры
 const highp float THRESHOLD = 0.97; // Порог цвета (0-1)
 const highp int ANGLE_STEPS = 16;   // Количество направлений для свечения
@@ -27,7 +27,7 @@ void fragment() {
         }
     }
 
-    highp vec4 finalColor = baseColor + vec4(vec3(glowColor) * 2.0, glowColor.a);
+    highp vec4 finalColor = baseColor + vec4(vec3(glowColor) * 3.0, glowColor.a);
 
     COLOR = finalColor;
 }
