@@ -1,0 +1,6 @@
+- type: gameMapPool
+  id: SpaceCatsDefaultMapPool
+  maps:
+  - BagelSC
+  - BoxSC
+  - ClusterSC

@@ -3,6 +3,7 @@ using Content.Server.DoAfter;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Forensics.Components;
 using Content.Server.Popups;
+using Content.Shared._Cats.Blocking;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Chemistry.Components;
@@ -35,7 +36,8 @@ namespace Content.Server.Forensics
             SubscribeLocalEvent<DnaComponent, MapInitEvent>(OnDNAInit);
 
             SubscribeLocalEvent<ForensicsComponent, BeingGibbedEvent>(OnBeingGibbed);
-            SubscribeLocalEvent<ForensicsComponent, MeleeHitEvent>(OnMeleeHit);
+            SubscribeLocalEvent<ForensicsComponent, MeleeHitEvent>(OnMeleeHit,
+                after: new[] {typeof(MeleeBlockSystem)}); // CATS EDIT
             SubscribeLocalEvent<ForensicsComponent, GotRehydratedEvent>(OnRehydrated);
             SubscribeLocalEvent<CleansForensicsComponent, AfterInteractEvent>(OnAfterInteract, after: new[] { typeof(AbsorbentSystem) });
             SubscribeLocalEvent<ForensicsComponent, CleanForensicsDoAfterEvent>(OnCleanForensicsDoAfter);
@@ -95,6 +97,9 @@ namespace Content.Server.Forensics
 
         private void OnMeleeHit(EntityUid uid, ForensicsComponent component, MeleeHitEvent args)
         {
+            if (args.Handled) // CATS EDIT
+                return;
+
             if ((args.BaseDamage.DamageDict.TryGetValue("Blunt", out var bluntDamage) && bluntDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Slash", out var slashDamage) && slashDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Piercing", out var pierceDamage) && pierceDamage.Value > 0))
@@ -279,7 +284,7 @@ namespace Content.Server.Forensics
             return DNA;
         }
 
-        private void ApplyEvidence(EntityUid user, EntityUid target)
+        public void ApplyEvidence(EntityUid user, EntityUid target) // Cats-DoorForensics
         {
             if (HasComp<IgnoresFingerprintsComponent>(target))
                 return;

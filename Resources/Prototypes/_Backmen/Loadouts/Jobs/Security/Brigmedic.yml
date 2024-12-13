@@ -3,9 +3,13 @@
   equipment:
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     gloves: ClothingHandsGlovesNitrile
+    ears: ClothingHeadsetSecurity
+    mask: ClothingMaskBreathMedicalSecurity
     eyes: ClothingEyesHudMedSec
+    neck: ClothingNeckTieRed
+    pocket2: HandheldBrigmedicCrewMonitor # Cats
     id: BrigmedicPDA
-    belt: ClothingBeltMedicalFilled
+    belt: ClothingBeltMilitaryWebbingCorpsman
 
 #Suit
 - type: loadout
