@@ -38,7 +38,7 @@ latejoin-arrival-announcement =
         [female] прибыла
         [epicene] прибыли
        *[neuter] прибыло
-    } на станцию!/font][/color]
+    } на станцию![/font][/color]
 latejoin-arrival-announcement-special = { $job } { $character } на палубе!
 latejoin-arrival-sender = Станции
 latejoin-arrivals-direction = Вскоре прибудет шаттл, который доставит вас на станцию.
