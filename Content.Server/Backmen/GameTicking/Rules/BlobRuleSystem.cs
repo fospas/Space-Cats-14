@@ -135,7 +135,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                     Loc.GetString("blob-alert-detect"),
                     stationName,
                     true,
-                    BlobDetectAudio,
+         //           BlobDetectAudio,
                     Color.Red);
 
                 _alertLevelSystem.SetLevel(stationUid, StationSierra, true, true, true, true);
