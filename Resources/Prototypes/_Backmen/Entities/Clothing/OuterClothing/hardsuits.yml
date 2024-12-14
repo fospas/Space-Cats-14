@@ -225,6 +225,9 @@
         Heat: 0.9
   - type: TinfoilHat
     destroyOnFry: false
+  - type: ClothingGrantComponent
+    component:
+    - type: NightVision
 
 - type: entity
   parent: ClothingOuterHardsuitSyndieElite
