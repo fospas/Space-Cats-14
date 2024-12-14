@@ -122,10 +122,10 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#FFD1A3" # 4000K color temp
-    lightEnergy: 1.0
+    color: "#be885e" 
+    lightEnergy: 2
     lightRadius: 6
-    lightSoftness: 1.1
+    lightSoftness: 1
   - type: Tag
     tags:
     - LightBulb
@@ -215,9 +215,9 @@
   description: A light fixture.
   components:
   - type: LightBulb
-    color: "#bac9d6" # Cats edit
-    lightEnergy: 0.8
-    lightRadius: 9
+    color: "#bac9d6" 
+    lightEnergy: 0.6
+    lightRadius: 7
     lightSoftness: 1
     PowerUse: 25
 
@@ -266,7 +266,7 @@
   components:
   - type: LightBulb
     color: "#B4FCF0"
-    lightEnergy: 2.5
+    lightEnergy: 4.5
     lightRadius: 12
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -280,7 +280,7 @@
   components:
   - type: LightBulb
     color: "#FFAF38"
-    lightEnergy: 2.5
+    lightEnergy: 4
     lightRadius: 10
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -294,7 +294,7 @@
   components:
   - type: LightBulb
     color: "#47f8ff"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -314,7 +314,7 @@
   components:
   - type: LightBulb
     color: "#39a1ff"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -334,7 +334,7 @@
   components:
   - type: LightBulb
     color: "#ff66cc"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -354,7 +354,7 @@
   components:
   - type: LightBulb
     color: "#ff8227"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -374,7 +374,7 @@
   components:
   - type: LightBulb
     color: "#fb4747"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
@@ -394,7 +394,7 @@
   components:
   - type: LightBulb
     color: "#52ff39"
-    lightEnergy: 2
+    lightEnergy: 3
     lightRadius: 8
     lightSoftness: 0.5
     BurningTemperature: 350
