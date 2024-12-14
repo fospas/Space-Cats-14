@@ -62,7 +62,6 @@
     back: ClothingBlueshieldBackpack # cats
     belt: ClothingBeltSecurityCentComSecurity
     pocket1: PistolBlueShield # cats
-    pocket2: RadioBlueShieldSupplyPod
   storage:
     back:
   #  - BlueShieldLoadout

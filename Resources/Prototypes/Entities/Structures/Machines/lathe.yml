@@ -362,6 +362,7 @@
       - DeviceQuantumSpinInverter
       - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
       - HypoExperement # Cats
+      - ClothingEyesNightVisionGoggles # Cats
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
@@ -931,6 +932,7 @@
       - WeaponXrayCannon
       - SecurityCyberneticEyes # Shitmed Change
       - MedicalCyberneticEyes # Shitmed Change
+      - ClothingEyesThermalVisionGoggles # Cats
   - type: MaterialStorage
     whitelist:
       tags:
