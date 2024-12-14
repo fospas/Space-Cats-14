@@ -83,6 +83,7 @@
     - id: ClothingMaskGasCaptain
     - id: JetpackCaptainFilled
     - id: OxygenTankFilled
+    - id: ClothingShoesBootsMagCaptain # Cats edit
 
 # No laser locker, used when the antique laser is placed in the special display crate
 - type: entity
