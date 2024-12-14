@@ -31,8 +31,8 @@ public sealed class HypospraySystem : SharedHypospraySystem
         base.Initialize();
 
         SubscribeLocalEvent<HyposprayComponent, AfterInteractEvent>(OnAfterInteract);
-        SubscribeLocalEvent<HyposprayComponent, MeleeHitEvent>(OnAttack,
         SubscribeLocalEvent<HyposprayComponent, MeleeHitEvent>(OnAttack);
+        SubscribeLocalEvent<HyposprayComponent, UseInHandEvent>(OnUseInHand);
     }
 
     private bool TryUseHypospray(Entity<HyposprayComponent> entity, EntityUid target, EntityUid user)
