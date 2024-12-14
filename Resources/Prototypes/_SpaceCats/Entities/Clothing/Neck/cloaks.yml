@@ -79,7 +79,7 @@
       params:
         variation: 0.09
   - type: ToggleClothing
-    action: ADTActionToggleCloak
+    action: ActionsToggleCloak
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90

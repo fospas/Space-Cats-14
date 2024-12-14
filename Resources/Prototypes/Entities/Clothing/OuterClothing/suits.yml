@@ -160,7 +160,7 @@
         Heat: 0.8
   # phase cloak
   - type: ToggleClothing
-    action: ADTActionToggleCloak # Cats edit
+    action: ActionsToggleCloak # Cats edit
   - type: ThermalCloak
     opacity: 0.03
     restrictWeapons: true

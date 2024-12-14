@@ -1,5 +1,5 @@
 - type: entity
-  id: ADTActionToggleCloak
+  id: ActionsToggleCloak
   categories:
     - HideSpawnMenu
   name: Toggle Cloak

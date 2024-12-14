@@ -42,7 +42,7 @@ public sealed partial class ThermalCloakComponent : Component
     public TimeSpan UncloakWeaponLock = TimeSpan.FromSeconds(1);
 
     [DataField, AutoNetworkedField]
-    public EntProtoId ActionId = "ADTActionToggleCloak";
+    public EntProtoId ActionId = "ActionsToggleCloak";
 
     [DataField, AutoNetworkedField]
     public EntityUid? Action;
