@@ -54,7 +54,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ADTClothingNeckInvisibleCloak
+  id: ClothingNeckInvisibleCloak
   name: Invisible Cloak
   description: kto eto chitaet
   components:

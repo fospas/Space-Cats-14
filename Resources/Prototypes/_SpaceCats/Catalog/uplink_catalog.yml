@@ -22,7 +22,7 @@
   id: ADTUplinkInvisibleCloak
   name: uplink-invisible-cloak-name
   description: uplink-invisible-cloak-desc
-  productEntity: ADTClothingNeckInvisibleCloak
+  productEntity: ClothingNeckInvisibleCloak
   cost:
     Telecrystal: 5
   categories:
