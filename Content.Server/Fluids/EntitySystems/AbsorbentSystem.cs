@@ -111,19 +111,13 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
             && _useDelay.IsDelayed((used, useDelay)))
             return;
 
+        // If it's a puddle try to grab from
         if (!TryPuddleInteract(user, used, target, component, useDelay, absorberSoln.Value))
         {
             // If it's refillable try to transfer
             if (!TryRefillableInteract(user, used, target, component, useDelay, absorberSoln.Value))
                 return;
         }
-
-        // If it's a puddle try to grab from
-        if (TryPuddleInteract(user, used, target, component, useDelay, absorberSoln.Value))
-            return;
-
-        // If it's refillable try to transfer
-        TryRefillableInteract(user, used, target, component, useDelay, absorberSoln.Value);
     }
 
     /// <summary>
@@ -330,5 +324,4 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         return true;
     }
-
 }
