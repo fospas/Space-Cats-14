@@ -20,7 +20,6 @@
     maxTransferAmount: 5
   - type: Drink
   - type: MeleeWeapon
-    canBeBlocked: false # CATS EDIT
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
     damage:

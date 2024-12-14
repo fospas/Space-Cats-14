@@ -179,10 +179,6 @@ public sealed partial class MeleeWeaponComponent : Component
     [DataField, AutoNetworkedField]
     public bool MustBeEquippedToUse = false;
 
-    // CATS EDIT START
-    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public bool CanBeBlocked = true;
-    // CATS EDIT END
 }
 
 /// <summary>

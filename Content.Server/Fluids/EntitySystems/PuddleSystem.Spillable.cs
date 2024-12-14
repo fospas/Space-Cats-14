@@ -8,7 +8,6 @@ using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Database;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids.Components;
-using Content.Shared._Cats.Blocking;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Popups;
@@ -27,8 +26,7 @@ public sealed partial class PuddleSystem
 
         SubscribeLocalEvent<SpillableComponent, LandEvent>(SpillOnLand);
         // Openable handles the event if it's closed
-        SubscribeLocalEvent<SpillableComponent, MeleeHitEvent>(
-            SplashOnMeleeHit, before: new[] {typeof(MeleeBlockSystem)}, after:[typeof(OpenableSystem)]); // CATS EDIT
+        SubscribeLocalEvent<SpillableComponent, MeleeHitEvent>(SplashOnMeleeHit, after: [typeof(OpenableSystem)]);
         SubscribeLocalEvent<SpillableComponent, SolutionContainerOverflowEvent>(OnOverflow);
         SubscribeLocalEvent<SpillableComponent, SpillDoAfterEvent>(OnDoAfter);
         SubscribeLocalEvent<SpillableComponent, AttemptPacifiedThrowEvent>(OnAttemptPacifiedThrow);

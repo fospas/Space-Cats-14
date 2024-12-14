@@ -115,3 +115,8 @@
   id: BasePostProcess
   kind: source
   path: "/Textures/Shaders/base_postprocess.swsl"
+
+- type: shader
+  id: RMCInvisible
+  kind: source
+  path: "/Textures/_SpaceCats/Shaders/invisible.swsl"

@@ -23,7 +23,6 @@
   - type: Item
     size: Small
   - type: MeleeWeapon
-    canBeBlocked: false # CATS EDIT
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
     damage:
