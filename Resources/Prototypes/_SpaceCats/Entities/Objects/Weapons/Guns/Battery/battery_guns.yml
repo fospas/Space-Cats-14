@@ -140,6 +140,7 @@
   - type: Battery
     maxCharge: 750
     startingCharge: 750
+  - type: DNAGunLocker
 
 - type: hitscan
   id: VioletLaser 
