@@ -16,7 +16,6 @@
   - type: Item
     sprite: Objects/Specific/Chemistry/beaker.rsi
   - type: MeleeWeapon
-    canBeBlocked: false # CATS EDIT
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
     damage:
@@ -113,7 +112,6 @@
   - type: Item
     sprite: Objects/Specific/Chemistry/beaker.rsi
   - type: MeleeWeapon
-    canBeBlocked: false # CATS EDIT
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
     damage:
