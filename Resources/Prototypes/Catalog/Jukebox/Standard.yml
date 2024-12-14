@@ -77,3 +77,9 @@
   name: The Theme Is Deserts.
   path:
     path: /Audio/_Cats/Admin_Abuse/тема-пустыни.ogg
+
+- type: jukebox
+  id: JustTheTwoOfUs
+  name: Just The Two Of Us
+  path:
+    path: /Audio/_Cats/Admin_Abuse/Just-The-Two-Of-Us.ogg
