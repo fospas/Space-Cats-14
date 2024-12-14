@@ -21,6 +21,7 @@
   - Maintenance
   - Command
   - Service
+  - Janitor
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

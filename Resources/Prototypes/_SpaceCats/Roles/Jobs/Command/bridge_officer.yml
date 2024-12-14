@@ -25,6 +25,10 @@
       - type: CommandStaff
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  minBankBalance: 300
+  maxBankBalance: 600
+  wageDepartment: CentCom
+  wage: 200
 
 - type: startingGear
   id: BridgeOfficerGear
