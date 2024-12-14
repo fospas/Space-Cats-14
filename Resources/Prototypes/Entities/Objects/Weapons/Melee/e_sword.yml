@@ -71,10 +71,6 @@
   - type: Reflect
   - type: IgnitionSource
     temperature: 700
-  - type: MeleeBlock # CATS EDIT
-    delay: 6.1
-    blockSound:
-      path: /Audio/Weapons/eblade1.ogg
 # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:
@@ -265,8 +261,6 @@
   - type: Tag
     tags:
     - Write
-  - type: MeleeBlock # CATS EDIT
-    delay: 12.1
 # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:
@@ -412,8 +406,6 @@
     deconstructionTarget: null
     graph: EnergyDoubleSwordGraph
     node: desword
-  - type: MeleeBlock # CATS EDIT
-    delay: 3.1
   # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:

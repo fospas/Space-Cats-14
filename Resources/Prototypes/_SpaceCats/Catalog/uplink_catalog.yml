@@ -81,3 +81,13 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkInvisibleCloak
+  name: uplink-invisible-cloak-name
+  description: uplink-invisible-cloak-desc
+  productEntity: ClothingNeckInvisibleCloak
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkWearables

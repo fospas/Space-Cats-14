@@ -44,8 +44,6 @@
   - type: DisarmMalus
   - type: StealTarget
     stealGroup: CaptainSabre
-  - type: MeleeBlock # CATS EDIT
-    delay: 6.1
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
@@ -107,8 +105,6 @@
     spread: 75
     reflects:
       - Energy
-  - type: MeleeBlock # CATS EDIT
-    delay: 6.1
 
 - type: entity
   name: machete

@@ -32,7 +32,6 @@
     solution: food
   # soup weapon!
   - type: MeleeWeapon
-    canBeBlocked: false # CATS EDIT
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
     damage:
