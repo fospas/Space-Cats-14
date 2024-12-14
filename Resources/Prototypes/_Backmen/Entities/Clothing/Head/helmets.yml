@@ -292,6 +292,10 @@
     slots:
     - Hair
     - Snout
+  - type: ClothingGrantComponent
+    component:
+    - type: NightVision
+    - type: ThermalVision
 
 - type: entity # backmen
   parent: ClothingHeadBase
