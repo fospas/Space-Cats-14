@@ -5,7 +5,6 @@
     shoes: ClothingShoesBootsSpetsnaz
     belt: WeaponRevolverMateba
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     id: DedSquadronGavnaIDCard
     ears: ClothingHeadsetCentComCCAltDeath
@@ -19,7 +18,6 @@
     shoes: ClothingShoesBootsSpetsnaz
     belt: WeaponRevolverMateba
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     id: DedSquadronLeaderGavnaIDCard
     head: ClothingHeadHatBeretMobileTaskForce
@@ -35,7 +33,6 @@
     shoes: ClothingShoesBootsMagSpecialForce
     mask: ClothingMaskGasDeathSquadV2_1
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     outerClothing: ClothingOuterHardsuitDeathsquad
     head: ClothingHeadHatBeretMobileTaskForce
@@ -56,7 +53,6 @@
     shoes: ClothingShoesBootsMagSpecialForce
     mask: ClothingMaskGasDeathSquadV2_1
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     outerClothing: ClothingOuterHardsuitDeathsquad
     id: DedSquadronGavnaIDCard
@@ -76,7 +72,6 @@
     shoes: ClothingShoesBootsMagSpecialForce
     mask: ClothingMaskGasDeathSquadV2_1
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     outerClothing: ClothingOuterHardsuitDeathsquad
     suitstorage: WeaponMinigunPulse
@@ -94,7 +89,6 @@
     shoes: ClothingShoesChameleonNoSlips
     mask: ClothingMaskGasDeathSquadV2_1
     neck: CombatKnifeSpetsnaz
-    eyes: ClothingEyesNightVisionGoggles
     gloves: ClothingHandsGlovesSpetsnazcombat
     outerClothing: ClothingOuterHardsuitDeathsquad
     id: DedSquadronGavnaIDCard
