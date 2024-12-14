@@ -14,7 +14,7 @@ max_connections = 60
 enabled = true
 
 [game]
-hostname = "[RU][MRP] × Space Cats \U0001F30C - Мы обновились!"
+hostname = "[RU][MRP] × Space Cats \U0001F30C"
 desc = """
 🌟 Space Cats — новый сервер, созданный на основе билда Backmen, где лайт-медиум отыгрыш сочетаются с увлекательным игровым процессом.
 Сейчас мы активно набираем новых администраторов и разработчиков. Присоединяйтесь к нам и станьте частью нашего уникального проекта!
@@ -39,6 +39,7 @@ maxplayers = 50
 soft_max_players = 40
 map_pool = "SpaceCatsDefaultMapPool"
 contraband_examine = false
+use_dynamic_hostname = true
 
 [mapping]
 autosave = false
@@ -46,7 +47,7 @@ autosave = false
 [hub]
 advertise = true
 tags = "region:eu_e, lang:ru, rp:low, rp:med"
-server_url = "ss14://spacecats.ru"
+server_url = "*"
 hub_urls = "https://hub.spacestation14.com/"
 
 [infolinks]
