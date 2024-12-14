@@ -34,7 +34,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
     [Dependency] private readonly AlertLevelSystem _alertLevelSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
 
-    private static readonly SoundPathSpecifier BlobDetectAudio = new ("/Audio/Corvax/Adminbuse/Outbreak5.ogg");
+    private static readonly SoundPathSpecifier BlobDetectAudio = new ("/Audio/_Cats/StationEvents/announce_dig.ogg");
 
     public override void Initialize()
     {
@@ -135,7 +135,7 @@ public sealed class BlobRuleSystem : GameRuleSystem<BlobRuleComponent>
                     Loc.GetString("blob-alert-detect"),
                     stationName,
                     true,
-         //           BlobDetectAudio,
+                    BlobDetectAudio,
                     Color.Red);
 
                 _alertLevelSystem.SetLevel(stationUid, StationSierra, true, true, true, true);
