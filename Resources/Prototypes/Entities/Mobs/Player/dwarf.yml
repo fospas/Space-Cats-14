@@ -4,6 +4,3 @@
   parent: BaseMobDwarf
   id: MobDwarf
   components:
-  - type: FootPrints
-    leftBarePrint: "footprint-left-bare-dwarf"
-    rightBarePrint: "footprint-right-bare-dwarf"

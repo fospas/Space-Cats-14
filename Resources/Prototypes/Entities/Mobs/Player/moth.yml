@@ -4,4 +4,3 @@
   parent: BaseMobMoth
   id: MobMoth
   components:
-    - type: FootPrints
