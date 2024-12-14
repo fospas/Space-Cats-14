@@ -61,10 +61,10 @@
     shoes: ClothingShoesBootsCombat
     back: ClothingBlueshieldBackpack # cats
     belt: ClothingBeltSecurityCentComSecurity
-    pocket1: WeaponPistolUCS
+    pocket1: PistolBlueShield # cats
     pocket2: RadioBlueShieldSupplyPod
   storage:
     back:
-    - BlueShieldLoadout
+  #  - BlueShieldLoadout
     - BlueShieldSetMedical
     - CombatKnifeSpetsnaz
