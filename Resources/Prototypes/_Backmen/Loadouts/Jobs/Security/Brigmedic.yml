@@ -8,12 +8,10 @@
     eyes: ClothingEyesGlassesBrigmedic
     neck: ClothingNeckTieRed
     pocket2: HandheldBrigmedicCrewMonitor # Cats
+    pocket1: SecHypo
     outerClothing: ClothingOuterCoatAMG
     id: BrigmedicPDA
     belt: ClothingBeltMilitaryWebbingCorpsman
-  storage:
-    back:
-    - SecHypo # Cats edit
 
 #Suit
 - type: loadout

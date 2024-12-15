@@ -49,7 +49,7 @@
     price: 550
 
 - type: entity
-  name: инжектор безопастности
+  name: инъектор химикатов
   parent: [BaseItem, BaseRestrictedContraband]
   description: Используется для быстрого введения лекарств. Используются картриджи, которые можно распечатать в лаборатории технологий медицины и безопасности.
   id: SecHypo
@@ -63,9 +63,6 @@
     solutions:
       hypospray:
         maxVol: 10
-        reagents:
-        - ReagentId: Epinephrine
-          Quantity: 10
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
@@ -75,7 +72,7 @@
     injectOnly: true
   - type: HyposprayBlockNonMobInjection
   - type: UseDelay
-    delay: 30 # up this later if its too low
+    delay: 15 # up this later if its too low
   - type: SolutionCartridgeReceiver
     tag: AutoinjectorCartridge
 
@@ -99,7 +96,7 @@
       - AutoinjectorCartridge
 
 - type: entity
-  name: картридж с автоинъектором эпенифрина
+  name: картридж с эпинифрином
   parent: BaseCartridgeAutoinjector
   description: Содержит 10 ед адреналина, используемого в картриджном автоинъекторе.
   id: CartridgeEpinephrine
@@ -116,9 +113,9 @@
         Quantity: 10
 
 - type: entity
-  name: картридж для автоинъектора brute
+  name: картридж для мех-повреждений
   parent: BaseCartridgeAutoinjector
-  description: Содержит 7 г бикаридина и 3 г транексамовой кислоты, которые используются в автоинъекторе в картриджах.
+  description: Содержит 7 единиц бикаридина и 3 единицы транексамовой кислоты, которые используются в автоинъекторе в картриджах.
   id: CartridgeBicaridine
   components:
   - type: Sprite
@@ -135,7 +132,7 @@
         Quantity: 3
 
 - type: entity
-  name: картридж для автоинъектора burn
+  name: картридж для ожогов
   parent: BaseCartridgeAutoinjector
   description: Содержит 10 единиц дермалина, используемого в картриджном автоинъекторе.
   id: CartridgeDermaline
@@ -152,7 +149,7 @@
         Quantity: 10
 
 - type: entity
-  name: картридж с автоинъектором эфедрина
+  name: картридж эфедрином
   parent: BaseCartridgeAutoinjector
   description: Содержит 10 единиц эфедрина, используемого в картриджном автоинъекторе.
   id: CartridgeEphedrine
@@ -169,9 +166,9 @@
         Quantity: 10
 
 - type: entity
-  name: картридж для автоинъектора puncturase
+  name: картридж пунктуразы
   parent: BaseCartridgeAutoinjector
-  description: Содержит 7 ед пунктуразы и 3 ед транексамовой кислоты, которые используются в картриджах автоинъекторов.
+  description: Содержит 7 единиц пунктуразы и 3 единицы транексамовой кислоты, которые используются в картриджах автоинъекторов.
   id: CartridgeIchor
   components:
   - type: Sprite
