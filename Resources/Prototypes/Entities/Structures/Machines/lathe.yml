@@ -879,6 +879,7 @@
       - CartridgeEpinephrine # Cats
       - CartridgeBicaridine # Cats
       - CartridgeDermaline # Cats
+      - CartridgeIchor # Cats
       - SecHypo # Cats
       - BorgModuleNeutralization # Cats Security Borg
     dynamicRecipes:

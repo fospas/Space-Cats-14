@@ -172,7 +172,7 @@
   name: картридж для автоинъектора puncturase
   parent: BaseCartridgeAutoinjector
   description: Содержит 7 ед пунктуразы и 3 ед транексамовой кислоты, которые используются в картриджах автоинъекторов.
-  id: CartridgePuncturase
+  id: CartridgeIchor
   components:
   - type: Sprite
     sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
