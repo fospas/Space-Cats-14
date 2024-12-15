@@ -265,6 +265,9 @@
   id: Cartridge
 
 - type: Tag
+  id: AutoinjectorCartridge
+
+- type: Tag
   id: CartridgeAntiMateriel
 
 - type: Tag
@@ -1110,6 +1113,9 @@
 
 - type: Tag
   id: SecBeltEquip
+
+- type: Tag
+  id: BrigmedicBeltEquip
 
 - type: Tag
   id: SecurePlasmaWindoor
