@@ -265,6 +265,9 @@
   id: Cartridge
 
 - type: Tag
+  id: CartridgeEpinephrine
+
+- type: Tag
   id: CartridgeAntiMateriel
 
 - type: Tag

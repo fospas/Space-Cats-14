@@ -1,0 +1,6 @@
+- type: latheRecipe
+  id: CartridgeEpinephrine
+  result: CartridgeEpinephrine
+  completetime: 1
+  materials:
+    Glass: 500

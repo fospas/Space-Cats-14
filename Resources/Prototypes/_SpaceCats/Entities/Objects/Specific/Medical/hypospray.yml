@@ -47,3 +47,56 @@
     delay: 1.1
   - type: StaticPrice
     price: 550
+
+- type: entity
+  name: epinephrine autoinjector
+  parent: [BaseItem, BaseRestrictedContraband]
+  description: Используется для быстрого введения эпинефрина раненым. Эпинефрин замедляет нанесение урона, уменьшает оглушение, слегка ускоряет и слегка заживляет раны в критическом состоянии. Используется для перезарядки картриджей. Доступно для печати на сайте security techfab.
+  id: SecHypo
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/security_hypo.rsi
+    state: icon
+  - type: Item
+    sprite: _SpaceCats/Objects/Specific/Medical/security_hypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 10
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    solutionName: hypospray
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: HyposprayBlockNonMobInjection
+  - type: UseDelay
+    delay: 300 # Prevent people from abusing it by printing a ton of cartridges and injecting constantly
+  - type: SolutionCartridgeReceiver
+    tag: CartridgeEpinephrine
+
+- type: entity
+  name: эпинефрин катридж
+  parent: [BaseItem, BaseRestrictedContraband]
+  description: Содержит 10 ед адреналина, используемого в автоинъекторе для введения адреналина.
+  id: CartridgeEpinephrine
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: icon
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Epinephrine
+        Quantity: 10
+  - type: Tag
+    tags:
+      - CartridgeEpinephrine

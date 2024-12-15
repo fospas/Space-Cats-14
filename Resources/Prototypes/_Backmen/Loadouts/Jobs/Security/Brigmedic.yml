@@ -11,6 +11,9 @@
     outerClothing: ClothingOuterCoatAMG
     id: BrigmedicPDA
     belt: ClothingBeltMilitaryWebbingCorpsman
+  storage:
+    back:
+    - SecHypo # Cats edit
 
 #Suit
 - type: loadout
