@@ -49,9 +49,9 @@
     price: 550
 
 - type: entity
-  name: security cartridge autoinjector
+  name: инжектор безопастности
   parent: [BaseItem, BaseRestrictedContraband]
-  description: Used for rapid administration of medicine. Uses cartridges printable at the medical and security techfab.
+  description: Используется для быстрого введения лекарств. Используются картриджи, которые можно распечатать в лаборатории технологий медицины и безопасности.
   id: SecHypo
   components:
   - type: Sprite
@@ -78,18 +78,6 @@
     delay: 30 # up this later if its too low
   - type: SolutionCartridgeReceiver
     tag: AutoinjectorCartridge
-
-- type: entity
-  name: автоинъектор медицинского картриджа
-  parent: [SecHypo, BaseMedicalContraband]
-  description: Используется для быстрого введения лекарств. Используются картриджи, которые можно распечатать в лаборатории технологий медицины и безопасности.
-  id: ParamedHypo
-  components:
-  - type: Sprite
-    sprite: _SpaceCats/Objects/Specific/Medical/medical_hypo.rsi
-    state: icon
-  - type: Item
-    sprite: _SpaceCats/Objects/Specific/Medical/medical_hypo.rsi
 
 - type: entity
   name: картридж для автоинъектора
