@@ -18,7 +18,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: CrewMonitor
   - type: WirelessNetworkConnection
-    range: 500
+    range: 750 #мб из-за недостатка дальности он не работает
 
 - type: entity
   id: HandheldBrigmedicCrewMonitorEmpty

@@ -16,7 +16,7 @@
 - type: entity
   id: CrateEmergencyMedipenSecurity
   parent: CrateMedical
-  name: medical supplies crate
+  name: набор иньекторов суфентанила
   description: 8 иньекторов суфентанила.
   components:
   - type: StorageFill

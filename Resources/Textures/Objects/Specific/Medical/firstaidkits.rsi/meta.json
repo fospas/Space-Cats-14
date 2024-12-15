@@ -10,6 +10,9 @@
 		{
 			"name": "firstaid"
 		},
+        {
+			"name": "medipenkit"
+		},
 		{
       "name": "firstaid-inhand-right",
       "directions": 4

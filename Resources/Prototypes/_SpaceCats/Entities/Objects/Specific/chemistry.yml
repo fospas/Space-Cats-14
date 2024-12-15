@@ -61,7 +61,7 @@
     price: 30
 
 - type: entity
-  name: brute reliable container 
+  name: brute reliable container
   parent: ReliableContainer
   description: "Filled with medication that treat brute damage."
   id: ReliableContainerBruteFilled
@@ -71,13 +71,13 @@
       beaker:
         maxVol: 100
         reagents:
-        - ReagentId: Bicaridine
-          Quantity: 75
+        - ReagentId: Meralyne #чтобы комбатка калом не была
+          Quantity: 70
         - ReagentId: TranexamicAcid
-          Quantity: 25
+          Quantity: 30
 
 - type: entity
-  name: burn reliable container 
+  name: burn reliable container
   parent: ReliableContainer
   description: "Filled with medication that treat burn damage."
   id: ReliableContainerBurnFilled
@@ -88,8 +88,8 @@
         maxVol: 100
         reagents:
         - ReagentId: Dermaline
-          Quantity: 50
+          Quantity: 80
         - ReagentId: Leporazine
-          Quantity: 25
-        - ReagentId: Tricordrazine
-          Quantity:  25
+          Quantity: 20
+       # - ReagentId: Tricordrazine я зачем ты добавил сюда трику,ибо она лечит мало и только если общий дамаг меньше 50,а организм способен через кровь переваривать только 2 химиката
+       #   Quantity:  25

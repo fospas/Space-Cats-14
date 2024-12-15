@@ -10,6 +10,7 @@
       - id: Ointment
       - id: Gauze
       - id: PillCanisterTricordrazine
+      - id: EmergencyMedipen
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -83,7 +84,9 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: Bloodpack
+      - id: SyringeSaline
+      - id: MedipenDylovene
+      - id: MeraDermInjector
         amount: 2
 
 - type: entity
