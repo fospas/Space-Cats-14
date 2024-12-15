@@ -5,9 +5,10 @@
     gloves: ClothingHandsGlovesNitrile
     ears: ClothingHeadsetSecurity
     mask: ClothingMaskBreathMedicalSecurity
-    eyes: ClothingEyesHudMedSec
+    eyes: ClothingEyesGlassesBrigmedic
     neck: ClothingNeckTieRed
     pocket2: HandheldBrigmedicCrewMonitor # Cats
+    outerClothing: ClothingOuterCoatAMG
     id: BrigmedicPDA
     belt: ClothingBeltMilitaryWebbingCorpsman
 

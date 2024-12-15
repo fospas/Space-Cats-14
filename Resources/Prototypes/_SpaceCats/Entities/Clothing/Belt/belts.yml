@@ -29,34 +29,53 @@
       - id: Cautery
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ClothingBeltMedical,ClothingBeltSecurity]
   id: ClothingBeltMilitaryWebbingCorpsman
-  name: corpsman chest rig
-  description: A medical chest rig with deep pockets, for use by paramedics and health professionals.
+  name: РПС бригмедика
+  description: Медицинский нагрудник с глубокими карманами, предназначенный для использования бригмедикам и медицинскими работниками.
   components:
   - type: Sprite
     sprite: _SpaceCats/Clothing/Belt/corpsman.rsi
   - type: Clothing
     sprite: _SpaceCats/Clothing/Belt/corpsman.rsi
-  - type: Item
-    size: Large
   - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,2,1
-    - 4,0,7,1
+    whitelist:
+      tags:
+        - SecBeltEquip
+        - BrigmedicBeltEquip
+        - CigPack
+        - Taser
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - Ammo
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
   - type: StorageFill
     contents:
+      - id: Stunbaton
+      - id: Handcuffs    
       - id: Brutepack
-        amount: 2
       - id: Ointment
-        amount: 1
       - id: Gauze
-      - id: EmergencyMedipenSecurity
-        amount: 2
-      - id: SyringeSaline
-      - id: SyringeEphedrine
-      - id: Cautery
 
 - type: entity
   parent: ClothingBeltSheath

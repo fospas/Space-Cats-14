@@ -1112,6 +1112,9 @@
   id: SecBeltEquip
 
 - type: Tag
+  id: BrigmedicBeltEquip
+
+- type: Tag
   id: SecurePlasmaWindoor
 
 - type: Tag
