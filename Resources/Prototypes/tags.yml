@@ -265,7 +265,7 @@
   id: Cartridge
 
 - type: Tag
-  id: CartridgeEpinephrine
+  id: AutoinjectorCartridge
 
 - type: Tag
   id: CartridgeAntiMateriel

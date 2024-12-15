@@ -49,9 +49,9 @@
     price: 550
 
 - type: entity
-  name: epinephrine autoinjector
+  name: security cartridge autoinjector
   parent: [BaseItem, BaseRestrictedContraband]
-  description: Используется для быстрого введения эпинефрина раненым. Эпинефрин замедляет нанесение урона, уменьшает оглушение, слегка ускоряет и слегка заживляет раны в критическом состоянии. Используется для перезарядки картриджей. Доступно для печати на сайте security techfab.
+  description: Used for rapid administration of medicine. Uses cartridges printable at the medical and security techfab.
   id: SecHypo
   components:
   - type: Sprite
@@ -75,21 +75,50 @@
     injectOnly: true
   - type: HyposprayBlockNonMobInjection
   - type: UseDelay
-    delay: 300 # Prevent people from abusing it by printing a ton of cartridges and injecting constantly
+    delay: 30 # up this later if its too low
   - type: SolutionCartridgeReceiver
-    tag: CartridgeEpinephrine
+    tag: AutoinjectorCartridge
 
 - type: entity
-  name: эпинефрин катридж
+  name: автоинъектор медицинского картриджа
+  parent: [SecHypo, BaseMedicalContraband]
+  description: Используется для быстрого введения лекарств. Используются картриджи, которые можно распечатать в лаборатории технологий медицины и безопасности.
+  id: ParamedHypo
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medical_hypo.rsi
+    state: icon
+  - type: Item
+    sprite: _SpaceCats/Objects/Specific/Medical/medical_hypo.rsi
+
+- type: entity
+  name: картридж для автоинъектора
   parent: [BaseItem, BaseRestrictedContraband]
-  description: Содержит 10 ед адреналина, используемого в автоинъекторе для введения адреналина.
-  id: CartridgeEpinephrine
+  description: Используется в автоинъекторе картриджа.
+  id: BaseCartridgeAutoinjector
   components:
   - type: Item
     size: Tiny
   - type: Sprite
     sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
-    state: icon
+    state: cartridge
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+  - type: Tag
+    tags:
+      - AutoinjectorCartridge
+
+- type: entity
+  name: картридж с автоинъектором эпенифрина
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 ед адреналина, используемого в картриджном автоинъекторе.
+  id: CartridgeEpinephrine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-epinephrine
   - type: SolutionCartridge
     targetSolution: hypospray
     solution:
@@ -97,6 +126,75 @@
       reagents:
       - ReagentId: Epinephrine
         Quantity: 10
-  - type: Tag
-    tags:
-      - CartridgeEpinephrine
+
+- type: entity
+  name: картридж для автоинъектора brute
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 7 г бикаридина и 3 г транексамовой кислоты, которые используются в автоинъекторе в картриджах.
+  id: CartridgeBicaridine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-bicaridine
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Bicaridine
+        Quantity: 7
+      - ReagentId: TranexamicAcid
+        Quantity: 3
+
+- type: entity
+  name: картридж для автоинъектора burn
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 единиц дермалина, используемого в картриджном автоинъекторе.
+  id: CartridgeDermaline
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-dermaline
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Dermaline
+        Quantity: 10
+
+- type: entity
+  name: картридж с автоинъектором эфедрина
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 10 единиц эфедрина, используемого в картриджном автоинъекторе.
+  id: CartridgeEphedrine
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-ephedrine
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Ephedrine
+        Quantity: 10
+
+- type: entity
+  name: картридж для автоинъектора puncturase
+  parent: BaseCartridgeAutoinjector
+  description: Содержит 7 ед пунктуразы и 3 ед транексамовой кислоты, которые используются в картриджах автоинъекторов.
+  id: CartridgePuncturase
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/cartridge.rsi
+    state: cartridge-ichor # not bothering to make a sprite for it
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Puncturase
+        Quantity: 7
+      - ReagentId: TranexamicAcid
+        Quantity: 3
