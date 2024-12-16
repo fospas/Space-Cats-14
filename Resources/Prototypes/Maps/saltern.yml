@@ -68,6 +68,7 @@
             # Cats
             Maid: [ 0, 1]
             BridgeOfficer: [ 0, 1 ]
+            BlueShield: [0, 1] # backmen-BlueShield
         # backmen blob-config-start SMALL+
         - type: StationBlobConfig
           stageBegin: 25
