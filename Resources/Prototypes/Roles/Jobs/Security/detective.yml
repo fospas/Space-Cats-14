@@ -36,7 +36,7 @@
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolster
-    neck: 
+    neck: SurveillanceWirelessCameraBodySecurity
   storage:
     back:
     - Flash
