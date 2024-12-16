@@ -226,9 +226,6 @@
   - type: TinfoilHat
     destroyOnFry: false
   - type: PNV
-  - type: ClothingGrant
-    component:
-    - type: NightVision
 
 - type: entity
   parent: ClothingOuterHardsuitSyndieElite
