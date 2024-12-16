@@ -212,7 +212,7 @@
       pen:
         maxVol: 25
         reagents:
-        - ReagentId: Meraline
+        - ReagentId: Meraline # cats edit
           Quantity: 10
         - ReagentId: Bicaridine
           Quantity: 15
@@ -340,7 +340,7 @@
       pen:
         maxVol: 12
         reagents:
-        - ReagentId: Pyrazine
+        - ReagentId: Pyrazine # cats edit
           Quantity: 2 #метаболизм 0.1 вместо 0.5
         - ReagentId: Dermaline
           Quantity: 10
@@ -372,9 +372,9 @@
       pen:
         maxVol: 15
         reagents:
-        - ReagentId: Inaprovaline
+        - ReagentId: Inaprovaline #cats edit
           Quantity: 5
-        - ReagentId: DexalinPlus
+        - ReagentId: DexalinPlus #cats edit
           Quantity: 10
   - type: Tag
     tags: []
@@ -493,7 +493,7 @@
         reagents:
         - ReagentId: Omnizine
           Quantity: 25
-        - ReagentId: Nanomachines
+        - ReagentId: Nanomachines #cats edit
           Quantity: 1 #по рофлу по приколу
   - type: Hypospray
     solutionName: pen
