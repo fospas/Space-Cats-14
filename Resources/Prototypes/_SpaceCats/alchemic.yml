@@ -381,8 +381,8 @@
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
     maxFillLevels: 1
-   changeColor: false
-   emptySpriteName: security_empty
+    changeColor: false
+    emptySpriteName: security_empty
   - type: SolutionContainerManager
     solutions:
       pen:
