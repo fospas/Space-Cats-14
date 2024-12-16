@@ -214,7 +214,7 @@
         reagents:
         - ReagentId: Meraline
           Quantity: 10
-        - ReagentId: Bicadirine
+        - ReagentId: Bicaridine
           Quantity: 15
   - type: Tag
     tags: []
