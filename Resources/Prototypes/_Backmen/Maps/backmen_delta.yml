@@ -2,7 +2,7 @@
   id: BackmenDelta
   mapName: 'Delta Station'
   mapPath: /Maps/Backmen/backmen_delta.yml
-  minPlayers: 30
+  minPlayers: 15
   stations:
     Delta:
       stationProto: StandardNanotrasenStation
@@ -62,6 +62,9 @@
             BlueShield: [1, 1] # backmen-BlueShield
             BKBPLATech: [0, 3] # backmen-BPLA-Silicons
             BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
+            # Cats
+            Maid: [ 0, 1]
+            BridgeOfficer: [ 0, 1 ]
         # backmen blob-config-start HUGE
         - type: StationBlobConfig
           stageBegin: 40

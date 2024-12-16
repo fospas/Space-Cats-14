@@ -18,7 +18,7 @@
   - bloodsucker
   name: vampires-title
   description: vampires-description
-  showInVote: false
+  showInVote: true
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
@@ -34,7 +34,7 @@
   name: blob-title
   description: blob-description
   minPlayers: 10
-  showInVote: false
+  showInVote: true
   rules:
   - BlobGameMode
   - BasicStationEventScheduler
@@ -65,7 +65,7 @@
   name: flesh-cult-title
   description: flesh-cult-description
   minPlayers: 10
-  showInVote: false
+  showInVote: true
   rules:
   - FleshCult
   - BasicStationEventScheduler
