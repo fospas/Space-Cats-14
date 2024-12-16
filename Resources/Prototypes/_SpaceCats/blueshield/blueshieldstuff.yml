@@ -165,6 +165,3 @@
   - type: UseDelay
     delay: 5
   - type: PNV
-  - type: ClothingGrant
-    component:
-    - type: NightVision
