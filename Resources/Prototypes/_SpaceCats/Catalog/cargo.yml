@@ -23,7 +23,7 @@
   id: MedkitsCrate
   icon:
     sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: firstaidkit
+    state: medipenkit
   product: MedkitsCrate
   cost: 5000
   category: cargoproduct-category-name-medical
