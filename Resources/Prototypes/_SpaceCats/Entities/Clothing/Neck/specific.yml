@@ -45,6 +45,7 @@
   parent: SurveillanceWirelessCameraBodySecurity
   name: боди-камера
   suffix: HandHeld
+  components:
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCameraService
