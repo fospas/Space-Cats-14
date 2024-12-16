@@ -10,9 +10,15 @@
     sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
   - type: Clothing
     sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
-  - type: ClothingGrantComponent
-    component:
-    - type: NightVision
+  - type: NightVisionItem
+  - type: ItemToggle
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.NightVisionItemVisuals.Active:
+        icon:
+          True: { state: icon }
+          False: { state: icon }
 
 - type: entity
   parent: ClothingEyesNightVisionGoggles

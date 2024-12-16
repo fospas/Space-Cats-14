@@ -1,5 +1,5 @@
 - type: entity
-  id: ToggleNightVision
+  id: ActionToggleNightVisions
   name: Switch night vision
   description: Switches night vision
   components:
@@ -9,7 +9,11 @@
     icon:
       sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
       state: icon
-    event: !type:ToggleNightVisionEvent
+    iconOn:
+      sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
+      state: icon
+    event: !type:ToggleActionEvent
+    useDelay: 0.25
 
 - type: entity
   id: ToggleThermalVision

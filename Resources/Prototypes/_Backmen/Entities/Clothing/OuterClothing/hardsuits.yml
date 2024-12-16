@@ -225,9 +225,15 @@
         Heat: 0.9
   - type: TinfoilHat
     destroyOnFry: false
-  - type: ClothingGrantComponent
-    component:
-    - type: NightVision
+  - type: NightVisionItem
+  - type: ItemToggle
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.NightVisionItemVisuals.Active:
+        icon:
+          True: { state: icon }
+          False: { state: icon }
 
 - type: entity
   parent: ClothingOuterHardsuitSyndieElite
