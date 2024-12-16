@@ -10,7 +10,7 @@
       - id: Ointment
       - id: Gauze
       - id: PillCanisterTricordrazine
-      - id: EmergencyMedipen
+      - id: EmergencyMedipen #cats edit
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -85,9 +85,9 @@
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: SyringeSaline
-      - id: MedipenDylovene
-      - id: MeraDermInjector
-        amount: 2
+      - id: MedipenDylovene #cats edit
+      - id: MeraDermInjector #cats edit
+        amount: 2 # cats
 
 - type: entity
   id: MedkitCombatFilled
