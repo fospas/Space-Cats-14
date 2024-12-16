@@ -2,7 +2,7 @@
   parent: ClothingOuterHardsuitBase
   id: CloakerHardsuit
   name: РИГ снайпера ОПЗ
-  description: Легкобронированный скафандр снайперов ОПЗ,дополненный прибором ночного видения и маскировочной сетью. Медленно скрывает своего носителя,если не двигаться,но одно движение полностью сломает маскировку!
+  description: Легкобронированный композитный скафандр снайперов ОПЗ,дополненный прибором термального видения. Медленно скрывает своего носителя,если не двигаться,но одно движение полностью сломает маскировку!
   components:
   - type: Sprite
     sprite: _SpaceCats/Clothing/OuterClothing/Hardsuits/cloaker.rsi
@@ -20,7 +20,7 @@
         Slash: 0.7
         Piercing: 0.6
         Heat: 0.6
-        Caustic: 0.6
+        Caustic: 0.5
         Stun: 0.4
   - type: ClothingSpeedModifier
     walkModifier: 1.05
@@ -28,13 +28,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: CloakerHardsuitHelmet
-  - type: Stealth
-    maxVisibility: 1
-  - type: StealthOnMove
-    passiveVisibilityRate: -0.1 # 10 секунд на скрытие.
-    movementVisibilityRate: 1   # мгновенное раскрытие при движении.
   - type: StaticPrice
-    price: 35000
+    price: 20000
 
 - type: entity
   parent: ClothingHeadHardsuitBase
@@ -46,3 +41,6 @@
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi
   - type: Clothing
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: ThermalVision

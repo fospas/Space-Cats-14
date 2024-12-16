@@ -5,7 +5,7 @@
     sprite: _SpaceCats/Clothing/Head/Hardsuits/cloaker.rsi
     state: icon
   product: CrateCloakerHardsuit
-  cost: 50000
+  cost: 30000
   category: cargoproduct-category-name-armory
   group: market
 
@@ -22,8 +22,8 @@
 - type: cargoProduct
   id: MedkitsCrate
   icon:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: firstaid
+    sprite: _SpaceCats/Objects/Specific/Medical/firstaidkits.rsi
+    state: medipenkit
   product: MedkitsCrate
   cost: 5000
   category: cargoproduct-category-name-medical
@@ -32,8 +32,8 @@
 - type: cargoProduct
   id: MedicalSuppliess
   icon:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: firstaid
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    state: security
   product: CrateEmergencyMedipenSecurity
   cost: 2000
   category: cargoproduct-category-name-medical

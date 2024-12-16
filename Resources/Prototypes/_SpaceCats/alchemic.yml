@@ -1,5 +1,5 @@
 - type: reagent
-  id: Meridine
+  id: Meraline
   name: reagent-meridine
   group: Medicine
   desc: reagent-meridine-desc
@@ -19,7 +19,7 @@
           min: 10
         damage:
           groups:
-            Toxin: 4
+            Toxin: 3
             Brute: -6
       - !type:HealthChange
         conditions:
@@ -33,7 +33,7 @@
         amount: -0.25
 
 - type: reaction
-  id: Meridine
+  id: Meraline
   reactants:
     SpaceDrugs:
       amount: 1
@@ -42,7 +42,7 @@
     Milk:
       amount: 1
   products:
-    Meridine: 2
+    Meraline: 2
 
 - type: reaction
   id: MeridPuncturase # чтобы не смешивали пунктураз и меридин вместе,ибо будет космическое лечение в секунду
@@ -50,7 +50,7 @@
   reactants:
     Puncturase:
       amount: 1
-    Meridine:
+    Meraline:
       amount: 1
   products:
     Razorium: 2
@@ -375,14 +375,14 @@
   description: Содержит дозу суфентанила и дирозина,способную поднять из критического состояния и частично закрыть раны. Не забудьте обратиться к квалифицированному врачу после использования.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
     layers:
-    - state: medipen
+    - state: security
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: medipen_empty
+    emptySpriteName: security_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -392,3 +392,79 @@
           Quantity: 10
         - ReagentId: Dirozine
           Quantity: 20
+
+- type: entity
+  name: иньектор наномашин
+  parent: EmergencyMedipen
+  id: MedipenNanomachines
+  description: Содержит дозу медицинских нанитов,расчитанных на работу в течении 15 минут за каждый иньектор.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: nanomachines
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: nanomachines_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nanomachines
+          Quantity: 1
+
+- type: entity
+  name: иньектор диловена
+  parent: EmergencyMedipen
+  id: MedipenDylovene
+  description: Содержит дозу диловена.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: dylopen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: dylopen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 20
+
+- type: entity
+  name: продвинутый боевой иньектор
+  parent: EmergencyMedipen
+  id: MeraDermInjector
+  description: Содержит дозу мералина и дермалина,способную быстро закрыть большинство ран.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: combat
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: combat_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: false
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Meraline
+          Quantity: 10
+        - ReagentId: Dermaline
+          Quantity: 10

@@ -8,11 +8,14 @@
     contents:
       - id: EmergencyMedipenSecurity
         amount: 8
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/firstaidkits.rsi
+    layers:
+    - state: medipenkit
 
 - type: entity
-  name: аптечка наёмника #покупка в карго
+  name: аптечка наёмника
   id: MedkitEmergencyMercenary
-  suffix: иньекторы суфентанила
   parent: MedkitCombat
   components:
   - type: StorageFill
