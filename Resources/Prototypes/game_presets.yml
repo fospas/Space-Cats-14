@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true # secret
   description: survival-description
   rules:
     #- MeteorSwarmScheduler
@@ -168,7 +168,7 @@
     - tator
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true
   minPlayers: 6
   rules:
     - Traitor
@@ -199,7 +199,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   minPlayers: 15
   rules:
     - Nukeops
@@ -218,8 +218,8 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: false
-  minPlayers: 10
+  showInVote: true
+  minPlayers: 15
   rules:
     - Revolutionary
     - SubGamemodesRule
@@ -239,7 +239,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true
   minPlayers: 10
   rules:
   - Zombie
