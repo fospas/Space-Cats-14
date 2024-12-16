@@ -71,7 +71,7 @@
       beaker:
         maxVol: 100
         reagents:
-        - ReagentId: Meralyne #чтобы комбатка калом не была
+        - ReagentId: Meraline #чтобы комбатка калом не была
           Quantity: 70
         - ReagentId: TranexamicAcid
           Quantity: 30
