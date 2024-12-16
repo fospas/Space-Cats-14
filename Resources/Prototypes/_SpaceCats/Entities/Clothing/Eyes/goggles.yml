@@ -1,7 +1,7 @@
 # Night Vision Goggles
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, BaseMajorContraband]
   id: ClothingEyesNightVisionGoggles
   name: night vision goggles
   description: Now you can see in the dark!

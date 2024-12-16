@@ -4,8 +4,6 @@
   description: Я тебя вижу!
   components:
   - type: InstantAction
-    itemIconStyle: BigAction
-    priority: -20
     icon:
       sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
       state: icon
