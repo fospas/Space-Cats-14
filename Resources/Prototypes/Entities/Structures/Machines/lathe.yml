@@ -228,6 +228,12 @@
       - RiotShield
       - SpeedLoaderMagnum
       - SpeedLoaderMagnumEmpty
+      - CartridgeEpinephrine # Cats
+      - CartridgeBicaridine # Cats
+      - CartridgeDermaline # Cats
+      - CartridgeEphedrine # Cats
+      - CartridgeIchor # Cats
+      - SecHypo # Cats
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -870,6 +876,11 @@
       - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
+      - CartridgeEpinephrine # Cats
+      - CartridgeBicaridine # Cats
+      - CartridgeDermaline # Cats
+      - CartridgeIchor # Cats
+      - SecHypo # Cats
       - BorgModuleNeutralization # Cats Security Borg
     dynamicRecipes:
       - BorgModuleCombat # Cats: Security Borg
