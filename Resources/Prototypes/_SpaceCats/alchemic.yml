@@ -400,7 +400,7 @@
   description: Содержит дозу медицинских нанитов,расчитанных на работу в течении 15 минут за каждый иньектор.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
     layers:
     - state: nanomachines
       map: ["enum.SolutionContainerLayers.Fill"]
@@ -423,7 +423,7 @@
   description: Содержит дозу диловена.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
     layers:
     - state: dylopen
       map: ["enum.SolutionContainerLayers.Fill"]
@@ -446,7 +446,7 @@
   description: Содержит дозу мералина и дермалина,способную быстро закрыть большинство ран.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
     layers:
     - state: combat
       map: ["enum.SolutionContainerLayers.Fill"]
