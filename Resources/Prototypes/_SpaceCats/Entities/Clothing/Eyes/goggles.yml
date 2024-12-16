@@ -7,18 +7,40 @@
   description: Now you can see in the dark!
   components:
   - type: Sprite
-    sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
+    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: Clothing
-    sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
-  - type: NightVisionItem
-  - type: ItemToggle
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.NightVisionItemVisuals.Active:
-        icon:
-          True: { state: icon }
-          False: { state: icon }
+    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: UseDelay
+    delay: 4
+  - type: PNV
+
+- type: entity
+  id: NVToggleAction
+  name: Переключение ПНВ
+  description: Переключает ваше ПНВ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    event: !type:NVInstantActionEvent
+
+- type: entity
+  id: SwitchNightVision
+  name: Переключение ночного зрения
+  description: Переключает ночное зрение
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 2.5
+    icon:
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+      state: icon
+    event: !type:NVInstantActionEvent
 
 - type: entity
   parent: ClothingEyesNightVisionGoggles

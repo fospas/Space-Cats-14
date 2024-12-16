@@ -164,12 +164,7 @@
   - type: FlashImmunity
   - type: UseDelay
     delay: 5
-  - type: NightVisionItem
-  - type: ItemToggle
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.NightVisionItemVisuals.Active:
-        icon:
-          True: { state: icon }
-          False: { state: icon }
+  - type: PNV
+  - type: ClothingGrant
+    component:
+    - type: NightVision

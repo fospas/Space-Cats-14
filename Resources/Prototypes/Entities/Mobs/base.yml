@@ -52,6 +52,7 @@
     - TauCetiBasic
     - SpaceMob
   - type: CanEscapeMech # ADT tweak
+  - type: NightVision # BackmenResources/Audio/Backmen/Misc/night-vision-sound-effect_E_minor.ogg
 
 - type: entity
   save: false

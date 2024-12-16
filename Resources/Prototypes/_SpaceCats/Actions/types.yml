@@ -1,14 +1,14 @@
 - type: entity
-  id: ActionToggleNightVisions
+  id: ActionToggleNinjaNightVision
   name: Переключить ночное зрение
   description: Я тебя вижу!
   components:
   - type: InstantAction
     icon:
-      sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
       state: icon
     iconOn:
-      sprite: _SpaceCats/Clothing/Eyes/Goggles/nightvision.rsi
+      sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
       state: icon
     event: !type:ToggleActionEvent
     useDelay: 0.25
