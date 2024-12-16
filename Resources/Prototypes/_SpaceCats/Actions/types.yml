@@ -1,7 +1,7 @@
 - type: entity
   id: ActionToggleNightVisions
-  name: Switch night vision
-  description: Switches night vision
+  name: Переключить ночное зрение
+  description: Я тебя вижу!
   components:
   - type: InstantAction
     itemIconStyle: BigAction
@@ -17,8 +17,8 @@
 
 - type: entity
   id: ToggleThermalVision
-  name: Switch Thermal vision
-  description: Switches Thermal vision
+  name: Переключить термальное зрение
+  description: Я тебя вижу!
   components:
   - type: InstantAction
     itemIconStyle: BigAction
@@ -27,3 +27,4 @@
       sprite: _SpaceCats/Clothing/Eyes/Goggles/thermal.rsi
       state: icon
     event: !type:ToggleThermalVisionEvent
+    useDelay: 0.25
