@@ -32,7 +32,7 @@
   parent: [ClothingBeltMedical,ClothingBeltSecurity]
   id: ClothingBeltMilitaryWebbingCorpsman
   name: РПС бригмедика
-  description: Медицинский нагрудник с глубокими карманами, предназначенный для использования бригмедикам и медицинскими работниками.
+  description: Медицинская ременно-плечевая система с множеством мелких и стерильных карманов и подсумков.
   components:
   - type: Sprite
     sprite: _SpaceCats/Clothing/Belt/corpsman.rsi
@@ -72,7 +72,7 @@
   - type: StorageFill
     contents:
       - id: Stunbaton
-      - id: Handcuffs    
+      - id: Handcuffs
       - id: Brutepack
       - id: Ointment
       - id: Gauze
@@ -105,7 +105,7 @@
   parent: ClothingBeltSecurityWebbingFilled
   id: ClothingBlackWebbing
   name: РПС офицера мостика
-  description: Это довольно удобно и не стесняет движений РПС.
+  description: Это довольно удобный и не стесняющий движений РПС.
   components:
   - type: Sprite
     sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
