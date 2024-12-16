@@ -22,7 +22,7 @@
 - type: cargoProduct
   id: MedkitsCrate
   icon:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/firstaidkits.rsi
     state: medipenkit
   product: MedkitsCrate
   cost: 5000
@@ -32,7 +32,7 @@
 - type: cargoProduct
   id: MedicalSuppliess
   icon:
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _SpaceCats/Objects/Specific/Medical/medipen.rsi
     state: security
   product: CrateEmergencyMedipenSecurity
   cost: 2000
