@@ -41,6 +41,11 @@
         variation: 0.05
 
 - type: entity
-  id: HandheldCamera
+  id: SurveillanceWirelessCameraBody
   parent: SurveillanceWirelessCameraBodySecurity
+  name: боди-камера
   suffix: HandHeld
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCameraService
+    transmitFrequencyId: SurveillanceCamera

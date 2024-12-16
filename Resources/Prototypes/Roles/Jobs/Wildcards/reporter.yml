@@ -22,7 +22,7 @@
     shoes: ClothingShoesColorWhite
     id: ReporterPDA
     ears: ClothingHeadsetService
-    neck: SurveillanceWirelessCameraBodySecurity
+    neck: SurveillanceWirelessCameraBody
   #storage:
     #back:
     #- Stuff
