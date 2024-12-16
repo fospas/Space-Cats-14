@@ -3,7 +3,6 @@
   id: SurveillanceWirelessCameraBodySecurity
   name: боди-камера безопасности
   description: Camera
-  abstract: true
   components:
   - type: StationAiVision
     range: 2
