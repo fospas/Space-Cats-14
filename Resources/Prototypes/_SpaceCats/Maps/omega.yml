@@ -66,6 +66,7 @@
 #            BKBPLATech: [0, 3] # backmen-BPLA-Silicons
 #            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons
             StationAi: [ 1, 0 ]
+            SecurityEngineer: [ 0, 1]
 #            Deliveryman: [ 0, 1 ]
 #            Prisoner: [ 2, 3]
             

@@ -27,3 +27,23 @@
   - type: Pda
     id: MaidIDCard
     state: pda-maid
+
+- type: entity
+  parent: BasePDA
+  id: SecurityEngineerPDA
+  name: кпк полевого инженера
+  description: Красный, чтобы скрыть пятна крови пассажира.
+  components:
+  - type: Pda
+    id: SecurityEngineerIDCard
+    state: pda-security-enginer
+  - type: PdaBorderColor
+    borderColor: "#9b2b2a"
+  - type: Icon
+    state: pda-security
+  - type: CartridgeLoader
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - WantedListCartridge

@@ -69,6 +69,7 @@
             #BKBPLAMED: [ 0, 1 ] # backmen-BPLAMED-Silicons
 #            Deliveryman: [ 0, 1 ]
             Prisoner: [ 2, 2 ]
+            SecurityEngineer: [ 0, 1]
         # backmen blob-config-start SMALL+
         - type: StationBlobConfig
           stageBegin: 25

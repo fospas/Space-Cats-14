@@ -71,6 +71,7 @@
             StationAi: [ 1, 1 ]
             BlueShield: [ 1, 1]
             Prisoner: [ 3, 3]
+            SecurityEngineer: [ 0, 1]
             Brigmedic: [ 1, 1 ] # backmen-Brigmedic
 #            BKBPLATech: [0, 3] # backmen-BPLA-Silicons
 #            BKBPLAMED: [0, 3] # backmen-BPLAMED-Silicons

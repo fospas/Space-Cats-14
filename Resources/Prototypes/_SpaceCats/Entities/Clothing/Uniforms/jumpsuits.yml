@@ -65,3 +65,14 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSecEngineer
+  name: комбинезон полевого офицера
+  description: Комбинезон изготовлен из прочного материала, обеспечивающего надежную защиту.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
+  - type: Clothing
+    sprite: _SpaceCats/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
