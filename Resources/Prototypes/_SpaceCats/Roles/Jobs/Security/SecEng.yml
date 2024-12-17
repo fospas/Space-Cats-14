@@ -5,11 +5,13 @@
   playTimeTracker: JobSecurityEnginer
   requirements:
     - !type:DepartmentTimeRequirement
-      department: Security
-      time: 12000
-    - !type:DepartmentTimeRequirement
       department: Engineering
-      min: 12000
+      time: 13000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 13000
+    - !type:AgeRequirement
+      requiredAge: 21
   startingGear: SecurityEngineerGear
   icon: "JobIconSecurityEnginer"
   supervisors: job-supervisors-hos
