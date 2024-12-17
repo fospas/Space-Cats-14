@@ -1,0 +1,15 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBridgeOfficer
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: BridgeOfficer
+  jobName: job-name-bridgeofficer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMaid
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Maid
+  jobName: job-name-maid
