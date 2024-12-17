@@ -4,12 +4,10 @@
   description: job-description-security-enginer
   playTimeTracker: JobSecurityEnginer
   requirements:
-    - !type:CharacterHeightRequirement
-      min: 160
-    - !type:CharacterDepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement
       department: Security
-      min: 12000
-    - !type:CharacterDepartmentTimeRequirement
+      time: 12000
+    - !type:DepartmentTimeRequirement
       department: Engineering
       min: 12000
   startingGear: SecurityEngineerGear
