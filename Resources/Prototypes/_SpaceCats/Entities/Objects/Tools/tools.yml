@@ -1,7 +1,7 @@
 - type: entity
   id: SecRCD
   parent: [ BaseItem, BaseEngineeringContraband ]
-  name: охранный РЦД
+  name: охранный РСУ
   description: Устройство rapid construction можно использовать для быстрой установки и демонтажа различных конструкций и приспособлений станции. Для работы требуется спрессованный материал.
   components:
   - type: RCD
