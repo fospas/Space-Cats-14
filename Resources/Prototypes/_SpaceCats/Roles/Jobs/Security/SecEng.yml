@@ -41,7 +41,6 @@
     belt: ClothingMilitaryWebbingSecEng
   storage:
     back:
-    - SheetSteel10
-    - SheetGlass10
+    - SecRCD
     - LPPC4Low
     - LPPC4Low
