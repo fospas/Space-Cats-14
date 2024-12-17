@@ -9,8 +9,6 @@
     state: icon
   - type: Item
     size: Large
-    shape:
-    - 0,0,3,2
   - type: MeleeWeapon
     attackRate: 0.75
     range: 2.0
