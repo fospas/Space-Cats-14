@@ -1,0 +1,39 @@
+- type: entity
+  name: отбойный молоток
+  parent: BaseItem
+  id: SecBreachingHammer
+  description: Большой тяжелый молоток с длинной ручкой, используемый для разбивания камней или других тяжелых материалов, таких как черепа жестоких преступников, также идеально подходит для взлома воздушных шлюзов.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Weapons/Melee/breaching_hammer.rsi
+    state: icon
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,2
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 2.0
+    damage:
+      types:
+        Blunt: 10
+        Piercing: 5
+        Structural: 20
+    bluntStaminaDamageFactor: 1.50 # 15 stamina damage
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 5
+        Piercing: 2
+        Structural: 25
+  - type: Tool
+    qualities:
+      - Prying
+  - type: ToolTileCompatible
+  - type: Clothing
+    sprite: _SpaceCats/Objects/Weapons/Melee/breaching_hammer.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage

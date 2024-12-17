@@ -47,6 +47,4 @@
     - LPPC4Low
     - LPPC4Low
     - BoxSurvivalSecurity
-    - CableApcStack
-    - CableMVStack
-    - CableHVStack
+    - SecBreachingHammer
