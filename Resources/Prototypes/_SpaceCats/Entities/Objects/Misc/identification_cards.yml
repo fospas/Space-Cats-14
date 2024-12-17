@@ -30,10 +30,6 @@
   - type: Sprite
     layers:
     - state: default
-    - state: departmenthead
-      color: "#1B67A5"
-    - state: subdepartment
-      color: "#F39F27"
     - state: idsecurityenginer
   - type: PresetIdCard
     job: SecurityEngineer
