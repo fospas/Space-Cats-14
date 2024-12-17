@@ -31,7 +31,7 @@
 - type: entity
   parent: BasePDA
   id: SecurityEngineerPDA
-  name: кпк полевого офицера
+  name: кпк полевого инженера
   description: Красный, чтобы скрыть пятна крови пассажира.
   components:
   - type: Pda
