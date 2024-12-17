@@ -107,7 +107,7 @@
   - type: Sprite
     sprite: _SpaceCats/Clothing/Eyes/HUD/SecEngHUD.rsi
   - type: Clothing
-    sprite: _SpaceCatsClothing/Eyes/HUD/SecEngHUD.rsi
+    sprite: _SpaceCats/Clothing/Eyes/HUD/SecEngHUD.rsi
   - type: EyeProtection
   - type: FlashImmunity
   - type: Tag
