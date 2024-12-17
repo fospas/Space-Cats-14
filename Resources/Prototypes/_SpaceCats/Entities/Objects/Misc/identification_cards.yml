@@ -21,3 +21,19 @@
     - state: idmaid
   - type: PresetIdCard
     job: Maid
+
+- type: entity
+  parent: IDCardStandard
+  id: SecurityEngineerIDCard
+  name: карта полевого офицера
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: departmenthead
+      color: "#1B67A5"
+    - state: subdepartment
+      color: "#F39F27"
+    - state: idsecurityenginer
+  - type: PresetIdCard
+    job: SecurityEngineer

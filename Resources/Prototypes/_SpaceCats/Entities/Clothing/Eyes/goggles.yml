@@ -97,3 +97,19 @@
   suffix: "Chameleon, NukeOps"
   components:
   - type: ShowSyndicateIcons
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: ClothingEyesHudSecEng
+  name: охранные очки полевого инженера
+  description: Модель HUD представляет собой комбинацию оптического мезонного сканера и датчика безопасности. Защищает глаза.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Clothing/Eyes/HUD/SecEngHUD.rsi
+  - type: Clothing
+    sprite: _SpaceCatsClothing/Eyes/HUD/SecEngHUD.rsi
+  - type: EyeProtection
+  - type: FlashImmunity
+  - type: Tag
+    tags:
+    - HudSecurity

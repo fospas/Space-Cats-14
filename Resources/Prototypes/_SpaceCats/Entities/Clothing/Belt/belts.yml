@@ -111,3 +111,20 @@
     sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
   - type: Clothing
     sprite: _SpaceCats/BridgeOfficer/BOWebbing.rsi
+
+- type: entity
+  id: ClothingMilitaryWebbingSecEng
+  parent: ClothingBeltMilitaryWebbing
+  name: инженерный рпс полевого инженера
+  description: Лямка с большим количеством ремней для инженера по безопасности.
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+    - id: JawsOfLife
+    - id: Wrench
+    - id: Screwdriver
+    - id: WelderIndustrial
+    - id: Multitool
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

@@ -21,3 +21,15 @@
     layers:
     - state: green
     - state: maid
+
+- type: entity
+  id: SpawnPointSecurityEngineer
+  parent: SpawnPointJobBase
+  name: SecurityEngineer
+  components:
+  - type: SpawnPoint
+    job_id: SecurityEngineer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: security_officer

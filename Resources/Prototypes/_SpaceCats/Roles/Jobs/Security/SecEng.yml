@@ -1,0 +1,47 @@
+- type: job
+  id: SecurityEngineer
+  name: job-name-security-enginer
+  description: job-description-security-enginer
+  playTimeTracker: JobSecurityEnginer
+  requirements:
+    - !type:CharacterHeightRequirement
+      min: 160
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 12000
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 12000
+  startingGear: SecurityEngineerGear
+  icon: "JobIconSecurityEnginer"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - External
+  - Engineering
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: SecurityEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecEngineer
+    back: ClothingBackpackSecurityEngineer
+    shoes: ClothingShoesBootsJackSecEnginer
+    eyes: ClothingEyesHudSecEng
+    gloves: ClothingHandsGlovesColorYellow
+    head: ClothingHeadHatHardhatYellow
+    id: SecurityEngineerPDA
+    outerClothing: ClothingOuterVestHazard
+    ears: ClothingHeadsetSecurityEngineer
+    belt: ClothingMilitaryWebbingSecEng
+  storage:
+    back:
+    - SheetSteel10
+    - SheetGlass10
+    - LPPC4Low
+    - LPPC4Low
