@@ -35,7 +35,8 @@
   - all
   name: all-at-once-title
   description: all-at-once-description
-  showInVote: false
+  showInVote: true
+  minPlayers: 15
   rules:
     # start-backmen
     - WageScheduler #backmen: currency
@@ -156,7 +157,7 @@
     - sandbox
   name: sandbox-title
   showInVote: true # secret
-  maxPlayers: 5
+  maxPlayers: 4
   description: sandbox-description
   rules:
     - Sandbox
@@ -186,9 +187,8 @@
     - dm
   name: death-match-title
   description: death-match-description
-  maxPlayers: 15
-  showInVote: false
-  isMiniGame: false
+  minPlayers: 10
+  showInVote: true
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31

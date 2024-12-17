@@ -19,6 +19,7 @@
   name: vampires-title
   description: vampires-description
   showInVote: true
+  minPlayers: 10
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
@@ -275,7 +276,7 @@
   - opg
   name: criminal-gamemode-title
   description: thief-extended-gamemode-description
-  showInVote: false
+  showInVote: true
   rules:
   - Revolutionary
   - ExtendedThief
