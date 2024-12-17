@@ -29,7 +29,7 @@
     state: pda-maid
 
 - type: entity
-  parent: BaseEngineerPDA
+  parent: BasePDA
   id: SecurityEngineerPDA
   name: кпк полевого офицера
   description: Красный, чтобы скрыть пятна крови пассажира.
