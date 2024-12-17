@@ -42,5 +42,11 @@
   storage:
     back:
     - SecRCD
+    - RCDAmmo
+    - RCDAmmo
     - LPPC4Low
     - LPPC4Low
+    - BoxSurvivalSecurity
+    - CableApcStack
+    - CableMVStack
+    - CableHVStack

@@ -126,5 +126,6 @@
     - id: Screwdriver
     - id: WelderIndustrial
     - id: Multitool
+    - id: NetworkConfigurator
   - type: ExplosionResistance
     damageCoefficient: 0.5
