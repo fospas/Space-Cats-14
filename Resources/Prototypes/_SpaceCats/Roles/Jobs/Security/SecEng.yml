@@ -32,6 +32,7 @@
     jumpsuit: ClothingUniformJumpsuitSecEngineer
     back: ClothingBackpackSecurityEngineer
     shoes: ClothingShoesBootsJackSecEnginer
+    mask: ClothingHeadHatWeldingMaskFlame
     eyes: ClothingEyesHudSecEng
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatHardhatYellow
