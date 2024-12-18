@@ -21,6 +21,8 @@ public abstract partial class SharedGunSystem
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ComponentInit>(OnBallisticInit);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, MapInitEvent>(OnBallisticMapInit);
         SubscribeLocalEvent<BallisticAmmoProviderComponent, TakeAmmoEvent>(OnBallisticTakeAmmo);
+        SubscribeLocalEvent<BallisticAmmoProviderComponent, ForceSpawnAmmoEvent>(OnForceSpawnAmmo); // Cats EDIT
+
         SubscribeLocalEvent<BallisticAmmoProviderComponent, GetAmmoCountEvent>(OnBallisticAmmoCount);
 
         SubscribeLocalEvent<BallisticAmmoProviderComponent, ExaminedEvent>(OnBallisticExamine);
@@ -262,6 +264,20 @@ public abstract partial class SharedGunSystem
         UpdateBallisticAppearance(uid, component);
         Dirty(uid, component);
     }
+
+    // CATS EDIT START
+    private void OnForceSpawnAmmo(EntityUid uid, BallisticAmmoProviderComponent component, ForceSpawnAmmoEvent args)
+    {
+        while(component.UnspawnedCount > 0)
+        {
+            var ent = Spawn(component.Proto, MapCoordinates.Nullspace);
+            component.Entities.Add(ent);
+            Containers.Insert(ent, component.Container);
+            component.UnspawnedCount--;
+        }
+        Dirty(uid, component);
+    }
+    // CATS EDIT END
 
     private void OnBallisticAmmoCount(EntityUid uid, BallisticAmmoProviderComponent component, ref GetAmmoCountEvent args)
     {

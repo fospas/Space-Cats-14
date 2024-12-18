@@ -2,3 +2,9 @@
   id: NightVision
   kind: source
   path: "/Textures/_SpaceCats/Shaders/nightvision.swsl"
+
+- type: shader
+  id: FlickerHologram
+  kind: source
+  path: "/Textures/_SpaceCats/Shaders/flickerhologram.swsl"
+  light_mode: unshaded
