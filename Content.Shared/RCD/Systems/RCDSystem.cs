@@ -88,6 +88,8 @@ public class RCDSystem : EntitySystem
         QueueDel(uid);
     }
 
+
+
     private void OnRCDSystemMessage(EntityUid uid, RCDComponent component, RCDSystemMessage args)
     {
         // Exit if the RCD doesn't actually know the supplied prototype
@@ -306,6 +308,7 @@ public class RCDSystem : EntitySystem
         Dirty(uid, rcd);
     }
 
+
     private void OnRCDConstructionGhostFlipEvent(RCDConstructionGhostFlipEvent ev, EntitySessionEventArgs session)
     {
         var uid = GetEntity(ev.NetEntity);
@@ -325,6 +328,7 @@ public class RCDSystem : EntitySystem
         rcd.UseMirrorPrototype = ev.UseMirrorPrototype;
         Dirty(uid, rcd);
     }
+
 
     #endregion
 
@@ -521,7 +525,7 @@ public class RCDSystem : EntitySystem
         else
         {
             // The object is not in the RPD whitelist
-            if (!deconstructible.Deconstructable)
+            if (!TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !deconstructible.RpdDeconstructable && component.IsRpd)
             {
                 if (popMsgs)
                     _popup.PopupClient(Loc.GetString("rcd-component-deconstruct-target-not-on-whitelist-message"), uid, user);
@@ -530,15 +534,15 @@ public class RCDSystem : EntitySystem
             }
 
             // The object is not in the whitelist
-            if (!TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !deconstructible.Deconstructable)
+            if (!deconstructible.Deconstructable)
             {
                 if (popMsgs)
                     _popup.PopupClient(Loc.GetString("rcd-component-deconstruct-target-not-on-whitelist-message"), uid, user);
 
                 return false;
             }
-        }
 
+        }
         return true;
     }
 

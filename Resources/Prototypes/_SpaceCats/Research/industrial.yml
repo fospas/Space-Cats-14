@@ -1,0 +1,13 @@
+- type: technology
+  id: RPD
+  name: research-technology-rpd-atmospherics
+  icon:
+    sprite: Objects/Tools/rpd.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - RPD
+  technologyPrerequisites:
+  - AtmosphericTech
