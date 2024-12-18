@@ -187,7 +187,7 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: SupermatterFlatpack # backmen
     - id: TelescopicBaton # Cats
-    - id: PRD # Cats
+    - id: RPD # Cats
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
