@@ -369,6 +369,7 @@
       - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
       - HypoExperement # Cats
       - ClothingEyesNightVisionGoggles # Cats
+      - RPD # Cats
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
