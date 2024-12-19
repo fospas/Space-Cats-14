@@ -7,12 +7,3 @@
   parent: BaseGoldCircuitboardRecipe
   id: MachineBluespaceTransitorCircuitboard
   result: MachineBluespaceTransitorCircuitboard
-
-- type: latheRecipe
-  id: RPD
-  result: RPD
-  materials:
-    Steel: 600
-    Glass: 500
-    Plastic: 250
-    Gold: 50
