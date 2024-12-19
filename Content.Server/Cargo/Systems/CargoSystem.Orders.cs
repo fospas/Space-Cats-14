@@ -538,6 +538,11 @@ namespace Content.Server.Cargo.Systems
 
         }
 
+        public void DeductFunds(StationBankAccountComponent bank, int amount)
+        {
+            bank.Balance = bank.Balance - amount;   
+        }
+
         #region Station
 
         private bool TryGetOrderDatabase([NotNullWhen(true)] EntityUid? stationUid, [MaybeNullWhen(false)] out StationCargoOrderDatabaseComponent dbComp)
