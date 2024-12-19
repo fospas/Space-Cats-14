@@ -107,7 +107,7 @@ public sealed class ShipyardConsoleSystem : SharedShipyardSystem
             return;
         }
 
-        _cargo.DeductFunds(bank, vessel.Price);
+        UpdateBankAccount(bankUid, bank, -vessel.Price);
         var channel = _prototypeManager.Index<RadioChannelPrototype>("Command");
         _radio.SendRadioMessage(uid, Loc.GetString("shipyard-console-docking", ("vessel", vessel.Name.ToString())), channel, uid);
         PlayConfirmSound(uid, component);
