@@ -88,7 +88,7 @@ namespace Content.Server.Cargo.Systems
                 var stationQuery = EntityQueryEnumerator<StationBankAccountComponent>(); // Cats-StockTrading: Early merge #33123
                 while (stationQuery.MoveNext(out var uid, out var bank)) // Cats-StockTrading: Early merge #33123
                 {
-                    ar balanceToAdd = bank.IncreasePerSecond * Delay;
+                    var balanceToAdd = bank.IncreasePerSecond * Delay;
                     UpdateBankAccount(uid, bank, balanceToAdd);
                 }
 
@@ -215,7 +215,7 @@ namespace Content.Server.Cargo.Systems
                 $"{ToPrettyString(player):user} approved order [orderId:{order.OrderId}, quantity:{order.OrderQuantity}, product:{order.ProductId}, requester:{order.Requester}, reason:{order.Reason}] with balance at {bank.Balance}");
 
             orderDatabase.Orders.Remove(order);
-            UpdateBankAccount(station.Value, bank, -cost); // Cats-StockTrading: Early merge #33123
+            UpdateBankAccount(station.Value, bank, -cost); // Corvax-Next-StockTrading: Early merge #33123
             UpdateOrders(station.Value);
         }
 
