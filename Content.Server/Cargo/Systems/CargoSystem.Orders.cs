@@ -538,9 +538,9 @@ namespace Content.Server.Cargo.Systems
 
         }
 
-        public void UpdateBankAccount(EntityUid stationUid, StationBankAccountComponent bank, int amount)
+        public void DeductFunds(StationBankAccountComponent bank, int amount)
         {
-            bank.Balance = Math.Max(0, bank.Balance + amount);
+            bank.Balance = bank.Balance - amount;   
         }
 
         #region Station
