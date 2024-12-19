@@ -36,7 +36,7 @@ public sealed partial class CCVars : CVars
     /// However, for now (mid-July of 2024), this only applies specifically to a particularly cheap shader: additive lighting.
     /// </summary>
     public static readonly CVarDef<bool> PostProcess =
-        CVarDef.Create("graphics.post_process", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("graphics.post_process", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// Set to true to enable the dynamic hostname system.
