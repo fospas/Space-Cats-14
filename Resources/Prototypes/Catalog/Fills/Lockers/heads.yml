@@ -22,6 +22,8 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: AstroNavCartridge
     - id: TelescopicBaton # Cats
+    - id: StockTradingCartridge # Cats-StockTrading
+
 
 - type: entity
   id: LockerQuarterMasterFilled
