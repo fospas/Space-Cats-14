@@ -126,7 +126,7 @@
   id: Shuttlecraft
   name: research-technology-shuttlecraft
   icon:
-    sprite: Structures/Shuttles/gyroscope.rsi
+    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
     state: base
   discipline: Industrial
   tier: 2

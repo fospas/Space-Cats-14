@@ -617,7 +617,7 @@
   description: Creates parts for robotics and other mechanical needs.
   components:
   - type: Sprite
-    sprite: Structures/Machines/exosuit_fabricator.rsi
+    sprite: _SpaceCats/Structures/Machines/exosuit_fabricator.rsi # Cats edit
     layers:
     - state: fab-idle
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -625,11 +625,16 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: fab-o
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: Machine
     board: ExosuitFabricatorMachineCircuitboard
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
+    unlitRunningState: unlit-building
+    unlitIdleState: unlit
     staticRecipes:
     - MMI
     - PositronicBrain

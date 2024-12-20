@@ -147,7 +147,7 @@
     machinePartThrust: Manipulator
   - type: Sprite
     # Listen I'm not the biggest fan of the sprite but it was the most appropriate thing I could find.
-    sprite: Structures/Shuttles/gyroscope.rsi
+    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
     snapCardinals: true
     layers:
     - state: base
@@ -221,7 +221,7 @@
     needsPower: false
     powerLoad: 0
   - type: Sprite
-    sprite: Structures/Shuttles/gyroscope.rsi
+    sprite: _SpaceCats/Structures/Shuttles/gyroscope.rsi # Cats edit
     snapCardinals: true
     layers:
     - state: base
